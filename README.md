@@ -26,3 +26,7 @@ pip install fontawesome_markdown
 mkdocs build
 ```
 ビルドされた Web サイトは `../cppmap.github.io` ディレクトリに保存されます。
+
+## TODO
+そのままビルドすると、サイト内検索で日本語の検索がうまくできません。  
+インストールした `mkdocs-material` にある `lunr.jp.js` の内容を `lunr.ja.js` で置き換えると回避できるようです。
