@@ -13,9 +13,9 @@ C++ プログラムのコンパイル・実行ができる Web サイトです�
 | [C++ Shell](http://cpp.sh/)                               | gcc 4.9.2                        |             | :fa-check:     |             | :fa-check: |
 
 ## ソース → ソース変換
-[C++ Insights](https://cppinsights.io/) は、ラムダ式、range-based for, 構造化束縛などで何が起こっているのかを、元のプログラムを簡単なソースコードに分解して可視化するツールです。  
+[C++ Insights](https://cppinsights.io/) は、ラムダ式、range-based for, 構造化束縛などで何が起こっているのかを、元のプログラムを単純なソースコードに分解して可視化するオンラインのツールです。  
 
-####入力例
+#### 入力例
 ```c++
 #include <cstdio>
 
@@ -29,7 +29,7 @@ int main()
     }
 }
 ```
-####出力
+#### 出力
 ```c++
 #include <cstdio>
 
@@ -48,4 +48,24 @@ int main()
     }
   }
 }
+```
+
+## ソース → アセンブリ変換
+[Compiler Explorer](https://godbolt.org/) は、C, C++, Rust, Swift などのソースコードをコンパイルしてアセンブリを表示するオンラインコンパイラです。複数タブを使って、GCC, Clang, MSVC, ICC などのコンパイラや、コンパイルオプションを変えたときの結果を比較できます。
+#### 入力例
+```c++
+int square(int num) {
+    return num * num;
+}
+```
+#### 出力
+```asm
+square(int):
+        push    rbp
+        mov     rbp, rsp
+        mov     DWORD PTR [rbp-4], edi
+        mov     eax, DWORD PTR [rbp-4]
+        imul    eax, DWORD PTR [rbp-4]
+        pop     rbp
+        ret
 ```
