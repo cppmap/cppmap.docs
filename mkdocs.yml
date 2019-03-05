@@ -45,6 +45,7 @@ nav:
   - C++ 規格:
     - 標準化会議: standardization/meetings.md
   - 学習:
+    - オンライン資料: learn/online-resources.md
     - 国内の勉強会: learn/studymeetings.md
   - ツール:
     - オンラインコンパイラ: tools/onlinecompilers.md

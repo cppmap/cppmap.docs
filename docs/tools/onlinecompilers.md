@@ -52,12 +52,14 @@ int main()
 
 ## ソース → アセンブリ変換
 [Compiler Explorer](https://godbolt.org/) は、C, C++, Rust, Swift などのソースコードをコンパイルしてアセンブリを表示するオンラインコンパイラです。複数タブを使って、GCC, Clang, MSVC, ICC などのコンパイラや、コンパイルオプションを変えたときの結果を比較できます。
+
 #### 入力例
 ```c++
 int square(int num) {
     return num * num;
 }
 ```
+
 #### 出力
 ```asm
 square(int):
