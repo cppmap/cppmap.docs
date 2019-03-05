@@ -25,3 +25,4 @@ pip install fontawesome_markdown
 ```
 mkdocs build
 ```
+ビルドされた Web サイトは `../cppmap.github.io` ディレクトリに保存されます。
