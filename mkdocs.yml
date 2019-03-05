@@ -1,0 +1,45 @@
+# Project information
+site_name: C++ の歩き方 | CppMap
+site_description: C++17, C++20, C++23, C++26 に関する情報の調査・提供
+site_author: Ryo Suzuki
+
+# Repository
+repo_name: cppmap/cppmap.docs
+repo_url: https://github.com/cppmap/cppmap.docs
+edit_uri: ""
+
+# Theme
+theme:
+  name: 'material'
+  language: 'ja'
+  favicon: 'assets/images/logo.png'
+  logo:
+    icon: 'donut_small'  
+  palette:
+    primary: 'teal'
+    accent: 'teal'  
+  feature:
+    tabs: true
+extra:
+  search:
+  language: 'jp, en'
+markdown_extensions:
+  - admonition
+  - codehilite
+  - fontawesome_markdown
+  - footnotes
+  - pymdownx.inlinehilite
+  - pymdownx.magiclink
+extra_css:
+  - "https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
+  - cppmap_styles.css
+
+# Page tree
+nav:
+  - Home: index.md
+  - C++ 規格:
+    - 標準化会議: standardization/meetings.md
+  - 学習:
+    - 国内の勉強会: learn/studymeetings.md
+  - ツール:
+    - オンラインコンパイラ: tools/onlinecompilers.md
