@@ -27,7 +27,7 @@ theme:
     tabs: true
 extra:
   search:
-  language: 'jp, en'
+    language: 'jp'
 markdown_extensions:
   - admonition
   - codehilite
