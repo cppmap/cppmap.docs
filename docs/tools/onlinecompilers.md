@@ -13,7 +13,7 @@ C++ プログラムのコンパイル・実行ができる Web サイトです�
 | [C++ Shell](http://cpp.sh/)                               | gcc 4.9.2                        |             | :fa-check:     |             | :fa-check: |
 
 ## ソース → ソース変換
-[C++ Insights](https://cppinsights.io/) は、ラムダ式、range-based for, 構造化束縛などで何が起こっているのかを、元のプログラムを単純なソースコードに分解して可視化するオンラインのツールです。  
+[C++ Insights](https://cppinsights.io/) は、ラムダ式、range-based for, 構造化束縛などで何が起こっているのかを、プログラムを単純なソースコードに分解することで可視化するオンラインのツールです。  
 
 #### 入力例
 ```c++
