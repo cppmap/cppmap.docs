@@ -1,12 +1,15 @@
 # Project information
 site_name: C++ の歩き方 | CppMap
-site_description: C++17, C++20, C++23, C++26 に関する情報の調査・提供
+site_description: C++17, C++20, C++23, C++26 に関する情報を調査・提供します
 site_author: Ryo Suzuki
 
 # Repository
 repo_name: cppmap/cppmap.docs
 repo_url: https://github.com/cppmap/cppmap.docs
 edit_uri: ""
+
+# Copyright
+copyright: To the extent possible under law, Ryo Suzuki has waived all copyright and related or neighboring rights to C++ の歩き方 | CppMap.  Third party copyrights are property of their respective owners.
 
 # Theme
 theme:
