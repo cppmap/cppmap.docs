@@ -44,6 +44,7 @@ nav:
   - Home: index.md
   - C++ 規格:
     - 標準化会議: standardization/meetings.md
+    - C++23 以降に向けた提案: standardization/cppx.md
   - 学習:
     - オンライン資料: learn/online-resources.md
     - 国内の勉強会: learn/studymeetings.md
