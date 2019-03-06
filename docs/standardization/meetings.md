@@ -25,7 +25,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 
 #### 解説
 コルーチンと、C++23 以降への先送りが見込まれていたモジュールの C++20 入りが承認され、C++20 は C++11 以来の大型アップデートになることが決まりました。 
-[C++20 のスケジュール](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1000r1.pdf)では、この会議をもって「Feature Freeze」になります。仕様文言のレビューが未完了の小規模な提案を次回の Colonge 会議で承認して、C++20 のドラフトが完成します。
+[C++20 のスケジュール](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1000r1.pdf)では、この会議をもって「Feature Freeze」になります。仕様文言のレビューが未完了の小規模な提案を次回の Colonge 会議で承認して、C++20 の全容が載った規格ドラフトができあがります。
 
 #### 提案一覧
 - [JTC1/SC22/WG21 - Papers 2019 mailing2019-01](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/#mailing2019-01)
