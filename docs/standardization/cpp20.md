@@ -61,3 +61,57 @@ true
 false
 false
 ```
+
+### `operator>>(basic_istream&, charT*)` の第二引数を `charT(&)[N]` に変更して安全に [(P0487R1)](https://wg21.link/P0487R1)
+
+C++17 までの `operator>>(basic_istream&, charT*)` は、関数にバッファのサイズが渡されないため、次のようなプログラムでバッファオーバーフローへの対策が必要でした。
+```C++
+#include <iostream>
+#include <iomanip>
+
+int main()
+{
+	char buffer[4];
+	
+	// std::cin >> buffer; // 危険: バッファオーバーフローの可能性
+	
+	std::cin >> std::setw(4) >> buffer; // OK: バッファオーバーフロー対策
+	
+	std::cout << buffer;
+}
+```
+C++20 では引数を次のように変更し、関数がバッファオーバーフローの対策を実装するようになりました。
+```C++
+// C++17 まで
+template<class charT, class traits>
+basic_istream<charT, traits>& operator>>(basic_istream<charT, traits>& in, charT* s);
+
+// C++20 から
+template<class charT, class traits, size_t N>
+basic_istream<charT, traits>& operator>>(basic_istream<charT, traits>& in, charT (&s)[N]);
+```
+```C++
+#include <iostream>
+#include <iomanip>
+
+int main()
+{
+	char buffer[4];
+	
+	std::cin >> buffer; // OK: C++20 ではバッファオーバーフローを防げる
+	
+	std::cout << buffer;
+}
+```
+この変更に伴い、C++17 までは有効だった次のようなプログラムが、C++20 からコンパイルエラーになります。
+```C++
+#include <iostream>
+#include <iomanip>
+
+int main()
+{
+    char* p = new char[100];
+    std::cin >> std::setw(100) >> p; // C++20 からはコンパイルエラー
+    std::cout << p;
+}
+```
