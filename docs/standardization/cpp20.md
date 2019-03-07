@@ -34,6 +34,7 @@ int main()
 15, 3, false
 ```
 
+
 ## 標準ライブラリ
 
 ### 文字列の先頭や末尾が、ある文字列と一致するか判定 [(P0457R2)](https://wg21.link/P0457R2)
@@ -61,6 +62,7 @@ true
 false
 false
 ```
+
 
 ### `operator>>(basic_istream&, charT*)` の第二引数を `charT(&)[N]` に変更して安全に [(P0487R1)](https://wg21.link/P0487R1)
 
@@ -115,3 +117,4 @@ int main()
     std::cout << p;
 }
 ```
+
