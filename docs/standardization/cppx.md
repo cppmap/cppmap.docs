@@ -17,22 +17,17 @@ Motivation, Scope, and Basic Design (P1386)](https://wg21.link/p1386)
 
 音声再生・録音を行う低レベル API `std::audio` を追加する提案です。以前頓挫した 2D Graphics API の標準化に比べれば、枯れている技術なので実現可能性は低くはなさそうです。波形データをオーディオデバイスとやり取りすることが主要な役割で、音声コーデックやフィルタなどの機能は提供しません。[実験的な実装を公開](https://github.com/stdcpp-audio/libstdaudio)して、設計に関するフィードバックを集めている段階です。
 
-## Executors
-
 ## ネットワーク
 - [Working Draft, C++ Extensions for Networking (N4734)](https://wg21.link/n4734)
 
-Networking TSは、[Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/boost_asio.html)をベースにした非同期I/Oライブラリを標準ライブラリへ導入するために進行中の作業です。ソケットベースの通信と、タイマーやバッファ、DNS、および非同期オペレーションのための各種ライブラリを含み、基本的なTCP/IPによる同期・非同期通信をクロスプラットフォームなC++コードとして書くことができるようになります。
-
+ネットワーク機能を標準ライブラリに導入する提案です。[Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/boost_asio.html) をベースに、ソケット通信、名前解決、インターネットプロトコル、タイマー、バッファ、非同期処理のための各種機能を実装する予定です。
 
 ## リフレクション
 - [Working Draft, C++ Extensions for Reﬂection (N4766)](https://wg21.link/n4766)
 
-Reﬂection TSは、C++に静的なリフレクションを導入するために進行中の作業です。  
-C#やJavascriptのJSONに代表される動的なリフレクションではなく、コンパイル時にソースコードに書かれていることを取得するような、静的なリフレクションになります。この静的リフレクションをベースとした[メタクラスの提案](https://wg21.link/p0707)も検討が進んでいます。
+C++ にリフレクションを導入する提案です。C# のような動的なリフレクションではなく、コンパイル時に情報を取得する静的なリフレクションです。
 
-サンプルコード(N4766)
-```cpp
+```C++
 #include <experimental/reflect>
 
 using namespace std::experimental::reflect;
@@ -41,9 +36,14 @@ constexpr void f(int arg1, int arg2);
 
 using f_mobj = reflexpr(f(0, 1));
 
-auto name = get_name_v<get_element_t<0, get_parameters_t<f_mobj>>>;
-//name == "arg1"
+auto name = get_name_v<get_element_t<0, get_parameters_t<f_mobj>>>; // "arg1"
 
-auto is_constexpr_function = is_constexpr<f_mobj>::value;
-//is_constexpr_function == true
+auto is_constexpr_function = is_constexpr<f_mobj>::value; // true
 ```
+
+この機能を前提とした[メタクラスの提案](https://wg21.link/p0707)も議論が進んでいます。
+
+## Executors
+
+
+
