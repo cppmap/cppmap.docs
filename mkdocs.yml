@@ -47,6 +47,7 @@ nav:
     - C++23 以降に向けた提案: standardization/cppx.md
     - 標準化会議: standardization/meetings.md
   - 学習:
+    - 書籍: learn/books.md
     - オンライン資料: learn/online-resources.md
     - 国内の勉強会: learn/studymeetings.md
     - コミュニティ: learn/communities.md
