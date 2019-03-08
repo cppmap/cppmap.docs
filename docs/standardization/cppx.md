@@ -1,5 +1,4 @@
 # C++23 以降に向けた提案
-
 議論が進行中のおもな提案です。標準化会議によって規格化が妥当でないと判断された場合は採択されません。
 
 ## 標準ライブラリ モジュール
@@ -23,7 +22,7 @@ Motivation, Scope, and Basic Design (P1386)](https://wg21.link/p1386)
 ## ネットワーク
 - [Working Draft, C++ Extensions for Networking (N4734)](https://wg21.link/n4734)
 
-Networking TSは、[Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/boost_asio.html)をベースにした非同期I/Oライブラリを標準ライブラリへ導入するために進行中の作業です。基礎的なTCP/IPによるソケット通信をクロスプラットフォームなC++コードとして書くことができるようになります。
+Networking TSは、[Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/boost_asio.html)をベースにした非同期I/Oライブラリを標準ライブラリへ導入するために進行中の作業です。基本的なTCP/IPによるソケット通信をクロスプラットフォームなC++コードとして書くことができるようになります。
 
 
 ## リフレクション
@@ -32,18 +31,19 @@ Networking TSは、[Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/
 Reﬂection TSは、C++に静的なリフレクションを導入するために進行中の作業です。  
 C#やJavascriptのJSONに代表される動的なリフレクションではなく、コンパイル時にソースコードに書かれていることを取得するような、静的なリフレクションになります。この静的リフレクションをベースとした[メタクラスの提案](https://wg21.link/p0707)も検討が進んでいます。
 
-コード例(N4766)
+サンプルコード(N4766)
 ```cpp
 #include <experimental/reflect>
+
 using namespace std::experimental::reflect;
 
 constexpr void f(int arg1, int arg2);
 
-using f_m = reflexpr(f(0, 1));
+using f_mobj = reflexpr(f(0, 1));
 
-auto name = get_name_v<get_element_t<0, get_parameters_t<f_m>>>;
+auto name = get_name_v<get_element_t<0, get_parameters_t<f_mobj>>>;
 //name == "arg1"
 
-auto is_constant = is_constexpr<f_m>::value;
-//is_constant == true
+auto is_constexpr_function = is_constexpr<f_mobj>::value;
+//is_constexpr_function == true
 ```
