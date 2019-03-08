@@ -21,12 +21,18 @@ Motivation, Scope, and Basic Design (P1386)](https://wg21.link/p1386)
 ## Executors
 
 ## ネットワーク
+- [Working Draft, C++ Extensions for Networking (N4734)](https://wg21.link/n4734)
+
+Networking TSは、[Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/boost_asio.html)をベースにした非同期I/Oライブラリを標準ライブラリへ導入するために進行中の作業です。基礎的なTCP/IPによるソケット通信をクロスプラットフォームなC++コードとして書くことができるようになります。
+
 
 ## リフレクション
 - [Working Draft, C++ Extensions for Reﬂection (N4766)](https://wg21.link/n4766)
 
-C++に静的なリフレクションを導入する作業が進行しています。  
-C#やJavascriptのJSONに代表される動的なリフレクションではなく、コンパイル時にソースコードに書かれていることを取得するような、静的なリフレクションになります。例えば以下のようなことが可能になります。
+Reﬂection TSは、C++に静的なリフレクションを導入するために進行中の作業です。  
+C#やJavascriptのJSONに代表される動的なリフレクションではなく、コンパイル時にソースコードに書かれていることを取得するような、静的なリフレクションになります。この静的リフレクションをベースとした[メタクラスの提案](https://wg21.link/p0707)も検討が進んでいます。
+
+コード例(N4766)
 ```cpp
 #include <experimental/reflect>
 using namespace std::experimental::reflect;
