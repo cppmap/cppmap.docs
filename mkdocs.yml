@@ -19,10 +19,10 @@ theme:
   language: 'ja'
   favicon: 'assets/images/logo.png'
   logo:
-    icon: 'donut_small'  
+    icon: 'donut_small'
   palette:
     primary: 'teal'
-    accent: 'teal'  
+    accent: 'teal'
   feature:
     tabs: true
 extra:
@@ -54,3 +54,4 @@ nav:
     - コンテナ: libraries/containers.md
   - ツール:
     - オンラインコンパイラ: tools/onlinecompilers.md
+    - パッケージマネージャ: tools/package-manager.md
