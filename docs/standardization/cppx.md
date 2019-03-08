@@ -23,4 +23,21 @@ Motivation, Scope, and Basic Design (P1386)](https://wg21.link/p1386)
 ## ネットワーク
 
 ## リフレクション
+- [Working Draft, C++ Extensions for Reﬂection (N4766)](https://wg21.link/n4766)
 
+C++に静的なリフレクションを導入する作業が進行しています。  
+C#やJavascriptのJSONに代表される動的なリフレクションではなく、コンパイル時にソースコードに書かれていることを取得するような、静的なリフレクションになります。例えば以下のようなことが可能になります。
+```cpp
+#include <experimental/reflect>
+using namespace std::experimental::reflect;
+
+constexpr void f(int arg1, int arg2);
+
+using f_m = reflexpr(f(0, 1));
+
+auto name = get_name_v<get_element_t<0, get_parameters_t<f_m>>>;
+//name == "arg1"
+
+auto is_constant = is_constexpr<f_m>::value;
+//is_constant == true
+```
