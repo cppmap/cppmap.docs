@@ -22,7 +22,7 @@ Motivation, Scope, and Basic Design (P1386)](https://wg21.link/p1386)
 ## ネットワーク
 - [Working Draft, C++ Extensions for Networking (N4734)](https://wg21.link/n4734)
 
-Networking TSは、[Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/boost_asio.html)をベースにした非同期I/Oライブラリを標準ライブラリへ導入するために進行中の作業です。基本的なTCP/IPによるソケット通信をクロスプラットフォームなC++コードとして書くことができるようになります。
+Networking TSは、[Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/boost_asio.html)をベースにした非同期I/Oライブラリを標準ライブラリへ導入するために進行中の作業です。ソケットベースの通信と、タイマーやバッファ、DNS、および非同期オペレーションのための各種ライブラリを含み、基本的なTCP/IPによる同期・非同期通信をクロスプラットフォームなC++コードとして書くことができるようになります。
 
 
 ## リフレクション
