@@ -6,6 +6,7 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
 
 - [@kariya_mitsuru](https://twitter.com/kariya_mitsuru) さん
     - [C++17 洋書の情報提供](https://github.com/cppmap/cppmap.docs/issues/6)
+    - [処理系の対応状況の情報提供](https://github.com/cppmap/cppmap.docs/pull/7)
 - [@matken11235](https://twitter.com/matken11235) さん
     - [C++ パッケージマネージャの情報提供](https://github.com/cppmap/cppmap.docs/pull/2)
 - [@NxNeu_J](https://twitter.com/NxNeu_J) さん
