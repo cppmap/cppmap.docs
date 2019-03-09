@@ -57,3 +57,5 @@ nav:
   - ツール:
     - オンラインコンパイラ: tools/onlinecompilers.md
     - パッケージマネージャ: tools/package-manager.md
+  - 貢献:
+    - コントリビュータ: contribution/contributors.md
