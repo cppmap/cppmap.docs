@@ -19,4 +19,13 @@ C++ の学習に役立つ書籍を紹介します。
 | [冒険で学ぶはじめてのプログラミング](https://amzn.to/2IWnWnx)                           | 2018 | C++17    | :fa-graduation-cap: 初学者向け。早稲田大学が運営する中学・高校生向け C++ 入門講座の教科書。[紹介ページ](https://enrect.org/cppbook/) |
 | [Modern C++ チャレンジ ― C++17 プログラミング力を鍛える 100 問](https://amzn.to/2EMsIP8) | 2019 | C++17/20 | 現実的・実践的な 100 の課題を C++ で解決する問題集。オープンソースライブラリを積極活用                                               |
 
+
+## 洋書
+| 書名                                                                         | 発行年  | C++ 規格   | 内容                                                                                                                                 |
+|----------------------------------------------------------------------------|------|----------|------------------------------------------------------------------------------------------------------------------------------------|
+| [C++ Templates: The Complete Guide (2nd Edition)](https://amzn.to/2TnVa4h) | 2017 | C++17/20 | C++17 のテンプレートの文法や様々なテクニックを解説。C++20 で導入されるコンセプトの紹介も。 [目次](https://www.oreilly.com/library/view/c-templates-the/9780134778808/)      |
+| [Mastering the C++17 STL](https://amzn.to/2tYz4X1)                         | 2017 | C++17    | C++17 までの標準ライブラリの機能や使い方を紹介。[目次](https://www.packtpub.com/application-development/mastering-c17-stl)                                |
+| [C++ Concurrency in Action, Second Edition](https://amzn.to/2J2y26G)       | 2019 | C++17    | C++17 における並行処理を詳細に解説。ロックフリーデータ構造の設計なども取り上げる。[試し読み](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition) |
+
+
 <!-- ToDo: C++11 とそれ以前の書籍 -->
