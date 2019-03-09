@@ -26,7 +26,7 @@ C++ の学習に役立つ書籍を紹介します。
 | [C++ Templates: The Complete Guide (2nd Edition)](https://amzn.to/2TnVa4h) | 2017 | C++17/20 | C++17 のテンプレートの文法や様々なテクニックを解説。C++20 で導入されるコンセプトの紹介も。 [目次](https://www.oreilly.com/library/view/c-templates-the/9780134778808/)      |
 | [Mastering the C++17 STL](https://amzn.to/2tYz4X1)                         | 2017 | C++17    | C++17 までの標準ライブラリの機能や使い方を紹介。[目次](https://www.packtpub.com/application-development/mastering-c17-stl)                                |
 | [C++ Concurrency in Action, Second Edition](https://amzn.to/2J2y26G)       | 2019 | C++17    | C++17 における並行処理を詳細に解説。ロックフリーデータ構造の設計なども取り上げる。[試し読み](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition) |
-| [C++17 in Detail](https://leanpub.com/cpp17indetail)                       | 2019 | C++17    | C++17 の主要な新機能・変更点、Boost からの移行を解説。[目次](https://leanpub.com/cpp17indetail)                                                           |
+| [C++17 in Detail](https://leanpub.com/cpp17indetail)                       | 2019 | C++17    | C++17 の主要な新機能・変更点のほか、Boost から標準ライブラリへの移行を解説。[目次](https://leanpub.com/cpp17indetail)                                                           |
 
 
 <!-- ToDo: C++11 とそれ以前の書籍 -->
