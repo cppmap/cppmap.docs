@@ -46,6 +46,7 @@ nav:
     - C++20 の新機能: standardization/cpp20.md
     - C++23 以降に向けた提案: standardization/cppx.md
     - 標準化会議: standardization/meetings.md
+    - 処理系の対応状況: standardization/status.md
   - 学習:
     - 書籍: learn/books.md
     - オンライン資料: learn/online-resources.md

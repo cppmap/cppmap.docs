@@ -16,11 +16,6 @@
 - [C++17 最終ワーキングドラフト (N4659)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017/n4659.pdf) | [HTML 版](https://timsong-cpp.github.io/cppwp/n4659/)
 - [最新の C++20 ワーキングドラフト (N4800)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/n4800.pdf) | [HTML 版](http://eel.is/c++draft/)
 
-## コンパイラの実装状況
-- GCC: [C++ Standards Support in GCC](https://gcc.gnu.org/projects/cxx-status.html)
-- Clang: [C++ Support in Clang](http://clang.llvm.org/cxx_status.html)
-- Microsoft Visaul C++: [Visual C++ Language Conformance](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
-
 ## FAQ
 - [C++ FAQ](https://isocpp.org/faq)
     - [Marshall Cline の C++ FAQ](http://www.cs.technion.ac.il/users/yechiel/c++-faq/index.html) と [Bjarne Stroustrup の C++ FAQ](http://stroustrup.com/bs_faq.html) を統合・更新した Q&A 集
