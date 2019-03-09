@@ -6,6 +6,7 @@
 ## C++20
 
 - GCC: [C++2a Support in GCC](https://gcc.gnu.org/projects/cxx-status.html#cxx2a)
+- libstdc++: [C++ 202a](https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2020)
 - Clang: [C++2a implementation status](http://clang.llvm.org/cxx_status.html#cxx20)
 - libc++: [libc++ C++2a Status](http://libcxx.llvm.org/cxx2a_status.html)
 - Microsoft Visaul C++: [Visual C++ Language Conformance](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
@@ -13,6 +14,7 @@
 ## C++17
 
 - GCC: [C++17 Support in GCC](https://gcc.gnu.org/projects/cxx-status.html#cxx17)
+- libstdc++: [C++ 2017](https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2017)
 - Clang: [C++17 implementation status](http://clang.llvm.org/cxx_status.html#cxx17)
 - libc++: [libc++ C++17 Status](http://libcxx.llvm.org/cxx1z_status.html)
 - Microsoft Visaul C++: [Visual C++ Language Conformance](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
@@ -20,6 +22,7 @@
 ## C++14
 
 - GCC: [C++14 Support in GCC](https://gcc.gnu.org/projects/cxx-status.html#cxx14)
+- libstdc++: [C++ 2014](https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2014)
 - Clang: [C++14 implementation status](http://clang.llvm.org/cxx_status.html#cxx14)
 - libc++: [libc++ C++14 Status](http://libcxx.llvm.org/cxx1y_status.html)
 - Microsoft Visaul C++: [Visual C++ Language Conformance](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
