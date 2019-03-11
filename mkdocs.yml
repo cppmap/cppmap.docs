@@ -38,6 +38,7 @@ markdown_extensions:
   - footnotes
   - pymdownx.inlinehilite
   - pymdownx.magiclink
+  - pymdownx.superfences
 extra_css:
   - "https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
   - cppmap_styles.css
@@ -50,6 +51,8 @@ nav:
     - C++23 以降に向けた提案: standardization/cppx.md
     - 標準化会議: standardization/meetings.md
     - 処理系の対応状況: standardization/status.md
+  - 記事:
+    - コメントアウトのトリック: articles/comment-tricks.md
   - 学習:
     - 書籍: learn/books.md
     - オンライン資料: learn/online-resources.md
