@@ -28,6 +28,9 @@ theme:
 extra:
   search:
     language: 'jp'
+  social:
+    - type: 'twitter'
+      link: 'https://twitter.com/Reputeless'
 markdown_extensions:
   - admonition
   - codehilite
