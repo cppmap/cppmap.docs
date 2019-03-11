@@ -12,7 +12,7 @@ C++ プログラムのコンパイル・実行ができる Web サイトです�
 | [Ideone](https://ideone.com/)                             | gcc 6.3.0                        | :fa-check:  |                |             | :fa-check: |
 | [C++ Shell](http://cpp.sh/)                               | gcc 4.9.2                        |             | :fa-check:     |             | :fa-check: |
 
-## ソース → ソース変換
+## C++ Insights: ソース → ソース変換
 [C++ Insights](https://cppinsights.io/) は、ラムダ式、range-based for, 構造化束縛などで何が起こっているのかを、プログラムを単純なソースコードに分解することで可視化するオンラインのツールです。  
 
 #### 入力例
@@ -50,7 +50,9 @@ int main()
 }
 ```
 
-## ソース → アセンブリ変換
+## Compiler Explorer: ソース → アセンブリ変換
+
+### 概要
 [Compiler Explorer](https://godbolt.org/) は、C, C++, Rust, Swift などのソースコードをコンパイルしてアセンブリを表示するオンラインコンパイラです。複数タブを使って、GCC, Clang, MSVC, ICC などのコンパイラや、コンパイルオプションを変えたときの結果を比較できます。
 
 #### 入力例
@@ -71,3 +73,6 @@ square(int):
         pop     rbp
         ret
 ```
+
+### URL からインクルード
+Compiler Explorer には、Web 上のファイルを `#include "URL"` でインクルードできる独自拡張機能があります。この機能を使うと、GitHub などに公開されているシングルヘッダライブラリをプログラムの中で簡単に使えます（例: https://godbolt.org/z/OV-vGQ）
