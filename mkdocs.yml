@@ -60,6 +60,7 @@ nav:
     - コミュニティ: learn/communities.md
   - ライブラリ:
     - コンテナ: libraries/containers.md
+    - テキストデータ: libraries/text-data.md   
   - ツール:
     - オンラインコンパイラ: tools/onlinecompilers.md
     - パッケージマネージャ: tools/package-manager.md
