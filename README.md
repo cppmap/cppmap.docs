@@ -13,6 +13,8 @@
 - リクエスト
     - Issues に書き込むか、管理者 [@Reputeless](https://twitter.com/Reputeless) にリプライを送ってください
 
+コントリビュートしてくれた方は、[コントリビュータ](https://cppmap.github.io/contribution/contributors/)として Web サイトに名前を掲載します。
+
 ## ビルド方法
 MkDocs を使います。  
 Python 3 をインストールし、MkDocs と MkDocs Material テーマ、`fontawesome_markdown` をインストールするために、以下のコマンドを実行します。
