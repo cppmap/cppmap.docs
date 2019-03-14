@@ -53,6 +53,8 @@ nav:
     - 処理系の対応状況: standardization/status.md
   - 記事:
     - コメントアウトのトリック: articles/comment-tricks.md
+    - なぜかコンパイルできる: articles/it-compiles.md
+    - なぜかコンパイルできない: articles/it-does-not-compile.md   
   - 学習:
     - 書籍: learn/books.md
     - オンライン資料: learn/online-resources.md
