@@ -28,13 +28,23 @@ description: C++ のテキストデータライブラリの紹介
 
 
 ## XML
+- [Boost.PropertyTree](https://github.com/boostorg/property_tree)  <small>BSL 1.0</small> (内部実装に RapidXml を使用)
+- [pugixml](https://github.com/zeux/pugixml) <small>MIT</small>
+- [RapidXml](http://rapidxml.sourceforge.net/) <small>BSL 1.0</small>
+- [TinyXML-2](https://github.com/leethomason/tinyxml2) <small>zlib</small>
 
 
 ## CSV
+- [Boost.Tokenizer](https://github.com/boostorg/tokenizer) <small>BSL 1.0</small>
+- [Fast C++ CSV Parser](https://github.com/ben-strasser/fast-cpp-csv-parser) <small>BSD 3-Clause</small>
+- [Vince's CSV Parser](https://github.com/vincentlaucsb/csv-parser) <small>MIT</small>
 
 
 ## INI
+- [Boost.PropertyTree](https://github.com/boostorg/property_tree) <small>BSL 1.0</small>
+- [inicpp](https://github.com/SemaiCZE/inicpp) <small>MIT</small>
+- [.ini parser](https://github.com/Poordeveloper/ini-parser) <small>MIT</small>
 
 
 ## YAML
-
+- [yaml-cpp](https://github.com/jbeder/yaml-cpp) <small>MIT</small>
