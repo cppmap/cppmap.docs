@@ -44,7 +44,7 @@ C++ の予約語の読みと名前の由来です。
 | explicit         | エクスプリシット                | 明示的な                                               |
 | export           | エクスポート                  | ほかへ送り出す                                            |
 | extern           | エクスターン                  | 外部へ (external) の略                                  |
-| false            | フォルス                    | 偽                                                  |
+| false            | フォルス/フォールス              | 偽                                                  |
 | float            | フロート                    | 浮動小数点数 (floating point number)                     |
 | for              | フォー/フォア                 | ～に対して                                              |
 | friend           | フレンド                    | 友だち                                                |
