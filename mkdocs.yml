@@ -58,7 +58,7 @@ nav:
     - なぜかコンパイルできる: articles/it-compiles.md
     - なぜかコンパイルできない: articles/it-does-not-compile.md
     - 予約語の読みと名前の由来: articles/how-to-read-keywords.md
-    - 標準ライブラリの読みと名前の由来: articles/how-to-read-keywords.md 
+    - 標準ライブラリの読みと名前の由来: articles/how-to-read-libraries.md 
   - 学習:
     - 書籍: learn/books.md
     - オンライン資料: learn/online-resources.md
