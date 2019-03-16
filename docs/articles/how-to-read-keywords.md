@@ -23,7 +23,7 @@ C++ の予約語の読みと名前の由来です。
 | char16_t         | チャー 16 ティー/キャラ 16 ティー   | UTF-16 文字 (character) 型 (type) の略                  |
 | char32_t         | チャー 32 ティー/キャラ 32 ティー   | UTF-32 文字 (character) 型 (type) の略                  |
 | class            | クラス                     | 部類                                                 |
-| compl            | コンプル/コンプリメント            | ~の置き換え                                             |
+| compl            | コンプル/コンプリメント            | 補数                                             |
 | concept          | コンセプト                   | コンセプト。要件の集合                                        |
 | const            | コンスト                    | 定数 (constant) の略                                   |
 | consteval        | コンストイーバル/コンストエバル        | 定数 (constant) 評価 (evaluation)                      |
