@@ -19,9 +19,9 @@ C++ の予約語の読みと名前の由来です。
 | case             | ケース                     | 場合                                                 |
 | catch            | キャッチ                    | 捕まえる                                               |
 | char             | チャー/キャラ/キャラクター          | 文字 (character) の略                                  |
-| char8_t          | チャー 8 ティー/キャラ 8 ティー     | UTF-8 文字 (character) の略                            |
-| char16_t         | チャー 16 ティー/キャラ 16 ティー   | UTF-16 文字 (character) の略                           |
-| char32_t         | チャー 32 ティー/キャラ 32 ティー   | UTF-32 文字 (character) の略                           |
+| char8_t          | チャー 8 ティー/キャラ 8 ティー     | UTF-8 文字 (character) 型 (type) の略                   |
+| char16_t         | チャー 16 ティー/キャラ 16 ティー   | UTF-16 文字 (character) 型 (type) の略                  |
+| char32_t         | チャー 32 ティー/キャラ 32 ティー   | UTF-32 文字 (character) 型 (type) の略                  |
 | class            | クラス                     | 部類                                                 |
 | compl            | コンプル/コンプリメント            | ~の置き換え                                             |
 | concept          | コンセプト                   | コンセプト。要件の集合                                        |
