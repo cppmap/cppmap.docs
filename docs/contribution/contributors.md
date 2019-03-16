@@ -6,12 +6,12 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
 
 <!-- ABC 順-->
 
-- [@kariya_mitsuru](https://twitter.com/kariya_mitsuru) さん
-    - [C++17 洋書 情報提供](https://github.com/cppmap/cppmap.docs/issues/6)
-    - [処理系の対応状況 情報提供](https://github.com/cppmap/cppmap.docs/pull/7)
 - [@Fuyutsubaki](https://twitter.com/Fuyutsubaki) さん
     - [なぜかコンパイルできない ネタ提供](https://github.com/cppmap/cppmap.docs/issues/9#issuecomment-472076826)
     - [標準ライブラリ 記事作成](https://github.com/cppmap/cppmap.docs/pull/12)
+- [@kariya_mitsuru](https://twitter.com/kariya_mitsuru) さん
+    - [C++17 洋書 情報提供](https://github.com/cppmap/cppmap.docs/issues/6)
+    - [処理系の対応状況 情報提供](https://github.com/cppmap/cppmap.docs/pull/7)
 - [@matken11235](https://twitter.com/matken11235) さん
     - [C++ パッケージマネージャ 情報提供](https://github.com/cppmap/cppmap.docs/pull/2)
 - [@nekko1119](https://twitter.com/nekko1119) さん
