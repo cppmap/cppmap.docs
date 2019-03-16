@@ -11,8 +11,11 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [処理系の対応状況 情報提供](https://github.com/cppmap/cppmap.docs/pull/7)
 - [@Fuyutsubaki](https://twitter.com/Fuyutsubaki) さん
     - [なぜかコンパイルできない ネタ提供](https://github.com/cppmap/cppmap.docs/issues/9#issuecomment-472076826)
+    - [標準ライブラリ 記事作成](https://github.com/cppmap/cppmap.docs/pull/12)
 - [@matken11235](https://twitter.com/matken11235) さん
     - [C++ パッケージマネージャ 情報提供](https://github.com/cppmap/cppmap.docs/pull/2)
+- [@nekko1119](https://twitter.com/nekko1119) さん
+    - [予約語 記事作成](https://github.com/cppmap/cppmap.docs/pull/11)    
 - [@NxNeu_J](https://twitter.com/NxNeu_J) さん
     - [C++17 洋書 情報提供](https://github.com/cppmap/cppmap.docs/issues/5)
 - [@onihusube9](https://twitter.com/onihusube9) さん
