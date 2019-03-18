@@ -53,6 +53,7 @@ nav:
     - C++23 以降に向けた提案: standardization/cppx.md
     - 標準化会議: standardization/meetings.md
     - 処理系の対応状況: standardization/status.md
+    - C++ 規格: standardization/working-drafts.md
   - 記事:
     - コメントアウトのトリック: articles/comment-tricks.md
     - なぜかコンパイルできる: articles/it-compiles.md
