@@ -241,3 +241,10 @@ MSVC の標準ライブラリでは Visual Studio 2017 15.6 以降、規格の�
 ### `<array>` ヘッダのすべての関数が constexpr に [(P1023R0)](https://wg21.link/P1023R0), [(P1032R1)](https://wg21.link/P1032R1)
 
 C++17 の `<array>` ヘッダでは、比較演算子、`swap()`, `fill()` 以外のすべての関数が constexpr でした。C++20 ではさらに、array の比較演算の実装に使われている `std::equal()` と `std::lexicographical_compare()` が [constexpr になった (P0202R3)](https://wg21.link/P0202R3) ことにともない、array の比較演算子を constexpr とし、また `swap()` と `fill()` についても constexpr にすることを決め、array ヘッダのすべての関数が constexpr で提供されます。
+
+### `<chrono>` ヘッダの `zero()`, `min()`, `max()` 関数が noexcept に [(P0972R0)](https://wg21.link/P0972R0)
+`std::chrono::duration_values`, `std::chrono::duration`, `std::chrono::time_point` などの `zero()`, `min()`, `max()` 関数に noexcept が付きます。
+
+### `pointer_traits` が constexpr に [(P1006R1)](https://wg21.link/P1006R1) 
+`std::vector` を constexpr にするのに必要なため、`std::pointer_traits::pointer_to()` 関数が constrexpr になります。
+
