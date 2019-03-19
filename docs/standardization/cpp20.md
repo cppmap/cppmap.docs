@@ -136,6 +136,71 @@ int main()
 }
 ```
 
+### 型名であることが明らかな文脈で `typename` を省略可能に [(P0634R3)](https://wg21.link/P0634R3)
+
+C++17 で依存名が型である場合に `typename` を付けないのは、派生クラス定義時の基底クラスの指定と、初期化子リストでの基底クラスの指定のみでした（厳密にはこの 2 つには `typename` を付けられません）。C++20 では、型名しか使えないさらにいくつかの文脈で `typename` が省略可能になります。次のサンプルコードの左右タブで比較できます。
+
+```C++ tab="C++17"
+#include <vector>
+#include <string>
+
+template <class T, class Alloc = typename T::allocator_type>
+struct S : T::value_type // 派生クラス定義時の基底クラスの指定
+{
+	using value_type = typename T::value_type;
+
+	S()
+        : T::value_type() {} // 初期化子リストでの基底クラスの指定
+
+	typename T::size_type max_size() const;
+
+	auto data()->typename T::pointer;
+
+	auto min_size() const
+	{
+		return static_cast<typename T::size_type>(0);
+	}
+};
+
+template <class T> typename T::size_type MaxSize();
+
+int main()
+{
+    S<std::vector<std::string>> s;
+}
+```
+
+```C++ tab="C++20"
+#include <vector>
+#include <string>
+
+template <class T, class Alloc = T::allocator_type> // OK
+struct S : T::value_type // 派生クラス定義時の基底クラスの指定
+{
+	using value_type = T::value_type; // OK
+
+	S()
+        : T::value_type() {} // 初期化子リストでの基底クラスの指定
+
+	T::size_type max_size() const; // OK
+
+	auto data()->T::pointer; // OK
+
+	auto min_size() const
+	{
+		return static_cast<T::size_type>(0); // OK
+	}
+};
+
+template <class T> T::size_type MaxSize(); // OK
+
+int main()
+{
+    S<std::vector<std::string>> s;
+}
+
+```
+
 
 ## 標準ライブラリ
 
