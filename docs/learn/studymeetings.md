@@ -13,23 +13,28 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - [Youtube チャンネル](https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w)
 - Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix)
 
-### C++ MIX #2
-[2019-02-20](https://cppmix.connpass.com/event/115640/)
+### C++ MIX #3 [(2019-04-17)](https://cppmix.connpass.com/event/124862/)
+| タイトル                                                                                                                                                       | 発表者                | ムービー |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------|
 
-- 勉強会と会場の説明
-- iOSアプリ『パズモナ』のひみつ
-- Qt×Reactive Extensions
-- C++のパッケージマネージャ「poac」を開発した話
-- 雑談タイム
+### C++ MIX #2 [(2019-02-20)](https://cppmix.connpass.com/event/115640/)
+| タイトル                                                                                                                                                       | 発表者                | ムービー |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------|
+| [勉強会と会場の説明](https://www.slideshare.net/faithandbrave/cppmix-02)                                                                                            | Akira Takahashi                  |     |
+| [iOSアプリ『パズモナ』のひみつ](https://speakerdeck.com/5mingame2/c-plus-plus-mix-number-2-pazumonafalsehimitu)                                                         | Nobuyuki Nishiyama |     |
+| [Qt×Reactive Extensions](https://www.slideshare.net/TetsuroMatsumura/qt-reactive-extensions-ja?ref=https://cppmix.connpass.com/event/115640/presentation/) | Tetsuro Matsumura  |     |
+| [C++のパッケージマネージャ「poac」を開発した話](https://speakerdeck.com/matken11235/poac-is-a-package-manager-for-c-plus-plus)                                                | Ken Matsui         |     |
+| 雑談タイム                                                                                                                                                      |                   |     |
 
-### C++ MIX #1
-[2018-12-06](https://cppmix.connpass.com/event/107576/)
+### C++ MIX #1 [(2018-12-06)](https://cppmix.connpass.com/event/107576/)
 
-- 勉強会と会場、最近のC++の説明
-- Menohにおける C++実装 / C API / C++API
-- Undefined Behaviorに対する防衛術
-- C++ を教える ～早稲田大学の小中高生向けプログラミング教室における事例紹介～
-- 避けよう memset の乱用
+| タイトル                                                                                                                                            | 発表者             | ムービー                                                     |
+|-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------|
+| [勉強会と会場、最近のC++の説明](https://www.slideshare.net/faithandbrave/cppmix-01)                                                                          | Akira Takahashi | [:fa-play:](https://www.youtube.com/watch?v=HfKNtAHMxiQ) |
+| [Menohにおける C++実装 / C API / C++API](https://www.slideshare.net/ShintarouOkada/menohc-c-api-capi)                                                 | okdshin         | [:fa-play:](https://www.youtube.com/watch?v=3_0p_yGv52Q) |
+| [Undefined Behaviorに対する防衛術](https://speakerdeck.com/loligothick/defense-against-undefined-behavior-wei-ding-yi-dong-zuo-nidui-surufang-wei-shu) | いなむのみたま         | [:fa-play:](https://www.youtube.com/watch?v=gc58TZ5m2dg) |
+| [C++ を教える ～早稲田大学の小中高生向けプログラミング教室における事例紹介～](https://www.dropbox.com/s/mfhncuyo723lfai/C%2B%2B%E3%82%92%E6%95%99%E3%81%88%E3%82%8B.pdf)           | Reputeless      | [:fa-play:](https://www.youtube.com/watch?v=O3i6gCpZKDw) |
+| [避けよう memset の乱用](https://agate-pris.gitlab.io/slides/no-more-memset/)                                                                          | agate-pris      | [:fa-play:](https://www.youtube.com/watch?v=IxPqx4ZOnFw) |
 
 
 ## nakameguro_feature.cpp
@@ -46,8 +51,7 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - https://ebisu-effective-modern-cpp.connpass.com/
 - Twitter ハッシュタグ [#nakamecpp](https://twitter.com/search?q=%23nakamecpp)
 
-### nakameguro_feature.cpp vol.17
-[2019-03-14](https://ebisu-effective-modern-cpp.connpass.com/event/122404/)
+### nakameguro_feature.cpp vol.17 [(2019-03-14)](https://ebisu-effective-modern-cpp.connpass.com/event/122404/)
 
 
 ## 札幌 C++ 勉強会
