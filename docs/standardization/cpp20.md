@@ -313,7 +313,7 @@ C++17 の `<array>` ヘッダでは、比較演算子、`swap()`, `fill()` 以�
 ### `pointer_traits` が constexpr に [(P1006R1)](https://wg21.link/P1006R1) 
 `std::vector` を constexpr にするのに必要なため、`std::pointer_traits::pointer_to()` 関数が constrexpr になります。
 
-### ポインタのアライメントを最適化ヒントとしてコンパイラに伝える `std::assume_aligned()` 関数 [(P1007R3)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1007r3.pdf)
+### ポインタのアライメントを最適化ヒントとしてコンパイラに伝える `assume_aligned()` 関数 [(P1007R3)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1007r3.pdf)
 
 データのアドレスが 16 バイトなどのサイズにアライメントされている場合、コンパイラが SIMD を使った最適なコードを生成できる場合があります。あるポインタの指すデータがアライメントされていることをコンパイラに伝える方法として、GCC や Clang では `__builtin_assume_aligned()` や `__attribute__((assume_aligned(alignment)))`, ICC では `__assume_aligned()` などの独自拡張がありますが、標準化された方法はありませんでした。C++20 では、これらの差異を吸収する次のような関数テンプレートが提供されます。
 ```C++
