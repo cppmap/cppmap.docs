@@ -14,17 +14,22 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix)
 
 ### C++ MIX #3 [(2019-04-17)](https://cppmix.connpass.com/event/124862/)
-| タイトル                                                                                                                                                       | 発表者                | ムービー |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------|
+| タイトル                                      | 発表者            | ムービー |
+|-------------------------------------------|----------------|------|
+| 勉強会と会場の説明                                 | Shintaro Okada |     |
+| Clangにreflection/metaclass提案っぽいものを実装してみた話 | Iwahori Kodai  |     |
+| C++ 情報サイト「C++ の歩き方 \| cppmap」を作っている話      | Ryo Suzuki     |     |
+| 業務用アプリケーション開発でC++11以降とテンプレートテクニックを使った話    | 安達俊貴           |     |
+| C++20の概要                                  | Akira Takahash |     |
 
 ### C++ MIX #2 [(2019-02-20)](https://cppmix.connpass.com/event/115640/)
-| タイトル                                                                                                                                                       | 発表者                | ムービー |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|------|
-| [勉強会と会場の説明](https://www.slideshare.net/faithandbrave/cppmix-02)                                                                                            | Akira Takahashi                  |     |
-| [iOSアプリ『パズモナ』のひみつ](https://speakerdeck.com/5mingame2/c-plus-plus-mix-number-2-pazumonafalsehimitu)                                                         | Nobuyuki Nishiyama |     |
-| [Qt×Reactive Extensions](https://www.slideshare.net/TetsuroMatsumura/qt-reactive-extensions-ja?ref=https://cppmix.connpass.com/event/115640/presentation/) | Tetsuro Matsumura  |     |
-| [C++のパッケージマネージャ「poac」を開発した話](https://speakerdeck.com/matken11235/poac-is-a-package-manager-for-c-plus-plus)                                                | Ken Matsui         |     |
-| 雑談タイム                                                                                                                                                      |                   |     |
+| タイトル                                                                                                                                                       | 発表者                | ムービー                                                     |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|----------------------------------------------------------|
+| [勉強会と会場の説明](https://www.slideshare.net/faithandbrave/cppmix-02)                                                                                            | Akira Takahashi    | [:fa-play:](https://www.youtube.com/watch?v=yviMSUKPF24) |
+| [iOSアプリ『パズモナ』のひみつ](https://speakerdeck.com/5mingame2/c-plus-plus-mix-number-2-pazumonafalsehimitu)                                                         | Nobuyuki Nishiyama | [:fa-play:](https://www.youtube.com/watch?v=bienAWHUXYA) |
+| [Qt×Reactive Extensions](https://www.slideshare.net/TetsuroMatsumura/qt-reactive-extensions-ja?ref=https://cppmix.connpass.com/event/115640/presentation/) | Tetsuro Matsumura  | [:fa-play:](https://www.youtube.com/watch?v=1Sb3XD8sPTI) |
+| [C++のパッケージマネージャ「poac」を開発した話](https://speakerdeck.com/matken11235/poac-is-a-package-manager-for-c-plus-plus)                                                | Ken Matsui         | [:fa-play:](https://www.youtube.com/watch?v=znVZkH3PjVw) |
+| 雑談タイム                                                                                                                                                      |                   |                                                         |
 
 ### C++ MIX #1 [(2018-12-06)](https://cppmix.connpass.com/event/107576/)
 
