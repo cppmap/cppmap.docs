@@ -56,7 +56,10 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - https://ebisu-effective-modern-cpp.connpass.com/
 - Twitter ハッシュタグ [#nakamecpp](https://twitter.com/search?q=%23nakamecpp)
 
-### nakameguro_feature.cpp vol.17 [(2019-03-14)](https://ebisu-effective-modern-cpp.connpass.com/event/122404/)
+| イベント番号                                                                                | タイトル                                                                                                                  | 発表者     |
+|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|---------|
+| Vol. 18 [(2019-03-28)](https://ebisu-effective-modern-cpp.connpass.com/event/125272/) | [C++17の新機能 落穂拾い](https://speakerdeck.com/kariyamitsuru/new-features-of-c-plus-plus-17-gleaner)                        | 鳥頭かりやマン |
+| Vol. 17 [(2019-03-14)](https://ebisu-effective-modern-cpp.connpass.com/event/122404/) | [落ち穂拾い:メタ関数編](https://speakerdeck.com/loligothick/nakameguro-feature-dot-cpp-vol17-luo-tisui-shi-i-metaguan-shu-bian) | いなむのみたま |
 
 
 ## 札幌 C++ 勉強会
