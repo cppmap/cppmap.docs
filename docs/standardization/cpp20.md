@@ -307,15 +307,18 @@ MSVC の標準ライブラリでは Visual Studio 2017 15.6 以降、規格の�
 
 C++17 の `<array>` ヘッダでは、比較演算子、`swap()`, `fill()` 以外のすべての関数が constexpr でした。C++20 ではさらに、array の比較演算の実装に使われている `std::equal()` と `std::lexicographical_compare()` が [constexpr になった (P0202R3)](https://wg21.link/P0202R3) ことにともない、array の比較演算子を constexpr とし、また `swap()` と `fill()` についても constexpr にすることを決め、array ヘッダのすべての関数が constexpr で提供されます。
 
+
 ### `<chrono>` ヘッダの `zero()`, `min()`, `max()` 関数が noexcept に [(P0972R0)](https://wg21.link/P0972R0)
 `std::chrono::duration_values`, `std::chrono::duration`, `std::chrono::time_point` などの `zero()`, `min()`, `max()` 関数に noexcept が付きます。
+
 
 ### `pointer_traits` が constexpr に [(P1006R1)](https://wg21.link/P1006R1) 
 `std::vector` を constexpr にするのに必要なため、`std::pointer_traits::pointer_to()` 関数が constrexpr になります。
 
+
 ### ポインタのアライメントを最適化ヒントとしてコンパイラに伝える `assume_aligned()` 関数 [(P1007R3)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1007r3.pdf)
 
-データのアドレスが 16 バイトなどのサイズにアライメントされている場合、コンパイラが SIMD を使った最適なコードを生成できる場合があります。あるポインタの指すデータがアライメントされていることをコンパイラに伝える方法として、GCC や Clang では `__builtin_assume_aligned()` や `__attribute__((assume_aligned(alignment)))`, ICC では `__assume_aligned()` などの独自拡張がありますが、標準化された方法はありませんでした。C++20 では、これらの差異を吸収する次のような関数テンプレートが提供されます。
+データのアドレスが 16 バイトなどのサイズにアライメントされている場合、コンパイラが SIMD を使った最適なコードを生成できる可能性があります。あるポインタの指すデータがアライメントされていることをコンパイラに伝える方法として、GCC や Clang では `__builtin_assume_aligned()` や `__attribute__((assume_aligned(alignment)))`, ICC では `__assume_aligned()` などの独自拡張がありますが、標準化された方法はありませんでした。C++20 では、これらの差異を吸収する次のような関数テンプレートが提供されます。
 ```C++
 template <size_t N, class T>
 [[nodiscard]] constexpr T* assume_aligned(T* ptr);
@@ -331,4 +334,53 @@ void Multiply(float* x, size_t size, float factor)
 		ax[i] *= factor;
 	}
 }
+```
+
+
+### スマートポインタの作成時に値をデフォルト初期化する make 関数を追加 [(P1020R1)](https://wg21.link/P1020R1)
+
+`float` や `unsigned char` など組み込み型の配列を、実行時性能のために値をデフォルト初期化させたい（ゼロ初期化しない）ケースがあります。しかし、`make_unique` や `make_shared`, `allocate_shared` でスマートポインタを作成した場合には値初期化が実行されます。C++20 では、値初期化をせずにデフォルト初期化でスマートポインタを作成する関数 `make_unique_default_init`, `make_shared_default_init`, `allocate_shared_default_init` が追加されました。
+```C++
+#include <iostream>
+#include <memory>
+
+// 未初期化の変数を使う実験的なコード
+int main()
+{
+	float v[4]; // デフォルト初期化
+
+	for (int i = 0; i < 4; ++i)
+	{
+		std::cout << v[i] << '\n';
+	}
+
+	auto pv = std::make_unique<float[]>(4); // 値初期化 (0 初期化) 
+
+	for (int i = 0; i < 4; ++i)
+	{
+		std::cout << pv[i] << '\n';
+	}
+
+	auto pd = std::make_unique_default_init<float[]>(4); // デフォルト初期化
+
+	for (int i = 0; i < 4; ++i)
+	{
+		std::cout << pd[i] << '\n';
+	}
+}
+```
+出力例
+```
+2.20325e-38
+4.11052e+32
+1.3013e-45
+2.48626e-38
+0
+0
+0
+0
+2.30415e-38
+2.51341e-38
+4.63281e+30
+2.32703e+17
 ```
