@@ -398,7 +398,7 @@ int main()
 {
 	std::unordered_map<std::string, int> table = { /* ... */ };
 
-	auto it = table.find("abc"); // std::string 型の一時オブジェクトを作成
+	auto it = table.find("abc"); // std::string 型の一時オブジェクトが作成される
 }
 ```
 
