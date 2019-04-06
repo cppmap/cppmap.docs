@@ -42,7 +42,7 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | [避けよう memset の乱用](https://agate-pris.gitlab.io/slides/no-more-memset/)                                                                          | agate-pris      | [:fa-play:](https://www.youtube.com/watch?v=IxPqx4ZOnFw) |
 
 
-## nakameguro_feature.cpp
+## feature.cpp
 >C++17の新機能について、復習＆予習をしませんか？  
 ・C++17が出たみたいだけど、何が新しくなったのが全然追えてない…＞＜  
 ・色んな機能が入ってるみたいだけど、本当に抑えとくべき機能やライブラリって何なんだろ？  
@@ -53,13 +53,22 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 ネタ振りとして  
 進行役が、C++17の基礎的な機能やライブラリの話題を、参加者に提供します
 
+- まとめ http://feature-cpp.github.io/feature.cpp/
 - https://ebisu-effective-modern-cpp.connpass.com/
 - Twitter ハッシュタグ [#nakamecpp](https://twitter.com/search?q=%23nakamecpp)
 
-| イベント番号                                                                                | タイトル                                                                                                                  | 発表者     |
-|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------|---------|
-| Vol. 18 [(2019-03-28)](https://ebisu-effective-modern-cpp.connpass.com/event/125272/) | [C++17の新機能 落穂拾い](https://speakerdeck.com/kariyamitsuru/new-features-of-c-plus-plus-17-gleaner)                        | 鳥頭かりやマン |
-| Vol. 17 [(2019-03-14)](https://ebisu-effective-modern-cpp.connpass.com/event/122404/) | [落ち穂拾い:メタ関数編](https://speakerdeck.com/loligothick/nakameguro-feature-dot-cpp-vol17-luo-tisui-shi-i-metaguan-shu-bian) | いなむのみたま |
+| イベント番号                                                                                | タイトル                                                                                                                                                                                          | 発表者                   |
+|---------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------------|
+| Vol. 18 [(2019-03-28)](https://ebisu-effective-modern-cpp.connpass.com/event/125272/) | [C++17の新機能 落穂拾い](https://speakerdeck.com/kariyamitsuru/new-features-of-c-plus-plus-17-gleaner)                                                                                                | 鳥頭かりやマン               |
+| Vol. 17 [(2019-03-14)](https://ebisu-effective-modern-cpp.connpass.com/event/122404/) | [落ち穂拾い:メタ関数編](https://speakerdeck.com/loligothick/nakameguro-feature-dot-cpp-vol17-luo-tisui-shi-i-metaguan-shu-bian)                                                                         | いなむのみたま               |
+| Vol. 16 [(2019-02-21)](https://ebisu-effective-modern-cpp.connpass.com/event/119907/) | [std::invoke の紹介](https://www.flast.jp/article/nakameguro-feature-16/index.html)                                                                                                              | Flast                 |
+| Vol. 15 [(2019-01-31)](https://ebisu-effective-modern-cpp.connpass.com/event/118243/) | -                                                                                                                                                                                             | Akira Takahashi       |
+| Vol. 14 [(2019-01-17)](https://ebisu-effective-modern-cpp.connpass.com/event/114912/) | [string_view](https://speakerdeck.com/loligothick/string-view)                                                                                                                                | いなむのみたま               |
+| Vol. 13 [(2018-12-13)](https://ebisu-effective-modern-cpp.connpass.com/event/111469/) | [C++17の新機能 optional編](https://speakerdeck.com/kariyamitsuru/new-features-of-c-plus-plus-17-optional),<br> [std::optionalの使い方](https://speakerdeck.com/harukasao/how-to-use-optional-nakamecpp-13) | 鳥頭かりやマン,<br>遥佐保,<br>いなむのみたま |
+| Vol. 12 [(2018-11-22)](https://ebisu-effective-modern-cpp.connpass.com/event/109911/) | [C++17の新機能 optional編](https://speakerdeck.com/kariyamitsuru/new-features-of-c-plus-plus-17-optional)                                                                                          | 鳥頭かりやマン               |
+| Vol. 11 [(2018-11-08)](https://ebisu-effective-modern-cpp.connpass.com/event/107008/) | -                                                                                                                                                                                             | 西山 信行                 |
+| Vol. 10 [(2018-10-18)](https://ebisu-effective-modern-cpp.connpass.com/event/104657/) | [C++17 std::anyについて](https://speakerdeck.com/5mingame2/c-plus-plus-17-std-anynituite)                                                                                                         | 西山 信行                 |
+| Vol. 9 [(2018-10-04)](https://ebisu-effective-modern-cpp.connpass.com/event/102699/)  | [C++17の新機能 アロケータ編](https://speakerdeck.com/kariyamitsuru/new-features-of-c-plus-plus-17-allocator)                                                                                            | 鳥頭かりやマン               |
 
 
 ## 札幌 C++ 勉強会
