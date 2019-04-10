@@ -429,3 +429,93 @@ int main()
 	auto it2 = table.find("abc"sv); // std::string 型の一時オブジェクトは作成されない
 }
 ```
+
+
+### 非順序連想コンテナのルックアップ操作で、計算済みハッシュを再利用可能に [(P0920R2)](https://wg21.link/P0920R2)
+
+同じ種類の非順序連想コンテナを複数扱い、同じキーを用いたルックアップ操作をそれらのコンテナに対して行うようなケースでは、キーのハッシュ値の計算を毎回行うのは冗長です。C++20 ではメンバ関数 `find()`, `count()`, `contains()`, `equal_range()` に、計算済みのハッシュ値を渡せるオーバーロードが追加されます。
+```C++
+#include <iostream>
+#include <string>
+#include <array>
+#include <unordered_map>
+
+int main()
+{
+	std::array<std::unordered_map<std::string, int>, 10> maps = { /*...*/ };
+
+	const std::string key = "key";
+
+	const auto hash = maps.front().hash_function()(key);
+
+	for (auto& map : maps)
+	{
+		auto it = map.find(key, hash);
+
+		// ...
+	}
+}
+```
+
+
+### 2 つの値の中点を計算する `std::midpoint()` 関数 [(P0811R3)](https://wg21.link/P0811R3)
+
+2 つの値 `a`, `b` の中点を計算する際に、単純な `(a + b) / 2` という式ではオーバーフローを起こす可能性があります。C++20 で追加される `std::midpoint()` 関数では、整数に対して
+```C++
+constexpr Integer midpoint(Integer a, Integer b) noexcept
+{
+	using U = make_unsigned_t<Integer>;
+	return a>b ? a-(U(a)-b)/2 : a+(U(b)-a)/2;
+}
+```
+のような実装が使われ、オーバーフローを回避できます。`(a + b)` が奇数になるケースの結果は `a` の方向に丸められます。  
+浮動小数点数に対しては次のような実装が使われます。
+```C++
+Float midpoint(Float a, Float b)
+{
+	return isnormal(a) && isnormal(b) ? a/2+b/2 : (a+b)/2;
+}
+```
+```C++
+#include <iostream>
+#include <numeric>
+
+int main()
+{
+	std::cout << (2'000'000'000 + 1'000'000'000) / 2 << '\n'; // オーバーフロー
+
+	std::cout << std::midpoint(2'000'000'000, 1'000'000'000) << '\n'; // 1500000000
+
+	std::cout << std::midpoint(1, 4) << '\n'; // 2
+	
+	std::cout << std::midpoint(4, 1) << '\n'; // 3
+}
+```
+
+
+### 2 つの値の線形補間を計算する `std::lerp()` 関数 [(P0811R3)](https://wg21.link/P0811R3)
+
+2 点 `a`, `b` の間をパラメータ `t` によって線形補間する関数が提供されます。計算結果 `r` は `a + t * (b - a)` によって求められますが、実装により `isfinite(a) && isfinite(b)` のとき
+
+- `lerp(a, b, 0) == a && lerp(a, b, 1) == b`
+- `0 <= t && t <= 1` のとき `isfinite(r)`
+- `isfinite(t) && a == b` のとき `r == a`
+- `isfinite(t) || !isnan(t) && (b - a) != 0` のとき `!isnan(r)`
+
+また、`cmp(lerp(a,b,t2), lerp(a,b,t1)) * cmp(t2,t1) * cmp(b,a) >= 0` (cmp は -1, 0, 1 を返す三方比較関数とする)  
+であることが保証されます。
+```C++
+#include <iostream>
+#include <numeric>
+
+int main()
+{
+	std::cout << std::lerp(0.0, 10.0, 0.0) << '\n'; // 0
+
+	std::cout << std::lerp(0.0, 10.0, 0.3) << '\n'; // 3
+
+	std::cout << std::lerp(0.0, 10.0, 1.0) << '\n'; // 10
+
+	std::cout << std::lerp(0.0, 10.0, 1.2) << '\n'; // 12
+}
+```
