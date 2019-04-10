@@ -78,16 +78,29 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | Vol. 2 [(2017-12-14)](https://ebisu-effective-modern-cpp.connpass.com/event/74167/)   | (Vol. 1 と同じ)                                                                                                                                                                                     | 鳥頭かりやマン                     |
 | Vol. 1 [(2017-11-29)](https://ebisu-effective-modern-cpp.connpass.com/event/72793/)   | [C++14 すごーい！たーのしー！！！ C++14言語編](https://www.slideshare.net/kariya_mitsuru/c14-84084931/kariya_mitsuru/c14-84084931)                                                                               | 鳥頭かりやマン                     |
 
+## C++20 を相談しながら調べる会
+>C++20を相談しながら調べます。
+
+- https://cpp20survey.connpass.com/
+
+| イベント番号                                                            | 参加者間の共有ドキュメント                                                                                  |
+|-------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+| #2 [(2019-05-17)](https://cpp20survey.connpass.com/event/126691/) | -                                                                                              |
+| #1 [(2019-04-02)](https://cpp20survey.connpass.com/event/124051/) | [ドキュメント](https://docs.google.com/document/d/1is2E5wOYo8oHrsI4OJNLNPmSRpeX-0GyGIrqIhfSB5U/edit) |
+
 
 ## 札幌 C++ 勉強会
+>Sapporo.cppのメンバーで運営している、オンラインで実施しているもくもく会です。勉強会よりも高頻度に活動を行う場として、おおむね毎週1回実施しています。
+
 - https://sapporocpp-mokumoku.connpass.com/
 - [札幌C++勉強会/もくもく会](https://sapporocpp-mokumoku.connpass.com/)
->Sapporo.cppのメンバーで運営している、オンラインで実施しているもくもく会です。勉強会よりも高頻度に活動を行う場として、おおむね毎週1回実施しています。
 
 
 ## 大阪 C++ 読書会
-- https://cpp-osaka.connpass.com/
 >大阪でC++に関するものを読み進める会です。 誰かが発表するといったスタイルではなく、みんなでわからないところを話し合って読んでいくスタイルの会です。
+
+- https://cpp-osaka.connpass.com/
+
 
 ## Boost. 勉強会
 >Boost C++ Librariesという、C++の有名なライブラリ群を中心とした、C++全般の勉強会です。  
