@@ -29,7 +29,7 @@ theme:
 extra:
   search:
     language: 'en, jp'
-    tokenizer: '[\s]+'
+    tokenizer: '[\s　、。，．がのをにへとでやかもる「」『』]+'
   social:
     - type: 'twitter'
       link: 'https://twitter.com/Reputeless'
