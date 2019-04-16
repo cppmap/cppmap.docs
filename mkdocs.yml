@@ -28,7 +28,8 @@ theme:
     tabs: true
 extra:
   search:
-    language: 'jp'
+    language: 'en, jp'
+    tokenizer: '[\s]+'
   social:
     - type: 'twitter'
       link: 'https://twitter.com/Reputeless'
