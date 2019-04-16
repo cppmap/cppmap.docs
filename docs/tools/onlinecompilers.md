@@ -78,3 +78,52 @@ square(int):
 
 ### URL からインクルード
 Compiler Explorer には、Web 上のファイルを `#include "URL"` でインクルードできる独自拡張機能があります。この機能を使うと、GitHub などに公開されているシングルヘッダライブラリをプログラムの中で簡単に使えます（例: https://godbolt.org/z/OV-vGQ）
+
+
+## Stensal: セグメンテーション違反の原因を表示
+[Stensal](https://segfault.stensal.com/) は、C, C++ プログラムを実行して、セグメンテーション違反が発生したときにその原因をわかりやすく表示するオンラインコンパイラです。バッファオーバーラン、Null ポインタの参照外し、未初期化変数の利用など、メモリに関する実行時の問題を明らかにします。実装には Wandbox が使われています。
+
+#### 入力例
+```C++
+#include <iostream>
+
+int main()
+{
+	const char s[] = { 'A', 'B', 'C' };
+
+	std::cout << s << '\n';
+}
+```
+
+#### 出力例
+```
+=========== Start of #0 stensal runtime message ===========
+
+  Runtime error: **[out-of-bounds read]**  
+  Continuing execution can cause undefined behavior, abort!
+
+ ```stensal-diagnostic-info
+-
+- Reading 4 bytes from 0x937c414 will read undefined values.
+- 
+- The memory-space-to-be-read (start:0x937c414, size:3 bytes) is bound to 's' at
+-     file:/prog.cc::5, 0
+- 
+-  0x937c414               0x937c416
+-  +------------------------------+
+-  | the memory-space-to-be-read  |......
+-  +------------------------------+
+-  ^~~~~~~~~~
+-  the read starts at the memory begin.
+- 
+- Stack trace (most recent call first) of the read.
+- [1]  file:/musl-1.1.10/src/string/strlen.c::91, 3
+- [2]  @[unknown_id 291]
+- [3]  file:/prog.cc::7, 2
+- [4]  [libc-start-main]
+-
+ ```
+error code (56,213)
+
+============ End of #0 stensal runtime message ============
+```
