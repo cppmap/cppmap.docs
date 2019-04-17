@@ -14,13 +14,13 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix)
 
 ### C++ MIX #3 [(2019-04-17)](https://cppmix.connpass.com/event/124862/)
-| タイトル                                      | 発表者            | ムービー |
-|-------------------------------------------|----------------|------|
-| 勉強会と会場の説明                                 | Shintaro Okada |     |
-| Clangにreflection/metaclass提案っぽいものを実装してみた話 | Iwahori Kodai  |     |
-| C++ 情報サイト「C++ の歩き方 \| cppmap」を作っている話      | Ryo Suzuki     |     |
-| 業務用アプリケーション開発でC++11以降とテンプレートテクニックを使った話    | 安達俊貴           |     |
-| C++20の概要                                  | Akira Takahash |     |
+| タイトル                                                                                                                                                             | 発表者            | ムービー |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------|
+| 勉強会と会場の説明                                                                                                                                                        | Shintaro Okada |     |
+| [Clangにreflection/metaclass提案っぽいものを実装してみた話](https://speakerdeck.com/hori1991/clangnireflectionti-an-tupoimofalsewoshi-zhuang-sitemitahua)                        | Iwahori Kodai  |     |
+| [C++ 情報サイト「C++ の歩き方 \| cppmap」を作っている話](https://www.dropbox.com/s/6zgithu4bakq58x/cppmap%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E8%A9%B1.pdf?dl=0) | Ryo Suzuki     |     |
+| [データベースとポリモーフィズムとModern C++](https://www.slideshare.net/ToshitakaAdachi/database-polymorphism-and-modern-c/)                                                     | 安達俊貴           |     |
+| [C++20の概要](https://www.slideshare.net/faithandbrave/cpp20-overview-language-features/)                                                                            | Akira Takahash |     |
 
 ### C++ MIX #2 [(2019-02-20)](https://cppmix.connpass.com/event/115640/)
 | タイトル                                                                                                                                                       | 発表者                | ムービー                                                     |
