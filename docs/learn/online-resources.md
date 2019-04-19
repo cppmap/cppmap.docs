@@ -15,6 +15,7 @@ description: オンラインでアクセスできる C++ 資料の紹介
 ## コーディングガイドライン
 - [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) | [日本語訳](https://ttsuki.github.io/styleguide/cppguide.ja.html)
+- [LLVM Coding Standards](https://llvm.org/docs/CodingStandards.html)
 
 ## C++ 規格関連
 - [C++ 規格](https://cppmap.github.io/standardization/working-drafts/)
