@@ -27,5 +27,9 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [テキストデータ ライブラリ 情報提供](https://github.com/cppmap/cppmap.docs/pull/10)
 - [@tetzrom](https://twitter.com/tetzrom) さん
     - [オンライン資料 情報提供](https://github.com/cppmap/cppmap.docs/pull/15)
+- [@wx257osn2](https://twitter.com/wx257osn2) さん
+    - [オンラインコンパイラ 情報提供](https://github.com/cppmap/cppmap.docs/pull/18)
 - [@yohhoy](https://twitter.com/yohhoy) さん
     - [記事改善案 提供](https://twitter.com/yohhoy/status/1106950996192747521)
+- [@yumetodo](https://twitter.com/yumetodo) さん
+    - [テキストデータ ライブラリ 情報提供](https://github.com/cppmap/cppmap.docs/pull/17)
