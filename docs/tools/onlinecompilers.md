@@ -8,7 +8,7 @@ C++ プログラムのコンパイル・実行ができる Web サイトです�
 
 |                                                           | コンパイラ                       | 日本語入出力 | インタラクティブ | 複数ファイル | Share      |
 | --------------------------------------------------------- | -------------------------------- | ------------ | ---------------- | ------------ | ---------- |
-| [Wandbox](https://wandbox.org/)                           | gcc HEAD 10.0.0, Clang HEAD 9.0.0 | :fa-check:   |                  | :fa-check:   | :fa-check: |
+| [Wandbox](https://wandbox.org/)                           | gcc HEAD 10.0.0,<br>Clang HEAD 9.0.0 | :fa-check:   |                  | :fa-check:   | :fa-check: |
 | [repl.it](https://repl.it/languages/cpp)                  | Clang 7.0.0                      | :fa-check:   | :fa-check:       | :fa-check:   | :fa-check: |
 | [paiza.io](https://paiza.io/ja/projects/new?language=cpp) | Clang 6.0.0                      | :fa-check:   |                  | :fa-check:   | :fa-check: |
 | [GDB Online](https://www.onlinegdb.com/)                  | gcc 7.3.0                        | :fa-check:   | :fa-check:       | :fa-check:   | :fa-check: |
