@@ -57,6 +57,13 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [JTC1/SC22/WG21 - Papers 2018 mailing2018-10 pre-San Diego](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/#mailing2018-10)
 - [JTC1/SC22/WG21 - Papers 2018 mailing2018-11 post-San Diego](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/#mailing2018-11)
 
+#### 参加報告
+- [2018 San Diego ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/9vwvbz/2018_san_diego_iso_c_committee_trip_report_ranges/) by Bryce Lelbach and others
+- [Trip report: Fall ISO C++ standards meeting (San Diego)](https://herbsutter.com/2018/11/13/trip-report-fall-iso-c-standards-meeting-san-diego/) by Herb Sutter
+- [Fall 2018 ISO WG21 C++ Standards Committee meeting trip report](https://developers.redhat.com/blog/2019/01/10/fall-2018-iso-wg21-c-standards-committee-meeting-trip-report/)
+
+#### 解説
+Range ライブラリの C++20 入りが決まったほか、コンセプトの短縮構文、`coneteval` の追加や `constexpr` の制限緩和など定数式の強化、符号付整数型が 2 の補数であることの規定、`char8_t` 型の追加などが承認されました。
 
 ## 2018 Rapperswil
 #### 場所 / 提案 / 会議の結果
@@ -64,6 +71,12 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [JTC1/SC22/WG21 - Papers 2018 mailing2018-05 pre-Rapperswil](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/#mailing2018-05)
 - [JTC1/SC22/WG21 - Papers 2018 mailing2018-06 post-Rapperswil](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/#mailing2018-06)
 
+#### 参加報告
+- [2018 Rapperswil ISO C++ Committee Trip Report (Contracts for C++20; Parallelism TS v2 published; Draft Reflection TS)](https://www.reddit.com/r/cpp/comments/8prqzm/2018_rapperswil_iso_c_committee_trip_report/) by Bryce Lelbach and others
+- [Trip report: Summer ISO C++ standards meeting (Rapperswil)](https://herbsutter.com/2018/07/02/trip-report-summer-iso-c-standards-meeting-rapperswil/) by Herb Sutter
+
+#### 解説
+属性構文による Contracts (契約プログラミング) の C++20 入りが決まったほか、STL へのコンセプトライブラリの追加、任意のクラス型の非型テンプレートパラメータとしての利用、定数式での仮想関数呼び出しの許可、`explicit(bool)` などが承認されました。
 
 ## 2018 Jacksonville
 #### 場所 / 提案 / 会議の結果
@@ -71,6 +84,12 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [JTC1/SC22/WG21 - Papers 2018 mailing2018-02 pre-Jacksonville](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/#mailing2018-02)
 - [JTC1/SC22/WG21 - Papers 2018 mailing2018-04 post-Jacksonville](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/#mailing2018-04)
 
+#### 参加報告
+- [2018 Jacksonville ISO C++ Committee Reddit Trip Report](https://www.reddit.com/r/cpp/comments/854mu9/2018_jacksonville_iso_c_committee_reddit_trip/) by Bryce Lelbach and others
+- [Trip report: Winter ISO C++ standards meeting (Jacksonville)](https://herbsutter.com/2018/07/02/trip-report-summer-iso-c-standards-meeting-rapperswil/) by Herb Sutter
+
+#### 解説
+`<chrono>` へのカレンダーライブラリの追加、`<span>`, `no_unique_address` や `likely/unlikely` 属性構文の追加などが承認されました。
 
 ## 2017 Albuquerque
 #### 場所 / 提案 / 会議の結果
@@ -78,6 +97,12 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [JTC1/SC22/WG21 - Papers 2017 mailing2017-10 pre-Albuquerque](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017#mailing2017-10)
 - [JTC1/SC22/WG21 - Papers 2017 mailing2017-11 post-Albuquerque](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017#mailing2017-11)
 
+#### 参加報告
+- [2018 Jacksonville ISO C++ Committee Reddit Trip Report](https://www.reddit.com/r/cpp/comments/854mu9/2018_jacksonville_iso_c_committee_reddit_trip/) by Bryce Lelbach and others
+- [Trip report: Fall ISO C++ standards meeting (Albuquerque)](https://herbsutter.com/2017/11/11/trip-report-fall-iso-c-standards-meeting-albuquerque/) by Herb Sutter
+
+#### 解説
+三方比較演算子 `<=>` とそのライブラリサポート、標準ライブラリ関数のさらなる `constexpr` 対応、初期化式をともなう範囲 for 文などの C++20 入りが承認されました。
 
 ## 2017 Toronto
 #### 場所 / 提案 / 会議の結果
@@ -85,9 +110,13 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [JTC1/SC22/WG21 - Papers 2017 mailing2017-06 pre-Toronto](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017#mailing2017-06)
 - [JTC1/SC22/WG21 - Papers 2017 mailing2017-07 post-Toronto](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017#mailing2017-07)
 
-#### 解説
-C++20 に関する最初の会議です。
+#### 参加報告
+- [2017 Toronto ISO C++ Committee Discussion Thread (Concepts in C++20; Coroutines, Ranges and Networking TSes published)](https://www.reddit.com/r/cpp/comments/6ngkgc/2017_toronto_iso_c_committee_discussion_thread/) by Bryce Lelbach and others
+- [Trip report: Summer ISO C++ standards meeting (Toronto)](https://herbsutter.com/2017/07/15/trip-report-summer-iso-c-standards-meeting-toronto/) by Herb Sutter
+- [Trip Report: C++ Standards Meeting in Toronto, July 2017](https://botondballo.wordpress.com/2017/08/02/trip-report-c-standards-meeting-in-toronto-july-2017/)
 
+#### 解説
+C++20 に関する最初の会議です。コンセプト、Designated Initialization, ラムダ式における `this` のコピーキャプチャの許可などが承認されました。
 
 ## 2017 Kona
 #### 場所 / 提案 / 会議の結果
