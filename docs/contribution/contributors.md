@@ -25,6 +25,7 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [Q & A サイト 情報提供](https://twitter.com/onihusube9/status/1103168500703485952)
     - [C++23 以降に向けた提案 記事提供](https://github.com/cppmap/cppmap.docs/pull/4)
     - [テキストデータ ライブラリ 情報提供](https://github.com/cppmap/cppmap.docs/pull/10)
+    - [標準化会議 記事加筆](https://github.com/cppmap/cppmap.docs/pull/19)
 - [@tetzrom](https://twitter.com/tetzrom) さん
     - [オンライン資料 情報提供](https://github.com/cppmap/cppmap.docs/pull/15)
 - [@wx257osn2](https://twitter.com/wx257osn2) さん
