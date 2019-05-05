@@ -63,8 +63,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [Fall 2018 ISO WG21 C++ Standards Committee meeting trip report](https://developers.redhat.com/blog/2019/01/10/fall-2018-iso-wg21-c-standards-committee-meeting-trip-report/)
 
 #### 解説
-大きな変更として、RangeライブラリのC++20入りが承認されました。  
-他にも、コンセプトの短縮構文、conetevalの追加や定数式での制限緩和等のconstexprの強化、符号付整数型が2の補数であることを規定、UTF-8を表す文字型char8_tの追加などの変更が承認されています。
+Range ライブラリの C++20 入りが決まったほか、コンセプトの短縮構文、`coneteval` の追加や `constexpr` の制限緩和など定数式の強化、符号付整数型が 2 の補数であることの規定、`char8_t` 型の追加などが承認されました。
 
 ## 2018 Rapperswil
 #### 場所 / 提案 / 会議の結果
@@ -77,8 +76,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [Trip report: Summer ISO C++ standards meeting (Rapperswil)](https://herbsutter.com/2018/07/02/trip-report-summer-iso-c-standards-meeting-rapperswil/) by Herb Sutter
 
 #### 解説
-大きな変更として、属性構文によるContracts（契約プログラミング）のC++20入りが承認されました。  
-他にも、STLへのコンセプトライブラリの追加、任意のクラス型の非型テンプレートパラメータとしての利用、定数式での仮想関数呼び出しの許可、explicit(bool)等の変更が承認されています。
+属性構文による Contracts (契約プログラミング) の C++20 入りが決まったほか、STL へのコンセプトライブラリの追加、任意のクラス型の非型テンプレートパラメータとしての利用、定数式での仮想関数呼び出しの許可、`explicit(bool)` などが承認されました。
 
 ## 2018 Jacksonville
 #### 場所 / 提案 / 会議の結果
@@ -91,7 +89,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [Trip report: Winter ISO C++ standards meeting (Jacksonville)](https://herbsutter.com/2018/07/02/trip-report-summer-iso-c-standards-meeting-rapperswil/) by Herb Sutter
 
 #### 解説
-spanライブラリ及びカレンダーライブラリ（std::chrono）の追加、no_unique_addressやlikely/unlikely属性構文の追加等の変更が承認されています。
+`<chrono>` へのカレンダーライブラリの追加、`<span>`, `no_unique_address` や `likely/unlikely` 属性構文の追加などが承認されました。
 
 ## 2017 Albuquerque
 #### 場所 / 提案 / 会議の結果
@@ -104,8 +102,7 @@ spanライブラリ及びカレンダーライブラリ（std::chrono）の追�
 - [Trip report: Fall ISO C++ standards meeting (Albuquerque)](https://herbsutter.com/2017/11/11/trip-report-fall-iso-c-standards-meeting-albuquerque/) by Herb Sutter
 
 #### 解説
-大きな変更として、三方比較演算子（俗称：宇宙船演算子）及びそのライブラリサポートの追加が承認されました。  
-他には、Algorithmヘッダの多くの関数のconstexpr化、初期化式をともなう範囲for文の追加、等の変更が承認されています。
+三方比較演算子 `<=>` とそのライブラリサポート、標準ライブラリ関数のさらなる `constexpr` 対応、初期化式をともなう範囲 for 文などの C++20 入りが承認されました。
 
 ## 2017 Toronto
 #### 場所 / 提案 / 会議の結果
@@ -119,10 +116,7 @@ spanライブラリ及びカレンダーライブラリ（std::chrono）の追�
 - [Trip Report: C++ Standards Meeting in Toronto, July 2017](https://botondballo.wordpress.com/2017/08/02/trip-report-c-standards-meeting-in-toronto-july-2017/)
 
 #### 解説
-C++20 に関する最初の会議です。
-
-大きな変更として、コンセプトのC++20入りが承認されました。  
-他には、Designated Initialization、ラムダ式におけるthisのコピーキャプチャの許可及びテンプレート構文の追加、等の変更が承認されています。
+C++20 に関する最初の会議です。コンセプト、Designated Initialization, ラムダ式における `this` のコピーキャプチャの許可などが承認されました。
 
 ## 2017 Kona
 #### 場所 / 提案 / 会議の結果
