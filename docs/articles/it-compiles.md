@@ -128,3 +128,18 @@ int main()
 
 }
 ```
+
+## 名前空間エイリアスの再帰
+```C++
+namespace A
+{
+	namespace A = A;
+
+	void f() {}
+}
+
+int main()
+{
+	A::A::A::A::A::A::f();
+}
+```
