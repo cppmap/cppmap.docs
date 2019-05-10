@@ -527,14 +527,14 @@ int main()
 例えば C++20 以前の MSVC の標準ライブラリでは、`<yvals_core.h>` という独自ヘッダに標準ライブラリの機能テストマクロがまとめられていましたが、C++20 以降ではあらゆる実装において、`<version>` ヘッダを見ることで、こうした実装固有の情報にアクセスできるため利便性が高まります。
 
 
-### 例外を投げない暗黙の変換が可能か調べる is_nothrow_convertible 型特性 [(P0758R1)](https://wg21.link/P0758R1)
-型 `From` から型 `To` への暗黙の変換が可能であるかを調べる `std::is_convertible<class From, class To>` が C++11 から導入されましたが、その変換が `noexcept` でもあるかを調べられる型特性は実装されていませんでした。
+### 例外を投げない暗黙の変換が可能か調べる is_nothrow_convertible [(P0758R1)](https://wg21.link/P0758R1)
+型 `From` から型 `To` への暗黙の変換が可能であるかを調べる型特性クラス `std::is_convertible<class From, class To>` が C++11 から導入されましたが、その変換が `noexcept` でもあるかを調べられるバージョンは実装されていませんでした。
 このことが原因で、`std::decay_copy` の提案 ([N3255](http://wg21.link/n3255)) において、適切な `noexcept` 例外仕様を移植性のある方法で定義できない問題 ([LWG 2040](http://wg21.link/lwg2040)) が指摘されていました。
 ```C++
 template <class T> 
 typename decay<T>::type decay_copy(T&& v) noexcept(??? /* is_nothrow_convertible<T, T>::value */);
 ```
-C++20 からは、`noexcept` な暗黙の変換が可能であることを調べる型特性 `std::is_nothrow_convertible<class From, class To>` が実装されることで問題を解消できます。
+C++20 からは、`noexcept` な暗黙の変換が可能であることを調べる新しい型特性クラス `std::is_nothrow_convertible<class From, class To>` が実装されることで問題を解消できます。
 既存の標準ライブラリ関数においても、`std::basic_string` のメンバ関数テンプレートに、より適切な `noexcept` 例外仕様を定義するために活用されます。
 
 ```C++
