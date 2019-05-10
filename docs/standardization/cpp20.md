@@ -532,8 +532,7 @@ int main()
 このことが原因で、`std::decay_copy` の提案 ([N3255](http://wg21.link/n3255)) において、適切な `noexcept` 例外仕様を移植性のある方法で定義できない問題 ([LWG 2040](http://wg21.link/lwg2040)) が指摘されていました。
 ```C++
 template <class T> 
-typename decay<T>::type decay_copy(T&& v) noexcept(??? /* is_nothrow_convertible<T, T> */);
-
+typename decay<T>::type decay_copy(T&& v) noexcept(??? /* is_nothrow_convertible<T, T>::value */);
 ```
 C++20 からは、`noexcept` な暗黙の変換が可能であることを調べる型特性 `std::is_nothrow_convertible<class From, class To>` が実装されることで問題を解消できます。
 既存の標準ライブラリ関数においても、`std::basic_string` のメンバ関数テンプレートに、より適切な `noexcept` 例外仕様を定義するために活用されます。
