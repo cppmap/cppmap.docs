@@ -541,3 +541,11 @@ C++20 からは、`noexcept` な暗黙の変換が可能であることを調べ
 template <class T>
 size_type find(const T& t, size_type pos = 0) const noexcept(is_nothrow_convertible_v<const T&, basic_string_view<CharT, Traits>>);
 ```
+
+### ポインタライクなオブジェクトからアドレスを取得する `std::to_address()` 関数 [(P0653R2)](https://wg21.link/P0653R2)
+
+ポインタライクなオブジェクトを引数にとり、それが表すのと同じアドレスを生ポインタで返す関数 `std::to_address(p)` が追加されます。オブジェクトがポインタ型の場合はその値を返し、それ以外の場合、`std::pointer_traits<Ptr>::to_address()` が定義されていて使えればその戻り値を、そうでない場合は `std::to_address(p.operator->())` を返します。
+
+### `<complex>` ヘッダの関数の `constexpr` 対応を強化 [(P0415R1)](https://wg21.link/P0415R1)
+
+`<complex>` ヘッダが提供する関数のうち、複素数の四則演算、ノルムの取得、共役複素数の取得など、`constexpr` 非対応の数学関数 (sqrt など) を使わずに実装できるものが `constexpr` 化されます。
