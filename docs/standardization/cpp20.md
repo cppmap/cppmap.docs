@@ -544,7 +544,7 @@ size_type find(const T& t, size_type pos = 0) const noexcept(is_nothrow_converti
 
 ### ポインタライクなオブジェクトからアドレスを取得する `std::to_address()` 関数 [(P0653R2)](https://wg21.link/P0653R2)
 
-ポインタライクなオブジェクトを引数にとり、それが表すのと同じアドレスを生ポインタで返す関数 `std::to_address(p)` が追加されます。オブジェクトがポインタ型の場合はその値を返し、それ以外の場合、`std::pointer_traits<Ptr>::to_address()` が定義されていて使えればその戻り値を、そうでない場合は `std::to_address(p.operator->())` を返します。
+ポインタライクなオブジェクトを引数にとり、それが表すのと同じアドレスを生ポインタで返す関数 `std::to_address(p)` が追加されます。オブジェクトがポインタ型の場合はその値を返し、それ以外の場合、`std::pointer_traits<Ptr>::to_address(p)` の特殊化が定義されていて使えればその戻り値を、そうでない場合は `std::to_address(p.operator->())` の戻り値を返します。
 
 ### `<complex>` ヘッダの関数の `constexpr` 対応を強化 [(P0415R1)](https://wg21.link/P0415R1)
 
