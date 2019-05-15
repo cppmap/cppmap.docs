@@ -28,7 +28,7 @@ theme:
     tabs: true
 extra:
   search:
-    language: 'en, jp'
+    language: 'en, ja'
     tokenizer: '[\s　、。，．がのをにへとでやかもる「」『』]+'
   social:
     - type: 'twitter'
