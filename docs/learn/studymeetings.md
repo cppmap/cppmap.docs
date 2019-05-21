@@ -18,13 +18,13 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------|
 
 ### C++ MIX #3 [(2019-04-17)](https://cppmix.connpass.com/event/124862/)
-| タイトル                                                                                                                                                             | 発表者            | ムービー |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|------|
-| 勉強会と会場の説明                                                                                                                                                        | Shintaro Okada |     |
-| [Clangにreflection/metaclass提案っぽいものを実装してみた話](https://speakerdeck.com/hori1991/clangnireflectionti-an-tupoimofalsewoshi-zhuang-sitemitahua)                        | Iwahori Kodai  |     |
-| [C++ 情報サイト「C++ の歩き方 \| cppmap」を作っている話](https://www.dropbox.com/s/6zgithu4bakq58x/cppmap%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E8%A9%B1.pdf?dl=0) | Ryo Suzuki     |     |
-| [データベースとポリモーフィズムとModern C++](https://www.slideshare.net/ToshitakaAdachi/database-polymorphism-and-modern-c/)                                                     | 安達俊貴           |     |
-| [C++20の概要](https://www.slideshare.net/faithandbrave/cpp20-overview-language-features/)                                                                            | Akira Takahash |     |
+| タイトル                                                                                                                                                             | 発表者            | ムービー                                                     |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------------------------------------------|
+| 勉強会と会場の説明                                                                                                                                                        | Shintaro Okada |                                                          |
+| [Clangにreflection/metaclass提案っぽいものを実装してみた話](https://speakerdeck.com/hori1991/clangnireflectionti-an-tupoimofalsewoshi-zhuang-sitemitahua)                        | Iwahori Kodai  | [:fa-play:](https://www.youtube.com/watch?v=FYZKnb8NOsA) |
+| [C++ 情報サイト「C++ の歩き方 \| cppmap」を作っている話](https://www.dropbox.com/s/6zgithu4bakq58x/cppmap%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E8%A9%B1.pdf?dl=0) | Ryo Suzuki     | [:fa-play:](https://www.youtube.com/watch?v=FXRzYQGM7zE) |
+| [データベースとポリモーフィズムとModern C++](https://www.slideshare.net/ToshitakaAdachi/database-polymorphism-and-modern-c/)                                                     | 安達俊貴           | [:fa-play:](https://www.youtube.com/watch?v=K-xuX-HdOwY) |
+| [C++20の概要 #1 言語機能編](https://www.slideshare.net/faithandbrave/cpp20-overview-language-features)                                                                   | Akira Takahash | [:fa-play:](https://www.youtube.com/watch?v=JmbHiCAMX2U) |
 
 ### C++ MIX #2 [(2019-02-20)](https://cppmix.connpass.com/event/115640/)
 | タイトル                                                                                                                                                       | 発表者                | ムービー                                                     |
