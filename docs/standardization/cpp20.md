@@ -247,22 +247,13 @@ int main()
 ```
 
 ### 定数式でのRTTI [(P1327R1)](https://wg21.link/P1327)
-仮想関数呼び出しと同様に、`dynamic_cast`や`type_id`もポインタや参照を介してさえいればスタック領域にあるオブジェクトに対して行うことができます。また、型に対する`type_id`は定数実行できない理由がありません。  
-そのため、定数式で`dynamic_cast`や`type_id`を禁じていた制限もまた不要であるとして削除されます。
+仮想関数呼び出しと同様に、`dynamic_cast`や`type_id`もポインタや参照を介してさえいればスタック領域にあるオブジェクトに対して行うことができます。  
+そのため、定数式で`dynamic_cast`や多態的なオブジェクトに対する`type_id`を禁じていた制限もまた不要であるとして削除されます。
 
 また、この変更に伴って`std::type_info`の`operator==`と`operator!=`がconstexpr指定され定数式で使用可能になります。
 
 ```C++
 #include <typeinfo>
-
-//組み込み型に対するtypeid
-{
-  constexpr auto&& int_t  = typeid(int);
-  constexpr auto&& char_t = typeid(char);
-
-  constexpr bool is_same = int_t == char_t;
-  static_assert(is_same == false);
-}
 
 struct base {
   virtual int f() const = 0;
@@ -284,9 +275,12 @@ struct derived2 : public base {
 {
   constexpr derived1 d1{};
   constexpr derived2 d2{};
+  
+  constexpr base* b1 = &d1;
+  constexpr base* b2 = &d2;
 
-  constexpr auto&& b1_t = typeid(&d1);
-  constexpr auto&& b2_t = typeid(&d2);
+  constexpr auto&& b1_t = typeid(*b1);
+  constexpr auto&& b2_t = typeid(*b2);
 
   constexpr bool is_same = b1_t == b2_t;
   static_assert(is_same == false);
