@@ -201,6 +201,202 @@ int main()
 
 ```
 
+### 定数式で仮想関数呼び出しが可能に [(P1064R0)](https://wg21.link/P1064)
+従来の実行時の仮想関数呼び出しは、ポインタや参照を介してさえいればスタック領域にあるオブジェクトであっても呼び出し可能です。従って、仮想関数を呼び出すだけであれば`new`による動的確保や不正なポインタのキャストは必要なく、定数式でも実行可能であるはずです。  
+そのため、定数式で仮想関数呼び出しを禁止している制限は不要であるとして撤廃され、定数式でも仮想関数による動的ポリモーフィズムを利用可能になります。
+
+```C++
+struct cpp {
+  constexpr virtual unsigned int version() const = 0;
+};
+
+struct cpp17 : public cpp {
+  constexpr unsigned int version() const override {
+    return 17;
+  }
+};
+
+struct cpp20 : public cpp {
+  constexpr unsigned int version() const override {
+    return 20;
+  }
+};
+
+constexpr auto check_version(const cpp* a) {
+  return a->version();
+}
+
+int main()
+{
+  constexpr cpp17 c17{};
+  constexpr cpp20 c20{};
+  
+  constexpr auto ver1 = check_version(&c17);
+  constexpr auto ver2 = check_version(&c20);
+  
+  static_assert(ver1 == 17);
+  static_assert(ver2 == 20);
+  
+  std::cout << ver1 << std::endl;
+  std::cout << ver2 << std::endl;
+}
+```
+```
+17
+20
+```
+
+### 定数式でのRTTI [(P1327R1)](https://wg21.link/P1327)
+仮想関数呼び出しと同様に、`dynamic_cast`や`type_id`もポインタや参照を介してさえいればスタック領域にあるオブジェクトに対して行うことができます。また、型に対する`type_id`は定数実行できない理由がありません。  
+そのため、定数式で`dynamic_cast`や`type_id`を禁じていた制限もまた不要であるとして削除されます。
+
+また、この変更に伴って`std::type_info`の`operator==`と`operator!=`がconstexpr指定され定数式で使用可能になります。
+
+```C++
+#include <typeinfo>
+
+//組み込み型に対するtypeid
+{
+  constexpr auto&& int_t  = typeid(int);
+  constexpr auto&& char_t = typeid(char);
+
+  constexpr bool is_same = int_t == char_t;
+  static_assert(is_same == false);
+}
+
+struct base {
+  virtual int f() const = 0;
+};
+
+struct derived1 : public base {
+  constexpr int f() const override {
+    return 10;
+  }
+};
+
+struct derived2 : public base {
+  constexpr int f() const override {
+    return 20;
+  }
+};
+
+//polymorphicな型に対するtypeid
+{
+  constexpr derived1 d1{};
+  constexpr derived2 d2{};
+
+  constexpr auto&& b1_t = typeid(&d1);
+  constexpr auto&& b2_t = typeid(&d2);
+
+  constexpr bool is_same = b1_t == b2_t;
+  static_assert(is_same == false);
+}
+
+struct base2 {
+  virtual int g() const = 0;
+};
+
+struct derived3 : public base, public base2 {
+  constexpr int f() const override {
+    return 20;
+  }
+  
+  constexpr int g() const override {
+    return 30;
+  }
+};
+
+//dynamic_cast
+{
+  constexpr derived3 d{};
+  constexpr const base* b1 = &d;
+  //side cast
+  constexpr const base2 b2 = dynamic_cast<const base2*>(b1);
+}
+```
+
+ただし、`dynamic_cast`や`type_id`の定数実行が例外を投げる場合は定数式で実行できずにコンパイルエラーとなります。  
+例えば、`dynamic_cast`なら参照のキャスト失敗時、`type_id`は`nullptr`を渡されたときに例外を投げます。
+
+```C++
+//typeid
+{
+  constexpr int* nullp = nullptr;
+  constexpr auto&& t = typeid(nullp);  //例外を投げるため定数実行できない
+}
+
+//dynamic_cast
+{
+  constexpr derived1 d1{};
+  constexpr const base& b1 = d1;  //b1はderived1のオブジェクトを指す
+
+  //down cast
+  constexpr const derived2& d2 = dynamic_cast<const derived2&>(b1);  //例外を投げるため定数実行できない
+}
+```
+
+### 定数式での共用体アクティブメンバの切り替え [(P1330R0)](https://wg21.link/P1330)
+
+共用体のアクティブメンバとは、ある時点において最後に初期化されたメンバの事です。  
+共用体の構築と初期化及びアクティブメンバへのアクセスは定数式で行うことができますが、アクティブメンバの切り替えは行うことができませんでした。
+
+しかし、共用体は`std::string`や`std::optional`、`std::variant`の実装に利用されており、そこではアクティブメンバの切り替えが必要になります。  
+これらのクラスをよりconstexprで利用可能にするための準備として、定数式での共用体アクティブメンバの切り替えが許可されます。
+
+```C++
+union U {
+  int n;
+  double d = 3.1415;
+};
+
+constexpr double change_U() {
+  U u{};  //u.dをアクティブメンバとして初期化
+  double d = u.d;
+  u.n = 0;  //u.nへアクティブメンバを切り替え、C++20より可能
+  return d;
+}
+
+int main()
+{
+  constexpr double d = change_U();
+  static_assert(d == 3.1415);
+  
+  std::cout << d << std::endl;
+}
+```
+```
+3.1415
+```
+
+ただし、非アクティブメンバへのアクセスは未定義動作であり、定数式で行うとコンパイルエラーとなります。
+
+### 定数式における`try-catch`ブロック [(P1002R1)](https://wg21.link/P1002)
+
+これまではconstexpr関数の中などの定数式として実行されうる場所に`try-catch`ブロックを書くことができませんでした。  
+しかし、`std::vector`等のコンテナをconstexpr対応するにあたって`try-catch`ブロックが表れたとしても定数式として実行できるようにするために、`try-catch`ブロックを定数式内に書くことができるようになります。
+
+ただし、例外処理が定数式で行われるわけではなく、定数実行中に例外が投げられた場合はコンパイルエラーとなります。つまり、定数式における`try-catch`ブロックは単に無視されます。
+
+```cpp
+constexpr int f(const int n) {
+	try {
+		return n + 1;
+	} catch(...) {
+		return 0;
+	}
+}
+
+constexpr int g(const int n) {
+	try {
+		throw std::exception{};  //ここでコンパイルエラー
+	} catch (const std::exception& except) {
+		return 0;  //コンパイル時にここに来る事は無い
+	}
+}
+```
+
+C++20の仕様としては単に無視することにしただけで、将来的なコンパイル時例外処理のサポートへの道が閉ざされたわけではありません。
+
 
 ## 標準ライブラリ
 
@@ -549,3 +745,64 @@ size_type find(const T& t, size_type pos = 0) const noexcept(is_nothrow_converti
 ### `<complex>` ヘッダの関数の `constexpr` 対応を強化 [(P0415R1)](https://wg21.link/P0415R1)
 
 `<complex>` ヘッダが提供する関数のうち、複素数の四則演算、ノルムの取得、共役複素数の取得など、`constexpr` 非対応の数学関数 (sqrt など) を使わずに実装できるものが `constexpr` 化されます。
+
+### コンパイル時と実行時の判定を行う `std::is_constant_evaluated()` 関数 [(P0595R2)](https://wg21.link/P0595)
+
+C++17までは、あるコードが実行されているときにそれがコンパイル時と実行時のどちらで実行中なのかを判定する方法はありませんでした。
+その判断ができれば、コンパイル時と実行時それぞれで最適なアルゴリズム及びコードを選択して実行することができます。  
+特にこれは、`<cmath>`にある数学関数を`constexpr`で実装する際に必要となります。
+
+C++20では`<type_traits>`ヘッダに新たに追加される`std::is_constant_evaluated()`関数の利用によってそれが可能になります。  
+`std::is_constant_evaluated()`関数は確実にコンパイル時に評価される個所でだけ`true`を返し、その他の場合には`false`を返す関数です。
+
+例えば以下のように利用できます。
+
+```cpp
+#include <type_traits>
+#include <cmath>
+#include <iostream>
+
+template<typename T>
+constexpr auto my_sin(T theta) {
+  if (std::is_constant_evaluated()) {
+    //コンパイル時の処理、マクローリン級数の計算
+
+    auto fabs = [](T v) -> T { return (v < T(0.0))?(-v):(v); };
+    T x_sq = -(theta * theta);
+    T series = theta;
+    T tmp = theta;
+    T fact = T(2.0);
+
+    do {
+      tmp *= x_sq / (fact * (fact+T(1.0)));
+      series += tmp;
+      fact += T(2.0);
+    } while(fabs(tmp) >= std::numeric_limits<T>::epsilon());
+    
+    return series;
+  } else {
+    //実行時の処理、<cmath>の関数を利用
+    return std::sin(theta);
+  }
+}
+
+int main()
+{
+  constexpr double pi = 3.1415926535897932384626433832795;
+  
+  std::cout << std::setprecision(16);
+  
+  //sin(60°)を求める
+  constexpr auto sin_static = my_sin(pi/3.0); //コンパイル時計算
+  auto sin_dynamic = my_sin(pi/3.0);  //実行時計算
+  
+  std::cout << sin_static << std::endl;
+  std::cout << sin_dynamic << std::endl;
+}
+```
+```
+0.8660254037844385
+0.8660254037844386
+```
+
+`if constexpr`や`static_assert`の条件式では必ず`true`に評価されるので注意が必要です。
