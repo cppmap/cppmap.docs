@@ -36,8 +36,8 @@ int main()
 15, 3, false
 ```
 
-### メンバポインタ演算子の仕様を一貫性のために修正 [(P0704R1)](http://wg21.link/p0704r1)
 
+### メンバポインタ演算子の仕様を一貫性のために修正 [(P0704R1)](http://wg21.link/p0704r1)
 C++17 までのメンバポインタ演算子 `.*` は「右辺値オブジェクトから、左辺値参照修飾されたメンバ関数ポインタに使うことは不適格」という規格文面になっていました。そのため、同じ意味をもつ次の 2 つのプログラムで後者だけ不適格とされ、一貫性がありませんでした。
 ```C++
 #include <iostream>
@@ -136,8 +136,8 @@ int main()
 }
 ```
 
-### 型名であることが明らかな文脈で `typename` を省略可能に [(P0634R3)](https://wg21.link/P0634R3)
 
+### 型名であることが明らかな文脈で `typename` を省略可能に [(P0634R3)](https://wg21.link/P0634R3)
 C++17 で依存名が型である場合に `typename` を付けないのは、派生クラス定義時の基底クラスの指定と、初期化子リストでの基底クラスの指定のみでした（厳密にはこの 2 つには `typename` を付けられません）。C++20 では、型名しか使えないさらにいくつかの文脈で `typename` が省略可能になります。次のサンプルコードの左右タブで比較できます。
 
 ```C++ tab="C++17"
@@ -166,7 +166,7 @@ template <class T> typename T::size_type MaxSize();
 
 int main()
 {
-    S<std::vector<std::string>> s;
+	S<std::vector<std::string>> s;
 }
 ```
 
@@ -201,141 +201,127 @@ int main()
 
 ```
 
-### 定数式で仮想関数呼び出しが可能に [(P1064R0)](https://wg21.link/P1064)
-従来の実行時の仮想関数呼び出しは、ポインタや参照を介してさえいればスタック領域にあるオブジェクトであっても呼び出し可能です。従って、仮想関数を呼び出すだけであれば`new`による動的確保や不正なポインタのキャストは必要なく、定数式でも実行可能であるはずです。  
-そのため、定数式で仮想関数呼び出しを禁止している制限は不要であるとして撤廃され、定数式でも仮想関数による動的ポリモーフィズムを利用可能になります。
+
+### 定数式での仮想関数呼び出しが可能に [(P1064R0)](https://wg21.link/P1064)
+コンパイル時に決定可能であれば、参照やポインタを通した仮想関数の呼び出しを `constexpr` にできるようになります。`constexpr` 修飾された仮想関数を非 `constexpr` 関数でオーバーライドすることや、その逆も可能です。
 
 ```C++
-struct cpp {
-  constexpr virtual unsigned int version() const = 0;
+struct Cpp
+{
+	virtual int version() const = 0;
 };
 
-struct cpp17 : public cpp {
-  constexpr unsigned int version() const override {
-    return 17;
-  }
+struct Cpp17 : Cpp
+{
+	constexpr int version() const override
+	{
+		return 17;
+	}
 };
 
-struct cpp20 : public cpp {
-  constexpr unsigned int version() const override {
-    return 20;
-  }
+struct Cpp20 : Cpp
+{
+	constexpr int version() const override
+	{
+		return 20;
+	}
 };
 
-constexpr auto check_version(const cpp* a) {
-  return a->version();
+constexpr int GetVersion(const Cpp& a)
+{
+	return a.version();
 }
 
 int main()
 {
-  constexpr cpp17 c17{};
-  constexpr cpp20 c20{};
-  
-  constexpr auto ver1 = check_version(&c17);
-  constexpr auto ver2 = check_version(&c20);
-  
-  static_assert(ver1 == 17);
-  static_assert(ver2 == 20);
-  
-  std::cout << ver1 << std::endl;
-  std::cout << ver2 << std::endl;
+	constexpr Cpp17 cpp17;
+	constexpr Cpp20 cpp20;
+
+	static_assert(GetVersion(cpp17) == 17);
+	static_assert(GetVersion(cpp20) == 20);
 }
 ```
-```
-17
-20
-```
 
-### 定数式でのRTTI [(P1327R1)](https://wg21.link/P1327)
-仮想関数呼び出しと同様に、`dynamic_cast`や`type_id`もポインタや参照を介してさえいればスタック領域にあるオブジェクトに対して行うことができます。  
-そのため、定数式で`dynamic_cast`や多態的なオブジェクトに対する`type_id`を禁じていた制限もまた不要であるとして削除されます。
 
-また、この変更に伴って`std::type_info`の`operator==`と`operator!=`がconstexpr指定され定数式で使用可能になります。
+### `type_id` と `dynamic_cast` が例外を投げない場合 constexpr に [(P1327R1)](https://wg21.link/P1327)
+`dynamic_cast` と `type_id` が、例外を投げるケースを除いて `constexpr` になります。
 
 ```C++
 #include <typeinfo>
 
-struct base {
-  virtual int f() const = 0;
-};
-
-struct derived1 : public base {
-  constexpr int f() const override {
-    return 10;
-  }
-};
-
-struct derived2 : public base {
-  constexpr int f() const override {
-    return 20;
-  }
-};
-
-//polymorphicな型に対するtypeid
+struct Cpp
 {
-  constexpr derived1 d1{};
-  constexpr derived2 d2{};
-  
-  constexpr base* b1 = &d1;
-  constexpr base* b2 = &d2;
-
-  constexpr auto&& b1_t = typeid(*b1);
-  constexpr auto&& b2_t = typeid(*b2);
-
-  constexpr bool is_same = b1_t == b2_t;
-  static_assert(is_same == false);
-}
-
-struct base2 {
-  virtual int g() const = 0;
+	virtual int version() const = 0;
 };
 
-struct derived3 : public base, public base2 {
-  constexpr int f() const override {
-    return 20;
-  }
-  
-  constexpr int g() const override {
-    return 30;
-  }
-};
-
-//dynamic_cast
+struct Cpp17 : Cpp
 {
-  constexpr derived3 d{};
-  constexpr const base* b1 = &d;
-  //side cast
-  constexpr const base2 b2 = dynamic_cast<const base2*>(b1);
+	constexpr int version() const override
+	{
+		return 17;
+	}
+};
+
+struct Cpp20 : Cpp
+{
+	constexpr int version() const override
+	{
+		return 20;
+	}
+};
+
+int main()
+{
+	constexpr static Cpp17 cpp17;
+	constexpr const Cpp* pCpp = &cpp17;
+	constexpr auto& cpptype = typeid(*pCpp);
+
+	constexpr const Cpp& refCpp = cpp17;
+	constexpr const Cpp17& redCpp2 = dynamic_cast<const Cpp17&>(refCpp);
 }
 ```
 
-ただし、`dynamic_cast`や`type_id`の定数実行が例外を投げる場合は定数式で実行できずにコンパイルエラーとなります。  
-例えば、`dynamic_cast`なら参照のキャスト失敗時、`type_id`は`nullptr`を渡されたときに例外を投げます。
+次のように例外を投げるケースでは `constexpr` にできずコンパイルエラーになります。
 
 ```C++
-//typeid
-{
-  constexpr int* nullp = nullptr;
-  constexpr auto&& t = typeid(nullp);  //例外を投げるため定数実行できない
-}
+#include <typeinfo>
 
-//dynamic_cast
+struct Cpp
 {
-  constexpr derived1 d1{};
-  constexpr const base& b1 = d1;  //b1はderived1のオブジェクトを指す
+	virtual int version() const = 0;
+};
 
-  //down cast
-  constexpr const derived2& d2 = dynamic_cast<const derived2&>(b1);  //例外を投げるため定数実行できない
+struct Cpp17 : Cpp
+{
+	constexpr int version() const override
+	{
+		return 17;
+	}
+};
+
+struct Cpp20 : Cpp
+{
+	constexpr int version() const override
+	{
+		return 20;
+	}
+};
+
+int main()
+{
+	constexpr Cpp* pCpp = nullptr;
+	constexpr auto& cpptype = typeid(*pCpp); //コンパイルエラー: 例外 std::bad_typeid を投げるため constexpr 不可
+
+	constexpr static Cpp17 cpp17;
+	constexpr const Cpp& refCpp = cpp17;
+	constexpr const Cpp20& redCpp2 = dynamic_cast<const Cpp20&>(refCpp); // コンパイルエラー: 例外 std::bad_cast を投げるため constexpr 不可
 }
 ```
 
-### 定数式での共用体アクティブメンバの切り替え [(P1330R0)](https://wg21.link/P1330)
 
-共用体のアクティブメンバとは、ある時点において最後に初期化されたメンバの事です。  
-共用体の構築と初期化及びアクティブメンバへのアクセスは定数式で行うことができますが、アクティブメンバの切り替えは行うことができませんでした。
-
-しかし、共用体は`std::string`や`std::optional`、`std::variant`の実装に利用されており、そこではアクティブメンバの切り替えが必要になります。  
-これらのクラスをよりconstexprで利用可能にするための準備として、定数式での共用体アクティブメンバの切り替えが許可されます。
+### 定数式での共用体アクティブメンバの切り替えが可能に [(P1330R0)](https://wg21.link/P1330)
+共用体のアクティブメンバとは、ある時点において最後に初期化されたメンバの事です。C++17 では共用体の構築や初期化、アクティブメンバへのアクセスを定数式で行えましたが、アクティブメンバの切り替えできませんでした。  
+定数式でのアクティブメンバの切り替えが可能になると、共用体を使って実装される `std::string` や `std::optional`, `std::variant` のより多くの処理を `constexpr` 対応させることができます。
 
 ```C++
 union U {
@@ -362,14 +348,13 @@ int main()
 3.1415
 ```
 
-ただし、非アクティブメンバへのアクセスは未定義動作であり、定数式で行うとコンパイルエラーとなります。
+ただし、非アクティブメンバへのアクセスは未定義動作なので、定数式で行うとコンパイルエラーになります。
 
-### 定数式における`try-catch`ブロック [(P1002R1)](https://wg21.link/P1002)
 
-これまではconstexpr関数の中などの定数式として実行されうる場所に`try-catch`ブロックを書くことができませんでした。  
-しかし、`std::vector`等のコンテナをconstexpr対応するにあたって`try-catch`ブロックが表れたとしても定数式として実行できるようにするために、`try-catch`ブロックを定数式内に書くことができるようになります。
-
-ただし、例外処理が定数式で行われるわけではなく、定数実行中に例外が投げられた場合はコンパイルエラーとなります。つまり、定数式における`try-catch`ブロックは単に無視されます。
+### 定数式の文脈では `try-catch` を無視できるように [(P1002R1)](https://wg21.link/P1002)
+これまでは constexpr 関数の中などの定数式として実行されうる場所に `try-catch` ブロックを書くことができませんでした。  
+しかし、`std::vector` 等のコンテナを `constexpr` 対応するにあたって `try-catch` ブロックが表れたとしても定数式として実行できるようにするために、`try-catch` ブロックを定数式内に書くことができるようになります。  
+ただし、例外処理が定数式で行われるわけではなく、定数実行中に例外が投げられた場合はコンパイルエラーとなります。つまり、定数式における `try-catch` ブロックは単に無視されます。
 
 ```cpp
 constexpr int f(const int n) {
@@ -389,7 +374,7 @@ constexpr int g(const int n) {
 }
 ```
 
-C++20の仕様としては単に無視することにしただけで、将来的なコンパイル時例外処理のサポートへの道が閉ざされたわけではありません。
+C++20 の仕様としては単に無視することにしただけで、将来的なコンパイル時例外処理のサポートへの道が閉ざされたわけではありません。
 
 
 ## 標準ライブラリ
@@ -422,7 +407,6 @@ false
 
 
 ### `operator>>(basic_istream&, charT*)` の第二引数を `charT(&)[N]` に変更して安全に [(P0487R1)](https://wg21.link/P0487R1)
-
 C++17 までの `operator>>(basic_istream&, charT*)` は、関数にバッファのサイズが渡されないため、次のようなプログラムでバッファオーバーフローへの対策が必要でした。
 ```C++
 #include <iostream>
@@ -475,6 +459,7 @@ int main()
 }
 ```
 
+
 ### 戻り値の無視が不具合をもたらす関数に `[[nodiscard]]` を付与 [(P0600R1)](https://wg21.link/P0600R1)
 C++17 で導入された `[[nodiscard]]` 属性を標準ライブラリで活用するようになります。C++20 では付与基準を「戻り値の無視がトラブルやメモリリークなどの重大なエラーを引き起こす C++ の関数」とし、`async()`, `launder()`, `allocate()`, `empty()`, `operator new()` が対象となっています。
 ```C++
@@ -494,7 +479,6 @@ MSVC の標準ライブラリでは Visual Studio 2017 15.6 以降、規格の�
 
 
 ### `<array>` ヘッダのすべての関数が constexpr に [(P1023R0)](https://wg21.link/P1023R0), [(P1032R1)](https://wg21.link/P1032R1)
-
 C++17 の `<array>` ヘッダでは、比較演算子、`swap()`, `fill()` 以外のすべての関数が constexpr でした。C++20 ではさらに、array の比較演算の実装に使われている `std::equal()` と `std::lexicographical_compare()` が [constexpr になった (P0202R3)](https://wg21.link/P0202R3) ことにともない、array の比較演算子を constexpr とし、また `swap()` と `fill()` についても constexpr にすることを決め、array ヘッダのすべての関数が constexpr で提供されます。
 
 
@@ -507,7 +491,6 @@ C++17 の `<array>` ヘッダでは、比較演算子、`swap()`, `fill()` 以�
 
 
 ### ポインタのアライメントを最適化ヒントとしてコンパイラに伝える `assume_aligned()` 関数 [(P1007R3)](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/p1007r3.pdf)
-
 データのアドレスが 16 バイトなどのサイズにアライメントされている場合、コンパイラが SIMD を使った最適なコードを生成できる可能性があります。あるポインタの指すデータがアライメントされていることをコンパイラに伝える方法として、GCC や Clang では `__builtin_assume_aligned()` や `__attribute__((assume_aligned(alignment)))`, ICC では `__assume_aligned()` などの独自拡張がありますが、標準化された方法はありませんでした。C++20 では、これらの差異を吸収する次のような関数テンプレートが提供されます。
 ```C++
 template <size_t N, class T>
@@ -528,7 +511,6 @@ void Multiply(float* x, size_t size, float factor)
 
 
 ### スマートポインタの作成時に値をデフォルト初期化する make 関数を追加 [(P1020R1)](https://wg21.link/P1020R1)
-
 実行時性能のために、`float` や `unsigned char` など組み込み型の配列の値をデフォルト初期化させたい（ゼロ初期化しない）ケースがあります。しかし、`make_unique` や `make_shared`, `allocate_shared` でスマートポインタを作成した場合には値初期化が実行されます。C++20 では、値初期化をせずにデフォルト初期化でスマートポインタを作成する関数 `make_unique_default_init`, `make_shared_default_init`, `allocate_shared_default_init` が追加されました。
 ```C++
 #include <iostream>
@@ -577,7 +559,6 @@ int main()
 
 
 ### 非順序連想コンテナのルックアップ操作で、`key_type` と比較可能な型を変換せずに使えるように [(P0919R3)](http://wg21.link/P0919r3)
-
 C++17 までの `unorderd_map` や `unordered_set` など非順序連想コンテナでは、`find()`, `count()`, `equal_range()` などルックアップを行うメンバ関数は引数に `key_type` をとり、例えば次のようなケースで `std::string` 型の一時オブジェクトが作成されて非効率でした。
 
 ```C++
@@ -622,7 +603,6 @@ int main()
 
 
 ### 非順序連想コンテナのルックアップ操作に、計算済みハッシュ値を渡せるように [(P0920R2)](https://wg21.link/P0920R2)
-
 同じ種類の非順序連想コンテナを複数扱い、同じキーを用いたルックアップ操作をそれらのコンテナに対して行うようなケースでは、キーのハッシュ値の計算を毎回行うのは冗長です。C++20 ではメンバ関数 `find()`, `count()`, `contains()`, `equal_range()` に、計算済みのハッシュ値を渡せるオーバーロードが追加されます。
 ```C++
 #include <iostream>
@@ -649,7 +629,6 @@ int main()
 
 
 ### 2 つの値の中点を計算する `std::midpoint()` 関数 [(P0811R3)](https://wg21.link/P0811R3)
-
 2 つの値 `a`, `b` の中点を計算する際に、単純な `(a + b) / 2` という式ではオーバーフローを起こす可能性があります。C++20 で追加される `std::midpoint()` 関数では、整数に対して
 ```C++
 constexpr Integer midpoint(Integer a, Integer b) noexcept
@@ -684,7 +663,6 @@ int main()
 
 
 ### 2 つの値の線形補間を計算する `std::lerp()` 関数 [(P0811R3)](https://wg21.link/P0811R3)
-
 2 点 `a`, `b` の間をパラメータ `t` によって線形補間する関数が提供されます。計算結果 `r` は `a + t * (b - a)` によって求められますが、実装により `isfinite(a) && isfinite(b)` のとき
 
 - `lerp(a, b, 0) == a && lerp(a, b, 1) == b`
@@ -712,7 +690,6 @@ int main()
 
 
 ### 実装固有の情報をまとめる `<version>` ヘッダを追加 [(P0754R2)](https://wg21.link/P0754R2)
-
 `__cpp_lib_byte`, `__cpp_lib_void_t` のような標準ライブラリの機能テストマクロ、その他ライブラリのバージョンや実装固有の情報をまとめる目的の `<version>` ヘッダが追加されました。
 例えば C++20 以前の MSVC の標準ライブラリでは、`<yvals_core.h>` という独自ヘッダに標準ライブラリの機能テストマクロがまとめられていましたが、C++20 以降ではあらゆる実装において、`<version>` ヘッダを見ることで、こうした実装固有の情報にアクセスできるため利便性が高まります。
 
@@ -733,21 +710,20 @@ size_type find(const T& t, size_type pos = 0) const noexcept(is_nothrow_converti
 ```
 
 ### ポインタライクなオブジェクトからアドレスを取得する `std::to_address()` 関数 [(P0653R2)](https://wg21.link/P0653R2)
-
 ポインタライクなオブジェクトを引数にとり、それが表すのと同じアドレスを生ポインタで返す関数 `std::to_address(p)` が追加されます。オブジェクトがポインタ型の場合はその値を返し、それ以外の場合、`std::pointer_traits<Ptr>::to_address(p)` の特殊化が定義されていて使えればその戻り値を、そうでない場合は `std::to_address(p.operator->())` の戻り値を返します。
 
-### `<complex>` ヘッダの関数の `constexpr` 対応を強化 [(P0415R1)](https://wg21.link/P0415R1)
 
+### `<complex>` ヘッダの関数の `constexpr` 対応を強化 [(P0415R1)](https://wg21.link/P0415R1)
 `<complex>` ヘッダが提供する関数のうち、複素数の四則演算、ノルムの取得、共役複素数の取得など、`constexpr` 非対応の数学関数 (sqrt など) を使わずに実装できるものが `constexpr` 化されます。
 
-### コンパイル時と実行時の判定を行う `std::is_constant_evaluated()` 関数 [(P0595R2)](https://wg21.link/P0595)
 
-C++17までは、あるコードが実行されているときにそれがコンパイル時と実行時のどちらで実行中なのかを判定する方法はありませんでした。
+### コンパイル時処理と実行時処理を分けられる `std::is_constant_evaluated()` 関数 [(P0595R2)](https://wg21.link/P0595)
+C++17 までは、あるコードが実行されているときにそれがコンパイル時と実行時のどちらで実行中なのかを判定する方法はありませんでした。
 その判断ができれば、コンパイル時と実行時それぞれで最適なアルゴリズム及びコードを選択して実行することができます。  
-特にこれは、`<cmath>`にある数学関数を`constexpr`で実装する際に必要となります。
+特にこれは、`<cmath>` にある数学関数を `constexpr` で実装する際に必要となります。
 
-C++20では`<type_traits>`ヘッダに新たに追加される`std::is_constant_evaluated()`関数の利用によってそれが可能になります。  
-`std::is_constant_evaluated()`関数は確実にコンパイル時に評価される個所でだけ`true`を返し、その他の場合には`false`を返す関数です。
+C++20 では `<type_traits>` ヘッダに新たに追加される `std::is_constant_evaluated()` 関数の利用によってそれが可能になります。  
+`std::is_constant_evaluated()` 関数は確実にコンパイル時に評価される個所でだけ `true` を返し、その他の場合には `false` を返す関数です。
 
 例えば以下のように利用できます。
 
