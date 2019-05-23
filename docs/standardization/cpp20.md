@@ -320,7 +320,7 @@ int main()
 
 
 ### 定数式での共用体アクティブメンバの切り替えが可能に [(P1330R0)](https://wg21.link/P1330)
-共用体において、最後に初期化または値が代入されたメンバがアクティブメンバです。C++17 では共用体の初期化やアクティブメンバへのアクセスを定数式で行えましたが、アクティブメンバの切り替えはできませんでした。定数式でのアクティブメンバの切り替えが可能になると、共用体によって実装される `std::string` や `std::optional` などの標準ライブラリクラスの、より多くのメンバ関数を `constexpr` 対応させることにつながります。非アクティブメンバへのアクセスは未定義動作なので、定数式で行うとコンパイルエラーになります。
+共用体のアクティブメンバとは、最後に初期化または値を代入したメンバのことです。C++17 では共用体の初期化やアクティブメンバへのアクセスを定数式で行えましたが、アクティブメンバの切り替えはできませんでした。定数式でのアクティブメンバの切り替えが可能になると、共用体によって実装される `std::string` や `std::optional` などの標準ライブラリクラスのメンバ関数の `constexpr` 対応を拡充できます。非アクティブメンバへのアクセスは未定義動作なので、定数式で行うとコンパイルエラーになります。
 
 ```C++
 #include <cstdint>
@@ -351,7 +351,7 @@ int main()
 
 
 ### 定数式の文脈では `try-catch` を無視するように [(P1002R1)](https://wg21.link/P1002)
-これまで `constexpr` 関数の中には `try-catch` ブロックを書くことができませんでした。しかし、`std::vector` 等のコンテナを `constexpr` 対応するにあたっては、この制限が障壁となるため、C++20 では `constexpr` 関数の中の `try-catch` は、定数式として評価されるときには無視するよう仕様が改められます。定数式の評価中に例外を投げるようであればコンパイルエラーになります。`std::vector` などを `constexpr` 対応させるための措置で、将来の C++ におけるコンパイル時例外処理の実現を否定するものではありません。
+これまで `constexpr` 関数の中には `try-catch` ブロックを書くことができませんでした。しかし、`std::vector` 等のコンテナを `constexpr` 対応するにあたっては、この制限が障壁となるため、C++20 では `constexpr` 関数の中の `try-catch` は、定数式として評価されるときには無視するよう仕様が改められます。定数式の評価中に例外を投げるようであればコンパイルエラーになります。`std::vector` などを `constexpr` 対応させるための措置であり、将来の C++ におけるコンパイル時例外処理の実現を否定するものではありません。
 
 ```cpp
 #include <cstdint> 
@@ -731,55 +731,48 @@ size_type find(const T& t, size_type pos = 0) const noexcept(is_nothrow_converti
 `<complex>` ヘッダが提供する関数のうち、複素数の四則演算、ノルムの取得、共役複素数の取得など、`constexpr` 非対応の数学関数 (sqrt など) を使わずに実装できるものが `constexpr` 化されます。
 
 
-### コンパイル時処理と実行時処理を判別できる `std::is_constant_evaluated()` 関数 [(P0595R2)](https://wg21.link/P0595)
-C++17 までは、実行するコードを、コンパイル時評価か実行時評価かに応じて使い分ける方法はありませんでした。C++20 で `<type_traits>` ヘッダに追加される `std::is_constant_evaluated()` 関数は、コンパイル時評価されている文脈では `true` を、それ以外の場合では `false` を返します。これを例えば数学関数で使うことで、コンパイル時評価では `constexpr` 版の実装を、実行時には非 `constexpr` の標準ライブラリの実装を実行するよう選択させることができます。`std::is_constant_evaluated()` を `if constexpr` の `( )` 内や `static_assert` 内で使うと常に `true` に評価されてしまうので注意が必要です。基本的には `if (std::is_constant_evaluated())` と書きます。
+### コンパイル時評価の文脈か実行時評価の文脈かを判別できる `std::is_constant_evaluated()` 関数 [(P0595R2)](https://wg21.link/P0595)
+C++17 までは、実行するコードを、コンパイル時評価か実行時評価かに応じて使い分ける方法はありませんでした。C++20 では、コンパイル時評価されている文脈では `true` を、それ以外の場合では `false` を返す `std::is_constant_evaluated()` 関数が `<type_traits>` ヘッダに追加されます。例えば標準ライブラリで `constexpr` 対応していないような数学関数を提供する際、コンパイル時評価では `constexpr` 版の実装を、実行時には非 `constexpr` の標準ライブラリの実装を実行するよう選択させることができます。なお、`std::is_constant_evaluated()` を `if constexpr` の `( )` 内や `static_assert` 内で使うと常に `true` に評価されてしまうので注意が必要です。基本的には `if (std::is_constant_evaluated())` と書きます。
 
 ```cpp
-#include <type_traits>
 #include <cmath>
+#include <type_traits>
 #include <iostream>
+#include <iomanip>
 
-template<typename T>
-constexpr auto my_sin(T theta) {
-  if (std::is_constant_evaluated()) {
-    //コンパイル時の処理、マクローリン級数の計算
+constexpr float Sin_impl(float x2, int i, int k, float xn, long long nf)
+{
+	return (i > 10) ? 0.0f : (k * xn / nf + Sin_impl(x2, i + 2, -k, xn * x2, nf * (i + 1) * (i + 2)));
+}
 
-    auto fabs = [](T v) -> T { return (v < T(0.0))?(-v):(v); };
-    T x_sq = -(theta * theta);
-    T series = theta;
-    T tmp = theta;
-    T fact = T(2.0);
-
-    do {
-      tmp *= x_sq / (fact * (fact+T(1.0)));
-      series += tmp;
-      fact += T(2.0);
-    } while(fabs(tmp) >= std::numeric_limits<T>::epsilon());
-    
-    return series;
-  } else {
-    //実行時の処理、<cmath>の関数を利用
-    return std::sin(theta);
-  }
+constexpr float Sin(float x)
+{
+	if (std::is_constant_evaluated())
+	{
+		return Sin_impl(x * x, 1, 1, x, 1);
+	}
+	else
+	{
+		return std::sin(x);
+	}
 }
 
 int main()
 {
-  constexpr double pi = 3.1415926535897932384626433832795;
-  
-  std::cout << std::setprecision(16);
-  
-  //sin(60°)を求める
-  constexpr auto sin_static = my_sin(pi/3.0); //コンパイル時計算
-  auto sin_dynamic = my_sin(pi/3.0);  //実行時計算
-  
-  std::cout << sin_static << std::endl;
-  std::cout << sin_dynamic << std::endl;
+	constexpr float Pi = 3.14159265f;
+	constexpr float theta = Pi / 4.0;
+
+	constexpr float x1 = Sin(theta); // コンパイル時計算	
+	float x2 = Sin(theta);  // 実行時計算
+
+	std::cout << std::setprecision(16);
+	std::cout << x1 << '\n';
+	std::cout << x2 << '\n';
 }
 ```
+出力
 ```
-0.8660254037844385
-0.8660254037844386
+0.7071068286895752
+0.7071067690849304
 ```
-
 
