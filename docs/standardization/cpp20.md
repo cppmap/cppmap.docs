@@ -243,7 +243,7 @@ int main()
 ```
 
 
-### `type_id` と `dynamic_cast` が例外を投げない場合 constexpr に [(P1327R1)](https://wg21.link/P1327)
+### `type_id` と `dynamic_cast` が constexpr に [(P1327R1)](https://wg21.link/P1327)
 `dynamic_cast` と `type_id` が、例外を投げるケースを除いて `constexpr` になります。
 
 ```C++
@@ -319,7 +319,7 @@ int main()
 ```
 
 
-### 定数式での共用体アクティブメンバの切り替えが可能に [(P1330R0)](https://wg21.link/P1330)
+### 定数式において共用体のアクティブメンバの切り替えが可能に [(P1330R0)](https://wg21.link/P1330)
 共用体のアクティブメンバとは、最後に初期化または値を代入したメンバのことです。C++17 では共用体の初期化やアクティブメンバへのアクセスを定数式で行えましたが、アクティブメンバの切り替えはできませんでした。定数式でのアクティブメンバの切り替えが可能になると、共用体によって実装される `std::string` や `std::optional` などの標準ライブラリクラスのメンバ関数の `constexpr` 対応を拡充できます。非アクティブメンバへのアクセスは未定義動作なので、定数式で行うとコンパイルエラーになります。
 
 ```C++
@@ -732,7 +732,7 @@ size_type find(const T& t, size_type pos = 0) const noexcept(is_nothrow_converti
 
 
 ### コンパイル時評価の文脈か実行時評価の文脈かを判別できる `std::is_constant_evaluated()` 関数 [(P0595R2)](https://wg21.link/P0595)
-C++17 までは、実行するコードを、コンパイル時評価か実行時評価かに応じて使い分ける方法はありませんでした。C++20 では、コンパイル時評価されている文脈では `true` を、それ以外の場合では `false` を返す `std::is_constant_evaluated()` 関数が `<type_traits>` ヘッダに追加されます。例えば標準ライブラリで `constexpr` 対応していないような数学関数を提供する際、コンパイル時評価では `constexpr` 版の実装を、実行時には非 `constexpr` の標準ライブラリの実装を実行するよう選択させることができます。なお、`std::is_constant_evaluated()` を `if constexpr` の `( )` 内や `static_assert` 内で使うと常に `true` に評価されてしまうので注意が必要です。基本的には `if (std::is_constant_evaluated())` と書きます。
+C++17 までは、実行するコードを、コンパイル時評価か実行時評価かに応じて使い分ける方法はありませんでした。C++20 では、コンパイル時評価されている文脈では `true` を、それ以外の場合では `false` を返す `std::is_constant_evaluated()` 関数が `<type_traits>` ヘッダに追加されます。例えば標準ライブラリで `constexpr` 対応していないような数学関数を提供する際、コンパイル時評価では `constexpr` 版の実装を、実行時には非 `constexpr` の標準ライブラリの実装を提供するよう選択させることができます。なお、`std::is_constant_evaluated()` を `if constexpr` の `( )` 内や `static_assert` 内で使うと常に `true` に評価されてしまうので注意が必要です。基本的には `if (std::is_constant_evaluated())` と書きます。
 
 ```cpp
 #include <cmath>
