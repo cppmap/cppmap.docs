@@ -320,61 +320,75 @@ int main()
 
 
 ### 定数式での共用体アクティブメンバの切り替えが可能に [(P1330R0)](https://wg21.link/P1330)
-共用体のアクティブメンバとは、ある時点において最後に初期化されたメンバの事です。C++17 では共用体の構築や初期化、アクティブメンバへのアクセスを定数式で行えましたが、アクティブメンバの切り替えできませんでした。  
-定数式でのアクティブメンバの切り替えが可能になると、共用体を使って実装される `std::string` や `std::optional`, `std::variant` のより多くの処理を `constexpr` 対応させることができます。
+共用体において、最後に初期化または値が代入されたメンバがアクティブメンバです。C++17 では共用体の初期化やアクティブメンバへのアクセスを定数式で行えましたが、アクティブメンバの切り替えはできませんでした。定数式でのアクティブメンバの切り替えが可能になると、共用体によって実装される `std::string` や `std::optional` などの標準ライブラリクラスの、より多くのメンバ関数を `constexpr` 対応させることにつながります。非アクティブメンバへのアクセスは未定義動作なので、定数式で行うとコンパイルエラーになります。
 
 ```C++
-union U {
-  int n;
-  double d = 3.1415;
+#include <cstdint>
+
+union Value
+{
+	float f;
+	std::uint32_t i;
 };
 
-constexpr double change_U() {
-  U u{};  //u.dをアクティブメンバとして初期化
-  double d = u.d;
-  u.n = 0;  //u.nへアクティブメンバを切り替え、C++20より可能
-  return d;
+constexpr Value GetFloat(float x)
+{
+	return Value{ x }; // value.f がアクティブメンバ
+}
+
+constexpr Value GetUint(std::uint32_t x)
+{
+	Value value = GetFloat(0.0f); // value.f がアクティブメンバ
+	value.i = x; // value.i がアクティブメンバに
+	return value;
 }
 
 int main()
 {
-  constexpr double d = change_U();
-  static_assert(d == 3.1415);
-  
-  std::cout << d << std::endl;
+	static_assert(GetUint(123).i == 123);
 }
 ```
-```
-3.1415
-```
-
-ただし、非アクティブメンバへのアクセスは未定義動作なので、定数式で行うとコンパイルエラーになります。
 
 
-### 定数式の文脈では `try-catch` を無視できるように [(P1002R1)](https://wg21.link/P1002)
-これまでは constexpr 関数の中などの定数式として実行されうる場所に `try-catch` ブロックを書くことができませんでした。  
-しかし、`std::vector` 等のコンテナを `constexpr` 対応するにあたって `try-catch` ブロックが表れたとしても定数式として実行できるようにするために、`try-catch` ブロックを定数式内に書くことができるようになります。  
-ただし、例外処理が定数式で行われるわけではなく、定数実行中に例外が投げられた場合はコンパイルエラーとなります。つまり、定数式における `try-catch` ブロックは単に無視されます。
+### 定数式の文脈では `try-catch` を無視するように [(P1002R1)](https://wg21.link/P1002)
+これまで `constexpr` 関数の中には `try-catch` ブロックを書くことができませんでした。しかし、`std::vector` 等のコンテナを `constexpr` 対応するにあたっては、この制限が障壁となるため、C++20 では `constexpr` 関数の中の `try-catch` は、定数式として評価されるときには無視するよう仕様が改められます。定数式の評価中に例外を投げるようであればコンパイルエラーになります。`std::vector` などを `constexpr` 対応させるための措置で、将来の C++ におけるコンパイル時例外処理の実現を否定するものではありません。
 
 ```cpp
-constexpr int f(const int n) {
-	try {
-		return n + 1;
-	} catch(...) {
+#include <cstdint> 
+#include <iostream> 
+#include <exception> 
+
+constexpr std::uint32_t AddU8(std::uint32_t a, std::uint32_t b)
+{
+	if ((a + b) >= 256)
+	{
+		throw std::exception{};
+	}
+
+	return a + b;
+}
+
+constexpr std::uint32_t DoubleU8(std::uint32_t n)
+{
+	try
+	{
+		return AddU8(n, n);
+	}
+	catch (const std::exception& except)
+	{
 		return 0;
 	}
 }
 
-constexpr int g(const int n) {
-	try {
-		throw std::exception{};  //ここでコンパイルエラー
-	} catch (const std::exception& except) {
-		return 0;  //コンパイル時にここに来る事は無い
-	}
+int main()
+{
+	static_assert(DoubleU8(123) == 246); // OK: 例外を投げずに定数式として評価可能
+
+	//static_assert(DoubleU8(200) > 0); // コンパイルエラー: 定数式として評価される constexpr 関数内で例外を投げるため
+
+	std::cout << "result: " << DoubleU8(200) << '\n'; // OK: 実行時に評価される関数で例外が発生する
 }
 ```
-
-C++20 の仕様としては単に無視することにしただけで、将来的なコンパイル時例外処理のサポートへの道が閉ざされたわけではありません。
 
 
 ## 標準ライブラリ
@@ -717,15 +731,8 @@ size_type find(const T& t, size_type pos = 0) const noexcept(is_nothrow_converti
 `<complex>` ヘッダが提供する関数のうち、複素数の四則演算、ノルムの取得、共役複素数の取得など、`constexpr` 非対応の数学関数 (sqrt など) を使わずに実装できるものが `constexpr` 化されます。
 
 
-### コンパイル時処理と実行時処理を分けられる `std::is_constant_evaluated()` 関数 [(P0595R2)](https://wg21.link/P0595)
-C++17 までは、あるコードが実行されているときにそれがコンパイル時と実行時のどちらで実行中なのかを判定する方法はありませんでした。
-その判断ができれば、コンパイル時と実行時それぞれで最適なアルゴリズム及びコードを選択して実行することができます。  
-特にこれは、`<cmath>` にある数学関数を `constexpr` で実装する際に必要となります。
-
-C++20 では `<type_traits>` ヘッダに新たに追加される `std::is_constant_evaluated()` 関数の利用によってそれが可能になります。  
-`std::is_constant_evaluated()` 関数は確実にコンパイル時に評価される個所でだけ `true` を返し、その他の場合には `false` を返す関数です。
-
-例えば以下のように利用できます。
+### コンパイル時処理と実行時処理を判別できる `std::is_constant_evaluated()` 関数 [(P0595R2)](https://wg21.link/P0595)
+C++17 までは、実行するコードを、コンパイル時評価か実行時評価かに応じて使い分ける方法はありませんでした。C++20 で `<type_traits>` ヘッダに追加される `std::is_constant_evaluated()` 関数は、コンパイル時評価されている文脈では `true` を、それ以外の場合では `false` を返します。これを例えば数学関数で使うことで、コンパイル時評価では `constexpr` 版の実装を、実行時には非 `constexpr` の標準ライブラリの実装を実行するよう選択させることができます。`std::is_constant_evaluated()` を `if constexpr` の `( )` 内や `static_assert` 内で使うと常に `true` に評価されてしまうので注意が必要です。基本的には `if (std::is_constant_evaluated())` と書きます。
 
 ```cpp
 #include <type_traits>
@@ -775,4 +782,4 @@ int main()
 0.8660254037844386
 ```
 
-`if constexpr`や`static_assert`の条件式では必ず`true`に評価されるので注意が必要です。
+
