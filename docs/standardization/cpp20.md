@@ -708,7 +708,7 @@ int main()
 例えば C++20 以前の MSVC の標準ライブラリでは、`<yvals_core.h>` という独自ヘッダに標準ライブラリの機能テストマクロがまとめられていましたが、C++20 以降ではあらゆる実装において、`<version>` ヘッダを見ることで、こうした実装固有の情報にアクセスできるため利便性が高まります。
 
 
-### 例外を投げない暗黙の変換が可能か調べる is_nothrow_convertible [(P0758R1)](https://wg21.link/P0758R1)
+### 例外を投げない暗黙の変換が可能か調べる `is_nothrow_convertible` [(P0758R1)](https://wg21.link/P0758R1)
 型 `From` から型 `To` への暗黙の変換が可能であるかを調べる型特性クラス `std::is_convertible<class From, class To>` が C++11 から導入されましたが、その変換が `noexcept` でもあるかを調べられるバージョンは実装されていませんでした。
 このことが原因で、`std::decay_copy` の提案 ([N3255](http://wg21.link/n3255)) において、適切な `noexcept` 例外仕様を移植性のある方法で定義できない問題 ([LWG 2040](http://wg21.link/lwg2040)) が指摘されていました。
 ```C++
@@ -775,3 +775,46 @@ int main()
 0.7071067690849304
 ```
 
+### 浮動小数点数型のアトミック操作を拡張 [(P0020R6)](https://wg21.link/P0020R6)
+`std::atomic<T>` の `float`, `double`, `long double` 型の特殊化に、メンバ関数 `fetch_add()`, `fetch_sub()`, `operator+=()`, `operator-=()` が追加されます。
+
+
+### `std::memory_order` を `enum class` に変更 [(P0439R0)](https://wg21.link/P0439R0)
+C++17 まで `enum` で定義されていた `std::memory_order` を、モダンな C++ 文法と型安全のために、`enum class` で定義する仕様に変更されます。これまでの表記は定数で提供されるようになるため、既存のソースコードは影響を受けません。また、バイナリ互換性のために、`enum class` の基底型の選択は実装に任されています。
+
+```C++ tab="C++17"
+namespace std
+{
+	typedef enum memory_order
+	{
+		memory_order_relaxed,
+		memory_order_consume,
+		memory_order_acquire,
+		memory_order_release,
+		memory_order_acq_rel,
+		memory_order_seq_cst
+	} memory_order;
+}
+```
+
+```C++ tab="C++20"
+namespace std
+{
+	enum class memory_order /* : unspecified */
+	{
+		relaxed,
+		consume,
+		acquire,
+		release,
+		acq_rel,
+		seq_cst
+	};
+
+	inline constexpr memory_order memory_order_relaxed = memory_order::relaxed;
+	inline constexpr memory_order memory_order_consume = memory_order::consume;
+	inline constexpr memory_order memory_order_acquire = memory_order::acquire;
+	inline constexpr memory_order memory_order_release = memory_order::release;
+	inline constexpr memory_order memory_order_acq_rel = memory_order::acq_rel;
+	inline constexpr memory_order memory_order_seq_cst = memory_order::seq_cst;
+}
+```
