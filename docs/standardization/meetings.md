@@ -25,8 +25,9 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [2019-11-04 to 09](https://wg21.link/n4782) / ベルファスト, 北アイルランド, 英国
 
 ## 2019 Cologne
-#### 場所
+#### 場所 / 提案
 - [2019-07-15 to 20](https://wg21.link/n4783) / ケルン, ドイツ
+- [JTC1/SC22/WG21 - Papers 2019 mailing2019-06 pre-Cologne](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/#mailing2019-06)
 
 #### 解説
 この会議で C++20 の規格ドラフトを完成させる予定です。
