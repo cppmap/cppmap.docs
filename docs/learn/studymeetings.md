@@ -14,13 +14,13 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix)
 
 ### C++ MIX #4 [(2019-06-26)](https://cppmix.connpass.com/event/132145/)
-| タイトル                                                                           | 発表者                  | ムービー |
-|--------------------------------------------------------------------------------|----------------------|------|
-| 勉強会と会場の説明                                                                      | Shintaro Okada       |     |
-| C++ でも Result したい                                                              | いなむのみたま (@mitama_rs) |     |
-| [世界を創造する OSS 開発を始めた話](https://www.slideshare.net/Gaccho1/oss-c-mix-151965959)  | がっちょ                 |     |
-| [C++ で HTTP Proxy](https://www.slideshare.net/YasunoriHigashiyama/chttp-proxy) | 東山裕徳                 |     |
-| [モジュールの概要](https://www.slideshare.net/TetsuroMatsumura/c20-152189285)          | Tetsuro Matsumura     |     |
+| タイトル                                                                                               | 発表者                  | ムービー |
+|----------------------------------------------------------------------------------------------------|----------------------|------|
+| 勉強会と会場の説明                                                                                          | Shintaro Okada       |     |
+| [C++ でも Result したい](https://speakerdeck.com/loligothick/c-plus-plus-demorustfalseresultgashi-itai) | いなむのみたま (@mitama_rs) |     |
+| [世界を創造する OSS 開発を始めた話](https://www.slideshare.net/Gaccho1/oss-c-mix-151965959)                      | がっちょ                 |     |
+| [C++ で HTTP Proxy](https://www.slideshare.net/YasunoriHigashiyama/chttp-proxy)                     | 東山裕徳                 |     |
+| [モジュールの概要](https://www.slideshare.net/TetsuroMatsumura/c20-152189285)                              | Tetsuro Matsumura    |     |
 
 ### C++ MIX #3 [(2019-04-17)](https://cppmix.connpass.com/event/124862/)
 | タイトル                                                                                                                                                             | 発表者            | ムービー                                                     |
