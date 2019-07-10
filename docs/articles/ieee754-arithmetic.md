@@ -2,6 +2,8 @@ description: IEEE 754 の演算のルール
 
 # IEEE 754 演算のルール
 
+浮動小数点数の丸めモードが `FE_TONEAREST` の場合の結果です。
+
 ## 四則演算
 
 ![](images/ieee754-plus.png)
