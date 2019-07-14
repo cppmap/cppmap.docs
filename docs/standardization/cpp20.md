@@ -821,3 +821,57 @@ namespace std
 	inline constexpr memory_order memory_order_seq_cst = memory_order::seq_cst;
 }
 ```
+
+
+### `Hash` が同一の挙動をしない非順序連想コンテナどうしの比較が可能に [(P0809R0)](https://wg21.link/P0809R0)
+
+C++17 までは、非順序連想コンテナの `operator==`, `operator!=` について、「両者の `Hash` と `Pred` がそれぞれ同一の挙動をしない場合は未定義動作」と規格に記されていました。しかし、ランダムなソルトを使うハッシュ関数を持つコンテナ同士の比較もユースケースとして想定され、また、対応するための実装も難しくなかったことから、C++20 からはこのうち `Hash` に関する記述が削除されました。
+
+```C++
+#include <iostream>
+#include <unordered_map>
+#include <random>
+#include <string>
+
+template <class Type>
+struct RandomizedHash
+{
+	size_t rnd;
+
+	RandomizedHash()
+	{
+		std::random_device rd;
+		rnd = std::uniform_int_distribution<size_t>{}(rd);
+	}
+
+	size_t operator()(const Type& s) const
+	{
+		return (std::hash<Type>{}(s) ^ rnd);
+	}
+};
+
+int main()
+{
+	std::unordered_map<std::string, int, RandomizedHash<std::string>> u1 =
+	{
+		{ "One", 1 }, { "Two", 2 }, { "Three", 3 },
+	};
+
+	std::unordered_map<std::string, int, RandomizedHash<std::string>> u2 =
+	{
+		{ "One", 1 }, { "Two", 2 }, { "Three", 3 },
+	};
+	
+	// それぞれ異なるハッシュ値を返す
+	const std::string s = "abcde";
+	std::cout << "u1: " << u1.hash_function()(s) << '\n';
+	std::cout << "u2: " << u2.hash_function()(s) << '\n';
+
+	std::cout << std::boolalpha;
+
+	// C++17 までは未定義動作、C++20 から OK
+	std::cout << (u1 == u2) << '\n';
+}
+```
+
+
