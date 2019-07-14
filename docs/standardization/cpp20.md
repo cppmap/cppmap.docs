@@ -2,7 +2,7 @@ description: C++20 の新しい言語機能と標準ライブラリ機能の解�
 
 # C++20 の新機能
 
-現在、執筆作業中です（約 100 項目のうち、30 項目完成）。  
+現在、執筆作業中です（完成度 約 25%）。  
 一覧は [処理系の対応状況](https://cppmap.github.io/standardization/status/) から C++20 のページを参照してください。
 
 ## 言語機能
@@ -871,6 +871,32 @@ int main()
 
 	// C++17 までは未定義動作、C++20 から OK
 	std::cout << (u1 == u2) << '\n';
+}
+```
+
+
+## 実行環境のエンディアンを判別するための列挙定数を追加 [(P0463R1)](https://wg21.link/P0463R1)
+
+これまでの C++ プログラムでは、ターゲットアーキテクチャのバイトオーダを判別する際にトリッキーなコードを書く必要がありました。C++20 からは、リトルエンディアンを表す `endian::little`, ビッグエンディアンを表す `endian::big`, 実行環境のエンディアンを表す `endian::native` の 3 つの `endian` 型の列挙定数（値は実装に依存）が `<type_traits>` に定義され、`endian::native` をそれ以外の値と比較することで、実行環境のバイトオーダを判別できるようになります。現在の C++ コンパイラで、リトルエンディアンでもビッグエンディアンでもないミドルエンディアン（PDP エンディアンなど）をサポートしているものはありませんが、ミドルエンディアンの環境においては、`endian::native` は `endian::big` でも `endian::little` でもない値を持つことになっています。
+
+```C++
+#include <iostream>
+#include <type_traits>
+
+int main()
+{
+	if constexpr (std::endian::native == std::endian::little)
+	{
+		std::cout << "Little-endian\n";
+	}
+	else if constexpr (std::endian::native == std::endian::big)
+	{
+		std::cout << "Big-endian\n";
+	}
+	else
+	{
+		std::cout << "Middle-endian\n";
+	}
 }
 ```
 
