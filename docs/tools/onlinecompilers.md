@@ -4,16 +4,20 @@ description: C++ プログラムのコンパイル・実行ができる Web サ�
 
 ## 開発環境
 
-C++ プログラムのコンパイル・実行ができる Web サイトです。
+C++ プログラムのコンパイル、実行、共有ができる Web サイトです。
 
-|                                                           | コンパイラ                       | 日本語入出力 | インタラクティブ | 複数ファイル | Share      |
-| --------------------------------------------------------- | -------------------------------- | ------------ | ---------------- | ------------ | ---------- |
-| [Wandbox](https://wandbox.org/)                           | gcc HEAD 10.0.0,<br>Clang HEAD 9.0.0 | :fa-check:   |                  | :fa-check:   | :fa-check: |
-| [repl.it](https://repl.it/languages/cpp)                  | Clang 7.0.0                      | :fa-check:   | :fa-check:       | :fa-check:   | :fa-check: |
-| [paiza.io](https://paiza.io/ja/projects/new?language=cpp) | Clang 6.0.0                      | :fa-check:   |                  | :fa-check:   | :fa-check: |
-| [GDB Online](https://www.onlinegdb.com/)                  | gcc 7.3.0                        | :fa-check:   | :fa-check:       | :fa-check:   | :fa-check: |
-| [Ideone](https://ideone.com/)                             | gcc 6.3.0                        | :fa-check:   |                  |              | :fa-check: |
-| [C++ Shell](http://cpp.sh/)                               | gcc 4.9.2                        |              | :fa-check:       |              | :fa-check: |
+|                                                               | コンパイラ                                                                                         | 日本語入出力     | インタラクティブ   | 複数ファイル     |
+|---------------------------------------------------------------|-----------------------------------------------------------------------------------------------|:------------:|:------------:|:------------:|
+| [Wandbox](https://wandbox.org/)                               | <li>GCC 4.4.7 - **10.0.0\***</li><li>Clang 3.1 - **9.0.0\***</li>                               | :fa-check: |            | :fa-check: |
+| [Compiler Explorer](https://godbolt.org/)<br>(Execution モード) | <li>GCC 4.7.3 - **10.0.0\***</li><li>Clang 3.3 - **9.0.0\***</li><li>ICC 16.0.3 - **19.0.1**</li> | :fa-check: |            |            |
+| [GDB Online](https://www.onlinegdb.com/)                      | <li>GCC 7.4.0</li>                                                                            | :fa-check: | :fa-check: | :fa-check: |
+| [repl.it](https://repl.it/languages/cpp)                      | <li>Clang 7.0.0</li>                                                                          | :fa-check: | :fa-check: | :fa-check: |
+| [paiza.io](https://paiza.io/ja/projects/new?language=cpp)     | <li>Clang 7.0.0</li>                                                                          | :fa-check: |            | :fa-check: |
+| [Ideone](https://ideone.com/)                                 | <li>GCC 6.3.0</li>                                                                            | :fa-check: |            |            |
+| [C++ Shell](http://cpp.sh/)                                   | <li>GCC 4.9.2</li>                                                                            |            | :fa-check: |            |
+
+<small>* 印は trunk</small>
+
 
 ## C++ Insights: ソース → ソース変換
 [C++ Insights](https://cppinsights.io/) は、ラムダ式、range-based for, 構造化束縛などで何が起こっているのかを、プログラムを単純なソースコードに分解することで可視化するオンラインのツールです。  
