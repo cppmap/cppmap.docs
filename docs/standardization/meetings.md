@@ -215,7 +215,7 @@ C++17 に関する最後の会議です。この会議によってC++17規格は
 - [C++17 progress update!](https://www.reddit.com/r/cpp/comments/35g7f6/c17_progress_update/)
 
 #### 解説
-これが2015年最初の標準化委員会会議になります。
+これが2015年最初の会議になります。
 `std::bool_constant`、`std::vector, std::list, std::forward_list`の不完全型サポート、等が承認されました。
 
 ### 2015 Cologne
