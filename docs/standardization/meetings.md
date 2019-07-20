@@ -25,12 +25,17 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [2019-11-04 to 09](https://wg21.link/n4782) / ベルファスト, 北アイルランド, 英国
 
 ## 2019 Cologne
-#### 場所 / 提案
+#### 場所 / 提案 / 会議の結果
 - [2019-07-15 to 20](https://wg21.link/n4783) / ケルン, ドイツ
 - [JTC1/SC22/WG21 - Papers 2019 mailing2019-06 pre-Cologne](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/#mailing2019-06)
+- JTC1/SC22/WG21 - Papers 2019 mailing2019-08 post-Cologne
+
+#### 参加報告
+- [2019-07 Cologne ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/cfk9de/201907_cologne_iso_c_committee_trip_report_the/) <small>by Bryce Lelbach and others</small>
 
 #### 解説
-この会議で C++20 の規格ドラフトを完成させる予定です。
+`std::format` や `constexpr vector`, `using enum`, `constinit` など、前回の会議までにおおよそ完成していた多数の提案が C++20 ドラフト入りしました。一方で、2018 年にドラフト入りしていた Contracts は大幅な設計の見直しが発生し、C++20 での導入をキャンセルして Study Group で議論を続けることが決まりました。  
+この会議をもって C++20 規格ドラフトへの新機能の追加は締め切り (Feature Freeze) です。以降は C++20 規格完成に向けた文面の修正と、C++23 以降に向けた議論が進められます。 
 
 ## 2019 Kona
 #### 場所 / 提案 / 会議の結果
@@ -49,7 +54,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 
 #### 解説
 コルーチンと、C++23 以降への先送りが見込まれていたモジュールの C++20 入りが承認され、C++20 は C++11 以来の大型アップデートになることが決まりました。 
-[C++20 のスケジュール](https://wg21.link/p1000r1)では、この会議をもって「Feature Freeze」になります。仕様文言のレビューが未完了の小規模な提案を次回の Colonge 会議で承認し、C++20 の全容が載った規格ドラフトができあがります。
+[C++20 のスケジュール](https://wg21.link/p1000r1)では、この会議をもって Feature Freeze になります。仕様文言のレビューが未完了の小規模な提案を次回の Colonge 会議で承認し、C++20 の全容が載った規格ドラフトができあがります。
 
 
 ## 2018 San Diego
