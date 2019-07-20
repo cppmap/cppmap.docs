@@ -131,8 +131,8 @@ C++20 に関する最初の会議です。コンセプト、Designated Initializ
 - [Red Hat at the ISO C++ Standards Meeting (April 2017, Kona): Core Language](https://developers.redhat.com/blog/2017/06/27/red-hat-at-the-iso-c-standards-meeting-april-2017-kona-core-language/) by Jason Merrill
 
 #### 解説
-C++17 に関する最後の会議です。この会議によってC++17規格は完成しました。  
-`std::byte`型の導入が承認されたほかは、各国委員会からのコメントに対しての対応が主です。
+C++17 について議論する最後の会議で、この会議によって C++17 規格が完成しました。  
+`std::byte` 型の導入が追加で承認されたほかは、各国委員会からのコメントへの対応が主です。
 
 
 ## 2017 年以前の会議
@@ -144,15 +144,13 @@ C++17 に関する最後の会議です。この会議によってC++17規格は
 - [JTC1/SC22/WG21 - Papers 2016 mailing2016-11 post-Issaquah](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/#mailing2016-11)
 
 #### 参加報告
-
 - [Trip report: Fall ISO C++ standards meeting (Issaquah)](https://herbsutter.com/2016/11/15/trip-report-fall-iso-c-standards-meeting-issaquah/) by Herb Sutter
 - [2016 Issaquah ISO C++ Committee Meeting Live Thread](https://www.reddit.com/r/cpp/comments/5chf36/2016_issaquah_iso_c_committee_meeting_live_thread/)
 - [The view from Nov 2016 C++ Standard Meeting Issaquah](https://www.codeplay.com/portal/12-09-16-the-view-from-nov-2016-cpp-standard-meeting-issaquah) by Michael Wong
 
 #### 解説
-
-`using`宣言でのパラメータパック展開、古い例外仕様（`throw()`）の削除、`<charconv>`、等が承認されました。  
-この会議をもってC++17は「Feature Freeze」になります。
+`using` 宣言でのパラメータパック展開、古い例外仕様 `throw()` の削除、`<charconv>` 等が承認されました。  
+この会議をもって C++17 は Feature Freeze になりました。
 
 ### 2016 Oulu
 #### 場所 / 提案 / 会議の結果
@@ -161,14 +159,13 @@ C++17 に関する最後の会議です。この会議によってC++17規格は
 - [JTC1/SC22/WG21 - Papers 2016 mailing2016-07 post-Oulu](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/#mailing2016-07)
 
 #### 参加報告
-
 - [Trip report: Summer ISO C++ standards meeting (Oulu)](https://herbsutter.com/2016/06/30/trip-report-summer-iso-c-standards-meeting-oulu/) by Herb Sutter
 - [Red Hat at the ISO C++ Standards Meeting (June 2016, Oulu): Library](https://developers.redhat.com/blog/2016/07/18/red-hat-at-the-iso-c-standards-meeting-june-2016-oulu-library/) by Jonathan Wakely
 - [C++17, All Final Features from Oulu in a Few Slides](https://www.codeplay.com/portal/c17-all-final-features-from-oulu-in-a-few-slides) by Michael Wong
 
 #### 解説
-コア言語機能として、クラステンプレートのテンプレート引数推論（deduction guide）、インライン変数、if constexpr、構造化束縛、if,switch文での初期化式と条件式の分離、コピー省略保証、式の評価順序の厳密化、`std::launder`等が承認されました。  
-ライブラリ機能としては、`std::variant`、`variant, optional, any`のインターフェースの統一、連想コンテナのsplice等が承認されました。
+コア言語機能として、クラステンプレートのテンプレート引数推論（deduction guide）、インライン変数、`constexpr if`, 構造化束縛、if 文や switch 文での初期化式と条件式の分離、コピー省略保証、式の評価順序の厳密化、`std::launder` 等が承認されました。  
+ライブラリ機能としては、`std::variant`, `variant, optional, any` インターフェースの統一、連想コンテナの splice 等が承認されました。
 
 ### 2016 Jacksonville
 #### 場所 / 提案 / 会議の結果
@@ -177,14 +174,12 @@ C++17 に関する最後の会議です。この会議によってC++17規格は
 - [JTC1/SC22/WG21 - Papers 2016 mailing2016-03 post-Jacksonville](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/#mailing2016-03)
 
 #### 参加報告
-
 - [Trip report: Winter ISO C++ standards meeting](https://herbsutter.com/2016/03/11/trip-report-winter-iso-c-standards-meeting/) by Herb Sutter
 - [Trip Report: C++ Standards Meeting in Jacksonville, February 2016](https://botondballo.wordpress.com/2016/03/21/trip-report-c-standards-meeting-in-jacksonville-february-2016/) by Botond Ballo
 - [Trip report: C++ meeting at Jacksonville](https://usingstdcpp.org/2016/03/05/trip-report-c-meeting-at-jacksonville/) by J. Daniel Garcia
 
 #### 解説
-
-16進浮動小数点リテラル、constexprラムダ、3つの属性構文（`[[fallthrough]]`、`[[nodiscard]]`、`[[maybe_unused]]`）、`std::any`、`std::optional`、`std::string_view`、`<filesystem>`、`<memory_resource>`、並列アルゴリズム（Parallel STL）、数学の特殊関数、等が承認されました。
+16 進浮動小数点リテラル、constexpr ラムダ、属性構文 `[[fallthrough]]`, `[[nodiscard]]`, `[[maybe_unused]]` のほか、標準ライブラリに `std::any`, `std::optional`, `std::string_view`, `<filesystem>`, `<memory_resource>`, 並列アルゴリズム、数学の特殊関数等を追加することが承認されました。
 
 ### 2015 Kona
 #### 場所 / 提案 / 会議の結果
@@ -193,13 +188,12 @@ C++17 に関する最後の会議です。この会議によってC++17規格は
 - [JTC1/SC22/WG21 - Papers 2015 mailing2015-11 post-Kona](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/#mailing2015-11)
 
 #### 参加報告
-
 - [Trip report: Fall 2015 ISO C++ standards meeting](https://herbsutter.com/2015/10/25/2568/) by Herb Sutter
 - [Trip Report: C++ Standards Meeting in Kona, October 2015](https://botondballo.wordpress.com/2015/11/09/trip-report-c-standards-meeting-in-kona-october-2015/) by J. Daniel Garcia
 - [C++17 progress update! (Oct 2015)](https://www.reddit.com/r/cpp/comments/3q4agc/c17_progress_update_oct_2015/)
 
 #### 解説
-`register`キーワードの削除、`__has_include()`マクロ、`std::conunction`、`std::disjunction`、`std::negation`、等が承認されました。
+`register` キーワードの削除、`__has_include()` マクロ、`std::conunction`、`std::disjunction`、`std::negation` 等が承認されました。
 
 ### 2015 Lenexa
 #### 場所 / 提案 / 会議の結果
@@ -208,15 +202,13 @@ C++17 に関する最後の会議です。この会議によってC++17規格は
 - [JTC1/SC22/WG21 - Papers 2015 mailing2015-05 post-Lenexa](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/#mailing2015-05)
 
 #### 参加報告
-
 - [Trip report: Spring ISO C++ meeting](https://isocpp.org/blog/2015/06/trip-report-spring-iso-cpp-meeting) by Herb Sutter
 - [Trip Report: C++ Standards Meeting in Lenexa, May 2015](https://botondballo.wordpress.com/2015/06/05/trip-report-c-standards-meeting-in-lenexa-may-2015/) by J. Daniel Garcia
 - [Lenexa C++ Meeting Report (Core Language)](https://developers.redhat.com/blog/2015/06/10/lenexa-c-meeting-report-core-language/) by Jason Merrill 
 - [C++17 progress update!](https://www.reddit.com/r/cpp/comments/35g7f6/c17_progress_update/)
 
 #### 解説
-これが2015年最初の会議になります。
-`std::bool_constant`、`std::vector, std::list, std::forward_list`の不完全型サポート、等が承認されました。
+`std::bool_constant`, `std::vector, std::list, std::forward_list` の不完全型サポート等が承認されました。
 
 ### 2015 Cologne
 - 2015-02-23 to 27 / ケルン, ドイツ
@@ -231,14 +223,13 @@ C++17 に関する最後の会議です。この会議によってC++17規格は
 - [JTC1/SC22/WG21 - Papers 2014 mailing2014-11 post-Urbana](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/#mailing2014-11)
 
 #### 参加報告
-
 - [Trip Report: Fall ISO C++ Meeting](https://isocpp.org/blog/2014/11/trip-report-fall) by Herb Sutter
 - [Trip Report: C++ Standards Meeting in Urbana-Champaign, November 2014](https://botondballo.wordpress.com/2014/11/23/trip-report-c-standards-meeting-in-urbana-champaign-november-2014/) by J. Daniel Garcia
 - [Red Hat at the ISO C++ Standards Meeting (November 2014): Library](https://developers.redhat.com/blog/2014/12/16/red-hat-at-the-iso-c-standards-meeting-november-2014-library/) by Jason Merrill
 
 #### 解説
-これがC++17のみを対象とした最初の会議になります。
-畳み込み式、入れ子名前空間定義の簡略化、`u8`文字列リテラル、非型テンプレートパラメータのポインタ制限緩和、`void_t`、`std::uncaught_exceptions`、等が承認されました。
+C++14 規格完成後の最初の会議です。  
+畳み込み式、入れ子名前空間定義の簡略化、`u8` 文字列リテラル、非型テンプレートパラメータのポインタ制限緩和、`void_t`, `std::uncaught_exceptions` 等の C++17 入りが承認されました。
 
 
 ### 2014 Rapperswil
@@ -248,13 +239,12 @@ C++17 に関する最後の会議です。この会議によってC++17規格は
 - [JTC1/SC22/WG21 - Papers 2014 mailing2014-07 post-Rapperswil](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/#mailing2014-07)
 
 #### 参加報告
-
 - [Trip Report: C++ Standards Meeting in Urbana-Champaign, November 2014](http://www.theres-waldo.ca/2014/07/17/trip-report-c-standards-committee-meeting-in-rapperswil-june-2014/) by J. Daniel Garcia
 - [Red Hat at the ISO C++ Standards Meeting (November 2014): Library](https://developers.redhat.com/blog/2014/08/21/iso-cxx-meeting-rapperswil-2014-core-library/) by Jonathan Wakely, Jason Merrill, Matt Newsome
 
 #### 解説
-C++14に関する最後の会議になります。この会議でC++14規格は完成しました。
-C++14への機能追加はなく、C++17に対しては、トライグラフの削除、テンプレートテンプレートパラメータに`typename`使用の許可、`static_assert`のメッセージ省略、等が承認されました。
+C++14 について議論する最後の会議で、この会議によって C++14 規格が完成しました。  
+C++14 への機能追加はなく、C++17 に対しては、トライグラフの削除、テンプレートテンプレートパラメータでの `typename` 使用の許可、省略版の `static_assert` 等が承認されました。
 
 ### 2014 Issaquah
 #### 場所 / 提案 / 会議の結果
@@ -263,14 +253,13 @@ C++14への機能追加はなく、C++17に対しては、トライグラフの�
 - [JTC1/SC22/WG21 - Papers 2014 mailing2014-03 post-Issaquah](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/#mailing2014-03)
 
 #### 参加報告
-
 - [Trip report: Winter ISO C++ meeting](https://isocpp.org/blog/2014/02/trip-report) by Herb Sutter
 - [Trip Report: C++ Standards Committee Meeting in Issaquah, February 2014](http://theres-waldo.ca/2014/02/22/trip-report-c-standards-committee-meeting-in-issaquah-february-2014/) by J. Daniel Garcia
 - [Red Hat at the ISO C++ Standards Meeting (February 2014)](https://developers.redhat.com/blog/2014/05/28/red-hat-iso-c-standards-meeting-february-2014/) by Matt Newsome
 
 #### 解説
-C++14の最終作業とC++17に向けた一部の作業が行われました。
-どちらに対しても機能の追加等はなく、C++14に対しては各国委員会からのコメントや既存のIssue等への対応が主です。
+C++14 の最終作業と C++17 に向けた一部の作業が行われました。
+どちらに対しても機能の追加はなく、C++14 に対しては各国委員会からのコメントや既存の Issue への対応が主です。
 
 ### 2013 Chicago
 - 2013-09-23 to 28 / シカゴ, イリノイ州, 米国
