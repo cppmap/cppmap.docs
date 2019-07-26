@@ -32,6 +32,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 
 #### 参加報告
 - [2019-07 Cologne ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/cfk9de/201907_cologne_iso_c_committee_trip_report_the/) <small>by Bryce Lelbach and others</small>
+- [Trip report: Summer ISO C++ standards meeting (Cologne)](https://herbsutter.com/2019/07/20/trip-report-summer-iso-c-standards-meeting-cologne/) <small>by Herb Sutter</small>
 
 #### 解説
 `std::format` や `constexpr vector`, `using enum`, `constinit` など、前回の会議までにおおよそ完成していた多数の提案が C++20 ドラフト入りしました。一方で、2018 年にドラフト入りしていた Contracts は大幅な設計の見直しが発生し、C++20 での導入をキャンセルして Study Group で議論を続けることが決まりました。  
@@ -44,13 +45,13 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [JTC1/SC22/WG21 - Papers 2019 mailing2019-03 post-Kona](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/#mailing2019-03)
 
 #### 参加報告
-- [2019-02 Kona ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/au0c4x/201902_kona_iso_c_committee_trip_report_c20/) by Bryce Lelbach and others
-- [Trip report: Winter ISO C++ standards meeting (Kona)](https://herbsutter.com/2019/02/23/trip-report-winter-iso-c-standards-meeting-kona/) by Herb Sutter
+- [2019-02 Kona ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/au0c4x/201902_kona_iso_c_committee_trip_report_c20/) <small>by Bryce Lelbach and others</small>
+- [Trip report: Winter ISO C++ standards meeting (Kona)](https://herbsutter.com/2019/02/23/trip-report-winter-iso-c-standards-meeting-kona/) <small>by Herb Sutter</small>
 - [Kona: A trip report](https://cor3ntin.github.io/posts/kona2019/) by Corentin
-- [Trip report: February 2019 ISO C++ committee meeting, Kona, Hawai’i](http://timur.audio/trip-report-february-2019-iso-c-committee-meeting-kona-hawaii) by Timur Doumler
+- [Trip report: February 2019 ISO C++ committee meeting, Kona, Hawai’i](http://timur.audio/trip-report-february-2019-iso-c-committee-meeting-kona-hawaii) <small>by Timur Doumler</small>
 - [Telescopes and matrices and audio: Kona trip report](https://hatcat.com/?p=69) by Guy Davidson
-- [Trip Report: Freestanding (and Modules) in Kona](https://www.reddit.com/r/cpp/comments/ax1z2y/trip_report_freestanding_and_modules_in_kona/) by Bryce Lelbach
-- [Trip Report: C++ Standards Meeting in Kona, February 2019](https://botondballo.wordpress.com/2019/03/20/trip-report-c-standards-meeting-in-kona-february-2019/) by Botond Ballo
+- [Trip Report: Freestanding (and Modules) in Kona](https://www.reddit.com/r/cpp/comments/ax1z2y/trip_report_freestanding_and_modules_in_kona/) <small>by Bryce Lelbach</small>
+- [Trip Report: C++ Standards Meeting in Kona, February 2019](https://botondballo.wordpress.com/2019/03/20/trip-report-c-standards-meeting-in-kona-february-2019/) <small>by Botond Ballo</small>
 
 #### 解説
 コルーチンと、C++23 以降への先送りが見込まれていたモジュールの C++20 入りが承認され、C++20 は C++11 以来の大型アップデートになることが決まりました。 
