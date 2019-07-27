@@ -71,7 +71,7 @@ nav:
     - Boost: libraries/boost.md
     - コンテナ: libraries/containers.md
     - テキストデータ: libraries/text-data.md
-    - 平行・並列: libraries/multi-threading.md
+    - 並行・並列: libraries/multi-threading.md
     - テストフレームワーク: libraries/testing.md
   - ツール:
     - オンラインコンパイラ: tools/onlinecompilers.md
