@@ -904,6 +904,6 @@ int main()
 ### 型から cv 修飾と参照を除去する `std::remove_cvref` trait [(P0550R2)](https://wg21.link/P0550R2)
 型から `const` や `volatile` の修飾および参照を除去したいだけで、配列からポインタ、関数型から関数ポインタへの変換は不要なケースでも、C++17 では `std::remove_cv_t<std::remove_reference_t<T>>` と書くと長くなるため、`std::decay` を使うというケースがよくありました。C++20 からは、この問題を解決する `std::remove_cvref` trait が追加されました。この trait は `std::remove_cv_t<std::remove_reference_t<T>>` と同じ効果を持ち、ヘルパー型として `std::remove_cvref_t` も用意されます。`std::remove_reference_t<std::remove_cv_t<T>>` のような順番の間違いを防ぐ効果もあります。
 
-### 標準ライブラリでの不要な `std::decay` の使用を回避 [(P0777R1)](https://wg21.link/P0777R1)
+### 標準ライブラリでの不必要な `std::decay` の使用を回避 [(P0777R1)](https://wg21.link/P0777R1)
 C++17 の標準ライブラリの規格では `std::decay_t` がおよそ 40 箇所で使われていましたが、そのうち cv 修飾の除去や参照の除去だけで十分な箇所について、実装の意図をより明確にするため `std::remove_reference_t` や、C++20 から導入される `std::remove_cvref_t` に置き換えられます。具体的には、`std::apply` や、`std::optional`, `std::variant` の一部のメンバ関数などで置き換えが発生します。
 
