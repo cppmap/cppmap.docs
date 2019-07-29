@@ -34,6 +34,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [2019-07 Cologne ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/cfk9de/201907_cologne_iso_c_committee_trip_report_the/) <small>by Bryce Lelbach and others</small>
 - [Trip report: Summer ISO C++ standards meeting (Cologne)](https://herbsutter.com/2019/07/20/trip-report-summer-iso-c-standards-meeting-cologne/) <small>by Herb Sutter</small>
 - [Trip Report: C++ Standards Meeting in Cologne, July 2019](https://botondballo.wordpress.com/2019/07/26/trip-report-c-standards-meeting-in-cologne-july-2019/) <small>by Botond Ballo</small>
+- [The German tour: Cologne trip report](https://hatcat.com/?p=86) <small>by Guy Davidson</small>
 
 #### 解説
 `std::format` や `constexpr vector`, `using enum`, `constinit` など、前回の会議までにおおよそ完成していた多数の提案が C++20 ドラフト入りしました。一方で、2018 年にドラフト入りしていた Contracts は大幅な設計の見直しが発生し、C++20 での導入をキャンセルして Study Group で議論を続けることが決まりました。  
