@@ -1,6 +1,6 @@
-description: C++ でよく使われる略語の紹介
+description: C++ 関連の略語の紹介
 
-# C++ でよく使われる略語
+# C++ 関連の略語
 
 ### ABI | Application Binary Interface
 アプリケーション・バイナリ・インタフェース
