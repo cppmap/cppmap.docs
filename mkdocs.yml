@@ -62,6 +62,7 @@ nav:
     - 予約語の読みと名前の由来: articles/how-to-read-keywords.md
     - 標準ライブラリの読みと名前の由来: articles/how-to-read-libraries.md
     - IEEE 754 演算のルール: articles/ieee754-arithmetic.md
+    - C++ でよく使われる略語: articles/acronyms.md
   - 学習:
     - 書籍: learn/books.md
     - オンライン資料: learn/online-resources.md
