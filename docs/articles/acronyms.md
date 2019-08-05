@@ -8,7 +8,7 @@ description: C++ 関連の略語の紹介
 ### ACCU | Association of C and C++ Users
 C および C++ ユーザ協会。[年次カンファレンス](https://conference.accu.org/) の開催や「[Overload](https://accu.org/index.php/journals/c78/)」の刊行などを行う。
 
-### ADL | Argument-dependent lookup
+### ADL | Argument Dependent Lookup
 実引数依存の名前検索
 
 ### ANSI | American National Standards Institute
@@ -17,11 +17,17 @@ C および C++ ユーザ協会。[年次カンファレンス](https://conferen
 ### API | Application Programming Interface
 アプリケーション・プログラミング・インタフェース
 
+### BCC | Borland C++ Compiler
+現在の Embarcadero C++ Builder の前身。2000 年にリリースされた Borland C++ Compiler 5.5 は、当時はめずらしい無償の C++ コンパイラとして、広く使われた。
+
 ### BCPL | Basic Combined Programming Language
 1966 年にマーティン・リチャーズが設計したプログラミング言語。C 言語や C++ に影響を与えた。
 
 ### BMI | Binary Module Interface
 コンパイラがモジュールファイルをコンパイルして生成する中間ファイル。GCC では CMI (Compiled Module Interfaces) と呼ぶ
+
+### C++ AMP | C++ Accelerated Massive Parallelism
+マイクロソフトなどが開発を進めている、並列計算のための言語拡張機能とライブラリ
 
 ### CD | Committee Draft
 規格の委員会原案
@@ -101,6 +107,9 @@ C++ 標準化委員会のワーキンググループの 1 つ。標準ライブ�
 ### LEWGI | Library Evolution Working Group Incubator
 C++ 標準化委員会のスタディグループの 1 つ (SG18). LEWG に向けた提案の評価をする。
 
+### LTO | Link Time Optimization
+リンク時最適化
+
 ### LWG | Library Working Group
 C++ 標準化委員会のワーキンググループの 1 つ。標準ライブラリに関する規格文面をレビューする。
 
@@ -139,6 +148,9 @@ C++ の設計コンセプトの 1 つ。あらゆる型や関数、テンプレ�
 
 ### PCH | Precompiled Header
 プリコンパイル済みヘッダ
+
+### PGO | Profile-guided Optimization
+プロファイリングによる最適化
 
 ### PImpl | Pointer to Implementation
 クラスの実装の詳細を隠す、C++ のプログラミングテクニック
