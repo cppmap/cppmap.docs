@@ -34,6 +34,8 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [標準化会議 記事加筆](https://github.com/cppmap/cppmap.docs/pull/21)
 - [@tetzrom](https://twitter.com/tetzrom) さん
     - [オンライン資料 情報提供](https://github.com/cppmap/cppmap.docs/pull/15)
+- [@wolf_cpp](https://twitter.com/wolf_cpp) さん
+    - [国内の勉強会 情報提供](https://github.com/cppmap/cppmap.docs/pull/25)
 - [@wx257osn2](https://twitter.com/wx257osn2) さん
     - [オンラインコンパイラ 情報提供](https://github.com/cppmap/cppmap.docs/pull/18)
 - [@yohhoy](https://twitter.com/yohhoy) さん
