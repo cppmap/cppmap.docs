@@ -10,10 +10,10 @@ C++ プログラムのコンパイル、実行、共有ができる Web サイ�
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------|:------------:|:------------:|:------------:|
 | [Wandbox](https://wandbox.org/)                               | <li>GCC 4.4.7 - **10.0.0\***</li><li>Clang 3.1 - **9.0.0\***</li>                               | :fa-check: |            | :fa-check: |
 | [Compiler Explorer](https://godbolt.org/)<br>(Execution モード) | <li>GCC 4.7.3 - **10.0.0\***</li><li>Clang 3.3 - **9.0.0\***</li><li>ICC 16.0.3 - **19.0.1**</li> | :fa-check: |            |            |
+| [Ideone](https://ideone.com/)                                 | <li>GCC 8.3.0</li>                                                                            | :fa-check: |            |            |
 | [GDB Online](https://www.onlinegdb.com/)                      | <li>GCC 7.4.0</li>                                                                            | :fa-check: | :fa-check: | :fa-check: |
 | [repl.it](https://repl.it/languages/cpp)                      | <li>Clang 7.0.0</li>                                                                          | :fa-check: | :fa-check: | :fa-check: |
-| [paiza.io](https://paiza.io/ja/projects/new?language=cpp)     | <li>Clang 7.0.0</li>                                                                          | :fa-check: |            | :fa-check: |
-| [Ideone](https://ideone.com/)                                 | <li>GCC 6.3.0</li>                                                                            | :fa-check: |            |            |
+| [paiza.io](https://paiza.io/ja/projects/new?language=cpp)     | <li>Clang 7.0.0</li>                                                                          | :fa-check: |            | :fa-check: 
 | [C++ Shell](http://cpp.sh/)                                   | <li>GCC 4.9.2</li>                                                                            |            | :fa-check: |            |
 
 <small>* 印は trunk</small>
