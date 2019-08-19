@@ -28,7 +28,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 #### 場所 / 提案 / 会議の結果
 - [2019-07-15 to 20](https://wg21.link/n4783) / ケルン, ドイツ
 - [JTC1/SC22/WG21 - Papers 2019 mailing2019-06 pre-Cologne](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/#mailing2019-06)
-- JTC1/SC22/WG21 - Papers 2019 mailing2019-08 post-Cologne
+- [JTC1/SC22/WG21 - Papers 2019 mailing2019-08 post-Cologne](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2019/#mailing2019-08)
 
 #### 参加報告
 - [2019-07 Cologne ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/cfk9de/201907_cologne_iso_c_committee_trip_report_the/) <small>by Bryce Lelbach and others</small>
