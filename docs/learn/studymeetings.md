@@ -18,10 +18,10 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 |-----------------------------|-----------------|------|
 | 勉強会と会場の説明                   | Shintaro Okada  |     |
 | 自作OS向けにlibc++をビルドする方法       | uchan           |     |
-| C++ 製グラフィックライブラリ Skia の紹介   | 水音ぴね            |     |
-| Unreal C++ を始めてみた時の躓いたTips  | akoto           |     |
-| C++20ステータス                  | Akira Takahashi |     |
-| 20分くらいでわかった気分になれるC++20コルーチン | yohhoy          |     |
+| [C++ 製グラフィックライブラリ Skia の紹介](https://speakerdeck.com/pine/c-plus-plus-zhi-kurahuitukuraihurari-skia-falseshao-jie) | 水音ぴね            |     |
+| [Unreal C++ を始めてみた時の躓いたTips](https://www.slideshare.net/MakotoAdachi/cmix5) | akoto           |     |
+| [C++20ステータス](https://speakerdeck.com/faithandbrave/c-plus-plus-20-status) | Akira Takahashi |     |
+| [20分くらいでわかった気分になれるC++20コルーチン](https://www.slideshare.net/yohhoy/20c20) | yohhoy          |     |
 | ディスカッション                    | (全員参加)          |     |
 
 
