@@ -20,6 +20,8 @@ C++ の学習に役立つ書籍を紹介します。
 | [江添亮の詳説 C++17](https://amzn.to/2HmVw42)                                | 2018 | C++17    | C++14/17 の新しい文法と標準ライブラリ機能を詳細に解説。[オープンソース版](https://ezoeryou.github.io/cpp17book/)              |
 | [冒険で学ぶはじめてのプログラミング](https://amzn.to/2IWnWnx)                           | 2018 | C++17    | :fa-graduation-cap: 初学者向け。早稲田大学が運営する中学・高校生向け C++ 入門講座の教科書。[紹介ページ](https://enrect.org/cppbook/) |
 | [Modern C++ チャレンジ ― C++17 プログラミング力を鍛える 100 問](https://amzn.to/2EMsIP8) | 2019 | C++17/20 | 現実的・実践的な 100 の課題を C++ で解決する問題集。オープンソースライブラリを積極的に活用する                                           |
+| [江添亮の C++ 入門](https://amzn.to/2HTGUbt) | 2019 | C++17/20 | プログラミング経験者が C++ を網羅的に学べる解説書。[オープンソース版](https://ezoeryou.github.io/cpp-intro/) |
+| [独習 C++ 新版](https://amzn.to/2ZWRrck) | 2019 | C++17 | :fa-graduation-cap: 初学者向け。「独習 C++ 第 4 版」を C++17 に対応させ解説も一新 | 
 
 
 ## 洋書
