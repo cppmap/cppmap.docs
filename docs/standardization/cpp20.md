@@ -620,32 +620,6 @@ int main()
 ```
 
 
-### 非順序連想コンテナのルックアップ操作に、計算済みハッシュ値を渡せるように [(P0920R2)](https://wg21.link/P0920R2)
-同じ種類の非順序連想コンテナを複数扱い、同じキーを用いたルックアップ操作をそれらのコンテナに対して行うようなケースでは、キーのハッシュ値の計算を毎回行うのは冗長です。C++20 ではメンバ関数 `find()`, `count()`, `contains()`, `equal_range()` に、計算済みのハッシュ値を渡せるオーバーロードが追加されます。
-```C++
-#include <iostream>
-#include <string>
-#include <array>
-#include <unordered_map>
-
-int main()
-{
-	std::array<std::unordered_map<std::string, int>, 10> maps = { /*...*/ };
-
-	const std::string key = "key";
-
-	const auto hash = maps.front().hash_function()(key);
-
-	for (auto& map : maps)
-	{
-		auto it = map.find(key, hash);
-
-		// ...
-	}
-}
-```
-
-
 ### 2 つの値の中点を計算する `std::midpoint()` 関数 [(P0811R3)](https://wg21.link/P0811R3)
 2 つの値 `a`, `b` の中点を計算する際に、単純な `(a + b) / 2` という式ではオーバーフローを起こす可能性があります。C++20 で追加される `std::midpoint()` 関数では、整数に対して
 ```C++
