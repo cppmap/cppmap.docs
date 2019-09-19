@@ -17,6 +17,9 @@ C および C++ ユーザ協会。[年次カンファレンス](https://conferen
 ### API | Application Programming Interface
 アプリケーション・プログラミング・インタフェース
 
+### ASan | AddressSanitizer
+メモリ関連のエラーを検出する動的解析ツール
+
 ### BCC | Borland C++ Compiler
 現在の Embarcadero C++ Builder の前身。2000 年にリリースされた Borland C++ Compiler 5.5 は、当時はめずらしい無償の C++ コンパイラとして、広く使われた。
 
@@ -52,6 +55,9 @@ C++ 標準化委員会のワーキンググループの 1 つ。言語機能に�
 
 ### DIS | Draft International Standard
 国際規格案
+
+### DR | Defect Report
+規格の欠陥の報告
 
 ### EBO | Empty Base Optimization
 空の基底クラスの最適化
