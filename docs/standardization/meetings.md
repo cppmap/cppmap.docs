@@ -51,9 +51,9 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 #### 参加報告
 - [2019-02 Kona ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/au0c4x/201902_kona_iso_c_committee_trip_report_c20/) <small>by Bryce Lelbach and others</small>
 - [Trip report: Winter ISO C++ standards meeting (Kona)](https://herbsutter.com/2019/02/23/trip-report-winter-iso-c-standards-meeting-kona/) <small>by Herb Sutter</small>
-- [Kona: A trip report](https://cor3ntin.github.io/posts/kona2019/) by Corentin
+- [Kona: A trip report](https://cor3ntin.github.io/posts/kona2019/) <small>by Corentin</small>
 - [Trip report: February 2019 ISO C++ committee meeting, Kona, Hawai’i](http://timur.audio/trip-report-february-2019-iso-c-committee-meeting-kona-hawaii) <small>by Timur Doumler</small>
-- [Telescopes and matrices and audio: Kona trip report](https://hatcat.com/?p=69) by Guy Davidson
+- [Telescopes and matrices and audio: Kona trip report](https://hatcat.com/?p=69) <small>by Guy Davidson</small>
 - [Trip Report: Freestanding (and Modules) in Kona](https://www.reddit.com/r/cpp/comments/ax1z2y/trip_report_freestanding_and_modules_in_kona/) <small>by Bryce Lelbach</small>
 - [Trip Report: C++ Standards Meeting in Kona, February 2019](https://botondballo.wordpress.com/2019/03/20/trip-report-c-standards-meeting-in-kona-february-2019/) <small>by Botond Ballo</small>
 
@@ -69,8 +69,8 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [JTC1/SC22/WG21 - Papers 2018 mailing2018-11 post-San Diego](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/#mailing2018-11)
 
 #### 参加報告
-- [2018 San Diego ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/9vwvbz/2018_san_diego_iso_c_committee_trip_report_ranges/) by Bryce Lelbach and others
-- [Trip report: Fall ISO C++ standards meeting (San Diego)](https://herbsutter.com/2018/11/13/trip-report-fall-iso-c-standards-meeting-san-diego/) by Herb Sutter
+- [2018 San Diego ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/9vwvbz/2018_san_diego_iso_c_committee_trip_report_ranges/) <small>by Bryce Lelbach and others</small>
+- [Trip report: Fall ISO C++ standards meeting (San Diego)](https://herbsutter.com/2018/11/13/trip-report-fall-iso-c-standards-meeting-san-diego/) <small>by Herb Sutter</small>
 - [Fall 2018 ISO WG21 C++ Standards Committee meeting trip report](https://developers.redhat.com/blog/2019/01/10/fall-2018-iso-wg21-c-standards-committee-meeting-trip-report/)
 
 #### 解説
@@ -83,8 +83,8 @@ Range ライブラリの C++20 入りが決まったほか、コンセプトの�
 - [JTC1/SC22/WG21 - Papers 2018 mailing2018-06 post-Rapperswil](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/#mailing2018-06)
 
 #### 参加報告
-- [2018 Rapperswil ISO C++ Committee Trip Report (Contracts for C++20; Parallelism TS v2 published; Draft Reflection TS)](https://www.reddit.com/r/cpp/comments/8prqzm/2018_rapperswil_iso_c_committee_trip_report/) by Bryce Lelbach and others
-- [Trip report: Summer ISO C++ standards meeting (Rapperswil)](https://herbsutter.com/2018/07/02/trip-report-summer-iso-c-standards-meeting-rapperswil/) by Herb Sutter
+- [2018 Rapperswil ISO C++ Committee Trip Report (Contracts for C++20; Parallelism TS v2 published; Draft Reflection TS)](https://www.reddit.com/r/cpp/comments/8prqzm/2018_rapperswil_iso_c_committee_trip_report/) <small>by Bryce Lelbach and others</small>
+- [Trip report: Summer ISO C++ standards meeting (Rapperswil)](https://herbsutter.com/2018/07/02/trip-report-summer-iso-c-standards-meeting-rapperswil/) <small>by Herb Sutter</small>
 
 #### 解説
 属性構文による Contracts (契約プログラミング) の C++20 入りが決まったほか、STL へのコンセプトライブラリの追加、任意のクラス型の非型テンプレートパラメータとしての利用、定数式での仮想関数呼び出しの許可、`explicit(bool)` などが承認されました。
@@ -96,8 +96,8 @@ Range ライブラリの C++20 入りが決まったほか、コンセプトの�
 - [JTC1/SC22/WG21 - Papers 2018 mailing2018-04 post-Jacksonville](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2018/#mailing2018-04)
 
 #### 参加報告
-- [2018 Jacksonville ISO C++ Committee Reddit Trip Report](https://www.reddit.com/r/cpp/comments/854mu9/2018_jacksonville_iso_c_committee_reddit_trip/) by Bryce Lelbach and others
-- [Trip report: Winter ISO C++ standards meeting (Jacksonville)](https://herbsutter.com/2018/07/02/trip-report-summer-iso-c-standards-meeting-rapperswil/) by Herb Sutter
+- [2018 Jacksonville ISO C++ Committee Reddit Trip Report](https://www.reddit.com/r/cpp/comments/854mu9/2018_jacksonville_iso_c_committee_reddit_trip/) <small>by Bryce Lelbach and others</small>
+- [Trip report: Winter ISO C++ standards meeting (Jacksonville)](https://herbsutter.com/2018/07/02/trip-report-summer-iso-c-standards-meeting-rapperswil/) <small>by Herb Sutter</small>
 
 #### 解説
 `<chrono>` へのカレンダーライブラリの追加、`<span>`, `no_unique_address` や `likely/unlikely` 属性構文の追加などが承認されました。
@@ -109,8 +109,8 @@ Range ライブラリの C++20 入りが決まったほか、コンセプトの�
 - [JTC1/SC22/WG21 - Papers 2017 mailing2017-11 post-Albuquerque](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017#mailing2017-11)
 
 #### 参加報告
-- [2018 Jacksonville ISO C++ Committee Reddit Trip Report](https://www.reddit.com/r/cpp/comments/854mu9/2018_jacksonville_iso_c_committee_reddit_trip/) by Bryce Lelbach and others
-- [Trip report: Fall ISO C++ standards meeting (Albuquerque)](https://herbsutter.com/2017/11/11/trip-report-fall-iso-c-standards-meeting-albuquerque/) by Herb Sutter
+- [2018 Jacksonville ISO C++ Committee Reddit Trip Report](https://www.reddit.com/r/cpp/comments/854mu9/2018_jacksonville_iso_c_committee_reddit_trip/) <small>by Bryce Lelbach and others</small>
+- [Trip report: Fall ISO C++ standards meeting (Albuquerque)](https://herbsutter.com/2017/11/11/trip-report-fall-iso-c-standards-meeting-albuquerque/) <small>by Herb Sutter</small>
 
 #### 解説
 三方比較演算子 `<=>` とそのライブラリサポート、標準ライブラリ関数のさらなる `constexpr` 対応、初期化式をともなう範囲 for 文などの C++20 入りが承認されました。
@@ -122,8 +122,8 @@ Range ライブラリの C++20 入りが決まったほか、コンセプトの�
 - [JTC1/SC22/WG21 - Papers 2017 mailing2017-07 post-Toronto](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2017#mailing2017-07)
 
 #### 参加報告
-- [2017 Toronto ISO C++ Committee Discussion Thread (Concepts in C++20; Coroutines, Ranges and Networking TSes published)](https://www.reddit.com/r/cpp/comments/6ngkgc/2017_toronto_iso_c_committee_discussion_thread/) by Bryce Lelbach and others
-- [Trip report: Summer ISO C++ standards meeting (Toronto)](https://herbsutter.com/2017/07/15/trip-report-summer-iso-c-standards-meeting-toronto/) by Herb Sutter
+- [2017 Toronto ISO C++ Committee Discussion Thread (Concepts in C++20; Coroutines, Ranges and Networking TSes published)](https://www.reddit.com/r/cpp/comments/6ngkgc/2017_toronto_iso_c_committee_discussion_thread/) <small>by Bryce Lelbach and others</small>
+- [Trip report: Summer ISO C++ standards meeting (Toronto)](https://herbsutter.com/2017/07/15/trip-report-summer-iso-c-standards-meeting-toronto/) <small>by Herb Sutter</small>
 - [Trip Report: C++ Standards Meeting in Toronto, July 2017](https://botondballo.wordpress.com/2017/08/02/trip-report-c-standards-meeting-in-toronto-july-2017/)
 
 #### 解説
@@ -137,8 +137,8 @@ C++20 に関する最初の会議です。コンセプト、Designated Initializ
 
 #### 参加報告
 
-- [Trip report: Winter ISO C++ standards meeting (Kona), C++17 is complete](https://herbsutter.com/2017/03/24/trip-report-winter-iso-c-standards-meeting-kona-c17-is-complete/) by Herb Sutter
-- [Red Hat at the ISO C++ Standards Meeting (April 2017, Kona): Core Language](https://developers.redhat.com/blog/2017/06/27/red-hat-at-the-iso-c-standards-meeting-april-2017-kona-core-language/) by Jason Merrill
+- [Trip report: Winter ISO C++ standards meeting (Kona), C++17 is complete](https://herbsutter.com/2017/03/24/trip-report-winter-iso-c-standards-meeting-kona-c17-is-complete/) <small>by Herb Sutter</small>
+- [Red Hat at the ISO C++ Standards Meeting (April 2017, Kona): Core Language](https://developers.redhat.com/blog/2017/06/27/red-hat-at-the-iso-c-standards-meeting-april-2017-kona-core-language/) <small>by Jason Merrill</small>
 
 #### 解説
 C++17 について議論する最後の会議で、この会議によって C++17 規格が完成しました。  
@@ -154,9 +154,9 @@ C++17 について議論する最後の会議で、この会議によって C++1
 - [JTC1/SC22/WG21 - Papers 2016 mailing2016-11 post-Issaquah](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/#mailing2016-11)
 
 #### 参加報告
-- [Trip report: Fall ISO C++ standards meeting (Issaquah)](https://herbsutter.com/2016/11/15/trip-report-fall-iso-c-standards-meeting-issaquah/) by Herb Sutter
+- [Trip report: Fall ISO C++ standards meeting (Issaquah)](https://herbsutter.com/2016/11/15/trip-report-fall-iso-c-standards-meeting-issaquah/) <small>by Herb Sutter</small>
 - [2016 Issaquah ISO C++ Committee Meeting Live Thread](https://www.reddit.com/r/cpp/comments/5chf36/2016_issaquah_iso_c_committee_meeting_live_thread/)
-- [The view from Nov 2016 C++ Standard Meeting Issaquah](https://www.codeplay.com/portal/12-09-16-the-view-from-nov-2016-cpp-standard-meeting-issaquah) by Michael Wong
+- [The view from Nov 2016 C++ Standard Meeting Issaquah](https://www.codeplay.com/portal/12-09-16-the-view-from-nov-2016-cpp-standard-meeting-issaquah) <small>by Michael Wong</small>
 
 #### 解説
 `using` 宣言でのパラメータパック展開、古い例外仕様 `throw()` の削除、`<charconv>` 等が承認されました。  
@@ -169,9 +169,9 @@ C++17 について議論する最後の会議で、この会議によって C++1
 - [JTC1/SC22/WG21 - Papers 2016 mailing2016-07 post-Oulu](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/#mailing2016-07)
 
 #### 参加報告
-- [Trip report: Summer ISO C++ standards meeting (Oulu)](https://herbsutter.com/2016/06/30/trip-report-summer-iso-c-standards-meeting-oulu/) by Herb Sutter
-- [Red Hat at the ISO C++ Standards Meeting (June 2016, Oulu): Library](https://developers.redhat.com/blog/2016/07/18/red-hat-at-the-iso-c-standards-meeting-june-2016-oulu-library/) by Jonathan Wakely
-- [C++17, All Final Features from Oulu in a Few Slides](https://www.codeplay.com/portal/c17-all-final-features-from-oulu-in-a-few-slides) by Michael Wong
+- [Trip report: Summer ISO C++ standards meeting (Oulu)](https://herbsutter.com/2016/06/30/trip-report-summer-iso-c-standards-meeting-oulu/) <small>by Herb Sutter</small>
+- [Red Hat at the ISO C++ Standards Meeting (June 2016, Oulu): Library](https://developers.redhat.com/blog/2016/07/18/red-hat-at-the-iso-c-standards-meeting-june-2016-oulu-library/) <small>by Jonathan Wakely</small>
+- [C++17, All Final Features from Oulu in a Few Slides](https://www.codeplay.com/portal/c17-all-final-features-from-oulu-in-a-few-slides) <small>by Michael Wong</small>
 
 #### 解説
 コア言語機能として、クラステンプレートのテンプレート引数推論（deduction guide）、インライン変数、`constexpr if`, 構造化束縛、if 文や switch 文での初期化式と条件式の分離、コピー省略保証、式の評価順序の厳密化、`std::launder` 等が承認されました。  
@@ -184,9 +184,9 @@ C++17 について議論する最後の会議で、この会議によって C++1
 - [JTC1/SC22/WG21 - Papers 2016 mailing2016-03 post-Jacksonville](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2016/#mailing2016-03)
 
 #### 参加報告
-- [Trip report: Winter ISO C++ standards meeting](https://herbsutter.com/2016/03/11/trip-report-winter-iso-c-standards-meeting/) by Herb Sutter
-- [Trip Report: C++ Standards Meeting in Jacksonville, February 2016](https://botondballo.wordpress.com/2016/03/21/trip-report-c-standards-meeting-in-jacksonville-february-2016/) by Botond Ballo
-- [Trip report: C++ meeting at Jacksonville](https://usingstdcpp.org/2016/03/05/trip-report-c-meeting-at-jacksonville/) by J. Daniel Garcia
+- [Trip report: Winter ISO C++ standards meeting](https://herbsutter.com/2016/03/11/trip-report-winter-iso-c-standards-meeting/) <small>by Herb Sutter</small>
+- [Trip Report: C++ Standards Meeting in Jacksonville, February 2016](https://botondballo.wordpress.com/2016/03/21/trip-report-c-standards-meeting-in-jacksonville-february-2016/) <small>by Botond Ballo</small>
+- [Trip report: C++ meeting at Jacksonville](https://usingstdcpp.org/2016/03/05/trip-report-c-meeting-at-jacksonville/) <small>by J. Daniel Garcia</small>
 
 #### 解説
 16 進浮動小数点リテラル、constexpr ラムダ、属性構文 `[[fallthrough]]`, `[[nodiscard]]`, `[[maybe_unused]]` のほか、標準ライブラリに `std::any`, `std::optional`, `std::string_view`, `<filesystem>`, `<memory_resource>`, 並列アルゴリズム、数学の特殊関数等を追加することが承認されました。
@@ -198,8 +198,8 @@ C++17 について議論する最後の会議で、この会議によって C++1
 - [JTC1/SC22/WG21 - Papers 2015 mailing2015-11 post-Kona](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/#mailing2015-11)
 
 #### 参加報告
-- [Trip report: Fall 2015 ISO C++ standards meeting](https://herbsutter.com/2015/10/25/2568/) by Herb Sutter
-- [Trip Report: C++ Standards Meeting in Kona, October 2015](https://botondballo.wordpress.com/2015/11/09/trip-report-c-standards-meeting-in-kona-october-2015/) by J. Daniel Garcia
+- [Trip report: Fall 2015 ISO C++ standards meeting](https://herbsutter.com/2015/10/25/2568/) <small>by Herb Sutter</small>
+- [Trip Report: C++ Standards Meeting in Kona, October 2015](https://botondballo.wordpress.com/2015/11/09/trip-report-c-standards-meeting-in-kona-october-2015/) <small>by J. Daniel Garcia</small>
 - [C++17 progress update! (Oct 2015)](https://www.reddit.com/r/cpp/comments/3q4agc/c17_progress_update_oct_2015/)
 
 #### 解説
@@ -212,9 +212,9 @@ C++17 について議論する最後の会議で、この会議によって C++1
 - [JTC1/SC22/WG21 - Papers 2015 mailing2015-05 post-Lenexa](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/#mailing2015-05)
 
 #### 参加報告
-- [Trip report: Spring ISO C++ meeting](https://isocpp.org/blog/2015/06/trip-report-spring-iso-cpp-meeting) by Herb Sutter
-- [Trip Report: C++ Standards Meeting in Lenexa, May 2015](https://botondballo.wordpress.com/2015/06/05/trip-report-c-standards-meeting-in-lenexa-may-2015/) by J. Daniel Garcia
-- [Lenexa C++ Meeting Report (Core Language)](https://developers.redhat.com/blog/2015/06/10/lenexa-c-meeting-report-core-language/) by Jason Merrill 
+- [Trip report: Spring ISO C++ meeting](https://isocpp.org/blog/2015/06/trip-report-spring-iso-cpp-meeting) <small>by Herb Sutter</small>
+- [Trip Report: C++ Standards Meeting in Lenexa, May 2015](https://botondballo.wordpress.com/2015/06/05/trip-report-c-standards-meeting-in-lenexa-may-2015/) <small>by J. Daniel Garcia</small>
+- [Lenexa C++ Meeting Report (Core Language)](https://developers.redhat.com/blog/2015/06/10/lenexa-c-meeting-report-core-language/) <small>by Jason Merrill </small>
 - [C++17 progress update!](https://www.reddit.com/r/cpp/comments/35g7f6/c17_progress_update/)
 
 #### 解説
@@ -233,9 +233,9 @@ C++17 について議論する最後の会議で、この会議によって C++1
 - [JTC1/SC22/WG21 - Papers 2014 mailing2014-11 post-Urbana](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/#mailing2014-11)
 
 #### 参加報告
-- [Trip Report: Fall ISO C++ Meeting](https://isocpp.org/blog/2014/11/trip-report-fall) by Herb Sutter
-- [Trip Report: C++ Standards Meeting in Urbana-Champaign, November 2014](https://botondballo.wordpress.com/2014/11/23/trip-report-c-standards-meeting-in-urbana-champaign-november-2014/) by J. Daniel Garcia
-- [Red Hat at the ISO C++ Standards Meeting (November 2014): Library](https://developers.redhat.com/blog/2014/12/16/red-hat-at-the-iso-c-standards-meeting-november-2014-library/) by Jason Merrill
+- [Trip Report: Fall ISO C++ Meeting](https://isocpp.org/blog/2014/11/trip-report-fall) <small>by Herb Sutter</small>
+- [Trip Report: C++ Standards Meeting in Urbana-Champaign, November 2014](https://botondballo.wordpress.com/2014/11/23/trip-report-c-standards-meeting-in-urbana-champaign-november-2014/) <small>by J. Daniel Garcia</small>
+- [Red Hat at the ISO C++ Standards Meeting (November 2014): Library](https://developers.redhat.com/blog/2014/12/16/red-hat-at-the-iso-c-standards-meeting-november-2014-library/) <small>by Jason Merrill</small>
 
 #### 解説
 C++14 規格完成後の最初の会議です。  
@@ -249,8 +249,8 @@ C++14 規格完成後の最初の会議です。
 - [JTC1/SC22/WG21 - Papers 2014 mailing2014-07 post-Rapperswil](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/#mailing2014-07)
 
 #### 参加報告
-- [Trip Report: C++ Standards Meeting in Urbana-Champaign, November 2014](http://www.theres-waldo.ca/2014/07/17/trip-report-c-standards-committee-meeting-in-rapperswil-june-2014/) by J. Daniel Garcia
-- [Red Hat at the ISO C++ Standards Meeting (November 2014): Library](https://developers.redhat.com/blog/2014/08/21/iso-cxx-meeting-rapperswil-2014-core-library/) by Jonathan Wakely, Jason Merrill, Matt Newsome
+- [Trip Report: C++ Standards Meeting in Urbana-Champaign, November 2014](http://www.theres-waldo.ca/2014/07/17/trip-report-c-standards-committee-meeting-in-rapperswil-june-2014/) <small>by J. Daniel Garcia</small>
+- [Red Hat at the ISO C++ Standards Meeting (November 2014): Library](https://developers.redhat.com/blog/2014/08/21/iso-cxx-meeting-rapperswil-2014-core-library/) <small>by Jonathan Wakely, Jason Merrill, Matt Newsome</small>
 
 #### 解説
 C++14 について議論する最後の会議で、この会議によって C++14 規格が完成しました。  
@@ -263,9 +263,9 @@ C++14 への機能追加はなく、C++17 に対しては、トライグラフ�
 - [JTC1/SC22/WG21 - Papers 2014 mailing2014-03 post-Issaquah](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2015/#mailing2014-03)
 
 #### 参加報告
-- [Trip report: Winter ISO C++ meeting](https://isocpp.org/blog/2014/02/trip-report) by Herb Sutter
-- [Trip Report: C++ Standards Committee Meeting in Issaquah, February 2014](http://theres-waldo.ca/2014/02/22/trip-report-c-standards-committee-meeting-in-issaquah-february-2014/) by J. Daniel Garcia
-- [Red Hat at the ISO C++ Standards Meeting (February 2014)](https://developers.redhat.com/blog/2014/05/28/red-hat-iso-c-standards-meeting-february-2014/) by Matt Newsome
+- [Trip report: Winter ISO C++ meeting](https://isocpp.org/blog/2014/02/trip-report) <small>by Herb Sutter</small>
+- [Trip Report: C++ Standards Committee Meeting in Issaquah, February 2014](http://theres-waldo.ca/2014/02/22/trip-report-c-standards-committee-meeting-in-issaquah-february-2014/) <small>by J. Daniel Garcia</small>
+- [Red Hat at the ISO C++ Standards Meeting (February 2014)](https://developers.redhat.com/blog/2014/05/28/red-hat-iso-c-standards-meeting-february-2014/) <small>by Matt Newsome</small>
 
 #### 解説
 C++14 の最終作業と C++17 に向けた一部の作業が行われました。
