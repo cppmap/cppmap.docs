@@ -283,8 +283,8 @@ C++14 の最終作業と C++17 に向けた一部の作業が行われました�
 
 #### 解説
 
-数値リテラルの区切り文字、`[[deprecated]]`属性、引数としてサイズをとるグローバル`delete`演算子のオーバーロードの許可等が承認されました。  
-また、前回会議で承認されていた動的配列のサポートおよび`std::dynarray<T>`と`std::optional<T>`はC++14から取り除かれることになりました。
+数値リテラルの区切り文字、`[[deprecated]]` 属性、引数としてサイズをとるグローバル `delete` 演算子のオーバーロードの許可等が承認されました。  
+また、前回会議で承認されていた動的配列のサポートおよび `std::dynarray<T>` と `std::optional<T>` は C++14 から取り除かれることになりました。
 
 
 ### 2013 Bristol
@@ -302,7 +302,7 @@ C++14 の最終作業と C++17 に向けた一部の作業が行われました�
 - [A look at C++14 and beyond: Papers Part 4](https://www.meetingcpp.com/blog/items/a-look-at-c14-and-beyond-papers-part-4.html) <small>by Jens Weller</small>
 
 #### 解説
-コア言語機能として、`constexpr`の制限緩和、ジェネリックラムダ、ラムダ式の初期化キャプチャ、変数テンプレート、関数の戻り値型推論、動的配列のサポート、ライブラリ機能として、`std::make_unique()`、標準ライブラリへのユーザー定義リテラル導入、`std::optional<T>`、`std::dynarray<T>`等が承認されました。  
+コア言語機能として、`constexpr` の制限緩和、ジェネリックラムダ、ラムダ式の初期化キャプチャ、変数テンプレート、関数の戻り値型推論、動的配列のサポート、ライブラリ機能として、`std::make_unique()`, 標準ライブラリへのユーザー定義リテラル導入、`std::optional<T>`, `std::dynarray<T>` 等が承認されました。  
 C++14 のほとんどの機能がこの会議で追加されています。
 
 ### 2012 Portland
@@ -312,8 +312,8 @@ C++14 のほとんどの機能がこの会議で追加されています。
 - [JTC1/SC22/WG21 - Papers 2012 mailing2012-11-post-Portland](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2012/#mailing2012-11)
 
 #### 解説
-Issue対応が主で大きな機能の追加はありませんでした。  
-ライブラリ機能として、`std::complex`, `std::chrono`, `std::array`, `std::initilizer_list`, `std::tuple`, `std::pair`等の`constexpr`対応が承認されました。
+Issue 対応が主で大きな機能の追加はありませんでした。  
+ライブラリ機能として、`std::complex`, `std::chrono`, `std::array`, `std::initilizer_list`, `std::tuple`, `std::pair` 等の `constexpr` 対応が承認されました。
 
 ### 2012 Kona
 #### 場所 / 提案 / 会議の結果
@@ -323,7 +323,7 @@ Issue対応が主で大きな機能の追加はありませんでした。
 
 #### 解説
 C++14 について議論する最初の会議です。  
-機能の追加は無く、C++11 に対するIssueへの対応が主です。
+機能の追加は無く、C++11 に対する Issue への対応が主です。
 
 
 ### 2011 Bloomington
