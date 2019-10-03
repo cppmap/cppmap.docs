@@ -2,7 +2,7 @@ description: C++ プログラムのコンパイル・実行ができる Web サ�
 
 # オンラインコンパイラ
 
-## 開発環境
+## 主要なオンラインコンパイラ
 
 C++ プログラムのコンパイル、実行、共有ができる Web サイトです。
 
@@ -18,11 +18,46 @@ C++ プログラムのコンパイル、実行、共有ができる Web サイ�
 
 <small>* 印は trunk</small>
 
+## その他のツール
 
-## C++ Insights: ソース → ソース変換
+### Compiler Explorer
+[Compiler Explorer](https://godbolt.org/) は、C, C++, Rust, Swift などのソースコードをコンパイルしてアセンブリを表示するオンラインコンパイラです。複数タブを使って、GCC, Clang, MSVC, ICC などのコンパイラや、コンパイルオプションを変えたときの結果を比較できます。
+
+入力例
+```c++
+int square(int num)
+{
+    return num * num;
+}
+```
+
+出力
+```asm
+square(int):
+        push    rbp
+        mov     rbp, rsp
+        mov     DWORD PTR [rbp-4], edi
+        mov     eax, DWORD PTR [rbp-4]
+        imul    eax, DWORD PTR [rbp-4]
+        pop     rbp
+        ret
+```
+
+Compiler Explorer には、Web 上のファイルを `#include "URL"` でインクルードできる独自拡張機能があります。この機能を使うと、GitHub などに公開されているシングルヘッダライブラリをプログラムの中で簡単に使えます（例: https://godbolt.org/z/OV-vGQ）
+
+
+### Quick C++ Benchmark
+[Quick C++ Benchmark](http://quick-bench.com/) は、[google/benchmark](https://github.com/google/benchmark) による実行時間の計測と、その結果のビジュアライズができるオンラインコンパイラです。棒グラフによる比較、アセンブリの表示、グラフ画像のダウンロード、URL による結果のシェアなどの機能があります。
+
+例: http://quick-bench.com/O1QdfCc73docKGKjaYBxWG6a9AU
+
+![](images/quick-bench.png)
+
+
+### C++ Insights
 [C++ Insights](https://cppinsights.io/) は、ラムダ式、range-based for, 構造化束縛などで何が起こっているのかを、プログラムを単純なソースコードに分解することで可視化するオンラインのツールです。  
 
-#### 入力例
+入力例
 ```c++
 #include <cstdio>
 
@@ -36,7 +71,7 @@ int main()
     }
 }
 ```
-#### 出力
+出力
 ```c++
 #include <cstdio>
 
@@ -57,38 +92,11 @@ int main()
 }
 ```
 
-## Compiler Explorer: ソース → アセンブリ変換
 
-### 概要
-[Compiler Explorer](https://godbolt.org/) は、C, C++, Rust, Swift などのソースコードをコンパイルしてアセンブリを表示するオンラインコンパイラです。複数タブを使って、GCC, Clang, MSVC, ICC などのコンパイラや、コンパイルオプションを変えたときの結果を比較できます。
-
-#### 入力例
-```c++
-int square(int num) {
-    return num * num;
-}
-```
-
-#### 出力
-```asm
-square(int):
-        push    rbp
-        mov     rbp, rsp
-        mov     DWORD PTR [rbp-4], edi
-        mov     eax, DWORD PTR [rbp-4]
-        imul    eax, DWORD PTR [rbp-4]
-        pop     rbp
-        ret
-```
-
-### URL からインクルード
-Compiler Explorer には、Web 上のファイルを `#include "URL"` でインクルードできる独自拡張機能があります。この機能を使うと、GitHub などに公開されているシングルヘッダライブラリをプログラムの中で簡単に使えます（例: https://godbolt.org/z/OV-vGQ）
-
-
-## Stensal: セグメンテーション違反の原因を表示
+### Stensal
 [Stensal](https://segfault.stensal.com/) は、C, C++ プログラムを実行して、セグメンテーション違反などメモリに関する問題が発生したときに、その箇所と原因をわかりやすく表示するオンラインコンパイラです。バッファオーバーラン、Null ポインタの参照外し、未初期化変数の利用などの問題を明らかにします。実装には Wandbox が使われています。
 
-#### 入力例
+入力例
 ```C++
 #include <iostream>
 
@@ -100,7 +108,7 @@ int main()
 }
 ```
 
-#### 出力例
+出力例
 ```
 =========== Start of #0 stensal runtime message ===========
 
