@@ -13,7 +13,7 @@ description: オンラインでアクセスできる C++ 資料の紹介
 - [C++ Language Reference](https://docs.microsoft.com/en-us/cpp/cpp/cpp-language-reference)
 
 ## コーディングガイドライン
-- [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines)
+- [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) | [見出し日本語訳](https://qiita.com/tetsurom/items/322c7b58cddaada861ff)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) | [日本語訳](https://ttsuki.github.io/styleguide/cppguide.ja.html)
 - [LLVM Coding Standards](https://llvm.org/docs/CodingStandards.html)
 
