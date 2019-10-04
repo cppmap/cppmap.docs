@@ -414,6 +414,90 @@ int main()
 ```
 
 
+### スコープ付き列挙型に対する using 宣言ができるように [(P1099R5)](http://wg21.link/p1099r5)
+これまでは、enum class のスコープ解決を省略する方法が無く、次のような `switch` で、列挙型の名前が何度も登場するようなコードを書く必要があり、読みにくく、長い列挙型の名前が避けられる原因になっていました。
+```C++
+#include <iostream>
+#include <string_view>
+
+enum class Terrain
+{
+	Open, Mountain, River, Ocean
+};
+
+constexpr std::string_view ToString(Terrain terrain)
+{
+	using namespace std::string_view_literals;
+
+	switch (terrain)
+	{
+	case Terrain::Open:		return "Open"sv;
+	case Terrain::Mountain:	return "Mountain"sv;
+	case Terrain::River:	return "River"sv;
+	case Terrain::Ocean:	return "Ocean"sv;
+	default:				return ""sv;
+	}
+}
+
+int main()
+{
+	std::cout << ToString(Terrain::Mountain);
+}
+```
+C++20 では `using` 宣言を拡張し、`using Terrain::Open;` で `Open` をエイリアスとして使えるようになります。また `using enum` 宣言という新しい仕組みにより、`using enum Terrain;` で `Terrain` がローカルスコープに導入され、スコープ解決演算子を使わずにその列挙子を使えるようになります。
+```C++
+#include <iostream>
+#include <string_view>
+
+enum class Terrain
+{
+	Open, Mountain, River, Ocean
+};
+
+constexpr std::string_view ToString(Terrain terrain)
+{
+	using namespace std::string_view_literals;
+
+	switch (terrain)
+	{
+	using enum Terrain; // using enum 宣言で、列挙型の名前 Terrain をローカルスコープに導入
+	case Open:		return "Open"sv;
+	case Mountain:	return "Mountain"sv;
+	case River:		return "River"sv;
+	case Ocean:		return "Ocean"sv;
+	default:		return ""sv;
+	}
+}
+
+int main()
+{
+	using Terrain::Mountain; // using 宣言で、列挙子 Mountain をローカルスコープに導入
+	std::cout << ToString(Mountain);
+}
+```
+なお、次のように複数の `using` 宣言によって名前の衝突が起こる場合はコンパイルエラーになります。
+```C++
+#include <iostream>
+#include <string_view>
+
+enum class Terrain
+{
+	Open, Mountain, River, Ocean
+};
+
+enum class State
+{
+	Open, Closed
+};
+
+int main()
+{
+	using enum Terrain;	// OK
+	using enum State;	// コンパイルエラー: Terrain::Open と State::Open の名前が衝突
+}
+```
+
+
 ## 標準ライブラリ
 
 ### 文字列の先頭や末尾が、ある文字列と一致するか判定 [(P0457R2)](https://wg21.link/P0457R2)
