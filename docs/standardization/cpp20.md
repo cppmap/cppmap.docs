@@ -446,9 +446,6 @@ int main()
 ```
 C++20 では `using` 宣言を拡張し、`using Terrain::Open;` で `Open` をエイリアスとして使えるようになります。また `using enum` 宣言という新しい仕組みにより、`using enum Terrain;` で `Terrain` がローカルスコープに導入され、スコープ解決演算子を使わずにその列挙子を使えるようになります。
 ```C++
-#include <iostream>
-#include <string_view>
-
 enum class Terrain
 {
 	Open, Mountain, River, Ocean
