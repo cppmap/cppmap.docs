@@ -10,7 +10,10 @@ int main()
 ```
 
 ## このサイトについて
-C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
+C++17, C++20, C++23, C++26 に関する情報を調査・提供します。  
+管理者 [@Reputeless](https://twitter.com/Reputeless) と、[コントリビュータの皆様](contribution/contributors/) によって執筆されています。
+
+- [コントリビュート方法](https://github.com/cppmap/cppmap.docs)
 
 ## ライセンス
 <img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0" />  
