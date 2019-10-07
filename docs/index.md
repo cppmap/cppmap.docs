@@ -11,7 +11,7 @@ int main()
 
 ## このサイトについて
 C++17, C++20, C++23, C++26 に関する情報を調査・提供します。  
-管理者 [@Reputeless](https://twitter.com/Reputeless) と、[コントリビュータの皆様](contribution/contributors/) によって執筆されています。
+管理者 <a href="https://twitter.com/Reputeless" target="_blank">@Reputeless</a> と、<a href="contribution/contributors/" target="_blank">コントリビュータの皆様</a> によって執筆されています。
 
 - [コントリビュート方法](https://github.com/cppmap/cppmap.docs)
 
