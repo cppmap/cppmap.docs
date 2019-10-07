@@ -118,8 +118,9 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 
 | イベント番号                                                       | 内容             | ムービー                                   |
 |-------------------------------------------------------------------|------------------|-------------------------------------------|
+| #6 [(2019-10-09)](https://caddi.connpass.com/event/150414/)       | 派生と継承、Type Erasure |  |
 | #5 [(2019-09-25)](https://caddi.connpass.com/event/147690/)       | 標準変換、オーバーロード解決、テンプレートの実引数推定 | [:fa-play:](https://youtu.be/bUyUDHPk4ik) |
-| #4 [(2019-09-11)](https://caddi.connpass.com/event/146786/)       | C++ 標準規格の用語解説 | [:fa-play:](https://youtu.be/OYBLK4Lwudw) |
+| #4 [(2019-09-11)](https://caddi.connpass.com/event/146851/)       | C++ 標準規格の用語解説 | [:fa-play:](https://youtu.be/OYBLK4Lwudw) |
 | #3 [(2019-08-30)](https://caddi.connpass.com/event/145070/)       | メタプログラミング |  |
 | #2 [(2019-08-21)](https://caddi.connpass.com/event/142476/)       | テンプレート基礎 | [:fa-play:](https://youtu.be/fz8ahXzOUNE) |
 | #1 [(2019-07-30)](https://caddi.connpass.com/event/140080/)       | ポインターについて | [:fa-play:](https://youtu.be/d9VgUHghlog) |
