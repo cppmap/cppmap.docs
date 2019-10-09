@@ -23,7 +23,7 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | タイトル                        | 発表者             | ムービー |
 |-----------------------------|-----------------|------|
 | 勉強会と会場の説明                   | Shintaro Okada  |     |
-| 自作OS向けにlibc++をビルドする方法       | uchan           |     |
+| [自作OS向けにlibc++をビルドする方法](https://www.slideshare.net/uchan_nos/building-libcxxformyos)       | uchan           |     |
 | [C++ 製グラフィックライブラリ Skia の紹介](https://speakerdeck.com/pine/c-plus-plus-zhi-kurahuitukuraihurari-skia-falseshao-jie) | 水音ぴね            |     |
 | [Unreal C++ を始めてみた時の躓いたTips](https://www.slideshare.net/MakotoAdachi/cmix5) | akoto           |     |
 | [C++20ステータス](https://speakerdeck.com/faithandbrave/c-plus-plus-20-status) | Akira Takahashi |     |
