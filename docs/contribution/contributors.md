@@ -44,5 +44,7 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [オンラインコンパイラ 情報提供](https://github.com/cppmap/cppmap.docs/pull/18)
 - [@yohhoy](https://twitter.com/yohhoy) さん
     - [記事改善案 提供](https://twitter.com/yohhoy/status/1106950996192747521)
+- [@yuji_n_dispair](https://twitter.com/yuji_n_dispair) さん
+    - [国内の勉強会 情報加筆](https://github.com/cppmap/cppmap.docs/pull/29)
 - [@yumetodo](https://twitter.com/yumetodo) さん
     - [テキストデータ ライブラリ 情報提供](https://github.com/cppmap/cppmap.docs/pull/17)
