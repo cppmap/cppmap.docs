@@ -34,7 +34,8 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [C++20 の新機能 記事加筆](https://github.com/cppmap/cppmap.docs/pull/20)
     - [標準化会議 記事加筆](https://github.com/cppmap/cppmap.docs/pull/21)
     - [標準化会議 記事加筆](https://github.com/cppmap/cppmap.docs/pull/27)
-    - [標準ライブラリ 執筆協力](https://github.com/cppmap/cppmap.docs/issues/28)    
+    - [標準ライブラリ 執筆協力](https://github.com/cppmap/cppmap.docs/issues/28)
+    - [標準ライブラリ 記事加筆](https://github.com/cppmap/cppmap.docs/issues/31)
 - [@tak0kada](https://twitter.com/tak0kada) さん
     - [国内の勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/26)
 - [@tetzrom](https://twitter.com/tetzrom) さん
