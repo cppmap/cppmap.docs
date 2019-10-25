@@ -25,7 +25,7 @@ Motivation, Scope, and Basic Design (P1386)](https://wg21.link/p1386)
 ネットワーク機能を標準ライブラリに導入する提案です。[Boost.Asio](https://www.boost.org/doc/libs/release/doc/html/boost_asio.html) をベースに、ソケット通信、名前解決、インターネットプロトコル、タイマー、バッファ、非同期処理のための各種機能を実装する予定です。
 
 ## リフレクション
-- [Working Draft, C++ Extensions for Reﬂection (N4766)](https://wg21.link/n4766)
+- [Working Draft, C++ Extensions for Reﬂection (N4818)](https://wg21.link/n4818)
 
 C++ にリフレクションを導入する提案です。C# のような動的なリフレクションではなく、コンパイル時に情報を取得する静的なリフレクションです。
 
