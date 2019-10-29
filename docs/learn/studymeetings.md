@@ -130,6 +130,7 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 
 | イベント番号                                                       | 内容             | ムービー                                   |
 |-------------------------------------------------------------------|------------------|-------------------------------------------|
+| #7 [(2019-10-29)](https://caddi.connpass.com/event/151541/)       | type erasure の続きと expression templates | [:fa-play:](https://youtu.be/50J6pM5JlsU) |
 | #6 [(2019-10-09)](https://caddi.connpass.com/event/150414/)       | 派生と継承、Type Erasure |  |
 | #5 [(2019-09-25)](https://caddi.connpass.com/event/147690/)       | 標準変換、オーバーロード解決、テンプレートの実引数推定 | [:fa-play:](https://youtu.be/bUyUDHPk4ik) |
 | #4 [(2019-09-11)](https://caddi.connpass.com/event/146851/)       | C++ 標準規格の用語解説 | [:fa-play:](https://youtu.be/OYBLK4Lwudw) |
