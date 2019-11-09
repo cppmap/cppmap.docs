@@ -39,6 +39,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 
 #### 参加報告
 - [2019-11 Belfast ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/dtuov8/201911_belfast_iso_c_committee_trip_report/) <small>by Bryce Lelbach and others</small>
+- [Trip report: Autumn ISO C++ standards meeting (Belfast)](https://herbsutter.com/2019/11/09/trip-report-autumn-iso-c-standards-meeting-belfast/) <small>by Herb Sutter</small>
 
 ## 2019 Cologne
 #### 場所 / 提案 / 会議の結果
