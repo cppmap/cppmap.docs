@@ -1054,5 +1054,5 @@ int main()
 ```
 
 
-### `basic_string::reserve()` が capacity を縮小しないよう仕様変更 [(P0966R1)](https://wg21.link/P0966R1)
+### `basic_string::reserve()` が capacity を縮小しないように [(P0966R1)](https://wg21.link/P0966R1)
 C++17 では、`std::basic_string::reserve(size_type)` に現在の `capacity()` よりも小さい値が渡された際、shrink-to-fit を実行することが許可されていたため、注意深く使わないとメモリの再配置を頻繁に引き起こし、実行時性能を低下させることがありました。また、デフォルト引数として `0` が定義されており、`s.reserve()` と `s.shrink_to_fit()` で機能が重複するという問題や、shrink-to-fit を実行せずデフォルト引数も無い `std::vector::reserve(size_type)` との一貫性がないという問題がありました。C++20 からの新しい仕様では `std::vector` 側に合わせ、`std::basic_string::reserve(size_type)` に現在の `capacity()` よりも小さい値が渡された際には何もしないことが保証され、デフォルト引数も廃止（互換性のために deprecated 指定の `std::basic_string:reserve(void)` オーバーロードが追加）となり、これらの問題が解決されます。
