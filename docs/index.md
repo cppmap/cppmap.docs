@@ -21,6 +21,9 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 サードパーティーのコンテンツの著作権は、それぞれの所有者に帰属します。
 
 ## 💗 [スポンサー](https://github.com/sponsors/Reputeless)
+
+「C++ の歩き方」の記事執筆・メンテナンスへ寄付してくださっている方々です。新規ご支援は [GitHub Sponsors ページ](https://github.com/sponsors/Reputeless) より。
+
 - [sknjpn](https://twitter.com/sknjpn)
 - アゲハマ
 - chobby75
