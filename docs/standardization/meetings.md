@@ -42,6 +42,8 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [Trip report: Autumn ISO C++ standards meeting (Belfast)](https://herbsutter.com/2019/11/09/trip-report-autumn-iso-c-standards-meeting-belfast/) <small>by Herb Sutter</small>
 - [WG21 in my own backyard: Belfast trip report](https://hatcat.com/?p=115) <small>by Guy Davidson</small>
 - [Trip Report: Freestanding Errors in Belfast](https://www.reddit.com/r/cpp/comments/dvh72f/trip_report_freestanding_errors_in_belfast/) <small>by Ben Craig</small>
+- [Belfast Trip Report](https://cppcast.com/timur-doumler-belfast/) <small>by Timur Doumler</small>
+- [Trip Report: C++ Standards Meeting in Belfast, November 2019](https://botondballo.wordpress.com/2019/11/15/trip-report-c-standards-meeting-in-belfast-november-2019/) <small>by Botond Ballo</small>
 
 ## 2019 Cologne
 #### 場所 / 提案 / 会議の結果
