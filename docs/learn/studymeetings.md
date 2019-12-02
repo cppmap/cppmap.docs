@@ -21,7 +21,7 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | [std::format - C++20 時代の便利な文字列フォーマット](https://www.dropbox.com/s/4gt1y5i3ogt9bvr/cppmix-C%2B%2B20Format.pdf?dl=0)                  | Ryo Suzuki      |     |
 | インターンシップでC++を使用したゲーム開発を経験した話                         | がっちょ            |     |
 | [コンパイラのいじめ方](https://speakerdeck.com/kaityo256/how-to-fight-the-compiler) | kaityo256             |     |
-| 書籍『独習C++』の改訂について (仮)                                 | Flast           |     |
+| [書籍『独習C++』の改訂について (仮) ](https://docs.google.com/presentation/d/1dfJ537pkSwYYRai4mktlAoHwNnqmnOUqfmQiVjDJClY/edit)                                | Flast           |     |
 | ディスカッション                                             | (全員参加)          |     |
 
 ### C++ MIX #5 [(2019-09-04)](https://cppmix.connpass.com/event/141908/)
