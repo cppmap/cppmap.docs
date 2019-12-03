@@ -22,7 +22,7 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 
 ## 💗 [スポンサー](https://github.com/sponsors/Reputeless)
 
-「C++ の歩き方」の記事執筆・メンテナンスへ寄付してくださっている方々です。新規ご支援は [GitHub Sponsors ページ](https://github.com/sponsors/Reputeless) より。
+[GitHub Sponsors ページ](https://github.com/sponsors/Reputeless) から「C++ の歩き方」にスポンサーとして貢献できます。
 
 - [sknjpn](https://twitter.com/sknjpn)
 - アゲハマ
