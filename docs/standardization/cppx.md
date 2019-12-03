@@ -231,7 +231,7 @@ double Area(const Shape& shape)
 {
 	return inspect (shape)
 	{
-		<Circle>	[r]		=> std::numbers::pi* radius * radius, // inspect 式では => を使う
+		<Circle>	[r]		=> std::numbers::pi * r * r, // inspect 式では => を使う
 		<Rectangle>	[w, h]	=> w * h
 	}
 }
