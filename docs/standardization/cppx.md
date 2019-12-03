@@ -67,8 +67,8 @@ inspect constexpr_opt (init-statement_opt condition)
 // inspect 式の文法
 inspect constexpr_opt (init-statement_opt condition) trailing-return-type_opt
 {
-    pattern guard_opt => expression
-    pattern guard_opt => expression
+    pattern guard_opt => expression ,
+    pattern guard_opt => expression ,
     ...
 }
 ```
