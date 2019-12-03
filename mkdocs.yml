@@ -55,7 +55,7 @@ nav:
     - 標準化会議: standardization/meetings.md
     - 処理系の対応状況: standardization/status.md
     - 規格ドラフト: standardization/working-drafts.md
-    - 標準ライブラリ: standardization/header.md
+    - C++ 標準ライブラリ: standardization/header.md
   - 記事:
     - コメントアウトのトリック: articles/comment-tricks.md
     - なぜかコンパイルできる: articles/it-compiles.md
