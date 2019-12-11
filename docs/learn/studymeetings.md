@@ -129,7 +129,8 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 
 | イベント番号                                                       | 内容             | ムービー                                   |
 |-------------------------------------------------------------------|------------------|-------------------------------------------|
-| #9 [(2019-12-03)](https://caddi.connpass.com/event/157462/)       | コンセプト（時間があれば、Three-way Comparison operator）[:fa-play:](https://youtu.be/nJcWfICJwyc) |  |
+| #10 [(2019-12-17)](https://caddi.connpass.com/event/158954/)       | テンプレートの同一性、C++20の新機能解説 |  |
+| #9 [(2019-12-03)](https://caddi.connpass.com/event/157462/)       | コンセプト（時間があれば、Three-way Comparison operator） | [:fa-play:](https://youtu.be/nJcWfICJwyc) |  |
 | #8 [(2019-11-19)](https://caddi.connpass.com/event/154653/)       | C++20 の機能紹介と一時オブジェクトの寿命 | [:fa-play:](https://youtu.be/Gu9Y5t3uCZA) |
 | #7 [(2019-10-29)](https://caddi.connpass.com/event/151541/)       | type erasure の続きと expression templates | [:fa-play:](https://youtu.be/50J6pM5JlsU) |
 | #6 [(2019-10-09)](https://caddi.connpass.com/event/150414/)       | 派生と継承、Type Erasure |  |
