@@ -42,6 +42,8 @@ markdown_extensions:
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.superfences
+  - toc:
+      permalink: true
 extra_css:
   - "https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
   - cppmap_styles.css
