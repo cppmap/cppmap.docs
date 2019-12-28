@@ -519,6 +519,59 @@ int main()
 ```
 
 
+### ネストした名前空間定義で `inline namespace` を使えるように [(P1094R2)](http://wg21.link/p1094r2)
+
+C++17 でネストした名前空間定義が導入されましたが、その中では `inline namespace` を使うことができず、`inline namespace` が `namespace` 内にある次のようなケースで恩恵を受けられませんでした。C++20 からはネストした名前空間定義の中で `inline` を使えるようになります。
+
+```C++ tab="C++17"
+#include <iostream>
+
+namespace mylib::v1::util
+{
+	constexpr int GetValue() { return 1; }
+}
+
+namespace mylib
+{
+	inline namespace v2
+	{
+		namespace util
+		{
+			constexpr int GetValue() { return 2; }
+		}
+	}
+}
+
+int main()
+{
+	std::cout << mylib::v1::util::GetValue() << '\n';
+	std::cout << mylib::v2::util::GetValue() << '\n';
+	std::cout << mylib::util::GetValue() << '\n'; // v2
+}
+```
+
+```C++ tab="C++20"
+#include <iostream>
+
+namespace mylib::v1::util
+{
+	constexpr int GetValue() { return 1; }
+}
+
+namespace mylib::inline v2::util
+{
+	constexpr int GetValue() { return 2; }
+}
+
+int main()
+{
+	std::cout << mylib::v1::util::GetValue() << '\n';
+	std::cout << mylib::v2::util::GetValue() << '\n';
+	std::cout << mylib::util::GetValue() << '\n'; // v2
+}
+```
+
+
 ## 標準ライブラリ
 
 ### 文字列の先頭や末尾が、ある文字列と一致するか判定 [(P0457R2)](https://wg21.link/P0457R2)
