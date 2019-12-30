@@ -78,6 +78,7 @@ nav:
     - 並行・並列: libraries/multi-threading.md
     - テストフレームワーク: libraries/testing.md
   - ツール:
+    - C++ コンパイラ: tools/compilers.md
     - C++ オンラインコンパイラ: tools/onlinecompilers.md
     - C++ パッケージマネージャ: tools/package-manager.md
   - 貢献:
