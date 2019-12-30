@@ -67,10 +67,10 @@ nav:
     - IEEE 754 演算のルール: articles/ieee754-arithmetic.md
     - C++ 関連の略語: articles/acronyms.md
   - 学習:
-    - 書籍: learn/books.md
-    - オンライン資料: learn/online-resources.md
-    - 国内の勉強会: learn/studymeetings.md
-    - コミュニティ: learn/communities.md
+    - C++ 書籍: learn/books.md
+    - C++ オンライン資料: learn/online-resources.md
+    - 国内の C++ 勉強会: learn/studymeetings.md
+    - C++ コミュニティ: learn/communities.md
   - ライブラリ:
     - Boost: libraries/boost.md
     - コンテナ: libraries/containers.md
@@ -78,7 +78,7 @@ nav:
     - 並行・並列: libraries/multi-threading.md
     - テストフレームワーク: libraries/testing.md
   - ツール:
-    - オンラインコンパイラ: tools/onlinecompilers.md
-    - パッケージマネージャ: tools/package-manager.md
+    - C++ オンラインコンパイラ: tools/onlinecompilers.md
+    - C++ パッケージマネージャ: tools/package-manager.md
   - 貢献:
     - コントリビュータ: contribution/contributors.md
