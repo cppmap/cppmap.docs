@@ -1150,3 +1150,30 @@ int main()
 }
 ```
 
+### コンテナから要素を削除する std::erase() / std::erase_if() 関数 [(P1209R0)](https://wg21.link/p1209r0)
+コンテナから特定の要素を削除するという処理は、コンテナの種類によって最適な書き方が異なります。`std::unordered_map` ではイテレータを使って先頭から要素を削除していき、`std::list` ではメンバ関数の `remove()` や `remove_if()` を使い、`std::vector` では `std::remove_if()` と `erase()` メンバ関数を組み合わせます。このようにコンテナの特性に応じてコードを書き分けるのは大変だったため、C++20 ではすべてのコンテナ向けに適切な実装を提供する、一貫して使える非メンバ関数 `std::erase()`, `std::erase_if()` が追加されます。
+
+```C++
+#include <iostream>
+#include <vector>
+#include <list>
+#include <unordered_map>
+#include <string>
+
+int main()
+{
+	std::vector<int> v = { 3, 14, 1, 5, 92 };
+	std::list<int> li = { 3, 14, 1, 5, 92 };
+	std::unordered_map<std::string, int> m = {
+		{ "aa", 3 }, { "bb", 14 }, { "cc", 1 }, { "dd", 5 }, { "ee", 92 } };
+
+	std::erase(v, 3);
+	std::erase(li, 3);
+	std::erase_if(m, [](const auto& p) { return p.second == 3; });
+
+	std::erase_if(v, [](auto n) { return n < 10; });
+	std::erase_if(li, [](auto n) { return n < 10; });
+	std::erase_if(m, [](const auto& p) { return p.second < 10; });
+}
+```
+
