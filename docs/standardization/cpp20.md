@@ -572,6 +572,90 @@ int main()
 ```
 
 
+### 本来アクセス可能な private メンバに構造化束縛ではアクセスできなかった問題を修正 [(P0969R0)](https://wg21.link/P0969R0)
+メンバ関数内で自身の `private` メンバにアクセスすることや、`friend` 指定された関数で該当クラスの `private` メンバ変数にアクセスすることは通常可能ですが、C++17 の構造化束縛はクラスの `public` メンバにしかバインドできないという規格文面の制約があり、次のようなケースで一貫性がありませんでした。この制約を課す合理的な理由は無かったため、C++17 向けの規格にさかのぼって仕様が修正され、アクセス可能であれば `private` メンバ変数をバインドできるようになります。C++20 および、この変更に対応した C++17 コンパイラで新仕様を利用できます。
+
+```C++
+class Date
+{
+private:
+
+	int m_year, m_month, m_day;
+
+public:
+
+	friend void Work(const Date& date);
+
+	void f(const Date& other) const
+	{
+		// OK
+		int year = other.m_year;
+		int month = other.m_month;
+		int day = other.m_day;
+
+		// これまではコンパイルエラー, C++20 以降 OK
+		auto [y, m, d] = other;
+	}
+};
+
+// friend 指定されている関数
+void Work(const Date& date)
+{
+	// OK
+	int year = date.m_year;
+	int month = date.m_month;
+	int day = date.m_day;
+
+	// これまではコンパイルエラー, C++20 以降 OK
+	auto [y, m, d] = date;
+}
+
+int main()
+{
+
+}
+```
+
+### ユーザ宣言されたコンストラクタを持つクラスの集成体初期化を禁止 [(P1008R1)](https://wg21.link/P1008R1)
+C++17 までは集成体の要件が緩かったため、コンストラクタについては、デフォルトコンストラクタが `= delete` または `private` であっても、集成体初期化によって初期化できる抜け道がありました。これはメンバ変数が意図しない値で初期化されるといった問題を引き起こします。C++20 からは集成体の要件が厳しくなり、ユーザ宣言されたコンストラクタがあるクラスは集成体にはなりません。
+
+```C++
+struct A
+{
+	A() = delete;
+};
+
+struct B
+{
+private:
+	B() = default;
+};
+
+struct C
+{
+	int i = 0;
+	C() = default;
+};
+
+int main()
+{
+	A a1; // コンパイルエラー
+	A a2{}; // C++17 までは OK, C++20 からはコンパイルエラー
+
+	B b1; // コンパイルエラー
+	B b2{}; // C++17 までは OK, C++20 からはコンパイルエラー
+
+	C c1(123); //コンパイルエラー
+	C c2{ 123 }; // C++17 までは OK, C++20 からはコンパイルエラー
+}
+```
+
+
+### `throw()` による動的例外指定を削除 [(P0619R4)](https://wg21.link/P0619R4)
+C++11 では、`noexcept` の追加に合わせ、`throw(typeid, ...)` や `throw()` による動的例外指定が非推奨化されました。C++17 では前者が削除されましたが、古いコードにおいて広く使われていた後者は、移行猶予のために `noexcept(true)` のエイリアスとして改められつつ保持されていました。C++20 では後者も削除されます。
+
+
+
 ## 標準ライブラリ
 
 ### 文字列の先頭や末尾が、ある文字列と一致するか判定 [(P0457R2)](https://wg21.link/P0457R2)
