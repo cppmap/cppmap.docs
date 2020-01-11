@@ -1261,3 +1261,61 @@ int main()
 }
 ```
 
+
+### バイト列の再解釈キャストを補助する `std::bit_cast()` 関数 [(P0476R2)](https://wg21.link/P0476R2)
+ある型のオブジェクトのバイト列を、別の型のオブジェクトと解釈して使うこと (type punning) は C++ では禁止されています (strict aliasing rule). `float` 型の値のバイト列を `std::uint32_t` 型として扱うときの間違った方法として、次のサンプルのように `reinterpret_cast` や `union` を用いる例があります。これは直感的に見え、実際ほとんどのコンパイラで期待通り動作しますが、規格上は未定義動作となる不正なコードです。正しくは `std::memcpy()` を使います。
+
+```C++
+#include <cstdint>
+#include <cstring>
+#include <iostream>
+
+union FloatUint32
+{
+    float f;
+    std::uint32_t u;
+};
+
+int main()
+{
+    constexpr float f = 0.5f;
+
+    // 未定義動作
+    const std::uint32_t u1 = *reinterpret_cast<const std::uint32_t*>(&f);
+
+    // 未定義動作
+    const std::uint32_t u2 = FloatUint32{ f }.u;
+
+    // OK
+    std::uint32_t u3;
+    std::memcpy(&u3, &f, sizeof(f));
+
+    std::cout << u1 << '\n';
+    std::cout << u2 << '\n';
+    std::cout << u3 << '\n';
+}
+```
+
+しかし、`std::memcpy()` では型変換を `constexpr` にできず、また、デフォルトコンストラクト可能でない型に対応するには `std::aligned_storage` と組み合わせる必要があるなど、適切な実装は面倒でした。C++20 では、この実装をコンパイラサポートによる `constexpr` 対応も含めて実現する `std::bit_cast()` 関数が提供されます。
+
+```C++
+template <typename To, typename From>
+constexpr To bit_cast(const From& from) noexcept;
+```
+
+変換先の型 `To` と変換元の型 `From` について、`sizeof(To) != sizeof(From)` の場合や、`std::is_trivially_copyable_v<To> == false` または `std::is_trivially_copyable_v<From> == false` の場合にはコンパイルエラーになるため、間違いを減らす効果もあります。
+
+```C++
+#include <cstdint>
+#include <bit>
+#include <iostream>
+
+int main()
+{
+	constexpr float f = 0.5f;
+
+	constexpr std::uint32_t u = std::bit_cast<std::uint32_t>(f);
+
+	std::cout << u << '\n';
+}
+```
