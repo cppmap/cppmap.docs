@@ -24,6 +24,9 @@ C++ の学習に役立つ最新の書籍を紹介します。
 | [江添亮の C++ 入門](https://amzn.to/2HTGUbt) | 2019 | C++17/20 | C++ のツールや文法、いくつかの標準ライブラリ機能の設計を学べる解説書。[オープンソース版](https://ezoeryou.github.io/cpp-intro/) |
 | [独習 C++ 新版](https://amzn.to/2ZWRrck) | 2019 | C++17 | :fa-graduation-cap: 初学者向け。「独習 C++ 第 4 版」を C++17 に対応させ解説を一新 | 
 
+![](images/books.jpg)
+
+
 ### モダン C++er になるための、おすすめルート
 
 <dl>
