@@ -1319,3 +1319,63 @@ int main()
 	std::cout << u << '\n';
 }
 ```
+
+
+### `<numeric>` の関数の非効率な実装を改善 [(P0616R0)](https://wg21.link/P0616R0)
+C++17 では、`std::accumulate()` は `acc = binary_op(acc, *i)` として実装されると規格に定められていいたため、次のようなケースで `std::accumulate()` の最中に `std::string` のアロケーションが大量に発生して非効率でした。
+
+```C++
+#include <iostream>
+#include <string>
+#include <numeric>
+#include <vector>
+
+int main()
+{
+	std::vector<std::string> words(100, "abc");
+
+	std::string s = "start";
+
+	std::string r = std::accumulate(words.begin(), words.end(), s);
+
+	std::cout << r << '\n';
+}
+```
+C++17 の `std::accumulate()` の中で行われること:
+```C++
+acc = acc + *i; // operator+(const std::string&, const std::string&)
+++i;
+... // くり返し
+```
+
+C++20 では、`std::move()` を使う `acc = binary_op(std::move(acc), *i)` という実装に変更され、右辺値の演算に対する効率的な実装を提供する型 (`std::string` など) が、恩恵を受けられるようになります。
+
+C++20 の `std::accumulate()` の中で行われること:
+```C++
+acc = std::move(acc) + *i; // operator+(std::string&&, const std::string&)
+++i;
+...
+```
+`operator+(std::string&& lhs, const std::string& rhs)` は基本的に `lhs.append(rhs)` です。次のようにあらかじめ十分なキャパシティを確保したバッファを `std::accumulate()` 内で使えるようにもなります。
+
+```C++
+#include <iostream>
+#include <string>
+#include <numeric>
+#include <vector>
+
+int main()
+{
+	std::vector<std::string> words(100, "abc");
+
+	std::string s = "start";
+
+	s.reserve(s.size() + (word.size() * words.front().size())); // C++17 では無意味
+
+	std::string r = std::accumulate(words.begin(), words.end(), std::move(s));
+
+	std::cout << r << '\n';
+}
+```
+
+`std::move()` を使うこの仕様変更は、同じ `<numeric>` ヘッダの `std::inner_product()` や `std::partial_sum()`, `std::adjacent_difference()` にも適用されます。
