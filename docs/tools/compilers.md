@@ -1,4 +1,4 @@
-description: C++ プログラムのコンパイラの紹介
+description: C++ コンパイラの紹介
 
 # C++ コンパイラ
 
