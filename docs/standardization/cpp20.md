@@ -12,14 +12,14 @@ C++20 の変更すべてをカバーするために、項目追加・執筆作�
 ```C++
 #include <iostream>
 
-enum class Terrain
+enum class Terrain : unsigned char
 {
     Open, Forest, Hill, Mountain, Desert, Tundra, River, Ocean
 };
 
 struct Tile
 {
-    unsigned int height : 4 = 1; // デフォルト値を 1 に
+    unsigned char height : 4 = 1; // デフォルト値を 1 に
     Terrain terrain : 3 = Terrain::Open; // デフォルト値を明示的に Terrain::Open に
     bool passable : 1 = true; // デフォルト値を true に
 };
@@ -29,10 +29,10 @@ int main()
     std::cout << std::boolalpha;
     
     Tile tile1;
-    std::cout << tile1.height << ", " << static_cast<int>(tile1.terrain) << ", " << tile1.passable << '\n';
+    std::cout << static_cast<int>(tile1.height) << ", " << static_cast<int>(tile1.terrain) << ", " << tile1.passable << '\n';
     
     Tile tile2{ 15, Terrain::Mountain, false };
-    std::cout << tile2.height << ", " << static_cast<int>(tile2.terrain) << ", " << tile2.passable << '\n';
+    std::cout << static_cast<int>(tile2.height) << ", " << static_cast<int>(tile2.terrain) << ", " << tile2.passable << '\n';
 }
 ```
 ```
