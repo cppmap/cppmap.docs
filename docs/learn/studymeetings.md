@@ -17,9 +17,10 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | タイトル                                                 | 発表者               | ムービー |
 |------------------------------------------------------|-------------------|------|
 | 勉強会と会場の説明                                            | Akira Takahashi   |     |
-| CPythonを組み込む話 (仮)                                    | Shintarou Okada   |     |
-| 「みんな大好き！using ディレクティブ！」<br>「みんな代替トークン使とる。使てへんのお前だけ。」 | Kariya Mitsuru    |     |
-| 続・モジュール                                              | Tetsuro Matsumura |     |
+| [蛇を埋葬する](https://www.slideshare.net/ShintarouOkada/pythonembed-225851252)                           | Shintarou Okada   |     |
+| [みんな大好き！using ディレクティブ！](https://speakerdeck.com/kariyamitsuru/using-directive)             | Kariya Mitsuru    |     |
+| [みんな代替トークン使とる。使てへんのお前だけ。](https://speakerdeck.com/kariyamitsuru/alternative-tokens) | Kariya Mitsuru    |     |
+| [続・モジュール](https://www.slideshare.net/TetsuroMatsumura/introduction-to-c-modules-part-2-225829715)  | Tetsuro Matsumura |     |
 | RustとC++を比べてみた（当社比）                                  | いなむのみたま           |     |
 | ディスカッション                                             | (全員参加)            |     |
 
