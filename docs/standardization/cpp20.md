@@ -655,6 +655,50 @@ int main()
 C++11 では、`noexcept` の追加に合わせ、`throw(typeid, ...)` や `throw()` による動的例外指定が非推奨化されました。C++17 では前者が削除されましたが、古いコードにおいて広く使われていた後者は、移行猶予のために `noexcept(true)` のエイリアスとして改められつつ保持されていました。C++20 では後者も削除されます。
 
 
+### メッセージ付きの `[[nodiscard]]` 属性 [(P1301R4)](https://wg21.link/P1301R4)
+C++17 で追加された `[[nodiscard]]` 属性は、ライブラリなどが提供する関数の誤用を防ぐ助けになりますが、関数がなぜ `[[nodiscard]]` 属性を持っているのかについて、利用者に十分な情報が伝わらない場合がありました。C++20 では `[[nodiscard("....")]]` のような形式でメッセージを追加できるようになります。戻り値の無視があった場合、コンパイラは警告に加えてこのメッセージを補足情報として出力できます。
+
+```C++
+#include <vector>
+
+struct Data
+{
+private:
+
+	std::vector<int> m_data;
+	
+public:
+
+	void clear()
+	{
+		m_data.clear();
+	}
+
+	[[nodiscard("Did you mean 'clear'?")]]
+	bool empty() const
+	{
+		return m_data.empty();
+	}
+};
+
+int main()
+{
+	Data data;
+
+	data.empty();
+}
+```
+
+コンパイラの出力例
+
+```
+prog.cc:27:2: warning: ignoring return value of function declared with 'nodiscard' attribute:
+        Did you mean 'clear'? [-Wunused-result]
+        data.empty();
+        ^~~~~~~~~~
+1 warning generated.
+```
+
 
 ## 標準ライブラリ
 
