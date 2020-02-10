@@ -1494,7 +1494,7 @@ int main()
 `std::list` のメンバ関数 `remove()` で要素を削除した際、実際に削除された要素数を知るには、前後で `size()` の比較を行わなければなりませんでした。しかし、`std::forward_list` の場合は `size()` メンバ関数を持たないため、O(n) の操作である `std::distance()` を使う必要がありました。C++20 では、`std::list` および `std::forward_list` の `remove()`, `remove_if()`, `unique()` メンバ関数が、削除された要素数を戻り値として返すようになります。なお、呼び出し側で戻り値を使わない場合、主要コンパイラは最適化で処理を省略するため、この仕様変更が実行時性能に与える影響は無いとされています。
 
 
-## 要素数が決まっている配列型かどうかを調べる型特性 `std::is_bounded_array`, `std::is_unbounded_array` [(P1357R1)](https://wg21.link/P1357R1) 
+### 要素数が決まっている配列型かどうかを調べる型特性 `std::is_bounded_array`, `std::is_unbounded_array` [(P1357R1)](https://wg21.link/P1357R1) 
 C++17 の標準ライブラリが提供する型特性には、配列の要素数が決まっている (bounded) かどうかを判定するものはありませんでした。C++20 では利便性のために、型 `T` が要素数既知の配列型であるかを調べる型特性 `std::is_bounded_array<T>` と、型 `T` が要素数未知の配列型であるかを調べる型特性 `std::is_unbounded_array<T>` が追加されました。
 
 ```C++
