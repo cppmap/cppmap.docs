@@ -29,7 +29,7 @@ description: C++ のテキストデータライブラリの紹介
 
 
 ## XML
-- [Boost.PropertyTree](https://github.com/boostorg/property_tree)  <small>BSL 1.0</small>
+- [Boost.PropertyTree](https://github.com/boostorg/property_tree) <small>BSL 1.0</small>
     - 内部実装に RapidXml を使用
 - [pugixml](https://github.com/zeux/pugixml) <small>MIT</small>
 - [RapidXml](http://rapidxml.sourceforge.net/) <small>BSL 1.0</small>
