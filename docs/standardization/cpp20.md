@@ -1536,3 +1536,42 @@ int main()
 }
 ```
 
+### `std::function` のムーブコンストラクタが `noexcept` に [(P0771R1)](https://wg21.link/P0771R1)
+実行時性能を向上させるため、C++20 では `std::function` のムーブコンストラクタが `noexcept` になります。なお、libstdc++ と libc++ では提案時点ですでに実装済みでした。
+
+### アルゴリズムライブラリの関数の多くが `constexpr` に [(P0202R3)](https://wg21.link/P0202R3), [(P0879R0)](https://wg21.link/P0879R0)
+C++20 では `<utility>` ヘッダの `std::swap()`, `std::exchange()` および、`<algorithm>` ヘッダで条件を満たす全関数が `constexpr` に対応します。`std::all_of()` や `std::sort()`, `std::reverse()` など、よく使われるアルゴリズム関数が `constexpr` になります。
+
+`<algorithm>` ヘッダで `constexpr` にならないのは以下の関数のみです。
+
+- `std::stable_partition()`, `std::inplace_merge()`, `std::stable_sort()`
+	- メモリのアロケーション等が必要なため
+- `std::shuffle()`, `std::sample()`
+	- `constexpr` 関数を持たない `std::uniform_int_distribution` を使用するため
+- `ExecutionPolicy` を引数に取る関数
+
+```C++
+#include <array>
+#include <algorithm>
+#include <iostream>
+
+constexpr int SumOfTop3(std::array<int, 5> a)
+{
+    std::nth_element(a.begin(), a.begin() + 3, a.end()); // C++20 では constexpr
+    
+    return a[0] + a[1] + a[2];
+}
+
+int main()
+{
+    constexpr int n = SumOfTop3({ 1, 8, 16, 4, 2 });
+    
+    static_assert(n == 7);
+
+    std::cout << n << '\n'; // 7
+}
+```
+
+```
+7
+```
