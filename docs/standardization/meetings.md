@@ -33,6 +33,10 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [2020-02-10 to 15](https://wg21.link/n4817) / プラハ, チェコ
 - [JTC1/SC22/WG21 - Papers 2020 mailing2020-01 pre-Prague](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-01)
 
+#### 参加報告
+- [2020-02 Prague ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/f47x4o/202002_prague_iso_c_committee_trip_report_c20_is/) <small>by Bryce Lelbach and others</small>
+- [Trip report: Winter ISO C++ standards meeting (Prague)](https://herbsutter.com/2020/02/15/trip-report-winter-iso-c-standards-meeting-prague/) <small>by Herb Sutter</small>
+
 ## 2019 Belfast
 #### 場所 / 提案 / 会議の結果
 - [2019-11-04 to 09](https://wg21.link/n4782) / ベルファスト, 北アイルランド, 英国
