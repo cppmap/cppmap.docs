@@ -238,6 +238,37 @@ double Area(const Shape& shape)
 ```
 
 
+## 拡張浮動小数点数型
+- [Extended floating-point types (P1467)](https://wg21.link/P1467)
+- [Fixed-layout floating-point type aliases (P1468)](https://wg21.link/P1468)
+
+`float`, `double`, `long double` 以外の浮動小数点数型の実装を可能にする提案です。コンピュータグラフィックスや機械学習分野で使用頻度が増えている半精度 (16-bit) 浮動小数点数型を、組み込み型として提供できるようにすることが主な目的です。
+
+
+## Unicode 名による文字エスケープ
+- [Named universal character escapes (P2071)](https://wg21.link/P2071)
+
+Python などで採用されている、Unicode 名による文字エスケープを導入する提案です。不可視文字や似ている字形を文字 / 文字列リテラルで記述する際に役に立ちます。
+
+```C++
+std::string a ="\N{ZERO WIDTH SPACE}"; // "​" (不可視の空白)
+std::string b = "\N{GREEK CAPITAL LETTER OMEGA}"; // "Ω"
+std::string c = "\N{OHM SIGN}"; // "Ω"
+```
+
+
+## `std::string::operator=(char)` の問題の解消
+- [String's gratuitous assignment (P2037)](https://wg21.link/P2037)
+
+`std::string::operator=(char)` によって次のようなコードがコンパイルできてしまう問題の解決を図る提案です。この関数自体を `deprecated` にすることも解決法の候補として挙げられています。
+
+```C++
+std::string s;
+s = 48.0;
+std::cout << s << '\n';
+```
+
+
 ## Executors
 
 
