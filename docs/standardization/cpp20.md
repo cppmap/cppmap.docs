@@ -1425,33 +1425,34 @@ int main()
 `std::move()` を使うこの仕様変更は、同じ `<numeric>` ヘッダの `std::inner_product()` や `std::partial_sum()`, `std::adjacent_difference()` にも適用されます。
 
 
-### 2 の累乗数に関するユーティリティ関数を追加 [(P0556R3)](https://wg21.link/P0556R3), [(P1355R2)](https://wg21.link/P1355R2)
+### 2 の累乗数に関するユーティリティ関数を追加 [(P0556R3)](https://wg21.link/P0556R3), [(P1355R2)](https://wg21.link/P1355R2), [(P1956R1)](https://wg21.link/P1956R1)
 ある整数が 2 の累乗数であるかを調べたり、ある整数に近い 2 の累乗数を探したりする処理は、プログラミングでよく登場しますが、C++17 の標準ライブラリには実装されていませんでした。C++20 では次のような関数が追加されます。
 
 ```C++
 namespace std
 {
 	template <class T>
-	constexpr bool ispow2(T x) noexcept;
+	constexpr bool has_single_bit(T x) noexcept;
 	
 	template <class T>
-	constexpr T ceil2(T x);
+	constexpr T bit_ceil(T x);
 	
 	template <class T>
-	constexpr T floor2(T x) noexcept;
+	constexpr T bit_floor(T x) noexcept;
 	
 	template <class T>
-	constexpr T log2p1(T x) noexcept;
+	constexpr T bit_width(T x) noexcept;
 }
 ```
 
-- 引数 `x` が 2 の累乗数であるかを判定する `std::ispow2(x)`
-- `x` 以上で最小の 2 の累乗数を返す `std::ceil2(x)`
-- `x` 以下で最大の 2 の累乗数 (ただし `x` が 0 の場合は 0) を返す `std::floor2(x)`
-- `(1 + log2(x))` の整数部 (ただし `x` が 0 の場合は 0) を返す `std::log2p1(x)`
+- 引数 `x` のビット列に含まれる 1 が 1 個だけであるかを判定する `std::has_single_bit(x)`
+    - 「`x` が 2 の累乗数 (1, 2, 4, 8, ...) であるか」と同じ意味
+- `x` 以上で最小の 2 の累乗数を返す `std::bit_ceil(x)`
+- `x` 以下で最大の 2 の累乗数 (ただし `x` が 0 の場合は 0) を返す `std::bit_floor(x)`
+- `(1 + log2(x))` の整数部 (ただし `x` が 0 の場合は 0) を返す `std::bit_width(x)`
     - 「`x` を表現するために何ビット必要か」と同じ意味
 
-いずれの関数も、型 `T` が符号なし整数型 (`unsigned char`, `unsigned short`, `unsigned int`, `unsigned long`, `unsigned long long`) の場合のみオーバーロード解決に参加します。なお、`std::ceil2(x)` について、結果が型 `T` で表現できない場合の動作は未定義です。
+いずれの関数も、型 `T` が符号なし整数型 (`unsigned char`, `unsigned short`, `unsigned int`, `unsigned long`, `unsigned long long`) の場合のみオーバーロード解決に参加します。なお、`std::bit_ceil(x)` について、結果が型 `T` で表現できない場合の動作は未定義です。
 
 ```C++
 #include <iostream>
@@ -1462,10 +1463,10 @@ int main()
 	for (unsigned i = 0; i <= 16; ++i)
 	{
 		std::cout << i << ": "
-			<< std::ispow2(i) << ' '
-			<< std::ceil2(i) << ' '
-			<< std::floor2(i) << ' '
-			<< std::log2p1(i) << '\n';
+			<< std::has_single_bit(i) << ' '
+			<< std::bit_ceil(i) << ' '
+			<< std::bit_floor(i) << ' '
+			<< std::bit_width(i) << '\n';
 	}
 }
 ```
