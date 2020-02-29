@@ -82,5 +82,6 @@ nav:
     - C++ コンパイラ: tools/compilers.md
     - C++ オンラインコンパイラ: tools/onlinecompilers.md
     - C++ パッケージマネージャ: tools/package-manager.md
+    - C++ コードフォーマッタ: tools/code-formatter.md
   - 貢献:
     - コントリビュータ: contribution/contributors.md
