@@ -14,6 +14,8 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
 - [@Fuyutsubaki](https://twitter.com/Fuyutsubaki) さん
     - [なぜかコンパイルできない ネタ提供](https://github.com/cppmap/cppmap.docs/issues/9#issuecomment-472076826)
     - [標準ライブラリ 記事作成](https://github.com/cppmap/cppmap.docs/pull/12)
+- [@hr_sao](https://twitter.com/hr_sao) さん
+    - [C++ コードフォーマッタ 記事加筆](https://github.com/cppmap/cppmap.docs/pull/36)
 - [@kariya_mitsuru](https://twitter.com/kariya_mitsuru) さん
     - [C++17 洋書 情報提供](https://github.com/cppmap/cppmap.docs/issues/6)
     - [処理系の対応状況 情報提供](https://github.com/cppmap/cppmap.docs/pull/7)
