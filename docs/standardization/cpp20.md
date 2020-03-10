@@ -1584,6 +1584,7 @@ C++17 では、ユーザ定義の `delete` の中でメンバ変数にアクセ�
 
 ```C++
 #include <iostream>
+#include <new>
 
 struct Object
 {
@@ -1609,6 +1610,7 @@ C++20 では、`delete` の第二引数を `std::destroying_delete_t` 型にす�
 
 ```C++
 #include <iostream>
+#include <new>
 
 struct Object
 {
