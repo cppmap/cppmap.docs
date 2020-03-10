@@ -1540,6 +1540,7 @@ int main()
 ### `std::function` のムーブコンストラクタが `noexcept` に [(P0771R1)](https://wg21.link/P0771R1)
 実行時性能を向上させるため、C++20 では `std::function` のムーブコンストラクタが `noexcept` になります。なお、libstdc++ と libc++ では提案時点ですでに実装済みでした。
 
+
 ### `<utility>`, `<algorithm>` の多くの関数が `constexpr` に [(P0202R3)](https://wg21.link/P0202R3), [(P0879R0)](https://wg21.link/P0879R0)
 C++20 では `<utility>` ヘッダの `std::swap()`, `std::exchange()` および、`<algorithm>` ヘッダで条件を満たす全関数が `constexpr` に対応します。`std::all_of()` や `std::sort()`, `std::reverse()` など、よく使われるアルゴリズム関数が `constexpr` になります。
 
@@ -1575,4 +1576,57 @@ int main()
 
 ```
 7
+```
+
+
+### デストラクタを自動で呼ばない `delete` 演算子オーバーロード [(P0722R3)](https://wg21.link/P0722R3)
+C++17 では、ユーザ定義の `delete` の中でメンバ変数にアクセスしたくても、すでにクラスのデストラクタが呼ばれているため未定義の動作になります。
+
+```C++
+#include <iostream>
+
+struct Object
+{
+	std::string m_str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+	static void operator delete(void* p)
+	{    
+		std::cout << "m_str: "
+            << static_cast<Object*>(p)->m_str // 未定義の動作
+            << '\n';
+		::operator delete(p);
+	}
+};
+
+int main()
+{
+	Object* p = new Object();
+	delete p;
+}
+```
+
+C++20 では、`delete` の第二引数を `std::destroying_delete_t` 型にすることで、デストラクタの呼び出しが自動で実行されない挙動に設定できます（この新しい挙動を「destroying operator delete」と呼びます）。`void T::operator delete(T* ptr, std::destroying_delete_t)` のように、第一引数にはクラスへのポインタが渡され、明示的にデストラクタ `ptr->~T()` を呼ぶ必要があります。
+
+```C++
+#include <iostream>
+
+struct Object
+{
+    std::string m_str = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+
+    static void operator delete(Object* p, std::destroying_delete_t)
+    {    
+        std::cout << "m_str: "
+            << p->m_str
+            << '\n';      
+        p->~Object();
+        ::operator delete(p);
+    }
+};
+
+int main()
+{
+    Object* p = new Object();
+    delete p;
+}
 ```
