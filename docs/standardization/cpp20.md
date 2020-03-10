@@ -1601,7 +1601,7 @@ struct Object
 
 int main()
 {
-	Object* p = new Object();
+	Object* p = new Object;
 	delete p;
 }
 ```
@@ -1628,7 +1628,7 @@ struct Object
 
 int main()
 {
-    Object* p = new Object();
+    Object* p = new Object;
     delete p;
 }
 ```
