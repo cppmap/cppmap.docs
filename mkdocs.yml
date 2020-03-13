@@ -79,8 +79,8 @@ nav:
     - テストフレームワーク: libraries/testing.md
     - 数学: libraries/math.md
   - ツール:
-    - C++ コンパイラ: tools/compilers.md
     - C++ オンラインコンパイラ: tools/onlinecompilers.md
+    - C++ コンパイラ: tools/compilers.md
     - C++ パッケージマネージャ: tools/package-manager.md
     - C++ コードフォーマッタ: tools/code-formatter.md
   - 貢献:

@@ -26,7 +26,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 
 ## 2020 Varna
 #### 場所
-- [2020-06-01 to 06](https://wg21.link/n4837) / ヴァルナ, ブルガリア
+- 開催見送り / [当初予定 2020-06-01 to 06](https://wg21.link/n4837) / ヴァルナ, ブルガリア
 
 ## 2020 Prague
 #### 場所 / 提案
@@ -37,6 +37,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [2020-02 Prague ISO C++ Committee Trip Report](https://www.reddit.com/r/cpp/comments/f47x4o/202002_prague_iso_c_committee_trip_report_c20_is/) <small>by Bryce Lelbach and others</small>
 - [Trip report: Winter ISO C++ standards meeting (Prague)](https://herbsutter.com/2020/02/15/trip-report-winter-iso-c-standards-meeting-prague/) <small>by Herb Sutter</small>
 - [WG21 in Prague - (Partial) Trip Report](https://www.reddit.com/user/InbalL/comments/f5ftop/wg21_in_prague_partial_trip_report/) <small>by Inbal Levi</small>
+- [Trip Report: C++ Standards Meeting in Prague, February 2020](https://botondballo.wordpress.com/2020/03/12/trip-report-c-standards-meeting-in-prague-february-2020/) <small>by Botond Ballo</small>
 
 ## 2019 Belfast
 #### 場所 / 提案 / 会議の結果
