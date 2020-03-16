@@ -1632,3 +1632,114 @@ int main()
     delete p;
 }
 ```
+
+
+### ビット操作のための関数 [(P0553R4)](https://wg21.link/P0553R4)
+ビット列の左端と右端が循環するようにシフトするビットローテーションや、1 になっているビットを数える popcount などのビット操作命令は、多くの CPU アーキテクチャに搭載されていますが、それに対応する関数は C++17 標準ライブラリには存在せず、`__builtin_popcount` (GCC, Clang) や `__popcnt` (MSVC) のような、処理系が提供する非標準の組み込み関数を使う必要がありました。C++20 では、7 種類のビット操作が標準ライブラリ関数として提供されます。
+
+```C++
+namespace std
+{
+	template<class T>
+	[[nodiscard]] constexpr T rotl(T x, int s) noexcept;
+	
+	template<class T>
+	[[nodiscard]] constexpr T rotr(T x, int s) noexcept;
+
+	template<class T>
+	constexpr int countl_zero(T x) noexcept;
+	
+	template<class T>
+	constexpr int countl_one(T x) noexcept;
+	
+	template<class T>
+	constexpr int countr_zero(T x) noexcept;
+	
+	template<class T>
+	constexpr int countr_one(T x) noexcept;
+	
+	template<class T>
+	constexpr int popcount(T x) noexcept;
+}
+```
+
+- 引数 `x` を `s` だけ左にビットローテーションさせる `std::rotl(x, s)`
+	- `s` が負数の場合 `std::rotr(x, -s)` と同等
+- 引数 `x` を `s` だけ右にビットローテーションさせる `std::rotr(x, s)`
+	- `s` が負数の場合 `std::rotl(x, -s)` と同等
+- `x` の最上位ビットから数えて 0 が連続する個数を返す `std::countl_zero(x)`
+- `x` の最上位ビットから数えて 1 が連続する個数を返す `std::countl_one(x)`
+- `x` の最下位ビットから数えて 0 が連続する個数を返す `std::countr_zero(x)`
+- `x` の最下位ビットから数えて 1 が連続する個数を返す `std::countr_one(x)`
+- `x` の 2 進表現に含まれる 1 の個数を返す `std::popcount(x)`
+
+いずれの関数も、型 `T` が符号なし整数型 (`unsigned char`, `unsigned short`, `unsigned int`, `unsigned long`, `unsigned long long`) の場合のみオーバーロード解決に参加します。
+
+```C++
+#include <iostream>
+#include <cstdint>
+#include <bit>
+
+void ShowBinary(std::uint16_t x)
+{
+	for (size_t i = 0; i < 16; ++i)
+	{
+		std::cout << ((x >> (15 - i)) & 1);
+	}
+	std::cout << '\n';
+}
+
+int main()
+{
+	const std::uint16_t x = 0b0001'0110'1110'1111;
+
+	ShowBinary(x);
+	std::cout << '\n';
+
+	for (int s = -4; s <= 4; ++s)
+	{
+		ShowBinary(std::rotl(x, s));
+	}
+	std::cout << '\n';
+
+	for (int s = -4; s <= 4; ++s)
+	{
+		ShowBinary(std::rotr(x, s));
+	}
+	std::cout << '\n';
+
+	std::cout << std::countl_zero(x) << '\n';	// 3
+	std::cout << std::countl_one(x) << '\n';	// 0
+	std::cout << std::countr_zero(x) << '\n';	// 0
+	std::cout << std::countr_one(x) << '\n';	// 4
+}
+```
+```
+0001011011101111
+
+1111000101101110
+1110001011011101
+1100010110111011
+1000101101110111
+0001011011101111
+0010110111011110
+0101101110111100
+1011011101111000
+0110111011110001
+
+0110111011110001
+1011011101111000
+0101101110111100
+0010110111011110
+0001011011101111
+1000101101110111
+1100010110111011
+1110001011011101
+1111000101101110
+
+3
+0
+0
+4
+```
+
