@@ -41,6 +41,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 - [Freestanding in Prague](https://www.reddit.com/r/cpp/comments/f5hgqm/freestanding_in_prague/) <small>by Ben Craig</small>
 - [Trip Report: C++ Standards Meeting in Prague, February 2020](https://botondballo.wordpress.com/2020/03/12/trip-report-c-standards-meeting-in-prague-february-2020/) <small>by Botond Ballo</small>
 - [Kafka’s uncle spends a week with Les Booloise: Prague trip report](https://hatcat.com/?p=119) <small>by Guy Davidson</small>
+- [Trip report: February 2020 ISO C++ committee meeting, Prague](https://timur.audio/trip-report-february-2020-iso-c-committee-meeting-prague) <small>by Timur Doumler</small>
 
 ## 2019 Belfast
 #### 場所 / 提案 / 会議の結果
