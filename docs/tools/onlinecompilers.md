@@ -93,8 +93,8 @@ int main()
 ```
 
 
-### Stensal
-[Stensal](https://segfault.stensal.com/) は、C, C++ プログラムを実行して、セグメンテーション違反などメモリに関する問題が発生したときに、その箇所と原因をわかりやすく表示するオンラインコンパイラです。バッファオーバーラン、Null ポインタの参照外し、未初期化変数の利用などの問題を明らかにします。実装には Wandbox が使われています。
+### cee.studio
+[cee.studio](https://www.cee.studio/) は、C, C++ プログラムを実行して、セグメンテーション違反などメモリに関する問題が発生したときに、その箇所と原因をわかりやすく表示する機能を持つオンラインコンパイラです。バッファオーバーラン、Null ポインタの参照外し、未初期化変数の利用などの問題を明らかにします。オンライン IDE で「Run in Guarrail」モードで実行することでメモリのデバッグを行えます。
 
 入力例
 ```C++
@@ -110,33 +110,23 @@ int main()
 
 出力例
 ```
-=========== Start of #0 stensal runtime message ===========
-
-  Runtime error: **[out-of-bounds read]**  
-  Continuing execution can cause undefined behavior, abort!
-
- ```stensal-diagnostic-info
--
-- Reading 4 bytes from 0x937c414 will read undefined values.
-- 
-- The memory-space-to-be-read (start:0x937c414, size:3 bytes) is bound to 's' at
--     file:/prog.cc::5, 0
-- 
--  0x937c414               0x937c416
--  +------------------------------+
--  | the memory-space-to-be-read  |......
--  +------------------------------+
--  ^~~~~~~~~~
--  the read starts at the memory begin.
-- 
-- Stack trace (most recent call first) of the read.
-- [1]  file:/musl-1.1.10/src/string/strlen.c::91, 3
-- [2]  @[unknown_id 291]
-- [3]  file:/prog.cc::7, 2
-- [4]  [libc-start-main]
--
- ```
-error code (56,213)
-
-============ End of #0 stensal runtime message ============
+  Memory access error: reading from the outside of a memory space; abort execution.
+  # Reading 4 bytes from 0x981cdd4 will read undefined values.
+  #
+  # The memory-space-to-be-read (start:0x981cdd4, size:3 bytes) is bound to 's' at
+  #    file:/prog.cc::5, 0
+  #
+  #  0x981cdd4               0x981cdd6
+  #  +------------------------------+
+  #  | the memory-space-to-be-read  |......
+  #  +------------------------------+
+  #  ^~~~~~~~~~
+  #  the read starts at the memory-space begin.
+  #
+  # Stack trace (most recent call first) of the read.
+  # [0]  file:/musl-1.1.10/src/string/strlen.c::91, 3
+  # [1]  unknown_location (report this ::244)
+  # [2]  file:/prog.cc::7, 5
+  # [3]  [libc-start-main]
+Segmentation fault
 ```
