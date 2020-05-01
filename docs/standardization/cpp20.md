@@ -700,6 +700,58 @@ prog.cc:27:2: warning: ignoring return value of function declared with 'nodiscar
 ```
 
 
+### 指示付き初期化子 [(P0329R4)](https://wg21.link/P0329R4)
+C++20 から、集成体において、メンバ変数名を指定した初期化（指示付き初期化子を用いた初期化: "Designated Initialization" ）ができるようになります。C 言語 (C99) にも同様の機能がありますが、C++20 では C99 と比較して以下のような制約が追加されています。
+
+- (a) 指示子の順番はメンバの宣言順と同じである必要がある
+- (b) 指示付き初期化子と通常の初期化子の混在はできない
+- (c) 指示付き初期化は重複できない
+- (d) 指示付き初期化のネストはできない
+- (e) 配列の指示付き初期化はできない
+
+また、初期化子の評価順序が左から右であることが保証されます。
+
+```C++
+#include <string>
+
+struct Point
+{
+	int x, y;
+};
+
+struct Item
+{
+	std::string name;
+	int id = -1;
+	int count = 1;
+};
+
+void F(Point) {}
+
+int main()
+{
+	Point p1 = { .x = 10, .y = 20 }; // OK
+	Point p2{ .x = 10, .y = 20 }; // OK
+	Point p3 = { .x = 10 }; // OK: y は 0 に初期化される
+	Point p4 = { .y = 20 }; // OK: x は 0 に初期化される
+	F({ .x = 10, .y = 20 }); // OK
+	
+	//Point p4 = { .y = 20, .x = 30 }; // コンパイルエラー: (a) 指示子の順番がメンバの宣言順と異なる
+	//Point p5 = { .x = 20, 40 }; // コンパイルエラー: (b) 指示付き初期化子と通常の初期化子は混在できない
+	//Point p6 = { .x = 20, .x = 30, .y = 30 }; // コンパイルエラー: (c) 指示付き初期化子は重複できない
+
+	Item i1{ .name = "shield", .id = 30, .count = 100 }; // OK
+	Item i2{ .id = 0 }; // OK: name は {} で初期化、count は 1 で初期化
+	
+	//Item i3{ .pos.x = 10, .pos.y = 40 }; // コンパイルエラー: (d) 指示付き初期化のネストはできない
+
+	//int arr[3] = {[1] = 5}; // コンパイルエラー: (e) 配列の指示付き初期化はできない
+}
+```
+
+従来までの `Point p{}`, `Item i{}` のような集成体初期化を「指示付き初期化子が 0 個の初期化」と考えると、新しい挙動も理解しやすくなります。
+
+
 ## 標準ライブラリ
 
 ### 文字列の先頭や末尾が、ある文字列と一致するか判定 [(P0457R2)](https://wg21.link/P0457R2)
@@ -1743,3 +1795,45 @@ int main()
 4
 ```
 
+
+### 組み込み配列から `std::array` を作成する `std::to_array()` [(P0325R4)](https://wg21.link/P0325R4)
+C++17 で導入された型推論ガイドによって、`std::array` で次のようなコードが書けるようになりました。
+
+```C++
+#include <array>
+
+int main()
+{
+	auto a = std::array{ 1, 2, 3 }; // std::array<int, 3>
+}
+```
+
+しかし、`"hello"` や `int[4]` のような組み込み配列から `std::array<char, 6>` や `std::array<int, 4>` を作成する方法はありませんでした。
+
+```C++
+#include <array>
+
+int main()
+{
+	auto a1 = std::array{ "hello" }; // std::array<const char*, 1>
+
+	int xs[4] = { 1,2,3,4 };
+	auto a2 = std::array{ xs }; // std::array<int*, 1>
+}
+```
+
+C++20 では、組み込み配列の左辺値または右辺値を引数にとり、値をコピー（ムーブ）して新しい `std::array` を作成する補助関数 `std::to_array()` が追加され、組み込み配列からの `std::array` の作成が簡単になりました。
+
+```C++
+#include <array>
+
+int main()
+{
+	auto a1 = std::to_array("hello"); // std::array<char, 6>
+
+	int xs[4] = { 1,2,3,4 };
+	auto a2 = std::to_array(xs); // std::array<int, 4>
+
+	auto a3 = std::to_array<long>({ 1, 2 }); // std::array<long, 2>
+}
+```
