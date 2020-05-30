@@ -72,6 +72,7 @@ nav:
     - C++ オンライン資料: learn/online-resources.md
     - 国内の C++ 勉強会: learn/studymeetings.md
     - C++ コミュニティ: learn/communities.md
+    - C++ カンファレンス: learn/conferences.md
   - ライブラリ:
     - Boost: libraries/boost.md
     - コンテナ: libraries/containers.md
