@@ -23,6 +23,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 ## (2020 最新の提案リスト)
 #### 提案
 - [JTC1/SC22/WG21 - Papers 2020 mailing2020-04 post-Prague](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-04)
+    - 解説: [WG21月次提案文書を眺める（2020年4月）](https://onihusube.hatenablog.com/entry/2020/05/01/194425)
 - [JTC1/SC22/WG21 - Papers 2020 mailing2020-05 post-Prague](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-05)
     - 解説: [WG21月次提案文書を眺める（2020年5月）](https://onihusube.hatenablog.com/entry/2020/06/01/001003)
 
