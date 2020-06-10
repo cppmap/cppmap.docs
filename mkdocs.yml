@@ -67,6 +67,7 @@ nav:
     - IEEE 754 演算のルール: articles/ieee754-arithmetic.md
     - C++ 関連の略語: articles/acronyms.md
     - C++ 型特性 早見表: articles/type-traits.md
+    - C++ アクセス指定子の効果: articles/member-access.md
   - 学習:
     - C++ 書籍: learn/books.md
     - C++ オンライン資料: learn/online-resources.md
