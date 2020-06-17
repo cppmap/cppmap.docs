@@ -954,7 +954,7 @@ int main()
 ```
 
 
-### 非順序連想コンテナのルックアップ操作で、`key_type` と比較可能な型を変換せずに使えるように [(P0919R3)](http://wg21.link/P0919r3)
+### 非順序連想コンテナのルックアップ操作で、`key_type` と比較可能な型を変換せずに使えるように [(P0919R3)](http://wg21.link/P0919r3), [(P1690R1)](http://wg21.link/P1690R1)
 C++17 までの `unorderd_map` や `unordered_set` など非順序連想コンテナでは、`find()`, `count()`, `equal_range()` などルックアップを行うメンバ関数は引数に `key_type` をとり、例えば次のようなケースで `std::string` 型の一時オブジェクトが作成されて非効率でした。
 
 ```C++
@@ -969,17 +969,24 @@ int main()
 }
 ```
 
-C++20 では、非順序連想コンテナのテンプレートパラメータ `Hash` が `transparent_key_equal` タグを持つときに、`key_type` 以外の型を引数にとるメンバ関数テンプレートのオーバーロードが使用可能になり、一時オブジェクトの作成を回避できるようになります。
+C++20 では、非順序連想コンテナのテンプレートパラメータについて `Hash::is_transparent` と `Pred::is_transparent` が存在するときに、`key_type` 以外の型を引数にとるメンバ関数テンプレートのオーバーロードが使用可能になり、一時オブジェクトの作成を回避できるようになります。
 
 ```C++
 #include <string>
 #include <string_view>
 #include <unordered_map>
 
+struct string_compare
+{
+	using is_transparent = void;
+	bool operator()(std::string_view key, std::string_view txt) const { return key == txt; }
+};
+
 struct string_hash
 {
-	using transparent_key_equal = std::equal_to<>;  // KeyEqual to use
-	using hash_type = std::hash<std::string_view>;  // helper local type
+	using is_transparent = void;
+	using transparent_key_equal = string_compare;
+	using hash_type = std::hash<std::string_view>; // helper local type
 	size_t operator()(std::string_view txt) const { return hash_type{}(txt); }
 	size_t operator()(const std::string& txt) const { return hash_type{}(txt); }
 	size_t operator()(const char* txt) const { return hash_type{}(txt); }
@@ -989,7 +996,7 @@ int main()
 {
 	using namespace std::literals;
 
-	std::unordered_map<std::string, int, string_hash> table = { /* ... */ };
+	std::unordered_map<std::string, int, string_hash, string_compare> table = { /* ... */ };
 
 	auto it1 = table.find("abc"); // std::string 型の一時オブジェクトは作成されない
 
