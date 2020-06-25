@@ -12,6 +12,10 @@ description: オンラインでアクセスできる C++ 資料の紹介
 - [cppreference.com](https://en.cppreference.com/w/)
 - [C++ Language Reference](https://docs.microsoft.com/en-us/cpp/cpp/cpp-language-reference)
 
+## 論文
+- [Thriving in a Crowded and Changing World: C++ 2006–2020](https://www.stroustrup.com/hopl20main-p5-p-bfc9cd4--final.pdf)
+    - C++ 生みの親ストラウストラップ氏による 2006～2020 年の C++ の進化の解説論文
+
 ## コーディングガイドライン
 - [組込みソフトウェア開発向けコーディング作法ガイド C++ 言語版 Ver.2.0](https://www.ipa.go.jp/sec/publish/tn16-007.html)
 - [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) | [見出し日本語訳](https://qiita.com/tetsurom/items/322c7b58cddaada861ff)
