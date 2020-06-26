@@ -1,6 +1,8 @@
 description: C++ の並行・並列ライブラリの紹介
 
-# マルチタスクスケジューリング
+# 並行・並列
+
+## マルチタスクスケジューリング
 
 - [Cpp-Taskflow](https://github.com/cpp-taskflow/cpp-taskflow) <small>MIT</small>
     - C++17 以上でモダンな API でタスクフローが組める
