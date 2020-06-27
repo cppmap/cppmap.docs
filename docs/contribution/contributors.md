@@ -58,3 +58,5 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [国内の勉強会 情報加筆](https://github.com/cppmap/cppmap.docs/pull/29)
 - [@yumetodo](https://twitter.com/yumetodo) さん
     - [テキストデータ ライブラリ 情報提供](https://github.com/cppmap/cppmap.docs/pull/17)
+    - [並行・並列 ライブラリ 記事加筆](https://github.com/cppmap/cppmap.docs/pull/40)
+    
