@@ -269,6 +269,16 @@ std::cout << s << '\n';
 ```
 
 
+## `std::print()`
+- [Formatted output (P2093)](https://wg21.link/P2093)
+
+C++20 の `std::format` をベースにした新しい標準出力 API, `std::print()` を導入する提案です。`std::cout` に比べて、Unicode 対応、使いやすさや実行時性能の向上、バイナリサイズの削減が期待されます。
+
+```C++
+std::print("Hello, {}!", name);
+```
+
+
 ## Executors
 
 
