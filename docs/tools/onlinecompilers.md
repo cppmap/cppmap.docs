@@ -46,12 +46,18 @@ square(int):
 Compiler Explorer には、Web 上のファイルを `#include "URL"` でインクルードできる独自拡張機能があります。この機能を使うと、GitHub などに公開されているシングルヘッダライブラリをプログラムの中で簡単に使えます（例: https://godbolt.org/z/OV-vGQ）
 
 
-### Quick C++ Benchmark
-[Quick C++ Benchmark](http://quick-bench.com/) は、[google/benchmark](https://github.com/google/benchmark) による実行時間の計測と、その結果のビジュアライズができるオンラインコンパイラです。棒グラフによる比較、アセンブリの表示、グラフ画像のダウンロード、URL による結果のシェアなどの機能があります。
+### Quick Bench
+[Quick Bench](http://quick-bench.com/) は、[google/benchmark](https://github.com/google/benchmark) による C++ プログラムの実行時間の計測と、その結果のビジュアライズができるオンラインコンパイラです。棒グラフによる比較、アセンブリの表示、グラフ画像のダウンロード、URL による結果のシェアなどの機能があります。
 
 例: http://quick-bench.com/O1QdfCc73docKGKjaYBxWG6a9AU
 
 ![](images/quick-bench.png)
+
+
+### Build Bench
+[Build Bench](https://build-bench.com/) は、異なる C++ ソースやビルドオプションどうしのビルド時間を比較できる Web サービスです。
+
+![](images/build-bench.png)
 
 
 ### C++ Insights
