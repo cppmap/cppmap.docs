@@ -86,5 +86,6 @@ nav:
     - C++ コンパイラ: tools/compilers.md
     - C++ パッケージマネージャ: tools/package-manager.md
     - C++ コードフォーマッタ: tools/code-formatter.md
+    - C++ プロジェクトテンプレート: tools/project-template.md
   - 貢献:
     - コントリビュータ: contribution/contributors.md
