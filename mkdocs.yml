@@ -2,9 +2,9 @@ site_dir: '../cppmap.github.io'
 
 # Project information
 site_name: C++ の歩き方 | CppMap
-site_description: C++17, C++20, C++23, C++26 に関する情報を調査・提供します
-site_author: Ryo Suzuki
 site_url: https://cppmap.github.io/
+site_author: Ryo Suzuki
+site_description: C++17, C++20, C++23, C++26 に関する情報を調査・提供します
 
 # Repository
 repo_name: cppmap/cppmap.docs
@@ -16,23 +16,26 @@ copyright: To the extent possible under law, Ryo Suzuki has waived all copyright
 
 # Theme
 theme:
-  name: 'material'
-  language: 'ja'
-  favicon: 'assets/images/logo.png'
-  logo:
-    icon: 'donut_small'
+  name: material
+  language: ja
   palette:
-    primary: 'teal'
-    accent: 'teal'
-  feature:
-    tabs: true
+    primary: teal
+    accent: teal
+  logo: images/donut_small-white-24dp.svg
+  favicon: assets/images/logo.png
+  features:
+    - tabs
+plugins:
+  - search:
+      lang:
+      - en
+      - ja
+      separator: '[\s　、。，．がのをにへとでやかもる「」『』]+'
+      prebuild_index: true
 extra:
-  search:
-    language: 'en, ja'
-    tokenizer: '[\s　、。，．がのをにへとでやかもる「」『』]+'
   social:
-    - type: 'twitter'
-      link: 'https://twitter.com/Reputeless'
+    - icon: fontawesome/brands/twitter
+      link: https://twitter.com/Reputeless
 markdown_extensions:
   - admonition
   - codehilite
