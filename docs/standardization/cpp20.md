@@ -1879,7 +1879,7 @@ C++17 で導入された `std::filesystem::create_directory()` および `std::f
 
 
 ### `std::make_shared()` と `std::allocate_shared()` が配列をサポート [(P0674R1)](https://wg21.link/P0674R1)
-C++11 から提供される `std::make_shared()`, `std::allocate_shared()` は配列をサポートしていませんでした。C++20 からは配列型のためのオーバーロードが追加されます。
+C++11 で導入された `std::make_shared()`, `std::allocate_shared()` は配列をサポートしていませんでした。C++20 からは配列型のためのオーバーロードが追加されます。
 
 ```C++
 #include <iostream>
