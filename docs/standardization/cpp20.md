@@ -1792,6 +1792,7 @@ int main()
 	std::cout << std::countl_one(x) << '\n';	// 0
 	std::cout << std::countr_zero(x) << '\n';	// 0
 	std::cout << std::countr_one(x) << '\n';	// 4
+	std::cout << std::popcount(x) << '\n';      // 10
 }
 ```
 ```
@@ -1821,6 +1822,7 @@ int main()
 0
 0
 4
+10
 ```
 
 
@@ -1875,3 +1877,56 @@ C++17 で導入された `std::filesystem::create_directory()` および `std::f
 
 という、対処しにくく一貫しない挙動がありました。C++20 では同名の（ディレクトリでない）ファイルが存在する場合は常にエラーになるよう仕様が修正されます。この変更は C++17 規格にさかのぼって適用され、対応した C++17 環境でも利用できます。
 
+
+### `std::make_shared()` が配列型をサポート [(P0674R1)](https://wg21.link/P0674R1)
+C++11 で導入された `std::make_shared()` は配列型をサポートしていませんでしたが、C++20 で配列型のためのオーバーロードが追加されました。
+
+```C++
+#include <iostream>
+#include <memory>
+
+int main()
+{
+	// 値初期化された int[100]
+	std::shared_ptr<int[]> p1 = std::make_shared<int[]>(100);
+	std::cout << p1[99] << '\n'; // 0
+
+	// 値初期化された double[6][4]
+	std::shared_ptr<double[][4]> p2 = std::make_shared<double[][4]>(6);
+	std::cout << p2[5][3] << '\n'; // 0.0
+
+	// 値初期化された int[100]
+	std::shared_ptr<int[100]> p3 = std::make_shared<int[100]>();
+	std::cout << p3[99] << '\n'; // 0
+
+	// 値初期化された double[6][4]
+	std::shared_ptr<double[6][4]> p4 = std::make_shared<double[6][4]>();
+	std::cout << p4[5][3] << '\n'; // 0.0
+
+	// int[100] で各要素は -1
+	std::shared_ptr<int[]> p5 = std::make_shared<int[]>(100, -1);
+	std::cout << p5[99] << '\n'; // -1
+
+	// double[6][4] で、各 double[4] は { 1.0, 0.9, 0.8, 0.7 }
+	std::shared_ptr<double[][4]> p6 = std::make_shared<double[][4]>(6, { 1.0, 0.9, 0.8, 0.7 });
+	std::cout << p6[5][3] << '\n'; // 0.7
+
+	// int[100] で各要素は -2
+	std::shared_ptr<int[100]> p7 = std::make_shared<int[100]>(-2);
+	std::cout << p7[99] << '\n'; // -2
+
+	// double[6][4] で、各 double[4] は { 0.0, 0.1, 0.2, 0.3 }
+	std::shared_ptr<double[6][4]> p8 = std::make_shared<double[6][4]>({ 0.0, 0.1, 0.2, 0.3 });
+	std::cout << p8[5][3] << '\n'; // 0.3
+}
+```
+```
+0
+0
+0
+0
+-1
+0.7
+-2
+0.3
+```
