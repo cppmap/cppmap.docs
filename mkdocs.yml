@@ -61,6 +61,7 @@ nav:
     - 処理系の対応状況: standardization/status.md
     - C++ 規格書: standardization/working-drafts.md
     - C++ 標準ライブラリ: standardization/header.md
+    - C++ 文書検索 bot: standardization/npaperbot.md
   - 記事:
     - コメントアウトのトリック: articles/comment-tricks.md
     - なぜかコンパイルできる: articles/it-compiles.md
