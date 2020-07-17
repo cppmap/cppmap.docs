@@ -28,39 +28,43 @@ C++ の学習に役立つ最新の書籍を紹介します。
 ![](images/books.jpg)
 
 
-### C++ 入門書の選び方
+## C++ 入門書の選び方
 
-#### [冒険で学ぶ はじめてのプログラミング](https://amzn.to/2IWnWnx)
-3 日間コースの中高生向け C++ 教室で使われている教科書で、モダン C++ をベースに入門レベルの内容 (標準入出力、変数、if-else, for, 乱数、std::vector など）を扱っています。無理のないペースと物語形式の題材で、挫折せずにプログラミングに慣れることができるのが特長です。C++ は厚い本が多いなか、約 180 ページと手軽なので、完全読破をして自信をつけて次のステップに進むのに適した最初の一冊です。
+### [冒険で学ぶ はじめてのプログラミング](https://amzn.to/2IWnWnx)
+3 日間コースの中高生向け C++ 教室で使われている教科書です。モダン C++ をベースに入門レベルの内容 (標準入出力、変数、if-else, for, 乱数、std::vector など）を扱っています。無理のないペースと物語形式の題材で、挫折せずにプログラミングに慣れることができるのが特長です。C++ は厚い本が多いなか、約 180 ページと手軽なので、完全読破をして自信をつけて次のステップに進むのに適した最初の一冊です。
 
-#### [やさしい C++ 第 5 版](https://amzn.to/3j9pVTD)
-C++ の入門～中級レベルの内容のうち、基本的な部分（『冒険で学ぶ はじめてのプログラミング』に加え、関数、ポインタ、クラス、ファイルなど）を取り上げて、豊富な図を交えて説明しています。学習する順番も適切にデザインされていて親切です。約 550 ページと分量は多いですが、情報系の専門 / 高専 / 大学生が C++ を使えるよう、腰を据えて独学するのに最適な一冊です。範囲 for や標準ライブラリなど、C++11 以降のモダンな機能への言及が少ない点には注意です。
+### [やさしい C++ 第 5 版](https://amzn.to/3j9pVTD)
+C++ の入門～中級レベルの内容のうち、基本的な部分（『冒険で学ぶ はじめてのプログラミング』に加え、関数、ポインタ、クラス、ファイルなど）を取り上げて、豊富な図を交えて説明しています。学習する順番も適切にデザインされていて親切です。約 550 ページと分量は多いですが、情報系の専門 / 高専 / 大学生が C++ を使えるよう、腰を据えて独学するのに最適な一冊です。C++11 以降の範囲 for や新しい標準ライブラリなど、モダンな機能への言及が少ない点には注意が必要です。
 
-#### [独習 C++ 新版](https://amzn.to/2ZWRrck)
-独学のための十分なサンプルと説明が掲載されている入門書で、C++17 の機能も扱っています。『やさしい C++ 第 5 版』では扱っていないラムダ式や右辺値参照、また簡単な紹介にとどまっていたテンプレートや例外、データ構造などもしっかり解説しています。序盤からやや高度なトピックも登場するため、未経験からこの本を読み始めるのは少し大変かもしれません。
+### [独習 C++ 新版](https://amzn.to/2ZWRrck)
+独学のための十分なサンプルと説明が掲載されている入門書で、C++11～C++17 の機能も多く登場します。『やさしい C++ 第 5 版』では扱っていないラムダ式や右辺値参照、また簡単な紹介にとどまっていたテンプレートや例外、データ構造などをしっかり解説しています。序盤からやや高度なトピックも登場するため、未経験からこの本を読み始めるのは少し大変かもしれません。
 
-#### [C++ の絵本 第２版](https://amzn.to/2TFvvTO)
-C 言語から C++ にステップアップするうえで新しく覚える必要のある内容（クラス、名前空間、参照、継承、テンプレートなど）に焦点を当てて、豊富な図解でまとめています。一方で、それ以外の基本的な文法については説明を省いているため、ある程度の経験者が対象です。"Better C" 的なコードしか書けない人が「C++ らしい」コードを書けるようになるための重要な情報がまとめられています。
+### [C++ の絵本 第２版](https://amzn.to/2TFvvTO)
+C 言語から C++ にステップアップするうえで新しく覚える必要のある内容（クラス、名前空間、参照、継承、テンプレートなど）に焦点を当て、豊富な図解でまとめています。一方で、それ以外の基本的な文法については説明を省いているため、ある程度の経験者が対象です。"Better C" 的なコードしか書けない人が「C++ らしい」コードを書けるようになるための重要な情報がまとめられています。
 
-#### [基礎からしっかり学ぶ C++ の教科書](https://amzn.to/2IXa1hf)
+### [基礎からしっかり学ぶ C++ の教科書](https://amzn.to/2IXa1hf)
 C++ の入門～中級レベルの多くの情報（『やさしい C++ 第 5 版』に加え、例外や並列処理）を、約 300 ページに効率よく圧縮して紹介しています。少しだけ C++ を使ったことのある人や、C 言語に慣れている人が、短時間で C++ の主要機能をインプットするのに向いています。
 
-#### [江添亮の C++ 入門](https://amzn.to/2HTGUbt)
-C++11 よりも昔の情報で C++ を学習した人が、最新の C++ の流儀に再入門するのに適した入門書です。
+### [江添亮の C++ 入門](https://amzn.to/2HTGUbt)
+古い C++ を学習した人が、最新の C++ の流儀に再入門するのに適した入門書です。
 
-#### [[改訂第3版] C++ ポケットリファレンス](https://amzn.to/2H8a3kH)
+### [[改訂第3版] C++ ポケットリファレンス](https://amzn.to/2H8a3kH)
 掲載されている C++ の機能の数は断トツのトップクラスです。総ページのうち大部分が標準ライブラリ機能の解説ですが、100 ページ以上ある第 2 章では C++ の言語機能も網羅的に解説しています（図などは無く、抜粋のコードがほとんどなので初学者にはやや難しいです）。入門書というよりも辞書的な性格が強い本です。ある程度 C++ の経験を積んでからもお世話になる本です。
 
 
 ## 洋書
-| 書名                                                                         | 発行年  | C++ 規格   | 内容                                                                                                                                 |
-|----------------------------------------------------------------------------|------|----------|------------------------------------------------------------------------------------------------------------------------------------|
-| [C++ Templates: The Complete Guide (2nd Edition)](https://amzn.to/2TnVa4h) | 2017 | C++17/20 | C++17 のテンプレートの文法や様々なテクニックを解説。C++20 で導入されるコンセプトの紹介も。 [目次](https://www.oreilly.com/library/view/c-templates-the/9780134778808/)      |
-| [Mastering the C++17 STL](https://amzn.to/2tYz4X1)                         | 2017 | C++17    | C++17 までの標準ライブラリの機能や使い方を紹介。[目次](https://www.packtpub.com/application-development/mastering-c17-stl)                                |
-| [A Tour of C++ Second Edition](https://amzn.to/307PviS)       | 2018 | C++17/20 | Bjarne Stroustrup による中級者向けの C++ 解説書。C++20 の一部の機能も紹介 |
-| [C++ Concurrency in Action, Second Edition](https://amzn.to/2J2y26G)       | 2019 | C++17    | C++17 における並行処理を詳細に解説。ロックフリーデータ構造の設計なども取り上げる。[試し読み](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition) |
-| [C++17 in Detail](https://amzn.to/308p8fO)                       | 2019 | C++17    | C++17 の主要な新機能・変更点のほか、Boost から標準ライブラリへの移行を解説。[目次](https://leanpub.com/cpp17indetail)                                                           |
-| [C++17 - The Complete Guide](http://www.cppstd17.com/)                       | 2019 | C++17    | [目次](http://www.cppstd17.com/)                                                           |
+| 書名                                                                         | 発行年  | C++ 規格   | 内容                                                                                                                                                     |
+|----------------------------------------------------------------------------|------|----------|--------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [C++ Templates: The Complete Guide (2nd Edition)](https://amzn.to/2TnVa4h) | 2017 | C++17/20 | C++17 のテンプレートの文法や様々なテクニックを解説。C++20 で導入されるコンセプトの紹介も。 [目次](https://www.oreilly.com/library/view/c-templates-the/9780134778808/)                          |
+| [Mastering the C++17 STL](https://amzn.to/2tYz4X1)                         | 2017 | C++17    | C++17 までの標準ライブラリの機能や使い方を紹介。[目次](https://www.packtpub.com/application-development/mastering-c17-stl)                                                    |
+| [Professional C++](https://amzn.to/2Ov3SJ9)                                | 2018 | C++17    | [目次](https://www.wiley.com/en-jp/Professional+C++,+4th+Edition-p-9781119421306)                                                                        |
+| [C++ Concurrency in Action, Second Edition](https://amzn.to/2J2y26G)       | 2019 | C++17    | C++17 における並行処理を詳細に解説。ロックフリーデータ構造の設計なども取り上げる。[試し読み](https://www.manning.com/books/c-plus-plus-concurrency-in-action-second-edition)                     |
+| [C++17 in Detail](https://leanpub.com/cpp17indetail)                       | 2019 | C++17    | C++17 の主要な新機能・変更点のほか、Boost から標準ライブラリへの移行を解説。[目次](https://leanpub.com/cpp17indetail)                                                                    |
+| [C++17 - The Complete Guide](http://www.cppstd17.com/)                     | 2019 | C++17    | [目次](http://www.cppstd17.com/)                                                                                                                         |
+| [C++ Crash Course: A Fast-Paced Introduction](https://amzn.to/395CtqL)     | 2019 | C++17    | （調査中）                                                                                                                                                  |
+| [Advanced C++ Programming Cookbook](https://amzn.to/3fFA88f)               | 2020 | C++20    | [目次](https://www.packtpub.com/programming/advanced-c-cookbook) / [サンプルコード](https://github.com/PacktPublishing/Advanced-CPP-Programming-CookBook)       |
+| [C++ System Programming Cookbook](https://amzn.to/3jfdoxU)                 | 2020 | C++20    | [目次](https://www.packtpub.com/programming/c-system-programming-cookbook) / [サンプルコード](https://github.com/PacktPublishing/C-System-Programming-Cookbook) |
+| [Expert C++](https://amzn.to/2WsxY49)                                      | 2020 | C++20    | [目次](https://www.packtpub.com/programming/mastering-c-programming) / [サンプルコード](https://github.com/PacktPublishing/Expert-CPP)                          |
 
 
 ## 同人誌
