@@ -38,6 +38,9 @@ C および C++ ユーザ協会。[年次カンファレンス](https://conferen
 ### COW | Copy On Write
 コピーオンライトと呼ばれる最適化テクニック
 
+### CPO | Customization point object
+C++20 以降の標準ライブラリで提供される、カスタマイゼーションポイントオブジェクトと呼ばれる関数オブジェクト（[参考記事](https://onihusube.hatenablog.com/entry/2020/06/26/225920)）
+
 ### CPP | C Preprocessor
 マクロを処理するプリプロセッサ
 
