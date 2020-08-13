@@ -864,7 +864,7 @@ C++17 で導入された `[[nodiscard]]` 属性を標準ライブラリで活用
 
 int main()
 {
-	std::vector<int> v = { 10, 20, 30 };
+	std::vector v = { 10, 20, 30 };
 
 	v.empty(); // C++20 では警告
 
@@ -1370,8 +1370,8 @@ int main()
 
 int main()
 {
-	std::vector<int> v = { 3, 14, 1, 5, 92 };
-	std::list<int> li = { 3, 14, 1, 5, 92 };
+	std::vector v = { 3, 14, 1, 5, 92 };
+	std::list li = { 3, 14, 1, 5, 92 };
 	std::unordered_map<std::string, int> m = {
 		{ "aa", 3 }, { "bb", 14 }, { "cc", 1 }, { "dd", 5 }, { "ee", 92 } };
 
@@ -1930,3 +1930,58 @@ int main()
 -2
 0.3
 ```
+
+
+### 範囲の要素を左右にシフトする `std::shift_left()`, `std::shift_right()` 関数 [(P0769R2)](https://wg21.link/P0769R2)
+
+ある範囲の要素を左右に移動させたいときは `std::rotate()` を使う方法がありましたが、はみ出た分は回転して反対側に移動する操作であるため、それらの値が不要な場合は余計なコストが発生していました。また、`std::rotate()` では要素をどちらにどれだけ移動するかという意図を明快に表現できませんでした。
+
+C++20 では、ある範囲の要素を回転無しで移動（シフト）させる `std::shift_left(first, last, n)`, `std::shift_right(first, last, n)` 関数が追加されます。移動させる要素の範囲を `first`, `last` で指定し、`n` 個分左右にシフトします。`n` が 0 以下の場合は何もしません。移動により要素がなくなった部分は有効で未規定の状態になるため、新しい要素を代入するか、`erase()` で削除します。
+
+```C++
+#include <iostream>
+#include <vector>
+#include <algorithm>
+
+int main()
+{
+	{
+		std::vector v = { 1, 2, 3, 4, 5 };
+
+		// 左へ 1 ローテ―ト
+		// { 2, 3, 4, 5, 1 }
+		std::rotate(v.begin(), v.begin() + 1, v.end());
+		
+		v.back() = 6;
+
+		for (const auto& e : v)
+		{
+			std::cout << e << ' '; // 2, 3, 4, 5, 6
+		}
+
+		std::cout << '\n';
+	}
+
+	{
+		std::vector v = { 1, 2, 3, 4, 5 };
+
+		// 左へ 1 シフト
+		// { 2, 3, 4, 5, (未規定) }
+		std::shift_left(v.begin(), v.end(), 1);
+		
+		v.back() = 6;
+
+		for (const auto& e : v)
+		{
+			std::cout << e << ' '; // 2, 3, 4, 5, 6
+		}
+
+		std::cout << '\n';
+	}
+}
+```
+```
+2 3 4 5 6 
+2 3 4 5 6 
+```
+
