@@ -1956,7 +1956,7 @@ int main()
 
 		for (const auto& e : v)
 		{
-			std::cout << e << ' '; // 2, 3, 4, 5, 6
+			std::cout << e << ' '; // 2 3 4 5 6
 		}
 
 		std::cout << '\n';
@@ -1973,7 +1973,7 @@ int main()
 
 		for (const auto& e : v)
 		{
-			std::cout << e << ' '; // 2, 3, 4, 5, 6
+			std::cout << e << ' '; // 2 3 4 5 6
 		}
 
 		std::cout << '\n';
