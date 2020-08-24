@@ -4,6 +4,10 @@ description: C++ の規格を議論する C++ 標準化委員会の主要会議�
 
 C++ の規格を議論する C++ 標準化委員会の主要会議の開催情報です。
 
+## 2022 Montreal
+#### 場所
+- 2022 夏 / モントリオール, カナダ
+
 ## 2022 Portland
 #### 場所
 - [2022-02-07 to 12](https://wg21.link/N4831) / ポートランド, オレゴン州, 米国
@@ -12,9 +16,9 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 #### 場所
 - 2021 秋 / 未定
 
-## 2021 Montreal
+## 2021 Varna
 #### 場所
-- 2021-07-12 to 17 / モントリオール, カナダ
+- [2020-5-31 to 06-05](https://wg21.link/n4837) / ヴァルナ, ブルガリア
 
 ## 2021 Kona
 #### 場所
@@ -22,13 +26,14 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 
 ## (最新の提案リスト)
 #### 提案
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-07 post-Prague](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-07)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-08](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-08)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-07](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-07)
     - 日本語での解説: [WG21月次提案文書を眺める（2020年7月）](https://onihusube.hatenablog.com/entry/2020/08/12/014639)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-06 post-Prague](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-06)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-06](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-06)
     - 日本語での解説: [WG21月次提案文書を眺める（2020年6月）](https://onihusube.hatenablog.com/entry/2020/07/05/003248)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-05 post-Prague](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-05)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-05](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-05)
     - 日本語での解説: [WG21月次提案文書を眺める（2020年5月）](https://onihusube.hatenablog.com/entry/2020/06/01/001003)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-04 post-Prague](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-04)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-04](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-04)
     - 日本語での解説: [WG21月次提案文書を眺める（2020年4月）](https://onihusube.hatenablog.com/entry/2020/05/01/194425)
 
 
@@ -38,7 +43,7 @@ C++ の規格を議論する C++ 標準化委員会の主要会議の開催情�
 
 ## 2020 Varna
 #### 場所
-- <strike>[2020-06-01 to 06](https://wg21.link/n4837) / ヴァルナ, ブルガリア</strike> (開催延期)
+- <strike>[2020-06-01 to 06](https://wg21.link/n4837) / ヴァルナ, ブルガリア</strike> (2021 年に開催延期)
 
 ## 2020 Prague
 #### 場所 / 提案 / 会議の結果
