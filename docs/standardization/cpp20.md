@@ -1985,3 +1985,30 @@ int main()
 2 3 4 5 6 
 ```
 
+
+### `std::string_view` のコンストラクタに、範囲のイテレータペアを受け取るオーバーロードを追加 [(P1391R4)](https://wg21.link/P1391R4)
+
+これまでは、メモリ連続な範囲から `std::string_view` を作成するには、先頭ポインタとサイズを渡す必要があり、イテレータを使用することはできませんでした。
+
+ C++20 では、イテレータコンセプト `std::contiguous_iterator<It>` を満たす先頭イテレータ `It` と、`std::sized_sentinel_for<It>` を満たすイテレータ `End` による `string_view::string_view(It first, End last);` というコンストラクタのオーバーロードが追加されます。これにより、`char` 型の配列や `std::vector<char>`, 非標準のライブラリで使われている様々な文字列クラスからの `std::string_view` の構築が、イテレータを使う方法で実現できるようになります。
+
+```C++
+#include <iostream>
+#include <vector>
+#include <string_view>
+
+int main()
+{
+	const std::vector<char> chars = { 'A', 'B', 'C', 'D', 'E' };
+	
+	// C++17 まで
+	//const std::string_view sv{ chars.data(), chars.size() };
+
+	const std::string_view sv{ chars.begin(), chars.end() };
+	
+	std::cout << sv << '\n';
+}
+```
+```
+ABCDE
+```
