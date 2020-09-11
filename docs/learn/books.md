@@ -72,7 +72,8 @@ C++ の入門～中級レベルの多くの情報（『やさしい C++ 第 5 �
 | 書名                                                                  | 発表年  | C++ 規格   | 内容                         |
 |---------------------------------------------------------------------|------|----------|----------------------------|
 | [C++ 標準的インターフェース](https://techbookfest.org/product/6417376601964544) | 2020 | C++17/20 | C++ 標準ライブラリのインターフェースについて解説。[目次とサンプル](https://github.com/onihusube/books/blob/master/sample/cpp_interface/sample.md)  |
-| [C++20 Modules](https://techbookfest.org/product/4680272314368000)  | 2020 | C++20    | C++20 から追加されるモジュールの仕様を解説。[目次とサンプル](https://github.com/onihusube/books/blob/master/sample/cpp20_modules/sample.md)    |
+| [C++20 Modules 第2版](https://techbookfest.org/product/4680272314368000)  | 2020 | C++20    | C++20 から追加されるモジュールの仕様を解説。[目次とサンプル](https://github.com/onihusube/books/blob/master/sample/cpp20_modules/sample.md)    |
+| [C++ 集成体](https://techbookfest.org/product/5650141820223488)  | 2020 | C++20    | C++20 における集成体型について解説。[目次とサンプル](https://github.com/onihusube/books/blob/master/sample/cpp_aggregate/sample.md)    |
 
 
 <!-- ToDo: C++11 とそれ以前の書籍 -->
