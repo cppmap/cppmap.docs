@@ -50,6 +50,9 @@ C++20 以降の標準ライブラリで提供される、カスタマイゼー�
 ### CTAD | Class Template Argument Deduction
 クラステンプレートのテンプレート引数推論
 
+### CTRE | Compile Time Regular Expressions
+コンパイル時正規表現
+
 ### CWG | Core Working Group
 C++ 標準化委員会のワーキンググループの 1 つ。言語機能に関する規格文面をレビューする。
 
@@ -214,6 +217,9 @@ C 言語と互換性のあるオブジェクトレイアウトを持つ型
 
 ### UDL | User-Defined Literals
 ユーザ定義リテラル
+
+### URBG | Uniform Random Bit Generator
+一様ランダムビット生成器。C++14 までは URNG (Uniform Random Number Generator) という語を使用していた。
 
 ### WD | Working Draft
 規格の作業原案
