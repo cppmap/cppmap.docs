@@ -59,6 +59,9 @@ C++ 標準化委員会のワーキンググループの 1 つ。言語機能に�
 ### deque | double-ended queue
 両端キュー
 
+### D&E | The Design and Evolution of C++
+Bjarne Stroustrup による C++ の設計と歴史の解説書。1994 年に発売。
+
 ### DIS | Draft International Standard
 国際規格案
 
@@ -70,6 +73,9 @@ C++ 標準化委員会のワーキンググループの 1 つ。言語機能に�
 
 ### EDG | Edison Design Group
 企業名。C/C++ コンパイラフロントエンドを開発する。[Edison Design Group](https://www.edg.com/company)
+
+### EMC++ | Effective Modern C++
+Scott Meyers による C++11/14 の解説書
 
 ### EOF | End-of-File
 ファイルの終端
@@ -226,6 +232,9 @@ C 言語と互換性のあるオブジェクトレイアウトを持つ型
 
 ### T | Type
 `template <class T>` のように、テンプレート引数でよく使われる名前。テンプレート引数がさらに登場する場合には、アルファベット順で次に来る `U` が使われることがある。
+
+### TC++PL | The C++ Programming Language
+Bjarne Stroustrup による C++ 解説書シリーズの 1 つ。プログラマ向け。2013 年の第 4 版が最新。
 
 ### TLS | Thread Local Storage
 スレッド局所記憶
