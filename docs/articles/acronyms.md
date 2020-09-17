@@ -86,6 +86,9 @@ C++ 標準化委員会のスタディグループの 1 つ (SG17). EWG に向け
 ### FDIS | Final Draft International Standard
 最終国際規格案
 
+### FIFO | First in, first out
+`std::queue` のように、最初に追加した要素から順番に取り出していくデータ構造や手順
+
 ### GCC | GNU Compiler Collection / GNU C++ Compiler
 GNU コンパイラコレクション、またはその C++ コンパイラ
 
@@ -119,6 +122,12 @@ C++ 標準化委員会のワーキンググループの 1 つ。標準ライブ�
 ### LEWGI | Library Evolution Working Group Incubator
 C++ 標準化委員会のスタディグループの 1 つ (SG18). LEWG に向けた提案の評価をする。
 
+### LHS | left-hand side
+式の左辺
+
+### LIFO | Last-in, first-out
+`std::stack` のように、最も新しく追加された要素から、入れたのとは逆順で取り出していくデータ構造や手順
+
 ### LTO | Link Time Optimization
 リンク時最適化
 
@@ -134,11 +143,20 @@ Microsoft Visual Studio の C++ コンパイラ
 ### NB | National Body
 標準化委員会の各国支部
 
+### NDR | No Diagnostic Required
+C++ の言語仕様には沿っていないが、コンパイル時間の短縮のためにコンパイラはメッセージを出力しなくてもよいとされている違反
+
 ### NRVO | Named Return Value Optimization
 名前付き戻り値の最適化
 
 ### NSDMI | Non-Static Data Member Initializers
 非静的メンバの初期化
+
+### NTBS | Null-terminated Byte Strings
+ヌル文字で終了する、各文字が 1 バイトで表現される文字配列
+
+### NTMBS | Null-terminated Multibyte Strings
+ヌル文字で終了する、各文字がマルチバイトで表現されることがある文字配列
 
 ### NTTP | Non-Type Template Parameter
 非型テンプレート・パラメータ
@@ -173,6 +191,9 @@ C 言語と互換性のあるオブジェクトレイアウトを持つ型
 ### RAII | Resource Allocation Is Initialization
 「リソース取得は初期化である」という C++ のプログラミングテクニック
 
+### RHS | right-hand side
+式の右辺
+
 ### RTTI | Run-Time Type Information
 実行時型情報
 
@@ -191,6 +212,9 @@ C 言語と互換性のあるオブジェクトレイアウトを持つ型
 ### SG | Study Group
 特定のテーマについて議論する、C++ 標準化委員会のサブグループ
 
+### SIMD | Single Instruction Multiple Data
+並列処理の分類の 1 つで、1 つの命令による操作を複数のデータに対して同時に行うもの
+
 ### SOO | Small Object Optimization
 小さなオブジェクトに対するメモリアロケーションを避ける C++ の最適化テクニック
 
@@ -199,6 +223,9 @@ C 言語と互換性のあるオブジェクトレイアウトを持つ型
 
 ### STL | Standard Template Library
 アレクサンダー・ステパノフらによって設計された標準テンプレートライブラリ。のちに C++ の標準ライブラリの一部となった。現在では C++ 標準ライブラリ全般を指して STL と呼ぶこともある。
+
+### T | Type
+`template <class T>` のように、テンプレート引数でよく使われる名前。テンプレート引数がさらに登場する場合には、アルファベット順で次に来る `U` が使われることがある。
 
 ### TLS | Thread Local Storage
 スレッド局所記憶
@@ -215,11 +242,23 @@ C 言語と互換性のあるオブジェクトレイアウトを持つ型
 ### UB | Undefined Behavior
 未定義動作
 
+### UCN | Universal Character Name
+ユニバーサル文字名。`char32_t s = U'\U0001F60E';` のように、文字・文字列リテラルにおいて Unicode コードポイントにより表された文字
+
 ### UDL | User-Defined Literals
 ユーザ定義リテラル
 
 ### URBG | Uniform Random Bit Generator
 一様ランダムビット生成器。C++14 までは URNG (Uniform Random Number Generator) という語を使用していた。
+
+### VLA | Variable Length Array
+可変長配列。GCC が拡張機能としてサポートし、C99 では正式に採用されているが、C++ 標準ではサポートしない。
+
+### VLAIS | Variable Length Array In Structure
+構造体内に可変長配列を宣言できる、GCC の拡張機能
+
+### VMT | Virtual Method Table
+仮想関数テーブル
 
 ### WD | Working Draft
 規格の作業原案
@@ -236,4 +275,6 @@ C 言語と互換性のあるオブジェクトレイアウトを持つ型
     https://cpprefjp.github.io/international-standard.html
 - Bjarne Stroustrup's C++ Glossary  
     http://www.stroustrup.com/glossary.html#Gvirtual-function-table
+- C++関連の略語 | Qiita  
+    https://qiita.com/yohhoy/items/b3cb98d2bacd69085309
 

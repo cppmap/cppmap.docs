@@ -11,6 +11,7 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [国内の勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/24)
     - [国内の勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/30)
     - [国内の勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/33)
+    - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41)
 - [@Fuyutsubaki](https://twitter.com/Fuyutsubaki) さん
     - [なぜかコンパイルできない ネタ提供](https://github.com/cppmap/cppmap.docs/issues/9#issuecomment-472076826)
     - [標準ライブラリ 記事作成](https://github.com/cppmap/cppmap.docs/pull/12)
@@ -20,6 +21,8 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [C++17 洋書 情報提供](https://github.com/cppmap/cppmap.docs/issues/6)
     - [処理系の対応状況 情報提供](https://github.com/cppmap/cppmap.docs/pull/7)
     - [IEEE 754 演算について 情報提供](https://twitter.com/kariya_mitsuru/status/1148972200713584640)
+- [@kenichiuda](https://twitter.com/kenichiuda)
+    - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41)
 - [@Linda_pp](https://twitter.com/Linda_pp) さん
     - [ライブラリ 記事提供](https://github.com/cppmap/cppmap.docs/pull/22)
 - [@matken11235](https://twitter.com/matken11235) さん
@@ -54,9 +57,12 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [記事改善案 提供](https://twitter.com/yohhoy/status/1106950996192747521)
     - [C++23 以降に向けた提案 情報提供](https://github.com/cppmap/cppmap.docs/pull/32)
     - [C++ 規格書 記事更新](https://github.com/cppmap/cppmap.docs/pull/38)
+    - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41)
 - [@yuji_n_dispair](https://twitter.com/yuji_n_dispair) さん
     - [国内の勉強会 情報加筆](https://github.com/cppmap/cppmap.docs/pull/29)
 - [@yumetodo](https://twitter.com/yumetodo) さん
     - [テキストデータ ライブラリ 情報提供](https://github.com/cppmap/cppmap.docs/pull/17)
     - [並行・並列 ライブラリ 記事加筆](https://github.com/cppmap/cppmap.docs/pull/40)
+    - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41)
+
     
