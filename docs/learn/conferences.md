@@ -25,6 +25,7 @@ https://cppnow.org/ | [YouTube](https://www.youtube.com/user/BoostCon/)
 ## CppCon
 https://cppcon.org/ | [YouTube](https://www.youtube.com/user/CppCon/)
 
+- [CppCon 2020](https://github.com/CppCon/CppCon2020)
 - [CppCon 2019](https://github.com/CppCon/CppCon2019)
 - [CppCon 2018](https://github.com/CppCon/CppCon2018)
 - [CppCon 2017](https://github.com/CppCon/CppCon2017)
