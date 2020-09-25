@@ -53,22 +53,14 @@ auto is_constexpr_function = is_constexpr<f_mobj>::value; // true
 ## パターンマッチング
 - [Pattern Matching (P1371)](https://wg21.link/p1371)
 
-`std::tuple` や `std::variant` で C++ における代数的データ型の表現が広がりましたが、それらを扱うための `std::apply` や `std::visit` は複雑で多くの制約があります。C++ 以外のプログラミング言語にならい、パターンマッチングを導入してこの問題を解決する提案です。この提案では、より宣言的で構造化された `switch` 文として、`inspect` 文/式という新しい文法の導入を提案しています。
+`std::tuple` や `std::variant` で C++ における代数的データ型の表現が広がりましたが、それらを扱うための `std::apply` や `std::visit` は複雑で多くの制約があります。C++ 以外のプログラミング言語にならい、パターンマッチングを導入してこの問題を解決する提案です。この提案では、より宣言的で構造化された `switch` 文として、`inspect` 式という新しい文法の導入を提案しています。
 
 ```C++
-// inspect 文の文法
-inspect constexpr_opt (init-statement_opt condition)
-{
-    pattern guard_opt : statement
-    pattern guard_opt : statement
-    ...
-}
-
 // inspect 式の文法
 inspect constexpr_opt (init-statement_opt condition) trailing-return-type_opt
 {
-    pattern guard_opt => expression ,
-    pattern guard_opt => expression ,
+    pattern guard_opt => statement
+    pattern guard_opt => !_opt { statement-seq }
     ...
 }
 ```
@@ -79,16 +71,16 @@ switch (code)
 {
 	case 200: std::cout << "OK\n"; break;
 	case 404: std::cout << "Not Found\n"; break;
-	default: std::cout << "don't care\n";
+	default : std::cout << "don't care\n";
 }
 ```
 
 ```C++ tab="提案"
 inspect (code)
 {
-    200: std::cout << "OK\n";
-	404: std::cout << "Not Found\n";
-	__: std::cout << "don't care\n"; // __ はワイルドカードパターン
+    200 => { std::cout << "OK\n" }
+	404 => { std::cout << "Not Found\n" }
+	__  => { std::cout << "don't care\n" } // __ はワイルドカードパターン
 }
 ```
 
@@ -111,9 +103,9 @@ else
 ```C++ tab="提案"
 inspect (s)
 {
-    "png": std::cout << "PNG Image\n";
-    "jpg": std::cout << "JPEG Image\n";
-    __: std::cout << "Not supported\n";
+    "png" => { std::cout << "PNG Image\n"; }
+    "jpg" => { std::cout << "JPEG Image\n"; }
+    __    => { std::cout << "Not supported\n"; }
 }
 ```
 
@@ -141,10 +133,10 @@ else
 ```C++ tab="提案"
 inspect (pos)
 {
-	[0, 0]: std::cout << "on the origin\n";
-	[x, 0]: std::cout << "on the X-axis\n";
-	[0, y]: std::cout << "on the Y-axis\n";
-	[x, y]: std::cout << x << ", " << y << '\n';
+	[0, 0] => { std::cout << "on the origin\n"; }
+	[x, 0] => { std::cout << "on the X-axis\n"; }
+	[0, y] => { std::cout << "on the Y-axis\n"; }
+	[x, y] => { std::cout << x << ", " << y << '\n'; }
 }
 ```
 
@@ -178,8 +170,8 @@ int main()
 
 	inspect (v)
 	{
-		<int> i: std::cout << "int: " << i << '\n';
-		<float> f: std::cout << "float: " << f << '\n';
+		<int> i   => { std::cout << "int: " << i << '\n'; }
+		<float> f => { std::cout << "float: " << f << '\n'; }
 	}
 }
 ```
@@ -231,8 +223,8 @@ double Area(const Shape& shape)
 {
 	return inspect (shape)
 	{
-		<Circle>	[r]		=> std::numbers::pi * r * r, // inspect 式では => を使う
-		<Rectangle>	[w, h]	=> w * h
+		<Circle>	[r]		=> std::numbers::pi * r * r;
+		<Rectangle>	[w, h]	=> w * h;
 	}
 }
 ```
