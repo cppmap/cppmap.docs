@@ -24,6 +24,7 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 
 [GitHub Sponsors ページ](https://github.com/sponsors/Reputeless) から「C++ の歩き方」のスポンサーにご登録ください。
 
+- [TOMOAKI12345](https://github.com/TOMOAKI12345)
 - [sknjpn](https://twitter.com/sknjpn)
 - アゲハマ
 - chobby75
