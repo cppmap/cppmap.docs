@@ -1,7 +1,7 @@
 site_dir: '../cppmap.github.io'
 
 # Project information
-site_name: C++ の歩き方 | CppMap
+site_name: C++ の歩き方 | cppmap
 site_url: https://cppmap.github.io/
 site_author: Ryo Suzuki
 site_description: C++17, C++20, C++23, C++26 に関する情報を調査・提供します
