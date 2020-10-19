@@ -144,12 +144,29 @@ int main()
 }
 ```
 
-## `typedef` の場所
+## `typedef` の場所 1
 ```C++
 long unsigned typedef int long Uint64;
 
 int main()
 {
 	Uint64 i = 123ull;
+}
+```
+
+## `typedef` の場所 2
+```C++
+int main()
+{
+	if (typedef int Int; true)
+	{
+
+	}
+
+	switch (typedef int Int; 0)
+	{
+	case 0:
+		break;
+	}
 }
 ```
