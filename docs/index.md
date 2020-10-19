@@ -1,7 +1,16 @@
 # C++ の歩き方 | CppMap
-📢 CEDEC 2020 にて講演を行いました。
 
-<script async class="speakerdeck-embed" data-slide="1" data-id="88f02084b1794a66b6dfe8e7026322cf" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
+📢 CEDEC 2020 にて講演を行いました。発表資料を公開しています。
+
+- [CEDEC 2020 | ゲーム開発者のための C++11～C++20, 将来の C++ の展望](https://speakerdeck.com/cpp/cedec2020)
+
+📢 コンテンツ拡充のため【募集】タグのスレッドへ情報をお寄せください。
+
+- [cppmap.docs | Issues](https://github.com/cppmap/cppmap.docs/issues)
+
+📢 本サイトの運営により多くの時間を使えるよう、寄付をお願いしています。
+
+- [GitHub Sponsors | Become a sponsor to Reputeless](https://github.com/sponsors/Reputeless)
 
 ## このサイトについて
 C++17, C++20, C++23, C++26 に関する情報を調査・提供します。  
