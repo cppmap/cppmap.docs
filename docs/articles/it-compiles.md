@@ -160,12 +160,13 @@ int main()
 {
 	if (typedef int Int; true)
 	{
-
+		Int a = 0;
 	}
 
 	switch (typedef int Int; 0)
 	{
 	case 0:
+		Int a = 0;
 		break;
 	}
 }
