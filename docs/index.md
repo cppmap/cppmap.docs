@@ -1,13 +1,7 @@
 # C++ の歩き方 | CppMap
+📢 CEDEC 2020 にて講演を行いました。
 
-``` c++
-#include <iostream>
-
-int main()
-{
-    std::cout << "Hello, CppMap!\n";
-}
-```
+<script async class="speakerdeck-embed" data-slide="1" data-id="88f02084b1794a66b6dfe8e7026322cf" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script>
 
 ## このサイトについて
 C++17, C++20, C++23, C++26 に関する情報を調査・提供します。  
@@ -16,7 +10,8 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 - [コントリビュート方法](https://github.com/cppmap/cppmap.docs)
 
 ## ライセンス
-<img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0" />  
+<img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0"/>  
+
 本サイトの記事とサンプルコードはパブリックドメインです。  
 サードパーティーのコンテンツの著作権は、それぞれの所有者に帰属します。
 
