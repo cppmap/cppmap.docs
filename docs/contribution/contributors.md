@@ -45,12 +45,15 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [標準ライブラリ 記事更新](https://github.com/cppmap/cppmap.docs/pull/34)
     - [C++ 書籍 記事加筆](https://github.com/cppmap/cppmap.docs/pull/37)
     - [標準化会議 情報提供](https://twitter.com/onihusube9/status/1267252027999973376)
+    - [C++ ブログ集 情報提供](https://github.com/cppmap/cppmap.docs/issues/42)
 - [@tak0kada](https://twitter.com/tak0kada) さん
     - [国内の勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/26)
 - [@tetzrom](https://twitter.com/tetzrom) さん
     - [オンライン資料 情報提供](https://github.com/cppmap/cppmap.docs/pull/15)
 - [@TKinugasa](https://twitter.com/TKinugasa)
     - [C++ 関連の略語 情報提供](https://twitter.com/TKinugasa/status/1306694400215449600)
+- [@ToruNiina](https://twitter.com/ToruNiina) さん
+    - [C++ ブログ集 情報提供](https://github.com/cppmap/cppmap.docs/issues/42)
 - [@wolf_cpp](https://twitter.com/wolf_cpp) さん
     - [国内の勉強会 情報提供](https://github.com/cppmap/cppmap.docs/pull/25)
 - [@wx257osn2](https://twitter.com/wx257osn2) さん
