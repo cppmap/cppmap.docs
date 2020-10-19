@@ -143,3 +143,13 @@ int main()
 	A::A::A::A::A::A::f();
 }
 ```
+
+## `typedef` の場所
+```C++
+long unsigned typedef int long Uint64;
+
+int main()
+{
+	Uint64 i = 123ull;
+}
+```
