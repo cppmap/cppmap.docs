@@ -22,7 +22,7 @@ C++ の学習に役立つ技術ブログ集を紹介します。
 - Barry Revzin’s blog https://brevzin.github.io/
 - Bartek's coding blog https://www.bfilipek.com/
 - C++ Team Blog https://devblogs.microsoft.com/cppblog/
-- cor3ntin https://cor3ntin.github.io/
+- cor3ntin's blog https://cor3ntin.github.io/
 - Daniel Lemire's blog https://lemire.me/blog/
 - Fluent C++ https://www.fluentcpp.com/
 - foonathan::​blog() https://foonathan.net/
@@ -36,6 +36,7 @@ C++ の学習に役立つ技術ブログ集を紹介します。
 - Sutter’s Mill https://herbsutter.com/
 - The Pasture https://thephd.github.io/
 - There’s Waldo https://botondballo.wordpress.com/category/programming/c/
+- timur.audio https://timur.audio/
 - vector of bool https://vector-of-bool.github.io/
 - Vittorio Romeo's blog https://vittorioromeo.info/index.html
 - Vorbrodt's C++ Blog https://vorbrodt.blog/
