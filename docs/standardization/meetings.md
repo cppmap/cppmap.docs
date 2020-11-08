@@ -34,6 +34,7 @@ C++ への提案文書を議論して承認する C++ 標準化委員会の主�
 
 #### 提案
 - [JTC1/SC22/WG21 - Papers 2020 mailing2020-10](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-10)
+    - 日本語での解説: [WG21月次提案文書を眺める（2020年10月）](https://onihusube.hatenablog.com/entry/2020/11/02/221657)
 - [JTC1/SC22/WG21 - Papers 2020 mailing2020-09](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-09)
     - 日本語での解説: [WG21月次提案文書を眺める（2020年9月）](https://onihusube.hatenablog.com/entry/2020/10/09/221025)
 - [JTC1/SC22/WG21 - Papers 2020 mailing2020-08](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-08)
