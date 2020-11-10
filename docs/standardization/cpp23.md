@@ -27,9 +27,9 @@ int main()
 
 	}
 
-	size_t s2 = std::min(1u, v.size()); // コンパイルエラー (64-bit 環境): 引数の型が不一致
+	size_t s2 = std::max(1u, v.size()); // コンパイルエラー (64-bit 環境): 引数の型が不一致
 
-    size_t s3 = std::min<size_t>(1u, v.size()); // OK
+    size_t s3 = std::max<size_t>(1u, v.size()); // OK
 }
 ```
 
@@ -49,7 +49,7 @@ int main()
 
 	}
 
-	size_t s2 = std::min(1uz, v.size()); // OK
+	size_t s2 = std::max(1uz, v.size()); // OK
 }
 ```
 
