@@ -4,7 +4,9 @@ description: C++23 の新しい言語機能と標準ライブラリ機能の解�
 
 C++23 の規格ドラフトに入ることが決まった新機能・仕様変更を随時追加していきます。
 
-### `std::size_t` 型の整数リテラルのためのサフィックスを追加 [(P0330)](http://wg21.link/p0330)
+## 言語機能
+
+### `std::size_t` 型の整数リテラルのためのサフィックスを追加 [(P0330)](http://wg21.link/P0330)
 これまで `std::size_t` 型の値をリテラルで表現する方法がなく、次のような不便の原因になっていました。
 
 ```C++
@@ -52,4 +54,46 @@ int main()
 	size_t s2 = std::max(1uz, v.size()); // OK
 }
 ```
+
+
+## 標準ライブラリ
+
+### 文字列クラスに、指定した文字列が含まれるかを返す `.contains()` メンバ関数を追加 [(P1679)](http://wg21.link/P1679)
+Java, C#, Rust の文字列クラスは、指定した文字列を含むかのメソッドを持っていますが、C++ の `std::string` には同等のメンバ関数がなく、次のようなコードを書く必要がありました。
+
+```C++
+#include <iostream>
+#include <string>
+
+int main()
+{
+	const std::string s = "I like C++23";
+
+	if (s.find("C++") != std::string::npos) // 文字列に "C++" が含まれるかを調べる
+	{
+		std::cout << "found!\n";
+	}
+}
+```
+
+C++23 では `std::basic_string` と `std::basic_string_view` に、指定した文字や文字列が含まれるかを返す `.contains(basic_string_view)`, `.contains(charT)`, `.contains(const charT*)` メンバ関数が追加され、より短く書けるようになります。
+
+```C++
+#include <iostream>
+#include <string>
+
+int main()
+{
+	const std::string s = "I like C++23";
+
+	std::cout << std::boolalpha;
+	std::cout << s.contains('+') << '\n';	// true
+	std::cout << s.contains('-') << '\n';	// false
+	std::cout << s.contains("like") << '\n';	// true
+	std::cout << s.contains("C++11") << '\n';	// false
+	std::cout << s.contains(s) << '\n';	// true
+}
+```
+
+なお、指定した文字列から始まるかを調べる `.starts_with()`, 指定した文字列で終わるかを調べる `.ends_with()` メンバ関数は C++20 で追加されています。
 

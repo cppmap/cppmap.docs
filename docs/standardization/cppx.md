@@ -298,26 +298,6 @@ int main()
 }
 ```
 
-## `std::string` や `std::string_view` が、ある文字列を含むかを返す `.contains()` メンバ関数
-- [string contains function (P1679)](https://wg21.link/P1679)
-
-`std::string` や `std::string_view` に、ある文字や文字列が含まれるかを返す `.contains(basic_string_view)`, `.contains(charT)`, `.contains(const charT*)` メンバ関数を追加する提案です。
-
-```C++
-#include <iostream>
-#include <string>
-
-int main()
-{
-	const std::string s = "C++23";
-
-	std::cout << std::boolalpha;
-	std::cout << s.contains('+') << '\n';	// true
-	std::cout << s.contains('-') << '\n';	// false
-	std::cout << s.contains("23") << '\n';	// true
-	std::cout << s.contains("20") << '\n';	// false
-}
-```
 
 ## ソート済み配列による連想コンテナ
 - [A Standard flat_set (P1222)](https://wg21.link/P1222)
