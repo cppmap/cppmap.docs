@@ -97,3 +97,40 @@ int main()
 
 なお、指定した文字列から始まるかを調べる `.starts_with()`, 指定した文字列で終わるかを調べる `.ends_with()` メンバ関数は C++20 で追加されています。
 
+
+### 型が scoped enum であるかを調べる `std::is_scoped_enum<T>` trait [(P1048)](http://wg21.link/P1048)
+C++11 で scoped enum (`enum class` / `enum struct`) が導入されましたが、同時に導入された type trait `std::is_enum<T>` は、unscoped enum (`enum`) 型と scoped enum 型のどちらにも `true` を示し、両者を区別できませんでした。
+
+C++23 では型が scoped enum であるかを調べる `std::is_scoped_enum<T>` trait が追加され、両者を区別できるようになります。
+
+```C++
+#include <iostream>
+#include <type_traits>
+
+enum UnscopedEnum {};
+enum class ScopedEnum {};
+
+int main()
+{
+	std::cout << std::boolalpha;
+	
+	std::cout << std::is_enum_v<int> << '\n';			// false	
+	std::cout << std::is_enum_v<UnscopedEnum> << '\n';	// true
+	std::cout << std::is_enum_v<ScopedEnum> << '\n';	// true
+	
+	std::cout << std::is_enum_v<int> << '\n';			// false
+	std::cout << std::is_enum_v<UnscopedEnum> << '\n';	// false
+	std::cout << std::is_enum_v<ScopedEnum> << '\n';	// true
+}
+```
+
+なお、Boost.TypeTraits にはすでに次のように実装されています。
+
+```C++
+namespace boost
+{
+	template <class T>
+	struct is_scoped_enum
+		: conjunction<is_enum<T>, negation<is_convertible<T, int>>>::type {};
+}
+```
