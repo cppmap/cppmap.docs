@@ -118,9 +118,9 @@ int main()
 	std::cout << std::is_enum_v<UnscopedEnum> << '\n';	// true
 	std::cout << std::is_enum_v<ScopedEnum> << '\n';	// true
 	
-	std::cout << std::is_enum_v<int> << '\n';			// false
-	std::cout << std::is_enum_v<UnscopedEnum> << '\n';	// false
-	std::cout << std::is_enum_v<ScopedEnum> << '\n';	// true
+	std::cout << std::is_scoped_enum_v<int> << '\n';			// false
+	std::cout << std::is_scoped_enum_v<UnscopedEnum> << '\n';	// false
+	std::cout << std::is_scoped_enum_v<ScopedEnum> << '\n';		// true
 }
 ```
 
