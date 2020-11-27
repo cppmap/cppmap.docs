@@ -248,6 +248,9 @@ Bjarne Stroustrup による C++ 解説書シリーズの 1 つ。プログラマ
 ### TS | Technical Specification
 実験的な C++ の機能に関する仕様書
 
+### TU | Translation Unit
+翻訳単位
+
 ### UB | Undefined Behavior
 未定義動作
 
