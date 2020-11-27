@@ -135,7 +135,7 @@ namespace boost
 }
 ```
 
-### C 言語との atomics の互換のための標準ライブラリヘッダ `<stdatomic.h>` を追加 [(P0943)](http://wg21.link/P0943)
+### C 言語との atomics の互換を目的とした標準ライブラリヘッダ `<stdatomic.h>` を追加 [(P0943)](http://wg21.link/P0943)
 
 C++ atomics の非ジェネリックな部分 (`atomic_char` や `atomic_ulong` など) は C 言語からも使えるように設計されていましたが、C 言語がジェネリック用として独自に `_Atomic(T)` 型指定子を追加したほか、C++ の規格では C 言語のヘッダ `<stdatomic.h>` に関する言及がないことから、実際の相互運用にはいくらかの手間が必要でした。
 
@@ -145,7 +145,7 @@ C++ atomics の非ジェネリックな部分 (`atomic_char` や `atomic_ulong` 
 	using std::atomic_int;	
 	using std::memory_order;
 	using std::memory_order_acquire;
-	# define _Atomic(X) std::atomic<X>
+	#define _Atomic(X) std::atomic<X>
 	// ...
 #else
 	#include <stdatomic.h>

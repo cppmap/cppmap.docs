@@ -4,6 +4,23 @@ description: C++ への提案文書を議論して承認する C++ 標準化委�
 
 C++ への提案文書を議論して承認する C++ 標準化委員会の主要会議の開催情報です。
 
+## 現在アクティブな提案
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-11](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-11)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-10](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-10)
+    - 日本語での解説: [WG21月次提案文書を眺める（2020年10月）](https://onihusube.hatenablog.com/entry/2020/11/02/221657)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-09](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-09)
+    - 日本語での解説: [WG21月次提案文書を眺める（2020年9月）](https://onihusube.hatenablog.com/entry/2020/10/09/221025)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-08](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-08)
+    - 日本語での解説: [WG21月次提案文書を眺める（2020年8月）](https://onihusube.hatenablog.com/entry/2020/09/18/222444)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-07](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-07)
+    - 日本語での解説: [WG21月次提案文書を眺める（2020年7月）](https://onihusube.hatenablog.com/entry/2020/08/12/014639)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-06](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-06)
+    - 日本語での解説: [WG21月次提案文書を眺める（2020年6月）](https://onihusube.hatenablog.com/entry/2020/07/05/003248)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-05](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-05)
+    - 日本語での解説: [WG21月次提案文書を眺める（2020年5月）](https://onihusube.hatenablog.com/entry/2020/06/01/001003)
+- [JTC1/SC22/WG21 - Papers 2020 mailing2020-04](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-04)
+    - 日本語での解説: [WG21月次提案文書を眺める（2020年4月）](https://onihusube.hatenablog.com/entry/2020/05/01/194425)
+
 ## 2022 Montreal
 #### 場所
 - 2022 夏 / モントリオール, カナダ
@@ -26,35 +43,22 @@ C++ への提案文書を議論して承認する C++ 標準化委員会の主�
 
 ## February 2021 Virtual
 #### 場所
-- 2021-02-?? / オンライン
+- [2021-02-22](https://wg21.link/N4876) / オンライン
 
 ## November 2020 Virtual
 #### 場所
 - [2020-11-09](https://wg21.link/N4863) / オンライン
 
-#### 提案
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-10](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-10)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年10月）](https://onihusube.hatenablog.com/entry/2020/11/02/221657)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-09](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-09)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年9月）](https://onihusube.hatenablog.com/entry/2020/10/09/221025)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-08](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-08)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年8月）](https://onihusube.hatenablog.com/entry/2020/09/18/222444)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-07](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-07)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年7月）](https://onihusube.hatenablog.com/entry/2020/08/12/014639)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-06](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-06)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年6月）](https://onihusube.hatenablog.com/entry/2020/07/05/003248)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-05](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-05)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年5月）](https://onihusube.hatenablog.com/entry/2020/06/01/001003)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-04](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-04)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年4月）](https://onihusube.hatenablog.com/entry/2020/05/01/194425)
+#### 参加報告
+- [Trip report: Autumn ISO C++ standards meeting (virtual)](https://herbsutter.com/2020/11/13/trip-report-autumn-iso-c-standards-meeting-virtual/) <small>by Herb Sutter</small>
 
 ## 2020 New York
 #### 場所
-- <strike>[2020-11-09 to 14](https://wg21.link/n4848) / ニューヨーク, ニューヨーク州, 米国</strike> (開催延期)
+- <strike>[2020-11-09 to 14](https://wg21.link/n4848) / ニューヨーク, ニューヨーク州, 米国</strike> (2021 年以降に開催延期)
 
 ## 2020 Varna
 #### 場所
-- <strike>[2020-06-01 to 06](https://wg21.link/n4837) / ヴァルナ, ブルガリア</strike> (2021 年に開催延期)
+- <strike>[2020-06-01 to 06](https://wg21.link/n4837) / ヴァルナ, ブルガリア</strike> ([2021 年に開催延期](https://cppmap.github.io/standardization/meetings/#2021-varna))
 
 ## 2020 Prague
 #### 場所 / 提案 / 会議の結果
