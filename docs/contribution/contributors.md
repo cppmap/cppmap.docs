@@ -46,6 +46,8 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [C++ 書籍 記事加筆](https://github.com/cppmap/cppmap.docs/pull/37)
     - [標準化会議 情報提供](https://twitter.com/onihusube9/status/1267252027999973376)
     - [C++ ブログ集 情報提供](https://github.com/cppmap/cppmap.docs/issues/42)
+- [@ryutorion](https://twitter.com/ryutorion) さん
+    - [C++ 洋書 情報提供](https://twitter.com/ryutorion/status/1333744787136991234)
 - [@tak0kada](https://twitter.com/tak0kada) さん
     - [国内の勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/26)
 - [@tetzrom](https://twitter.com/tetzrom) さん

@@ -67,6 +67,7 @@ C++ の入門～中級レベルの多くの情報（『やさしい C++ 第 5 �
 | [C++ System Programming Cookbook](https://amzn.to/3jfdoxU)                                                             | 2020 | C++20    | [目次](https://www.packtpub.com/programming/c-system-programming-cookbook) / [サンプルコード](https://github.com/PacktPublishing/C-System-Programming-Cookbook) |
 | [Expert C++](https://amzn.to/2WsxY49)                                                                                  | 2020 | C++20    | [目次](https://www.packtpub.com/programming/mastering-c-programming) / [サンプルコード](https://github.com/PacktPublishing/Expert-CPP)                          |
 | [The C++ Standard Library](https://leanpub.com/cpplibrary)                                                             | 2020 | C++20    | C++20 までの標準ライブラリ機能を解説。[目次](https://leanpub.com/cpplibrary)                                                                                             |
+| [C++ Move Semantics - The Complete Guide: First Edition](https://amzn.to/3fTLgiM)                                      | 2020 | C++20    | C++ のムーブセマンティクスを解説。[目次](http://www.cppmove.com/)                                                                                                       |
 
 
 ## 同人誌
