@@ -909,8 +909,8 @@ void Multiply(float* x, size_t size, float factor)
 ```
 
 
-### スマートポインタの作成時に値をデフォルト初期化する make 関数を追加 [(P1020R1)](https://wg21.link/P1020R1)
-実行時性能のために、`float` や `unsigned char` など組み込み型の配列の値をデフォルト初期化させたい（ゼロ初期化しない）ケースがあります。しかし、`make_unique` や `make_shared`, `allocate_shared` でスマートポインタを作成した場合には値初期化が実行されます。C++20 では、値初期化をせずにデフォルト初期化でスマートポインタを作成する関数 `make_unique_default_init`, `make_shared_default_init`, `allocate_shared_default_init` が追加されました。
+### スマートポインタの作成時に値をデフォルト初期化する make 関数を追加 [(P1020R1)](https://wg21.link/P1020R1), [(P1973R1)](https://wg21.link/P1973R1)
+実行時性能のために、`float` や `unsigned char` など組み込み型の配列の値をデフォルト初期化させたい（ゼロ初期化しない）ケースがあります。しかし、`make_unique` や `make_shared`, `allocate_shared` でスマートポインタを作成した場合には値初期化が実行されます。C++20 では、値初期化をせずにデフォルト初期化でスマートポインタを作成する関数 `make_unique_for_overwrite`, `make_shared_for_overwrite`, `allocate_shared_for_overwrite` が追加されました。
 ```C++
 #include <iostream>
 #include <memory>
@@ -932,7 +932,7 @@ int main()
 		std::cout << pv[i] << '\n';
 	}
 
-	auto pd = std::make_unique_default_init<float[]>(4); // デフォルト初期化
+	auto pd = std::make_unique_for_overwrite<float[]>(4); // デフォルト初期化
 
 	for (int i = 0; i < 4; ++i)
 	{
