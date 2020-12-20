@@ -12,11 +12,12 @@ C++11 以降は規格書と同等の内容のワーキングドラフトが無�
 | C++11 | [N3337 (PDF)](http://wg21.link/n3337) / [HTML](https://timsong-cpp.github.io/cppwp/n3337/) | [ISO/IEC 14882:2011](https://www.iso.org/standard/50372.html) | 1338 | 2011-09 |
 | C++14 | [N4140 (PDF)](http://wg21.link/n4140) / [HTML](https://timsong-cpp.github.io/cppwp/n4140/) | [ISO/IEC 14882:2014](https://www.iso.org/standard/64029.html) | 1358 | 2014-12 |
 | C++17 | [N4659 (PDF)](http://wg21.link/n4659) / [HTML](https://timsong-cpp.github.io/cppwp/n4659/) | [ISO/IEC 14882:2017](https://www.iso.org/standard/68564.html) | 1605 | 2017-12 |
-| C++20 | [N4861 (PDF)](http://wg21.link/n4861) / [HTML](https://timsong-cpp.github.io/cppwp/n4861/) | （未発行）                                                         | ?    | 2020-?? |
-| C++23 | [N4868 (PDF)](http://wg21.link/n4868) / [HTML](http://eel.is/c++draft/)<br>※最終版ではない        | （未発行）                                                         | ?    | 2023-?? |
+| C++20 | [N4860 (PDF)](http://wg21.link/n4861) / [HTML](https://timsong-cpp.github.io/cppwp/n4861/) | [ISO/IEC 14882:2020](https://www.iso.org/standard/79358.html) | 1853 | 2020-12 |
+| C++23 | [N4868 (PDF)](http://wg21.link/n4868) / [HTML](http://eel.is/c++draft/)<br>※最終版ではない | （未発行）                                                    | ?    | 2023-?? |
 
 - C++03 は日本語版 (JIS 規格) を無償で閲覧できます
     - [日本産業標準調査会：データベース検索-JIS検索](https://www.jisc.go.jp/app/jis/general/GnrJISSearch.html) にて「X3014」を検索します
+- C++20 の Draft International Standard は N4860 ですが、文書が一般公開されていないため、内容が同等の N4861 にリンクしています
 
 ## 参考文献
 
