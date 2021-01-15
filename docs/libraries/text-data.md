@@ -18,6 +18,7 @@ description: C++ のテキストデータライブラリの紹介
 - [RapidJSON](https://github.com/Tencent/rapidjson/) <small>MIT</small>
 - [sajson](https://github.com/chadaustin/sajson) <small>MIT</small>
 - [simdjson](https://github.com/lemire/simdjson) <small>Apache License 2.0</small>
+- [Boost.JSON](https://www.boost.org/libs/json/) <small>BSL-1.0</small>
 
 #### ベンチマーク
 - [Native JSON Benchmark](https://github.com/miloyip/nativejson-benchmark)
