@@ -71,5 +71,6 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [テキストデータ ライブラリ 情報提供](https://github.com/cppmap/cppmap.docs/pull/17)
     - [並行・並列 ライブラリ 記事加筆](https://github.com/cppmap/cppmap.docs/pull/40)
     - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41)
+    - [テキストデータ ライブラリ 情報提供](https://github.com/cppmap/cppmap.docs/pull/44)
 
     
