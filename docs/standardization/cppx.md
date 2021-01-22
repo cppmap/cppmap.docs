@@ -59,6 +59,9 @@ auto is_constexpr_function = is_constexpr<f_mobj>::value; // true
 
 `std::tuple` や `std::variant` で C++ における代数的データ型の表現が広がりましたが、それらを扱うための `std::apply` や `std::visit` は複雑で多くの制約があります。C++ 以外のプログラミング言語にならい、パターンマッチングを導入してこの問題を解決する提案です。この提案では、より宣言的で構造化された `switch` 文として、`inspect` 式という新しい文法の導入を提案しています。
 
+パターンマッチングの実験的な実装を [Compiler Explorer](https://godbolt.org/z/fdd5j4) 上で試すことができます。
+
+
 ```C++
 // inspect 式の文法
 inspect constexpr_opt (init-statement_opt condition) trailing-return-type_opt
@@ -143,9 +146,6 @@ inspect (pos)
 	[x, y] => { std::cout << x << ", " << y << '\n'; }
 };
 ```
-
-実験的な実装を [Compiler Explorer](https://godbolt.org/z/fdd5j4) 上で試すことができます。
-
 
 ### Variants のマッチング
 ```C++ tab="現在"
