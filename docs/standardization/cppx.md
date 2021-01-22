@@ -66,7 +66,7 @@ inspect constexpr_opt (init-statement_opt condition) trailing-return-type_opt
     pattern guard_opt => statement
     pattern guard_opt => !_opt { statement-seq }
     ...
-}
+};
 ```
 
 ### 整数のマッチング
@@ -85,7 +85,7 @@ inspect (code)
     200 => { std::cout << "OK\n" }
 	404 => { std::cout << "Not Found\n" }
 	__  => { std::cout << "don't care\n" } // __ はワイルドカードパターン
-}
+};
 ```
 
 ### 文字列のマッチング
@@ -110,7 +110,7 @@ inspect (s)
     "png" => { std::cout << "PNG Image\n"; }
     "jpg" => { std::cout << "JPEG Image\n"; }
     __    => { std::cout << "Not supported\n"; }
-}
+};
 ```
 
 ### Tuples のマッチング
@@ -141,8 +141,11 @@ inspect (pos)
 	[x, 0] => { std::cout << "on the X-axis\n"; }
 	[0, y] => { std::cout << "on the Y-axis\n"; }
 	[x, y] => { std::cout << x << ", " << y << '\n'; }
-}
+};
 ```
+
+実験的な実装を [Compiler Explorer](https://godbolt.org/z/fdd5j4) 上で試すことができます。
+
 
 ### Variants のマッチング
 ```C++ tab="現在"
@@ -177,7 +180,7 @@ int main()
 		<int> i   => { std::cout << "int: " << i << '\n'; }
 		<float> f => { std::cout << "float: " << f << '\n'; }
 	}
-}
+};
 ```
 
 ### Polymorphic Types のマッチング
@@ -230,7 +233,7 @@ double Area(const Shape& shape)
 		<Circle>	[r]		=> std::numbers::pi * r * r;
 		<Rectangle>	[w, h]	=> w * h;
 	}
-}
+};
 ```
 
 
