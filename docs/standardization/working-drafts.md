@@ -2,6 +2,8 @@ description: C++ 規格のワーキングドラフトです
 
 # C++ 規格書
 
+## 国際規格とワーキングドラフト
+
 C++11 以降は、規格書と同等の内容のワーキングドラフトが無償で公開されています。  
 公式の国際規格文書は ISO の Web サイトから購入できます。
 
@@ -18,9 +20,21 @@ C++11 以降は、規格書と同等の内容のワーキングドラフトが�
 - C++03 は日本語版 (JIS 規格) を無償で閲覧できます
     - [日本産業標準調査会：データベース検索-JIS検索](https://www.jisc.go.jp/app/jis/general/GnrJISSearch.html) にて「X3014」を検索します
 
+## 過去の C++ ワーキングドラフト（歴史的資料）
+
+| 日付                                                                                               | ワーキングドラフト             | ページ数 |
+|--------------------------------------------------------------------------------------------------|-----------------------|------|
+| 1990 年 2 月 | [X3J16 90-0004 の改稿版](https://drive.google.com/file/d/1XNzsgWMk0wfFOa5kjN9OV5a-04ttrdjE/view?usp=sharing)   | 160  |
+| 1994 年 1 月 | [X3J16 94-0027 (N0414)](https://drive.google.com/file/d/1EDQvAQSrQXHbUdN1Al7EvuOlIEhg1Hdl/view?usp=sharing) | 454  |
+
+
 ## 参考文献
 
 - History of C++  
     https://en.cppreference.com/w/cpp/language/history
 - C++ 各バージョン毎の規格書  
     https://onihusube.hatenablog.com/entry/2018/07/04/014257
+- r/cpp VERY Early C++ Working Draft I found, February 1990
+    https://www.reddit.com/r/cpp/comments/l33mmc/very_early_c_working_draft_i_found_february_1990/
+- r/cpp N0414: Working Paper from 25-January-1994
+    https://www.reddit.com/r/cpp/comments/cgfqcm/n0414_working_paper_from_25january1994/
