@@ -8,8 +8,8 @@ C++ プログラムのコンパイル、実行、共有ができる Web サイ�
 
 |                                                               | コンパイラ                                                                                         | 日本語入出力     | インタラクティブ   | 複数ファイル     |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------|:------------:|:------------:|:------------:|
-| [Wandbox](https://wandbox.org/)                               | <li>GCC 4.4.7 - **11.0.0\***</li><li>Clang 3.1 - **12.0.0\***</li>                               | :fa-check: |            | :fa-check: |
-| [Compiler Explorer](https://godbolt.org/)<br>(Execution モード) | <li>GCC 4.7.3 - **11.0.0\***</li><li>Clang 3.3 - **12.0.0\***</li><li>ICC 16.0.3 - **21.1.9**</li> | :fa-check: |            |            |
+| [Wandbox](https://wandbox.org/)                               | <li>GCC 4.4.7 - **11.0.0\***</li><li>Clang 3.1 - **13.0.0\***</li>                               | :fa-check: |            | :fa-check: |
+| [Compiler Explorer](https://godbolt.org/)<br>(Execution モード) | <li>GCC 4.1.2 - **11.0.0\***</li><li>Clang 3.4.1 - **12.0.0\***</li><li>ICC 13.0.1 - **21.1.9**</li> | :fa-check: |            |            |
 | [paiza.io](https://paiza.io/ja/projects/new?language=cpp)     | <li>Clang 10.0.0</li>                                                                          | :fa-check: |            | :fa-check: |
 | [Ideone](https://ideone.com/)                                 | <li>GCC 8.3.0</li>                                                                            | :fa-check: |            |            |
 | [GDB Online](https://www.onlinegdb.com/)                      | <li>GCC 7.4.0</li>                                                                            | :fa-check: | :fa-check: | :fa-check: |
