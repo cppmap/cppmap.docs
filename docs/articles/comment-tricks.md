@@ -103,6 +103,8 @@ int main()
 値の切り替えの範囲版です。  
 スラッシュ / の有無に応じて、前半、後半どちらかの範囲を選択します。
 
+#### パターン 1
+
 ``` C++ tab="前半"
 #include <iostream>
 
@@ -144,6 +146,51 @@ int main()
 	/**/
 }
 ```
+
+#### パターン 2
+
+``` C++ tab="前半"
+#include <iostream>
+
+int main()
+{
+	//*
+	int x;
+
+	std::cin >> x;
+
+	std::cout << x * x;
+	/*/
+	int x, y;
+
+	std::cin >> x >> y;
+
+	std::cout << x + y;
+	//*/
+}
+```
+
+``` C++ tab="後半"
+#include <iostream>
+
+int main()
+{
+	/*
+	int x;
+
+	std::cin >> x;
+
+	std::cout << x * x;
+	/*/
+	int x, y;
+
+	std::cin >> x >> y;
+
+	std::cout << x + y;
+	//*/
+}
+```
+
 
 ## 行の入れ替えの防止
 
