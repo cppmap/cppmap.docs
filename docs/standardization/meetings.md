@@ -6,6 +6,7 @@ C++ への提案文書を議論して承認する C++ 標準化委員会の主�
 
 ## 現在アクティブな提案
 - [JTC1/SC22/WG21 - Papers 2021 mailing2021-01](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/#mailing2020-01)
+    - 日本語での解説: [WG21月次提案文書を眺める（2021年01月）](https://onihusube.hatenablog.com/entry/2021/02/11/153333)
 - [JTC1/SC22/WG21 - Papers 2020 mailing2020-12](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-12)
     - 日本語での解説: [WG21月次提案文書を眺める（2020年12月）](https://onihusube.hatenablog.com/entry/2021/01/17/005823)
 - [JTC1/SC22/WG21 - Papers 2020 mailing2020-11](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-11)

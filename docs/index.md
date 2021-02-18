@@ -40,7 +40,6 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 - (匿名 🐠)
 - 野菜ジュース
 - MawkishWaffle
-- 揺らぐ藻
 - jacking75
 - Chris Ohk
 - IZUNA

@@ -8,6 +8,8 @@ description: C++ のプログラムで使えるコメントアウトのトリッ
 ## 範囲の ON・OFF
 スラッシュ `/` の有無に応じて、範囲コメントの有効・無効を切り替えます。
 
+#### パターン 1
+
 ``` C++ tab="無効"
 #include <iostream>
 
@@ -35,6 +37,38 @@ int main()
 
 	std::cout << x * x;
 	/**/
+}
+```
+
+#### パターン 2
+
+``` C++ tab="無効"
+#include <iostream>
+
+int main()
+{
+    //*
+    int x;
+
+    std::cin >> x;
+
+    std::cout << x * x;
+    //*/
+}
+```
+
+``` C++ tab="有効"
+#include <iostream>
+
+int main()
+{
+    /*
+    int x;
+
+    std::cin >> x;
+
+    std::cout << x * x;
+    //*/
 }
 ```
 
