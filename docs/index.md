@@ -43,3 +43,4 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 - jacking75
 - Chris Ohk
 - IZUNA
+- qppon
