@@ -2,45 +2,31 @@ description: C++ への提案文書を議論して承認する C++ 標準化委�
 
 # 標準化会議
 
-C++ への提案文書を議論して承認する C++ 標準化委員会の主要会議の開催情報です。
+C++ への提案文書を議論して承認する C++ 標準化委員会の全体会議の開催情報です。
 
-## 現在アクティブな提案
-- [JTC1/SC22/WG21 - Papers 2021 mailing2021-01](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/#mailing2020-01)
-    - 日本語での解説: [WG21月次提案文書を眺める（2021年01月）](https://onihusube.hatenablog.com/entry/2021/02/11/153333)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-12](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-12)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年12月）](https://onihusube.hatenablog.com/entry/2021/01/17/005823)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-11](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-11)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年11月）](https://onihusube.hatenablog.com/entry/2020/12/06/015108)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-10](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-10)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年10月）](https://onihusube.hatenablog.com/entry/2020/11/02/221657)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-09](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-09)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年9月）](https://onihusube.hatenablog.com/entry/2020/10/09/221025)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-08](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-08)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年8月）](https://onihusube.hatenablog.com/entry/2020/09/18/222444)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-07](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-07)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年7月）](https://onihusube.hatenablog.com/entry/2020/08/12/014639)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-06](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-06)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年6月）](https://onihusube.hatenablog.com/entry/2020/07/05/003248)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-05](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-05)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年5月）](https://onihusube.hatenablog.com/entry/2020/06/01/001003)
-- [JTC1/SC22/WG21 - Papers 2020 mailing2020-04](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/#mailing2020-04)
-    - 日本語での解説: [WG21月次提案文書を眺める（2020年4月）](https://onihusube.hatenablog.com/entry/2020/05/01/194425)
-
-## 2022 Montreal
+## 2022 Kona
 #### 場所
-- 2022 夏 / モントリオール, カナダ
+- 2022-11-07 to 12 / コナ, ハワイ州, 米国
+
+## 2022 New York
+#### 場所
+- 2022-07 / ニューヨーク, ニューヨーク州, 米国
 
 ## 2022 Portland
 #### 場所
 - [2022-02-07 to 12](https://wg21.link/N4831) / ポートランド, オレゴン州, 米国
 
-## 2021 未定
+## October 2021 Virtual
 #### 場所
-- 2021 秋 / 未定
+- 2021-10-04 / オンライン
+
+## June 2021 Virtual
+#### 場所
+- 2021-06-07 / オンライン
 
 ## 2021 Varna
 #### 場所
-- 2020-5-31 to 06-05 / ヴァルナ, ブルガリア
+- <strike>2020-5-31 to 06-05 / ヴァルナ, ブルガリア</strike> (2021 年に以降に開催再延期)
 
 ## 2021 Kona
 #### 場所
@@ -48,7 +34,10 @@ C++ への提案文書を議論して承認する C++ 標準化委員会の主�
 
 ## February 2021 Virtual
 #### 場所
-- [2021-02-22](https://wg21.link/N4876) / オンライン
+- [2021-02-22](https://wg21.link/N4880) / オンライン
+
+#### 参加報告
+- [Trip report: Winter 2021 ISO C++ standards meeting (virtual)](https://herbsutter.com/2021/02/22/trip-report-winter-2021-iso-c-standards-meeting-virtual/) <small>by Herb Sutter</small>
 
 ## November 2020 Virtual
 #### 場所

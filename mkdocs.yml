@@ -59,6 +59,7 @@ nav:
     - C++23 の新機能: standardization/cpp23.md
     - C++23 以降に向けた提案: standardization/cppx.md
     - 標準化会議: standardization/meetings.md
+    - 提案リスト: standardization/proposals.md
     - 処理系の対応状況: standardization/status.md
     - C++ 規格書: standardization/working-drafts.md
     - C++ 標準ライブラリ: standardization/header.md
