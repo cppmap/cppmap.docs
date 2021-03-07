@@ -65,6 +65,7 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [C++23 以降に向けた提案 情報提供](https://github.com/cppmap/cppmap.docs/pull/32)
     - [C++ 規格書 記事更新](https://github.com/cppmap/cppmap.docs/pull/38)
     - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41)
+    - [なぜかコンパイルできる 情報提供](https://github.com/cppmap/cppmap.docs/issues/9#issuecomment-791437878)
 - [@yuji_n_dispair](https://twitter.com/yuji_n_dispair) さん
     - [国内の勉強会 情報加筆](https://github.com/cppmap/cppmap.docs/pull/29)
 - [@yumetodo](https://twitter.com/yumetodo) さん
