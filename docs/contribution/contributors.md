@@ -60,6 +60,8 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [国内の勉強会 情報提供](https://github.com/cppmap/cppmap.docs/pull/25)
 - [@wx257osn2](https://twitter.com/wx257osn2) さん
     - [オンラインコンパイラ 情報提供](https://github.com/cppmap/cppmap.docs/pull/18)
+- [@yaito3014](https://twitter.com/yaito3014) さん
+    - [なぜかコンパイルできない 情報提供](https://github.com/cppmap/cppmap.docs/issues/9#issuecomment-792238518)
 - [@yohhoy](https://twitter.com/yohhoy) さん
     - [記事改善案 提供](https://twitter.com/yohhoy/status/1106950996192747521)
     - [C++23 以降に向けた提案 情報提供](https://github.com/cppmap/cppmap.docs/pull/32)

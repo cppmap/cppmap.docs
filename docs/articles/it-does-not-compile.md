@@ -40,3 +40,27 @@ int main()
 	Func();
 }
 ```
+
+## 関数のオーバーロード
+
+```C++
+#include <iostream>
+
+using T = int&;
+
+void f(T&)
+{
+	std::cout << "A\n";
+}
+
+void f(const T&)
+{
+	std::cout << "B\n";
+}
+
+int main()
+{
+	int x;
+	f(x);
+}
+```
