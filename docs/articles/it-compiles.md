@@ -152,6 +152,19 @@ int main()
 }
 ```
 
+## 続
+```C++
+struct S
+{
+	static const int i = 42;
+};
+
+int main()
+{
+	return S::S::S::S::S::S::i;
+}
+```
+
 ## `typedef` の場所 1
 ```C++
 long unsigned typedef int long Uint64;
