@@ -73,6 +73,7 @@ C++ の入門～中級レベルの多くの情報（『やさしい C++ 第 5 �
 | [Modern C++ Programming Cookbook, 2nd Edition](https://amzn.to/3naUMQs)                                                | 2020 | C++20    | C++11～C++20 のモダンな機能の使い方を解説。パターンやイディオム、Boost.Test, Google Test, Catch2 を使ったテスト手法も扱う。[目次](https://www.packtpub.com/product/modern-c-programming-cookbook-second-edition/9781800208988) |
 | [C++ Best Practices: 45ish Simple Rules with Specific Action Items for Better C++](https://amzn.to/3paeX2R)            | 2021 | C++20    | より良い C++ コーディングのための 45 個のルールを説明。[目次](https://leanpub.com/cppbestpractices)                                                                                                           |
 | [Professional C++, 5th Edition](https://amzn.to/3bKXqdH)                                                               | 2021 | C++20    | 2018 年に発売された『Professional C++, 4th Edition』の C++20 対応版。1312 ページ                                                                                                                      |
+| [C++20: Get the Details](https://leanpub.com/c20)                                                               | 2021 | C++20/23 | C++20 の新機能を 500 ページにわたって解説。[目次](https://leanpub.com/c20) |
 
 
 ## 同人誌
