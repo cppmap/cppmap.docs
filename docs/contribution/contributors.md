@@ -22,6 +22,7 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [処理系の対応状況 情報提供](https://github.com/cppmap/cppmap.docs/pull/7)
     - [IEEE 754 演算について 情報提供](https://twitter.com/kariya_mitsuru/status/1148972200713584640)
     - [なぜかコンパイルできる 情報提供](https://twitter.com/kariya_mitsuru/status/1369276950972309509)
+    - [なぜかコンパイルできない 情報提供](https://twitter.com/kariya_mitsuru/status/1369294046456332296)
 - [@kenichiuda](https://twitter.com/kenichiuda)
     - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41)
 - [@Linda_pp](https://twitter.com/Linda_pp) さん

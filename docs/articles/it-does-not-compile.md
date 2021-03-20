@@ -4,7 +4,7 @@ description: 正しいように見えて、コンパイルエラーになる C++
 
 正しいように見えて、コンパイルエラーになるコードの紹介です。
 
-## 添字とラムダ式
+## [添字とラムダ式](https://wandbox.org/permlink/SVY9fqkBjRUSUNJQ)
 ```C++
 #include <iostream>
 
@@ -16,7 +16,7 @@ int main()
 }
 ```
 
-## 使えない変数
+## [使えない変数](https://wandbox.org/permlink/HJHm8EKL6Ma73jyR)
 ```C++
 #include <memory>
 
@@ -28,7 +28,7 @@ int main()
 }
 ```
 
-## ポインタ型のデフォルト引数
+## [ポインタ型のデフォルト引数](https://wandbox.org/permlink/RiDJ2HEPG9zL0KH8)
 ```C++
 void Func(int*=nullptr)
 {
@@ -41,8 +41,7 @@ int main()
 }
 ```
 
-## 関数のオーバーロード
-
+## [関数のオーバーロード](https://wandbox.org/permlink/dTWsrIqVeuJRifdK)
 ```C++
 #include <iostream>
 
@@ -62,5 +61,13 @@ int main()
 {
 	int x;
 	f(x);
+}
+```
+
+## [0xe](https://wandbox.org/permlink/aYCRa87L7rhq5Ydt)
+```C++
+int main()
+{
+    return 0xe-0xe;
 }
 ```
