@@ -5,6 +5,9 @@ description: C++ 標準化委員会で議論される提案リストと日本語
 C++20 / C++23 以降に向けた提案文書と、その日本語解説記事へのリンクです。
 
 ### 2021 年
+- [JTC1/SC22/WG21 - Papers 2021 mailing2021-05](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/#mailing2020-05)
+- [JTC1/SC22/WG21 - Papers 2021 mailing2021-04](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/#mailing2020-04)
+    - 日本語での解説: [WG21月次提案文書を眺める（2021年04月）](https://onihusube.hatenablog.com/entry/2021/05/14/214016)
 - [JTC1/SC22/WG21 - Papers 2021 mailing2021-03](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/#mailing2020-03)
     - 日本語での解説: [WG21月次提案文書を眺める（2021年03月）](https://onihusube.hatenablog.com/entry/2021/04/10/222356)
 - [JTC1/SC22/WG21 - Papers 2021 mailing2021-02](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2021/#mailing2020-02)
