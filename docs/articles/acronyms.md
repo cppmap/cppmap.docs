@@ -209,6 +209,9 @@ C 言語と互換性のあるオブジェクトレイアウトを持つ型
 ### SBO | Small Buffer Optimization
 小さい動的配列でのメモリアロケーションを避ける C++ の最適化テクニック
 
+### SD | Standing Document
+（日本語訳・説明募集中）
+
 ### SEH | Structured Exception Handling
 構造化例外処理。Windows で使われる独自の例外処理。
 

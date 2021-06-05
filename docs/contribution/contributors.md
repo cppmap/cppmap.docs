@@ -24,7 +24,8 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [なぜかコンパイルできる 情報提供](https://twitter.com/kariya_mitsuru/status/1369276950972309509)
     - [なぜかコンパイルできない 情報提供](https://twitter.com/kariya_mitsuru/status/1369294046456332296)
 - [@kenichiuda](https://twitter.com/kenichiuda)
-    - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41)
+    - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41#issuecomment-693335310)
+    - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41#issuecomment-855238514)
 - [@Linda_pp](https://twitter.com/Linda_pp) さん
     - [ライブラリ 記事提供](https://github.com/cppmap/cppmap.docs/pull/22)
 - [@matken11235](https://twitter.com/matken11235) さん
