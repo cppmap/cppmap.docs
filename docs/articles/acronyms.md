@@ -210,7 +210,7 @@ C 言語と互換性のあるオブジェクトレイアウトを持つ型
 小さい動的配列でのメモリアロケーションを避ける C++ の最適化テクニック
 
 ### SD | Standing Document
-（日本語訳・説明募集中）
+標準化委員会の常備文書 (https://isocpp.org/std/standing-documents)
 
 ### SEH | Structured Exception Handling
 構造化例外処理。Windows で使われる独自の例外処理。
