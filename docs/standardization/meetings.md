@@ -24,6 +24,9 @@ C++ への提案文書を議論して承認する C++ 標準化委員会の全�
 #### 場所
 - 2021-06-07 / オンライン
 
+#### 参加報告
+- [Trip report: Summer 2021 ISO C++ standards meeting (virtual)](https://herbsutter.com/2021/06/09/trip-report-summer-2021-iso-c-standards-meeting-virtual/) <small>by Herb Sutter</small>
+
 ## 2021 Varna
 #### 場所
 - <strike>2020-5-31 to 06-05 / ヴァルナ, ブルガリア</strike> (2021 年に以降に開催再延期)
