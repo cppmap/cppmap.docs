@@ -12,6 +12,7 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [国内の勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/30)
     - [国内の勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/33)
     - [C++ 関連の略語 情報提供](https://github.com/cppmap/cppmap.docs/issues/41)
+    - [C++ 標準ライブラリ 記事加筆](https://github.com/cppmap/cppmap.docs/pull/45)
 - [@Fuyutsubaki](https://twitter.com/Fuyutsubaki) さん
     - [なぜかコンパイルできない ネタ提供](https://github.com/cppmap/cppmap.docs/issues/9#issuecomment-472076826)
     - [標準ライブラリ 記事作成](https://github.com/cppmap/cppmap.docs/pull/12)
