@@ -32,4 +32,4 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 |--|--|
 |🌳 Gold Sponsor |[TOMOAKI12345](https://github.com/TOMOAKI12345)|
 |🌴 Silver Sponsor |[sknjpn](https://twitter.com/sknjpn)|
-|🌷 Bronze Sponsor |アゲハマ, chobby75, 匿名 😀, minachun, Fuyutsubaki, 匿名 😊, 匿名 🐝, 匿名 🐠, 野菜ジュース, MawkishWaffle, jacking75, Chris Ohk, IZUNA, qppon, k-sunako, ysaito|
+|🌷 Bronze Sponsor |アゲハマ, anonymous 😀, minachun, Fuyutsubaki, anonymous 😊, anonymous 🐝, anonymous 🐠, 野菜ジュース, MawkishWaffle, jacking75, Chris Ohk, IZUNA, qppon, k-sunako, ysaito, totono|
