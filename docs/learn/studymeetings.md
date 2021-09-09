@@ -9,7 +9,7 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 >大阪でC++に関するものを読み進める会です。 誰かが発表するといったスタイルではなく、みんなでわからないところを話し合って読んでいくスタイルの会です。
 
 - https://cpp-osaka.connpass.com/
-- Twitter ハッシュタグ [#talkcpp](https://twitter.com/search?q=%23cpp%E8%AA%AD%E6%9B%B8%E4%BC%9A&f=live)
+- Twitter ハッシュタグ [#cpp読書会](https://twitter.com/search?q=%23cpp%E8%AA%AD%E6%9B%B8%E4%BC%9A&f=live)
 
 
 ## talk.cpp
