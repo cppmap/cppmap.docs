@@ -7,12 +7,16 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 
 ## 大阪 C++ 読書会
 >大阪でC++に関するものを読み進める会です。 誰かが発表するといったスタイルではなく、みんなでわからないところを話し合って読んでいくスタイルの会です。
+
 - https://cpp-osaka.connpass.com/
+- Twitter ハッシュタグ [#talkcpp](https://twitter.com/search?q=%23cpp%E8%AA%AD%E6%9B%B8%E4%BC%9A&f=live)
 
 
 ## talk.cpp
 >talk.cpp は、動画と質疑応答による発表・議論を通して、C++ ユーザどうしが知見やアイデアを共有する、参加無料の技術イベントです。完全オンラインでの実施を前提にした、新しいスタイルの発表方式を採用しています。
+
 - https://talkcpp.connpass.com/
+- Twitter ハッシュタグ [#talkcpp](https://twitter.com/search?q=%23talkcpp&f=live)
 
 
 ## C++ MIX
@@ -22,7 +26,7 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 
 - https://cppmix.connpass.com/
 - [Youtube チャンネル](https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w)
-- Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix)
+- Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix&f=live)
 
 ### C++ MIX #7 [(2020-01-29)](https://cppmix.connpass.com/event/160166/)
 | タイトル                                                 | 発表者               | ムービー |
