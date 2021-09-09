@@ -16,6 +16,7 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 >talk.cpp は、動画と質疑応答による発表・議論を通して、C++ ユーザどうしが知見やアイデアを共有する、参加無料の技術イベントです。完全オンラインでの実施を前提にした、新しいスタイルの発表方式を採用しています。
 
 - https://talkcpp.connpass.com/
+- 発表資料: https://scrapbox.io/talkcpp/
 - Twitter ハッシュタグ [#talkcpp](https://twitter.com/search?q=%23talkcpp&f=live)
 
 
