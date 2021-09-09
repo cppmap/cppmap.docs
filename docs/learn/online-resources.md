@@ -26,6 +26,8 @@ description: オンラインでアクセスできる C++ 資料の紹介
 - [C++ Core Guidelines](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines) | [見出し日本語訳](https://qiita.com/tetsurom/items/322c7b58cddaada861ff)
 - [Google C++ Style Guide](https://google.github.io/styleguide/cppguide.html) | [日本語訳](https://ttsuki.github.io/styleguide/cppguide.ja.html)
 - [LLVM Coding Standards](https://llvm.org/docs/CodingStandards.html)
+- [Safer Usage Of C++](https://docs.google.com/document/d/e/2PACX-1vRZr-HJcYmf2Y76DhewaiJOhRNpjGHCxliAQTBhFxzv1QTae9o8mhBmDl32CRIuaWZLt5kVeH9e9jXv/pub)
+  - Chromium チームによる、C++ の安全性を一層高めるためのガイドライン案
 
 ## C++ 規格関連
 - [C++ 規格](https://cppmap.github.io/standardization/working-drafts/)
