@@ -13,7 +13,7 @@ description: オンラインでアクセスできる C++ 資料の紹介
 - [cppreference.com](https://en.cppreference.com/w/)
 - [C++ Language Reference](https://docs.microsoft.com/en-us/cpp/cpp/cpp-language-reference)
 - [hacking C++](https://hackingcpp.com/)
-  - 豊富なインフォグラフィックで C++ の機能を網羅的に解説
+    - 豊富なインフォグラフィックで C++ の機能を網羅的に解説
 
 ## プレゼンテーション
 - [CEDEC 2020 | ゲーム開発者のための C++11～C++20, 将来の C++ の展望](https://speakerdeck.com/cpp/cedec2020)

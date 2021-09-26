@@ -10,93 +10,105 @@ description: C++ のプログラムで使えるコメントアウトのトリッ
 
 #### パターン 1
 
-``` C++ tab="無効"
-#include <iostream>
+=== "無効"
 
-int main()
-{
-	/**/
-	int x;
+	``` C++
+	#include <iostream>
 
-	std::cin >> x;
+	int main()
+	{
+		/**/
+		int x;
 
-	std::cout << x * x;
-	/**/
-}
-```
+		std::cin >> x;
 
-``` C++ tab="有効"
-#include <iostream>
+		std::cout << x * x;
+		/**/
+	}
+	```
 
-int main()
-{
-	/**
-	int x;
+=== "有効"
 
-	std::cin >> x;
+	``` C++
+	#include <iostream>
 
-	std::cout << x * x;
-	/**/
-}
-```
+	int main()
+	{
+		/**
+		int x;
+
+		std::cin >> x;
+
+		std::cout << x * x;
+		/**/
+	}
+	```
 
 #### パターン 2
 
-``` C++ tab="無効"
-#include <iostream>
+=== "無効"
 
-int main()
-{
-    //*
-    int x;
+	``` C++
+	#include <iostream>
 
-    std::cin >> x;
+	int main()
+	{
+		//*
+		int x;
 
-    std::cout << x * x;
-    //*/
-}
-```
+		std::cin >> x;
 
-``` C++ tab="有効"
-#include <iostream>
+		std::cout << x * x;
+		//*/
+	}
+	```
 
-int main()
-{
-    /*
-    int x;
+=== "有効"
 
-    std::cin >> x;
+	``` C++
+	#include <iostream>
 
-    std::cout << x * x;
-    //*/
-}
-```
+	int main()
+	{
+		/*
+		int x;
+
+		std::cin >> x;
+
+		std::cout << x * x;
+		//*/
+	}
+	```
 
 
 ## 値の切り替え
 スラッシュ `/` の有無に応じて、左右どちらかの値を選択します。
 
-``` C++ tab="左"
-#include <iostream>
+=== "左"
 
-int main()
-{
-	constexpr int N = /**/ 100 /*/ 200 /**/;
+	``` C++
+	#include <iostream>
 
-	std::cout << N << '\n';
-}
-```
+	int main()
+	{
+		constexpr int N = /**/ 100 /*/ 200 /**/;
 
-``` C++ tab="右"
-#include <iostream>
+		std::cout << N << '\n';
+	}
+	```
 
-int main()
-{
-	constexpr int N = /** 100 /*/ 200 /**/;
+=== "右"
 
-	std::cout << N << '\n';
-}
-```
+	``` C++
+	#include <iostream>
+
+	int main()
+	{
+		constexpr int N = /** 100 /*/ 200 /**/;
+
+		std::cout << N << '\n';
+	}
+	```
 
 
 ## 範囲の切り替え
@@ -105,116 +117,128 @@ int main()
 
 #### パターン 1
 
-``` C++ tab="前半"
-#include <iostream>
+=== "前半"
 
-int main()
-{
-	/**/
-	int x;
+	``` C++
+	#include <iostream>
 
-	std::cin >> x;
+	int main()
+	{
+		/**/
+		int x;
 
-	std::cout << x * x;
-	/*/
-	int x, y;
+		std::cin >> x;
 
-	std::cin >> x >> y;
+		std::cout << x * x;
+		/*/
+		int x, y;
 
-	std::cout << x + y;
-	/**/
-}
-```
+		std::cin >> x >> y;
 
-``` C++ tab="後半"
-#include <iostream>
+		std::cout << x + y;
+		/**/
+	}
+	```
 
-int main()
-{
-	/**
-	int x;
+=== "後半"
 
-	std::cin >> x;
+	``` C++
+	#include <iostream>
 
-	std::cout << x * x;
-	/*/
-	int x, y;
+	int main()
+	{
+		/**
+		int x;
 
-	std::cin >> x >> y;
+		std::cin >> x;
 
-	std::cout << x + y;
-	/**/
-}
-```
+		std::cout << x * x;
+		/*/
+		int x, y;
+
+		std::cin >> x >> y;
+
+		std::cout << x + y;
+		/**/
+	}
+	```
 
 #### パターン 2
 
-``` C++ tab="前半"
-#include <iostream>
+=== "前半"
 
-int main()
-{
-	//*
-	int x;
+	``` C++
+	#include <iostream>
 
-	std::cin >> x;
+	int main()
+	{
+		//*
+		int x;
 
-	std::cout << x * x;
-	/*/
-	int x, y;
+		std::cin >> x;
 
-	std::cin >> x >> y;
+		std::cout << x * x;
+		/*/
+		int x, y;
 
-	std::cout << x + y;
-	//*/
-}
-```
+		std::cin >> x >> y;
 
-``` C++ tab="後半"
-#include <iostream>
+		std::cout << x + y;
+		//*/
+	}
+	```
 
-int main()
-{
-	/*
-	int x;
+=== "後半"
 
-	std::cin >> x;
+	``` C++
+	#include <iostream>
 
-	std::cout << x * x;
-	/*/
-	int x, y;
+	int main()
+	{
+		/*
+		int x;
 
-	std::cin >> x >> y;
+		std::cin >> x;
 
-	std::cout << x + y;
-	//*/
-}
-```
+		std::cout << x * x;
+		/*/
+		int x, y;
+
+		std::cin >> x >> y;
+
+		std::cout << x + y;
+		//*/
+	}
+	```
 
 
 ## 行の入れ替えの防止
 
 リファクタリング時に、コピー＆ペーストで行の順番を入れ替えてしまうことを防ぎます。
 
-``` C++ tab="基本のコード"
-void First() {}
-void Second() {}
+=== "元のコード"
 
-int main()
-{
-	First();/*
-	*/Second();
-}
-```
+	``` C++
+	void First() {}
+	void Second() {}
 
-``` C++ tab="入れ替えるとエラー"
-void First() {}
-void Second() {}
+	int main()
+	{
+		First();/*
+		*/Second();
+	}
+	```
 
-int main()
-{
-	*/ Second();
-	First();/*	
-}
-```
+=== "入れ替えるとエラー"
+
+	``` C++
+	void First() {}
+	void Second() {}
+
+	int main()
+	{
+		*/ Second();
+		First();/*	
+	}
+	```
 

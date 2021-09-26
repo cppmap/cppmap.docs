@@ -73,168 +73,193 @@ inspect constexpr_opt (init-statement_opt condition) trailing-return-type_opt
 ```
 
 ### 整数のマッチング
-```C++ tab="現在"
-switch (code)
-{
-	case 200: std::cout << "OK\n"; break;
-	case 404: std::cout << "Not Found\n"; break;
-	default : std::cout << "don't care\n";
-}
-```
 
-```C++ tab="提案"
-inspect (code)
-{
-    200 => { std::cout << "OK\n" }
-	404 => { std::cout << "Not Found\n" }
-	__  => { std::cout << "don't care\n" } // __ はワイルドカードパターン
-};
+=== "現在"
+
+	```C++
+	switch (code)
+	{
+		case 200: std::cout << "OK\n"; break;
+		case 404: std::cout << "Not Found\n"; break;
+		default : std::cout << "don't care\n";
+	}
+	```
+
+=== "提案"
+
+	```C++
+	inspect (code)
+	{
+		200 => { std::cout << "OK\n" }
+		404 => { std::cout << "Not Found\n" }
+		__  => { std::cout << "don't care\n" } // __ はワイルドカードパターン
+	};
 ```
 
 ### 文字列のマッチング
-```C++ tab="現在"
-if (s == "png")
-{
-    std::cout << "PNG Image\n";
-}
-else if (s == "jpg")
-{
-    std::cout << "JPEG Image\n";
-}
-else
-{
-    std::cout << "Not supported\n";
-}
-```
 
-```C++ tab="提案"
-inspect (s)
-{
-    "png" => { std::cout << "PNG Image\n"; }
-    "jpg" => { std::cout << "JPEG Image\n"; }
-    __    => { std::cout << "Not supported\n"; }
-};
-```
+=== "現在"
+
+	```C++
+	if (s == "png")
+	{
+		std::cout << "PNG Image\n";
+	}
+	else if (s == "jpg")
+	{
+		std::cout << "JPEG Image\n";
+	}
+	else
+	{
+		std::cout << "Not supported\n";
+	}
+	```
+
+=== "提案"
+
+	```C++
+	inspect (s)
+	{
+		"png" => { std::cout << "PNG Image\n"; }
+		"jpg" => { std::cout << "JPEG Image\n"; }
+		__    => { std::cout << "Not supported\n"; }
+	};
+	```
 
 ### Tuples のマッチング
-```C++ tab="現在"
-auto&& [x, y] = pos;
-if (x == 0 && y == 0)
-{
-    std::cout << "on the origin\n";
-}
-else if (y == 0)
-{
-    std::cout << "on X-axis\n";
-}
-else if (x == 0)
-{
-    std::cout << "on Y-axis\n";
-}
-else
-{
-    std::cout << x << ", " << y << '\n';
-}
+
+=== "現在"
+
+	```C++
+	auto&& [x, y] = pos;
+	if (x == 0 && y == 0)
+	{
+		std::cout << "on the origin\n";
+	}
+	else if (y == 0)
+	{
+		std::cout << "on X-axis\n";
+	}
+	else if (x == 0)
+	{
+		std::cout << "on Y-axis\n";
+	}
+	else
+	{
+		std::cout << x << ", " << y << '\n';
+	}
 ```
 
-```C++ tab="提案"
-inspect (pos)
-{
-	[0, 0] => { std::cout << "on the origin\n"; }
-	[x, 0] => { std::cout << "on the X-axis\n"; }
-	[0, y] => { std::cout << "on the Y-axis\n"; }
-	[x, y] => { std::cout << x << ", " << y << '\n'; }
-};
-```
+=== "提案"
+
+	```C++
+	inspect (pos)
+	{
+		[0, 0] => { std::cout << "on the origin\n"; }
+		[x, 0] => { std::cout << "on the X-axis\n"; }
+		[0, y] => { std::cout << "on the Y-axis\n"; }
+		[x, y] => { std::cout << x << ", " << y << '\n'; }
+	};
+	```
 
 ### Variants のマッチング
-```C++ tab="現在"
-struct Visitor
-{
-	void operator()(int i) const
+
+=== "現在"
+
+	```C++
+	struct Visitor
 	{
-		std::cout << "int: " << i << '\n';
-	}
+		void operator()(int i) const
+		{
+			std::cout << "int: " << i << '\n';
+		}
 
-	void operator()(float f) const
+		void operator()(float f) const
+		{
+			std::cout << "float: " << f << '\n';
+		}
+	};
+
+	int main()
 	{
-		std::cout << "float: " << f << '\n';
+		std::variant<int, float> v = 3.14f;
+
+		std::visit(Visitor{}, v);
 	}
-};
+	```
 
-int main()
-{
-	std::variant<int, float> v = 3.14f;
+=== "提案"
 
-	std::visit(Visitor{}, v);
-}
-```
-
-```C++ tab="提案"
-int main()
-{
-	std::variant<int, float> v = 3.14f;
-
-	inspect (v)
+	```C++
+	int main()
 	{
-		<int> i   => { std::cout << "int: " << i << '\n'; }
-		<float> f => { std::cout << "float: " << f << '\n'; }
-	}
-};
-```
+		std::variant<int, float> v = 3.14f;
+
+		inspect (v)
+		{
+			<int> i   => { std::cout << "int: " << i << '\n'; }
+			<float> f => { std::cout << "float: " << f << '\n'; }
+		}
+	};
+	```
 
 ### Polymorphic Types のマッチング
-```C++ tab="現在"
-struct Shape
-{
-	virtual ~Shape() = default;
-	virtual double area() const = 0;
-};
 
-struct Circle : Shape
-{
-	double radius;
-	double area() const override
+=== "現在"
+
+	```C++
+	struct Shape
 	{
-		return std::numbers::pi * radius * radius;
-	}
-};
+		virtual ~Shape() = default;
+		virtual double area() const = 0;
+	};
 
-struct Rectangle : Shape
-{
-	double width, height;
-	double area() const override
+	struct Circle : Shape
 	{
-		return width * height;
-	}
-};
-```
+		double radius;
+		double area() const override
+		{
+			return std::numbers::pi * radius * radius;
+		}
+	};
 
-```C++ tab="提案"
-struct Shape
-{
-	virtual ~Shape() = default;
-};
-
-struct Circle : Shape
-{
-	double radius;
-};
-
-struct Rectangle : Shape
-{
-	double width, height;
-};
-
-double Area(const Shape& shape)
-{
-	return inspect (shape)
+	struct Rectangle : Shape
 	{
-		<Circle>	[r]		=> std::numbers::pi * r * r;
-		<Rectangle>	[w, h]	=> w * h;
-	}
-};
-```
+		double width, height;
+		double area() const override
+		{
+			return width * height;
+		}
+	};
+	```
+
+=== "提案"
+
+	```C++
+	struct Shape
+	{
+		virtual ~Shape() = default;
+	};
+
+	struct Circle : Shape
+	{
+		double radius;
+	};
+
+	struct Rectangle : Shape
+	{
+		double width, height;
+	};
+
+	double Area(const Shape& shape)
+	{
+		return inspect (shape)
+		{
+			<Circle>	[r]		=> std::numbers::pi * r * r;
+			<Rectangle>	[w, h]	=> w * h;
+		}
+	};
+	```
 
 
 ## 拡張浮動小数点数型

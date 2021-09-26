@@ -147,66 +147,69 @@ int main()
 ### 型名であることが明らかな文脈で `typename` を省略可能に [(P0634R3)](https://wg21.link/P0634R3)
 C++17 で依存名が型である場合に `typename` を付けないのは、派生クラス定義時の基底クラスの指定と、初期化子リストでの基底クラスの指定のみでした（厳密にはこの 2 つには `typename` を付けられません）。C++20 では、型名しか使えないさらにいくつかの文脈で `typename` が省略可能になります。次のサンプルコードの左右タブで比較できます。
 
-```C++ tab="C++17"
-#include <vector>
-#include <string>
+=== "C++17"
 
-template <class T, class Alloc = typename T::allocator_type>
-struct S : T::value_type // 派生クラス定義時の基底クラスの指定
-{
-	using value_type = typename T::value_type;
+	```C++
+	#include <vector>
+	#include <string>
 
-	S()
-        : T::value_type() {} // 初期化子リストでの基底クラスの指定
-
-	typename T::size_type max_size() const;
-
-	auto data()->typename T::pointer;
-
-	auto min_size() const
+	template <class T, class Alloc = typename T::allocator_type>
+	struct S : T::value_type // 派生クラス定義時の基底クラスの指定
 	{
-		return static_cast<typename T::size_type>(0);
-	}
-};
+		using value_type = typename T::value_type;
 
-template <class T> typename T::size_type MaxSize();
+		S()
+			: T::value_type() {} // 初期化子リストでの基底クラスの指定
 
-int main()
-{
-	S<std::vector<std::string>> s;
-}
-```
+		typename T::size_type max_size() const;
 
-```C++ tab="C++20"
-#include <vector>
-#include <string>
+		auto data()->typename T::pointer;
 
-template <class T, class Alloc = T::allocator_type> // OK
-struct S : T::value_type // 派生クラス定義時の基底クラスの指定
-{
-	using value_type = T::value_type; // OK
+		auto min_size() const
+		{
+			return static_cast<typename T::size_type>(0);
+		}
+	};
 
-	S()
-        : T::value_type() {} // 初期化子リストでの基底クラスの指定
+	template <class T> typename T::size_type MaxSize();
 
-	T::size_type max_size() const; // OK
-
-	auto data()->T::pointer; // OK
-
-	auto min_size() const
+	int main()
 	{
-		return static_cast<T::size_type>(0); // OK
+		S<std::vector<std::string>> s;
 	}
-};
+	```
 
-template <class T> T::size_type MaxSize(); // OK
+=== "C++20"
 
-int main()
-{
-    S<std::vector<std::string>> s;
-}
+	```C++
+	#include <vector>
+	#include <string>
 
-```
+	template <class T, class Alloc = T::allocator_type> // OK
+	struct S : T::value_type // 派生クラス定義時の基底クラスの指定
+	{
+		using value_type = T::value_type; // OK
+
+		S()
+			: T::value_type() {} // 初期化子リストでの基底クラスの指定
+
+		T::size_type max_size() const; // OK
+
+		auto data()->T::pointer; // OK
+
+		auto min_size() const
+		{
+			return static_cast<T::size_type>(0); // OK
+		}
+	};
+
+	template <class T> T::size_type MaxSize(); // OK
+
+	int main()
+	{
+		S<std::vector<std::string>> s;
+	}
+	```
 
 
 ### 定数式での仮想関数呼び出しが可能に [(P1064R0)](https://wg21.link/P1064)
@@ -526,53 +529,57 @@ int main()
 
 C++17 でネストした名前空間定義が導入されましたが、その中では `inline namespace` を使うことができず、`inline namespace` が `namespace` 内にある次のようなケースで恩恵を受けられませんでした。C++20 からはネストした名前空間定義の中で `inline` を使えるようになります。
 
-```C++ tab="C++17"
-#include <iostream>
+=== "C++17"
 
-namespace mylib::v1::util
-{
-	constexpr int GetValue() { return 1; }
-}
+	```C++
+	#include <iostream>
 
-namespace mylib
-{
-	inline namespace v2
+	namespace mylib::v1::util
 	{
-		namespace util
+		constexpr int GetValue() { return 1; }
+	}
+
+	namespace mylib
+	{
+		inline namespace v2
 		{
-			constexpr int GetValue() { return 2; }
+			namespace util
+			{
+				constexpr int GetValue() { return 2; }
+			}
 		}
 	}
-}
 
-int main()
-{
-	std::cout << mylib::v1::util::GetValue() << '\n';
-	std::cout << mylib::v2::util::GetValue() << '\n';
-	std::cout << mylib::util::GetValue() << '\n'; // v2
-}
-```
+	int main()
+	{
+		std::cout << mylib::v1::util::GetValue() << '\n';
+		std::cout << mylib::v2::util::GetValue() << '\n';
+		std::cout << mylib::util::GetValue() << '\n'; // v2
+	}
+	```
 
-```C++ tab="C++20"
-#include <iostream>
+=== "C++20"
 
-namespace mylib::v1::util
-{
-	constexpr int GetValue() { return 1; }
-}
+	```C++
+	#include <iostream>
 
-namespace mylib::inline v2::util
-{
-	constexpr int GetValue() { return 2; }
-}
+	namespace mylib::v1::util
+	{
+		constexpr int GetValue() { return 1; }
+	}
 
-int main()
-{
-	std::cout << mylib::v1::util::GetValue() << '\n';
-	std::cout << mylib::v2::util::GetValue() << '\n';
-	std::cout << mylib::util::GetValue() << '\n'; // v2
-}
-```
+	namespace mylib::inline v2::util
+	{
+		constexpr int GetValue() { return 2; }
+	}
+
+	int main()
+	{
+		std::cout << mylib::v1::util::GetValue() << '\n';
+		std::cout << mylib::v2::util::GetValue() << '\n';
+		std::cout << mylib::util::GetValue() << '\n'; // v2
+	}
+	```
 
 
 ### 本来アクセス可能な private メンバに構造化束縛ではアクセスできなかった仕様を修正 [(P0969R0)](https://wg21.link/P0969R0)
@@ -1148,42 +1155,46 @@ int main()
 ### `std::memory_order` を `enum class` に変更 [(P0439R0)](https://wg21.link/P0439R0)
 C++17 まで `enum` で定義されていた `std::memory_order` を、モダンな C++ 文法と型安全のために、`enum class` で定義する仕様に変更されます。これまでの表記は定数で提供されるようになるため、既存のソースコードは影響を受けません。また、バイナリ互換性のために、`enum class` の基底型の選択は実装に任せられています。
 
-```C++ tab="C++17"
-namespace std
-{
-	typedef enum memory_order
-	{
-		memory_order_relaxed,
-		memory_order_consume,
-		memory_order_acquire,
-		memory_order_release,
-		memory_order_acq_rel,
-		memory_order_seq_cst
-	} memory_order;
-}
-```
+=== "C++17"
 
-```C++ tab="C++20"
-namespace std
-{
-	enum class memory_order /* : unspecified */
+	```C++
+	namespace std
 	{
-		relaxed,
-		consume,
-		acquire,
-		release,
-		acq_rel,
-		seq_cst
-	};
+		typedef enum memory_order
+		{
+			memory_order_relaxed,
+			memory_order_consume,
+			memory_order_acquire,
+			memory_order_release,
+			memory_order_acq_rel,
+			memory_order_seq_cst
+		} memory_order;
+	}
+	```
 
-	inline constexpr memory_order memory_order_relaxed = memory_order::relaxed;
-	inline constexpr memory_order memory_order_consume = memory_order::consume;
-	inline constexpr memory_order memory_order_acquire = memory_order::acquire;
-	inline constexpr memory_order memory_order_release = memory_order::release;
-	inline constexpr memory_order memory_order_acq_rel = memory_order::acq_rel;
-	inline constexpr memory_order memory_order_seq_cst = memory_order::seq_cst;
-}
-```
+=== "C++20"
+
+	```C++
+	namespace std
+	{
+		enum class memory_order /* : unspecified */
+		{
+			relaxed,
+			consume,
+			acquire,
+			release,
+			acq_rel,
+			seq_cst
+		};
+
+		inline constexpr memory_order memory_order_relaxed = memory_order::relaxed;
+		inline constexpr memory_order memory_order_consume = memory_order::consume;
+		inline constexpr memory_order memory_order_acquire = memory_order::acquire;
+		inline constexpr memory_order memory_order_release = memory_order::release;
+		inline constexpr memory_order memory_order_acq_rel = memory_order::acq_rel;
+		inline constexpr memory_order memory_order_seq_cst = memory_order::seq_cst;
+	}
+	```
 
 
 ### `Hash` が同一の挙動をしない非順序連想コンテナどうしの比較が可能に [(P0809R0)](https://wg21.link/P0809R0)
@@ -1325,41 +1336,45 @@ C++17 では、`std::basic_string::reserve(size_type)` に現在の `capacity()`
 ### 連想コンテナに `constains()` メンバ関数を追加 [(P0458R2)](https://wg21.link/P0458R2)
 ある要素が連想コンテナに含まれているか調べるための C++17 までのイディオムは、直感的でなく初心者にとっても明快ではありませんでした。C++20 からは、要素の存在をチェックする `contains(key)` メンバ関数が `std::map`, `std::multimap`, `std::set`, `std::multiset`, `std::unordered_map`, `std::unordered_multimap`, `std::unordered_set`, `std::unordered_multiset` に追加されます。
 
-```C++ tab="C++17"
-#include <iostream>
-#include <unordered_map>
+=== "C++17"
 
-int main()
-{
-	const std::unordered_map<int, std::string> table =
-	{
-		{ 200, "OK" }, { 201, "Created" }, { 202, "Accepted" }
-	};
+	```C++
+	#include <iostream>
+	#include <unordered_map>
 
-	if (table.find(200) != table.end())
+	int main()
 	{
-		std::cout << "key exists\n";
+		const std::unordered_map<int, std::string> table =
+		{
+			{ 200, "OK" }, { 201, "Created" }, { 202, "Accepted" }
+		};
+
+		if (table.find(200) != table.end())
+		{
+			std::cout << "key exists\n";
+		}
 	}
-}
-```
+	```
 
-```C++ tab="C++20"
-#include <iostream>
-#include <unordered_map>
+=== "C++20"
 
-int main()
-{
-	const std::unordered_map<int, std::string> table =
+	```C++
+	#include <iostream>
+	#include <unordered_map>
+
+	int main()
 	{
-		{ 200, "OK" }, { 201, "Created" }, { 202, "Accepted" }
-	};
+		const std::unordered_map<int, std::string> table =
+		{
+			{ 200, "OK" }, { 201, "Created" }, { 202, "Accepted" }
+		};
 
-	if (table.contains(200))
-	{
-		std::cout << "key exists\n";
+		if (table.contains(200))
+		{
+			std::cout << "key exists\n";
+		}
 	}
-}
-```
+	```
 
 ### コンテナから指定した要素を削除する操作に一貫して使える `std::erase()`, `std::erase_if()` 関数 [(P1209R0)](https://wg21.link/p1209r0)
 コンテナから特定の要素を削除するという処理は、コンテナの種類によって最適な書き方が異なります。`std::unordered_map` ではイテレータを使って先頭から要素を削除していき、`std::list` ではメンバ関数の `remove()` や `remove_if()` を使い、`std::vector` では `std::remove_if()` と `erase()` メンバ関数を組み合わせます。このようにコンテナの特性に応じてコードを書き分けるのは大変だったため、C++20 ではすべてのコンテナ向けに適切な実装を提供する、一貫して使える非メンバ関数 `std::erase()`, `std::erase_if()` が追加されます。
