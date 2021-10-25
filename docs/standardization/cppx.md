@@ -94,7 +94,7 @@ inspect constexpr_opt (init-statement_opt condition) trailing-return-type_opt
 		404 => { std::cout << "Not Found\n" }
 		__  => { std::cout << "don't care\n" } // __ はワイルドカードパターン
 	};
-```
+	```
 
 ### 文字列のマッチング
 
@@ -148,7 +148,7 @@ inspect constexpr_opt (init-statement_opt condition) trailing-return-type_opt
 	{
 		std::cout << x << ", " << y << '\n';
 	}
-```
+	```
 
 === "提案"
 
