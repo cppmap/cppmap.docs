@@ -31,6 +31,8 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [ライブラリ 記事提供](https://github.com/cppmap/cppmap.docs/pull/22)
 - [@matken11235](https://twitter.com/matken11235) さん
     - [C++ パッケージマネージャ 情報提供](https://github.com/cppmap/cppmap.docs/pull/2)
+- [@monman53](https://twitter.com/monman53) さん
+    - [ページの修正](https://github.com/cppmap/cppmap.docs/pull/46)
 - [@nekko1119](https://twitter.com/nekko1119) さん
     - [予約語 記事作成](https://github.com/cppmap/cppmap.docs/pull/11)    
 - [@NxNeu_J](https://twitter.com/NxNeu_J) さん
