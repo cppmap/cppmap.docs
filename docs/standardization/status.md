@@ -5,12 +5,20 @@ description: 各種 C++ 処理系の規格対応状況
 ## 処理系の比較表
 - [C++ compiler support](https://en.cppreference.com/w/cpp/compiler_support)
 
+## C++23
+
+- GCC: [C++23 Support in GCC](https://gcc.gnu.org/projects/cxx-status.html#cxx23)
+- libstdc++: 
+- Clang: [C++2b implementation status](http://clang.llvm.org/cxx_status.html#cxx23)
+- libc++: [libc++ C++2b Status](https://libcxx.llvm.org/Status/Cxx2b.html)
+- Microsoft Visaul C++: [Visual C++ Language Conformance](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
+
 ## C++20
 
-- GCC: [C++2a Support in GCC](https://gcc.gnu.org/projects/cxx-status.html#cxx2a)
-- libstdc++: [C++ 202a](https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2020)
-- Clang: [C++2a implementation status](http://clang.llvm.org/cxx_status.html#cxx20)
-- libc++: [libc++ C++2a Status](http://libcxx.llvm.org/cxx2a_status.html)
+- GCC: [C++20 Support in GCC](https://gcc.gnu.org/projects/cxx-status.html#cxx20)
+- libstdc++: [C++ 2020](https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2020)
+- Clang: [C++20 implementation status](http://clang.llvm.org/cxx_status.html#cxx20)
+- libc++: [libc++ C++20 Status](https://libcxx.llvm.org/Status/Cxx20.html)
 - Microsoft Visaul C++: [Visual C++ Language Conformance](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
 
 ## C++17
@@ -18,7 +26,7 @@ description: 各種 C++ 処理系の規格対応状況
 - GCC: [C++17 Support in GCC](https://gcc.gnu.org/projects/cxx-status.html#cxx17)
 - libstdc++: [C++ 2017](https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2017)
 - Clang: [C++17 implementation status](http://clang.llvm.org/cxx_status.html#cxx17)
-- libc++: [libc++ C++17 Status](http://libcxx.llvm.org/cxx1z_status.html)
+- libc++: [libc++ C++17 Status](https://libcxx.llvm.org/Status/Cxx17.html)
 - Microsoft Visaul C++: [Visual C++ Language Conformance](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
 
 ## C++14
@@ -26,5 +34,5 @@ description: 各種 C++ 処理系の規格対応状況
 - GCC: [C++14 Support in GCC](https://gcc.gnu.org/projects/cxx-status.html#cxx14)
 - libstdc++: [C++ 2014](https://gcc.gnu.org/onlinedocs/libstdc++/manual/status.html#status.iso.2014)
 - Clang: [C++14 implementation status](http://clang.llvm.org/cxx_status.html#cxx14)
-- libc++: [libc++ C++14 Status](http://libcxx.llvm.org/cxx1y_status.html)
+- libc++: [libc++ C++14 Status](https://libcxx.llvm.org/Status/Cxx14.html)
 - Microsoft Visaul C++: [Visual C++ Language Conformance](https://docs.microsoft.com/en-us/cpp/visual-cpp-language-conformance)
