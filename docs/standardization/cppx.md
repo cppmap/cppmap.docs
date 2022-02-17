@@ -1,6 +1,6 @@
-description: C++23 以降に向けて議論が進行中のおもな提案の紹介
+description: C++23, C++26 以降に向けて議論が進行中のおもな提案の紹介
 
-# C++23 以降に向けた提案
+# C++23, C++26 以降に向けた提案
 
 !!! Info
 	C++23 の規格ドラフト入りが決まった機能は [C++23 の新機能](../cpp23) に移動します。
@@ -300,30 +300,6 @@ C++20 の `std::format` をベースにした新しい標準出力 API, `std::pr
 
 ```C++
 std::print("Hello, {}!", name);
-```
-
-## 列挙型の値を基底型に変換する `std::to_underlying()`
-- [std::to_underlying for enumerations (P1682)](https://wg21.link/P1682)
-
-`enum class` を基底型の整数値へ適切に変換するには `static_cast<std::underlying_type_t<Enum>>(e)` のようなコードを書く必要がありました。これを `std::to_underlying(e)` で書けるようにする提案です。
-
-```C++
-#include <utility>
-
-enum class Enum : char
-{
-	A, B, C
-};
-
-void F(char) {}
-void F(int) {}
-void F(unsigned) {}
-
-int main()
-{
-	Enum e = Enum::A;
-	F(std::to_underlying(e)); // F(char) が呼ばれる
-}
 ```
 
 
