@@ -95,5 +95,6 @@ nav:
     - C++ パッケージマネージャ: tools/package-manager.md
     - C++ コードフォーマッタ: tools/code-formatter.md
     - C++ プロジェクトテンプレート: tools/project-template.md
+    - C++ 用 .gitignore: tools/gitignore.md
   - 貢献:
     - コントリビュータ: contribution/contributors.md
