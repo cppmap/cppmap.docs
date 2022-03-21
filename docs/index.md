@@ -8,9 +8,10 @@
 
 - [cppmap.docs | Issues](https://github.com/cppmap/cppmap.docs/issues)
 
-📢 本サイトの運営により多くの時間を使えるよう、寄付をお願いしています。
+📢 本サイトの運営は、GitHub Sponsors によって支えられています。
 
 - [GitHub Sponsors | Become a sponsor to Reputeless](https://github.com/sponsors/Reputeless)
+
 
 ## このサイトについて
 C++17, C++20, C++23, C++26 に関する情報を調査・提供します。  
@@ -18,15 +19,17 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 
 - [コントリビュート方法](https://github.com/cppmap/cppmap.docs)
 
-## ライセンス
-<img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0"/>  
 
+## ライセンス
 本サイトの記事とサンプルコードはパブリックドメインです。  
 サードパーティーのコンテンツの著作権は、それぞれの所有者に帰属します。
 
+<img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0"/>  
+
+
 ## 💗 [スポンサー](https://github.com/sponsors/Reputeless)
 
-[GitHub Sponsors ページ](https://github.com/sponsors/Reputeless) から「C++ の歩き方」のスポンサーにご登録ください。
+[GitHub Sponsors ページ](https://github.com/sponsors/Reputeless) からスポンサーに登録して、「C++ の歩き方」の執筆とメンテナンスを応援してください！
 
 |Sponsor tier| |
 |--|--|
