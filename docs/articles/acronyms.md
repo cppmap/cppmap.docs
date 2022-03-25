@@ -98,6 +98,9 @@ C++ 標準化委員会のスタディグループの 1 つ (SG17). EWG に向け
 ### GCC | GNU Compiler Collection / GNU C++ Compiler
 GNU コンパイラコレクション、またはその C++ コンパイラ
 
+### GMF | Global Module Fragment
+グローバルモジュールフラグメント
+
 ### G++ | GNU C++ Compiler
 GNU コンパイラコレクションの C++ コンパイラ
 
