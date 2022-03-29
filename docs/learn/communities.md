@@ -21,11 +21,17 @@ C++ のニュース掲示板。
 
 400 人以上が参加する、日本の C++ プログラマのための Facebook グループです。書籍やイベントの情報が投稿されています。
 
-### Twitter C++ コミュニティ :fa-twitter:
+### C++ Twitter コミュニティ (日本語) :fa-twitter:
     
 [https://twitter.com/i/communities/1499396722514345984](https://twitter.com/i/communities/1499396722514345984)
 
 C++ ユーザが集まる、日本語の Twitter コミュニティです。
+
+### C++ Twitter コミュニティ (英語) :fa-twitter:
+    
+[https://twitter.com/i/communities/1508588673310277633](https://twitter.com/i/communities/1508588673310277633)
+
+C++ ユーザが集まる、英語の Twitter コミュニティです。
 
 
 ## 日本語の Q & A サイト
