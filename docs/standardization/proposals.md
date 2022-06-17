@@ -6,6 +6,7 @@ C++20 / C++23 以降に向けた提案文書と、その日本語解説記事へ
 
 ### 2022 年
 - [JTC1/SC22/WG21 - Papers 2022 mailing2022-05](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/#mailing2022-05)
+    - 日本語での解説: [WG21月次提案文書を眺める（2022年05月）](https://onihusube.hatenablog.com/entry/2022/06/11/191943)
 - [JTC1/SC22/WG21 - Papers 2022 mailing2022-04](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/#mailing2022-04)
     - 日本語での解説: [WG21月次提案文書を眺める（2022年04月）](https://onihusube.hatenablog.com/entry/2022/05/08/195618)
 - [JTC1/SC22/WG21 - Papers 2022 mailing2022-03](http://www.open-std.org/jtc1/sc22/wg21/docs/papers/2022/#mailing2022-03)
