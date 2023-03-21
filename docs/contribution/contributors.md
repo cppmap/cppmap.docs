@@ -19,6 +19,7 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
 - [@hr_sao](https://twitter.com/hr_sao) さん
     - [C++ コードフォーマッタ 記事加筆](https://github.com/cppmap/cppmap.docs/pull/36)
     - [gitignore テンプレ記事提供](https://github.com/cppmap/cppmap.docs/pull/48)
+    - [C++ 技術同人誌 情報提供](https://github.com/cppmap/cppmap.docs/pull/51)
 - [@kariya_mitsuru](https://twitter.com/kariya_mitsuru) さん
     - [C++17 洋書 情報提供](https://github.com/cppmap/cppmap.docs/issues/6)
     - [処理系の対応状況 情報提供](https://github.com/cppmap/cppmap.docs/pull/7)
