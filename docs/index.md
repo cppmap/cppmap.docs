@@ -27,7 +27,7 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 <img src="https://i.creativecommons.org/p/zero/1.0/88x31.png" alt="CC0"/>  
 
 
-## GitHun Sponsors
+## GitHub Sponsors
 
 #### Gold Sponsor 
 - [TOMOAKI12345](https://github.com/TOMOAKI12345)
