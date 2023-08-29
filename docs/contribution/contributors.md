@@ -38,6 +38,8 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [ページの修正](https://github.com/cppmap/cppmap.docs/pull/46)
 - [@nekko1119](https://twitter.com/nekko1119) さん
     - [予約語 記事作成](https://github.com/cppmap/cppmap.docs/pull/11)    
+- [@nicklegr](https://twitter.com/nicklegr) さん
+    - [記事の修正](https://github.com/cppmap/cppmap.docs/pull/52)
 - [@NxNeu_J](https://twitter.com/NxNeu_J) さん
     - [C++17 洋書 情報提供](https://github.com/cppmap/cppmap.docs/issues/5)
 - [@onihusube9](https://twitter.com/onihusube9) さん
