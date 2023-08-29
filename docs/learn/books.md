@@ -3,9 +3,9 @@ description: モダン C++ の学習に役立つ書籍の紹介
 # C++ 書籍
 
 C++ の学習に役立つ最新の書籍を紹介します。  
-初学者向けの入門書には :fa-graduation-cap: マークを付けています。
+初学者向けの入門書には :fontawesome-solid-graduation-cap: マークを付けています。
 <!-- C++14 以降を扱っているもの。書籍記載の発行年月日が古い順 -->
-<!-- プログラミング未経験者でも読みやすい書籍には :fa-graduation-cap: マーク -->
+<!-- プログラミング未経験者でも読みやすい書籍には :fontawesome-solid-graduation-cap: マーク -->
 
 ## C++14 以降を扱った書籍
 
@@ -20,10 +20,10 @@ C++ の学習に役立つ最新の書籍を紹介します。
 | [Optimized C++](https://amzn.to/2Ho1KjN)                               | 2017 | C++14    | C++ プログラムの性能測定と最適化についての実践と解説                                                                   |
 | [[改訂第3版] C++ ポケットリファレンス](https://amzn.to/2H8a3kH)                      | 2018 | C++17    | 基本文法の解説に加え、逆引き形式で標準ライブラリの幅広い機能を紹介                                                              |
 | [江添亮の詳説 C++17](https://amzn.to/2HmVw42)                                | 2018 | C++17    | C++14/17 の新しい文法と標準ライブラリ機能を詳細に解説。[オープンソース版](https://ezoeryou.github.io/cpp17book/)              |
-| [冒険で学ぶはじめてのプログラミング](https://amzn.to/2IWnWnx)                           | 2018 | C++17    | :fa-graduation-cap: 未経験者向け。早稲田大学が運営する中学・高校生向け C++ 入門講座の教科書。[紹介ページ](https://enrect.org/cppbook/) |
+| [冒険で学ぶはじめてのプログラミング](https://amzn.to/2IWnWnx)                           | 2018 | C++17    | :fontawesome-solid-graduation-cap: 未経験者向け。早稲田大学が運営する中学・高校生向け C++ 入門講座の教科書。[紹介ページ](https://enrect.org/cppbook/) |
 | [Modern C++ チャレンジ ― C++17 プログラミング力を鍛える 100 問](https://amzn.to/2EMsIP8) | 2019 | C++17/20 | 現実的・実践的な 100 の課題を C++ で解決する問題集。オープンソースライブラリを積極的に活用する                                           |
 | [江添亮の C++ 入門](https://amzn.to/2HTGUbt) | 2019 | C++17/20 | C++ のツールや文法、いくつかの標準ライブラリ機能の設計を学べる解説書。[オープンソース版](https://ezoeryou.github.io/cpp-intro/) |
-| [独習 C++ 新版](https://amzn.to/2ZWRrck) | 2019 | C++17 | :fa-graduation-cap: 初学者向け。「独習 C++ 第 4 版」を C++17 に対応させ解説を一新 | 
+| [独習 C++ 新版](https://amzn.to/2ZWRrck) | 2019 | C++17 | :fontawesome-solid-graduation-cap: 初学者向け。「独習 C++ 第 4 版」を C++17 に対応させ解説を一新 | 
 | [[改訂第4版] C++ポケットリファレンス](https://amzn.to/3p4p0pa) | 2021 | C++20 | 基本文法の解説に加え、逆引き形式で標準ライブラリの幅広い機能を紹介 | 
 
 

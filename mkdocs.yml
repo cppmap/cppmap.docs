@@ -31,15 +31,14 @@ plugins:
       - en
       - ja
       separator: '[\s　、。，．がのをにへとでやかもる「」『』]+'
-      prebuild_index: true
 extra:
   social:
     - icon: fontawesome/brands/twitter
       link: https://twitter.com/Reputeless
 markdown_extensions:
   - admonition
+  - attr_list
   - codehilite
-  - fontawesome_markdown
   - footnotes
   - meta
   - pymdownx.inlinehilite
@@ -49,6 +48,9 @@ markdown_extensions:
       alternate_style: true
   - toc:
       permalink: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
 extra_css:
   - "https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css"
   - cppmap_styles.css

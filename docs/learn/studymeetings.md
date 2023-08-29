@@ -45,21 +45,21 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | タイトル                                                 | 発表者             | ムービー |
 |------------------------------------------------------|-----------------|------|
 | 勉強会と会場の説明                                            | Akira Takahashi |     |
-| [std::format - C++20 時代の便利な文字列フォーマット](https://www.dropbox.com/s/4gt1y5i3ogt9bvr/cppmix-C%2B%2B20Format.pdf?dl=0)                  | Ryo Suzuki      | [:fa-play:](https://youtu.be/UGs10Unwams) |
-| インターンシップでC++を使用したゲーム開発を経験した話                         | がっちょ            | [:fa-play:](https://youtu.be/V0ENpMzZ4OE) |
-| [コンパイラのいじめ方](https://speakerdeck.com/kaityo256/how-to-fight-the-compiler) | kaityo256             | [:fa-play:](https://youtu.be/rC-YSvtRrHw) |
-| [書籍『独習C++』の改訂について (仮) ](https://docs.google.com/presentation/d/1dfJ537pkSwYYRai4mktlAoHwNnqmnOUqfmQiVjDJClY/edit)                                | Flast           | [:fa-play:](https://youtu.be/j30j7poj3J0) |
+| [std::format - C++20 時代の便利な文字列フォーマット](https://www.dropbox.com/s/4gt1y5i3ogt9bvr/cppmix-C%2B%2B20Format.pdf?dl=0)                  | Ryo Suzuki      | [:simple-youtube:](https://youtu.be/UGs10Unwams) |
+| インターンシップでC++を使用したゲーム開発を経験した話                         | がっちょ            | [:simple-youtube:](https://youtu.be/V0ENpMzZ4OE) |
+| [コンパイラのいじめ方](https://speakerdeck.com/kaityo256/how-to-fight-the-compiler) | kaityo256             | [:simple-youtube:](https://youtu.be/rC-YSvtRrHw) |
+| [書籍『独習C++』の改訂について (仮) ](https://docs.google.com/presentation/d/1dfJ537pkSwYYRai4mktlAoHwNnqmnOUqfmQiVjDJClY/edit)                                | Flast           | [:simple-youtube:](https://youtu.be/j30j7poj3J0) |
 | ディスカッション                                             | (全員参加)          |     |
 
 ### C++ MIX #5 [(2019-09-04)](https://cppmix.connpass.com/event/141908/)
 | タイトル                        | 発表者             | ムービー |
 |-----------------------------|-----------------|------|
 | 勉強会と会場の説明                   | Shintaro Okada  |     |
-| [自作OS向けにlibc++をビルドする方法](https://www.slideshare.net/uchan_nos/building-libcxxformyos)       | uchan           | [:fa-play:](https://youtu.be/2G9My4DR_N0) |
-| [C++ 製グラフィックライブラリ Skia の紹介](https://speakerdeck.com/pine/c-plus-plus-zhi-kurahuitukuraihurari-skia-falseshao-jie) | 水音ぴね            | [:fa-play:](https://youtu.be/Wvx2xW3c8_w) |
-| [Unreal C++ を始めてみた時の躓いたTips](https://www.slideshare.net/MakotoAdachi/cmix5) | akoto           | [:fa-play:](https://youtu.be/Uy1qxTDlOA4) |
-| [C++20ステータス](https://speakerdeck.com/faithandbrave/c-plus-plus-20-status) | Akira Takahashi | [:fa-play:](https://youtu.be/0xbmP9iJFRM) |
-| [20分くらいでわかった気分になれるC++20コルーチン](https://www.slideshare.net/yohhoy/20c20) | yohhoy          | [:fa-play:](https://youtu.be/XkZ260fgsq0) |
+| [自作OS向けにlibc++をビルドする方法](https://www.slideshare.net/uchan_nos/building-libcxxformyos)       | uchan           | [:simple-youtube:](https://youtu.be/2G9My4DR_N0) |
+| [C++ 製グラフィックライブラリ Skia の紹介](https://speakerdeck.com/pine/c-plus-plus-zhi-kurahuitukuraihurari-skia-falseshao-jie) | 水音ぴね            | [:simple-youtube:](https://youtu.be/Wvx2xW3c8_w) |
+| [Unreal C++ を始めてみた時の躓いたTips](https://www.slideshare.net/MakotoAdachi/cmix5) | akoto           | [:simple-youtube:](https://youtu.be/Uy1qxTDlOA4) |
+| [C++20ステータス](https://speakerdeck.com/faithandbrave/c-plus-plus-20-status) | Akira Takahashi | [:simple-youtube:](https://youtu.be/0xbmP9iJFRM) |
+| [20分くらいでわかった気分になれるC++20コルーチン](https://www.slideshare.net/yohhoy/20c20) | yohhoy          | [:simple-youtube:](https://youtu.be/XkZ260fgsq0) |
 | ディスカッション                    | (全員参加)          |     |
 
 
@@ -67,38 +67,38 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | タイトル                                                                                               | 発表者                  | ムービー |
 |----------------------------------------------------------------------------------------------------|----------------------|------|
 | 勉強会と会場の説明                                                                                          | Shintaro Okada       |     |
-| [C++ でも Result したい](https://speakerdeck.com/loligothick/c-plus-plus-demorustfalseresultgashi-itai) | いなむのみたま (@mitama_rs) | [:fa-play:](https://youtu.be/_GYnVhGmenY) |
-| [世界を創造する OSS 開発を始めた話](https://www.slideshare.net/Gaccho1/oss-c-mix-151965959)                      | がっちょ                 | [:fa-play:](https://youtu.be/cNEo65uGJXY) |
-| [C++ で HTTP Proxy](https://www.slideshare.net/YasunoriHigashiyama/chttp-proxy)                     | 東山裕徳                 | [:fa-play:](https://youtu.be/ldQr9meQY00) |
-| [モジュールの概要](https://www.slideshare.net/TetsuroMatsumura/c20-152189285)                              | Tetsuro Matsumura    | [:fa-play:](https://youtu.be/_UhfHhRwPQY) |
+| [C++ でも Result したい](https://speakerdeck.com/loligothick/c-plus-plus-demorustfalseresultgashi-itai) | いなむのみたま (@mitama_rs) | [:simple-youtube:](https://youtu.be/_GYnVhGmenY) |
+| [世界を創造する OSS 開発を始めた話](https://www.slideshare.net/Gaccho1/oss-c-mix-151965959)                      | がっちょ                 | [:simple-youtube:](https://youtu.be/cNEo65uGJXY) |
+| [C++ で HTTP Proxy](https://www.slideshare.net/YasunoriHigashiyama/chttp-proxy)                     | 東山裕徳                 | [:simple-youtube:](https://youtu.be/ldQr9meQY00) |
+| [モジュールの概要](https://www.slideshare.net/TetsuroMatsumura/c20-152189285)                              | Tetsuro Matsumura    | [:simple-youtube:](https://youtu.be/_UhfHhRwPQY) |
 
 ### C++ MIX #3 [(2019-04-17)](https://cppmix.connpass.com/event/124862/)
 | タイトル                                                                                                                                                             | 発表者            | ムービー                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------|----------------------------------------------------------|
 | 勉強会と会場の説明                                                                                                                                                        | Shintaro Okada |                                                          |
-| [Clangにreflection/metaclass提案っぽいものを実装してみた話](https://speakerdeck.com/hori1991/clangnireflectionti-an-tupoimofalsewoshi-zhuang-sitemitahua)                        | Iwahori Kodai  | [:fa-play:](https://www.youtube.com/watch?v=FYZKnb8NOsA) |
-| [C++ 情報サイト「C++ の歩き方 \| cppmap」を作っている話](https://www.dropbox.com/s/6zgithu4bakq58x/cppmap%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E8%A9%B1.pdf?dl=0) | Ryo Suzuki     | [:fa-play:](https://www.youtube.com/watch?v=FXRzYQGM7zE) |
-| [データベースとポリモーフィズムとModern C++](https://www.slideshare.net/ToshitakaAdachi/database-polymorphism-and-modern-c/)                                                     | 安達俊貴           | [:fa-play:](https://www.youtube.com/watch?v=K-xuX-HdOwY) |
-| [C++20の概要 #1 言語機能編](https://www.slideshare.net/faithandbrave/cpp20-overview-language-features)                                                                   | Akira Takahash | [:fa-play:](https://www.youtube.com/watch?v=JmbHiCAMX2U) |
+| [Clangにreflection/metaclass提案っぽいものを実装してみた話](https://speakerdeck.com/hori1991/clangnireflectionti-an-tupoimofalsewoshi-zhuang-sitemitahua)                        | Iwahori Kodai  | [:simple-youtube:](https://www.youtube.com/watch?v=FYZKnb8NOsA) |
+| [C++ 情報サイト「C++ の歩き方 \| cppmap」を作っている話](https://www.dropbox.com/s/6zgithu4bakq58x/cppmap%E3%82%92%E4%BD%9C%E3%81%A3%E3%81%A6%E3%81%84%E3%82%8B%E8%A9%B1.pdf?dl=0) | Ryo Suzuki     | [:simple-youtube:](https://www.youtube.com/watch?v=FXRzYQGM7zE) |
+| [データベースとポリモーフィズムとModern C++](https://www.slideshare.net/ToshitakaAdachi/database-polymorphism-and-modern-c/)                                                     | 安達俊貴           | [:simple-youtube:](https://www.youtube.com/watch?v=K-xuX-HdOwY) |
+| [C++20の概要 #1 言語機能編](https://www.slideshare.net/faithandbrave/cpp20-overview-language-features)                                                                   | Akira Takahash | [:simple-youtube:](https://www.youtube.com/watch?v=JmbHiCAMX2U) |
 
 ### C++ MIX #2 [(2019-02-20)](https://cppmix.connpass.com/event/115640/)
 | タイトル                                                                                                                                                       | 発表者                | ムービー                                                     |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------|----------------------------------------------------------|
-| [勉強会と会場の説明](https://www.slideshare.net/faithandbrave/cppmix-02)                                                                                            | Akira Takahashi    | [:fa-play:](https://www.youtube.com/watch?v=yviMSUKPF24) |
-| [iOSアプリ『パズモナ』のひみつ](https://speakerdeck.com/5mingame2/c-plus-plus-mix-number-2-pazumonafalsehimitu)                                                         | Nobuyuki Nishiyama | [:fa-play:](https://www.youtube.com/watch?v=bienAWHUXYA) |
-| [Qt×Reactive Extensions](https://www.slideshare.net/TetsuroMatsumura/qt-reactive-extensions-ja?ref=https://cppmix.connpass.com/event/115640/presentation/) | Tetsuro Matsumura  | [:fa-play:](https://www.youtube.com/watch?v=1Sb3XD8sPTI) |
-| [C++のパッケージマネージャ「poac」を開発した話](https://speakerdeck.com/matken11235/poac-is-a-package-manager-for-c-plus-plus)                                                | Ken Matsui         | [:fa-play:](https://www.youtube.com/watch?v=znVZkH3PjVw) |
+| [勉強会と会場の説明](https://www.slideshare.net/faithandbrave/cppmix-02)                                                                                            | Akira Takahashi    | [:simple-youtube:](https://www.youtube.com/watch?v=yviMSUKPF24) |
+| [iOSアプリ『パズモナ』のひみつ](https://speakerdeck.com/5mingame2/c-plus-plus-mix-number-2-pazumonafalsehimitu)                                                         | Nobuyuki Nishiyama | [:simple-youtube:](https://www.youtube.com/watch?v=bienAWHUXYA) |
+| [Qt×Reactive Extensions](https://www.slideshare.net/TetsuroMatsumura/qt-reactive-extensions-ja?ref=https://cppmix.connpass.com/event/115640/presentation/) | Tetsuro Matsumura  | [:simple-youtube:](https://www.youtube.com/watch?v=1Sb3XD8sPTI) |
+| [C++のパッケージマネージャ「poac」を開発した話](https://speakerdeck.com/matken11235/poac-is-a-package-manager-for-c-plus-plus)                                                | Ken Matsui         | [:simple-youtube:](https://www.youtube.com/watch?v=znVZkH3PjVw) |
 | 雑談タイム                                                                                                                                                      |                   |                                                         |
 
 ### C++ MIX #1 [(2018-12-06)](https://cppmix.connpass.com/event/107576/)
 
 | タイトル                                                                                                                                            | 発表者             | ムービー                                                     |
 |-------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------------------------------------------------------|
-| [勉強会と会場、最近のC++の説明](https://www.slideshare.net/faithandbrave/cppmix-01)                                                                          | Akira Takahashi | [:fa-play:](https://www.youtube.com/watch?v=HfKNtAHMxiQ) |
-| [Menohにおける C++実装 / C API / C++API](https://www.slideshare.net/ShintarouOkada/menohc-c-api-capi)                                                 | okdshin         | [:fa-play:](https://www.youtube.com/watch?v=3_0p_yGv52Q) |
-| [Undefined Behaviorに対する防衛術](https://speakerdeck.com/loligothick/defense-against-undefined-behavior-wei-ding-yi-dong-zuo-nidui-surufang-wei-shu) | いなむのみたま         | [:fa-play:](https://www.youtube.com/watch?v=gc58TZ5m2dg) |
-| [C++ を教える ～早稲田大学の小中高生向けプログラミング教室における事例紹介～](https://www.dropbox.com/s/mfhncuyo723lfai/C%2B%2B%E3%82%92%E6%95%99%E3%81%88%E3%82%8B.pdf)           | Reputeless      | [:fa-play:](https://www.youtube.com/watch?v=O3i6gCpZKDw) |
-| [避けよう memset の乱用](https://agate-pris.gitlab.io/slides/no-more-memset/)                                                                          | agate-pris      | [:fa-play:](https://www.youtube.com/watch?v=IxPqx4ZOnFw) |
+| [勉強会と会場、最近のC++の説明](https://www.slideshare.net/faithandbrave/cppmix-01)                                                                          | Akira Takahashi | [:simple-youtube:](https://www.youtube.com/watch?v=HfKNtAHMxiQ) |
+| [Menohにおける C++実装 / C API / C++API](https://www.slideshare.net/ShintarouOkada/menohc-c-api-capi)                                                 | okdshin         | [:simple-youtube:](https://www.youtube.com/watch?v=3_0p_yGv52Q) |
+| [Undefined Behaviorに対する防衛術](https://speakerdeck.com/loligothick/defense-against-undefined-behavior-wei-ding-yi-dong-zuo-nidui-surufang-wei-shu) | いなむのみたま         | [:simple-youtube:](https://www.youtube.com/watch?v=gc58TZ5m2dg) |
+| [C++ を教える ～早稲田大学の小中高生向けプログラミング教室における事例紹介～](https://www.dropbox.com/s/mfhncuyo723lfai/C%2B%2B%E3%82%92%E6%95%99%E3%81%88%E3%82%8B.pdf)           | Reputeless      | [:simple-youtube:](https://www.youtube.com/watch?v=O3i6gCpZKDw) |
+| [避けよう memset の乱用](https://agate-pris.gitlab.io/slides/no-more-memset/)                                                                          | agate-pris      | [:simple-youtube:](https://www.youtube.com/watch?v=IxPqx4ZOnFw) |
 
 
 ## feature.cpp
@@ -156,17 +156,17 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 
 | イベント番号                                                       | 内容             | ムービー                                   |
 |-------------------------------------------------------------------|------------------|-------------------------------------------|
-| #11 [(2020-01-08)](https://caddi.connpass.com/event/160626/)       | volatile、std::launder、PODやstandard layout型の歴史など | [:fa-play:](https://youtu.be/0d9upvmeuu4) |
-| #10 [(2019-12-17)](https://caddi.connpass.com/event/158954/)       | テンプレートの同一性、C++20の新機能解説 | [:fa-play:](https://youtu.be/3kZwwzdPR8M) |
-| #9 [(2019-12-03)](https://caddi.connpass.com/event/157462/)       | コンセプト（時間があれば、Three-way Comparison operator） | [:fa-play:](https://youtu.be/nJcWfICJwyc) |  |
-| #8 [(2019-11-19)](https://caddi.connpass.com/event/154653/)       | C++20 の機能紹介と一時オブジェクトの寿命 | [:fa-play:](https://youtu.be/Gu9Y5t3uCZA) |
-| #7 [(2019-10-29)](https://caddi.connpass.com/event/151541/)       | type erasure の続きと expression templates | [:fa-play:](https://youtu.be/50J6pM5JlsU) |
+| #11 [(2020-01-08)](https://caddi.connpass.com/event/160626/)       | volatile、std::launder、PODやstandard layout型の歴史など | [:simple-youtube:](https://youtu.be/0d9upvmeuu4) |
+| #10 [(2019-12-17)](https://caddi.connpass.com/event/158954/)       | テンプレートの同一性、C++20の新機能解説 | [:simple-youtube:](https://youtu.be/3kZwwzdPR8M) |
+| #9 [(2019-12-03)](https://caddi.connpass.com/event/157462/)       | コンセプト（時間があれば、Three-way Comparison operator） | [:simple-youtube:](https://youtu.be/nJcWfICJwyc) |  |
+| #8 [(2019-11-19)](https://caddi.connpass.com/event/154653/)       | C++20 の機能紹介と一時オブジェクトの寿命 | [:simple-youtube:](https://youtu.be/Gu9Y5t3uCZA) |
+| #7 [(2019-10-29)](https://caddi.connpass.com/event/151541/)       | type erasure の続きと expression templates | [:simple-youtube:](https://youtu.be/50J6pM5JlsU) |
 | #6 [(2019-10-09)](https://caddi.connpass.com/event/150414/)       | 派生と継承、Type Erasure |  |
-| #5 [(2019-09-25)](https://caddi.connpass.com/event/147690/)       | 標準変換、オーバーロード解決、テンプレートの実引数推定 | [:fa-play:](https://youtu.be/bUyUDHPk4ik) |
-| #4 [(2019-09-11)](https://caddi.connpass.com/event/146851/)       | C++ 標準規格の用語解説 | [:fa-play:](https://youtu.be/OYBLK4Lwudw) |
+| #5 [(2019-09-25)](https://caddi.connpass.com/event/147690/)       | 標準変換、オーバーロード解決、テンプレートの実引数推定 | [:simple-youtube:](https://youtu.be/bUyUDHPk4ik) |
+| #4 [(2019-09-11)](https://caddi.connpass.com/event/146851/)       | C++ 標準規格の用語解説 | [:simple-youtube:](https://youtu.be/OYBLK4Lwudw) |
 | #3 [(2019-08-30)](https://caddi.connpass.com/event/145070/)       | メタプログラミング |  |
-| #2 [(2019-08-21)](https://caddi.connpass.com/event/142476/)       | テンプレート基礎 | [:fa-play:](https://youtu.be/fz8ahXzOUNE) |
-| #1 [(2019-07-30)](https://caddi.connpass.com/event/140080/)       | ポインターについて | [:fa-play:](https://youtu.be/d9VgUHghlog) |
+| #2 [(2019-08-21)](https://caddi.connpass.com/event/142476/)       | テンプレート基礎 | [:simple-youtube:](https://youtu.be/fz8ahXzOUNE) |
+| #1 [(2019-07-30)](https://caddi.connpass.com/event/140080/)       | ポインターについて | [:simple-youtube:](https://youtu.be/d9VgUHghlog) |
 
 
 ## 札幌 C++ 勉強会
