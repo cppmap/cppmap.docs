@@ -12,13 +12,14 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - Scrapbox: https://scrapbox.io/cpp-osaka/
 - Twitter ハッシュタグ [#cpp読書会](https://twitter.com/search?q=%23cpp%E8%AA%AD%E6%9B%B8%E4%BC%9A&f=live)
 
+## C++ Meetup
+ウーブン・バイ・トヨタが主催する、C++ 専門家を招いたパネルディスカッションです。
 
-## talk.cpp
->talk.cpp は、動画と質疑応答による発表・議論を通して、C++ ユーザどうしが知見やアイデアを共有する、参加無料の技術イベントです。完全オンラインでの実施を前提にした、新しいスタイルの発表方式を採用しています。
+### C++ Meetup [(2023-06-07)](https://www.youtube.com/watch?v=rkDTgkN7FIY)
 
-- https://talkcpp.connpass.com/
-- 発表資料: https://scrapbox.io/talkcpp/
-- Twitter ハッシュタグ [#talkcpp](https://twitter.com/search?q=%23talkcpp&f=live)
+### C++ Meetup [(2023-02-28)](https://www.youtube.com/watch?v=mrQKfl893e8)
+
+### C++ Meetup [(2022-11-22)](https://www.youtube.com/watch?v=FU5Tl_Zdtmw)
 
 
 ## C++ MIX
@@ -99,6 +100,14 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | [Undefined Behaviorに対する防衛術](https://speakerdeck.com/loligothick/defense-against-undefined-behavior-wei-ding-yi-dong-zuo-nidui-surufang-wei-shu) | いなむのみたま         | [:simple-youtube:](https://www.youtube.com/watch?v=gc58TZ5m2dg) |
 | [C++ を教える ～早稲田大学の小中高生向けプログラミング教室における事例紹介～](https://www.dropbox.com/s/mfhncuyo723lfai/C%2B%2B%E3%82%92%E6%95%99%E3%81%88%E3%82%8B.pdf)           | Reputeless      | [:simple-youtube:](https://www.youtube.com/watch?v=O3i6gCpZKDw) |
 | [避けよう memset の乱用](https://agate-pris.gitlab.io/slides/no-more-memset/)                                                                          | agate-pris      | [:simple-youtube:](https://www.youtube.com/watch?v=IxPqx4ZOnFw) |
+
+
+## talk.cpp
+>talk.cpp は、動画と質疑応答による発表・議論を通して、C++ ユーザどうしが知見やアイデアを共有する、参加無料の技術イベントです。完全オンラインでの実施を前提にした、新しいスタイルの発表方式を採用しています。
+
+- https://talkcpp.connpass.com/
+- 発表資料: https://scrapbox.io/talkcpp/
+- Twitter ハッシュタグ [#talkcpp](https://twitter.com/search?q=%23talkcpp&f=live)
 
 
 ## feature.cpp

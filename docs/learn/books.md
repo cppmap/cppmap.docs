@@ -91,5 +91,6 @@ C++ の入門～中級レベルの多くの情報（『やさしい C++ 第 5 �
 | [C++20 ranges](https://techbookfest.org/product/5134506308665344?productVariantID=5896161179205632) | 2021 | C++20    | C++20 の Ranges ライブラリの使い方や設計を解説 (164 ページ)                                                                          |
 | [C++20 コア言語機能](https://techbookfest.org/product/4904567416291328?productVariantID=5196501510782976) | 2022 | C++20    | C++20 コア言語に追加された機能を解説 (128 ページ)                                                                          |
 | [C++20 ライブラリ機能 Vol.1](https://techbookfest.org/product/eGzbawjDfDAjJdkCwKbFtY?productVariantID=imM8MxR9zvu5fC0cpzWD6g) | 2022 | C++20    | C++20で新たに追加された標準ライブラリ機能のうち、規模の大きなものに絞って解説 (222 ページ)                                                                          |
+| [C++20 ライブラリ機能 Vol.2](https://techbookfest.org/product/w7kWwTCFWpgi7XYvGyKqpM?productVariantID=4ZazJVHsFG7e5AdL28WjpQ) | 2022 | C++20    | Vol.1 で取り扱っていない機能を解説 (174 ページ)                                                                          |
 
 <!-- ToDo: C++11 とそれ以前の書籍 -->
