@@ -12,20 +12,20 @@ C++ の学習に役立つ最新の書籍を紹介します。
 | 書名                                                                     | 発行年  | C++ 規格   | 内容                                                                                             |
 |------------------------------------------------------------------------|------|----------|------------------------------------------------------------------------------------------------|
 | [Effective Modern C++](https://amzn.to/2H8bnnF)                        | 2015 | C++14    | Effective C++ で有名な Scott Meyers による C++11/14 のガイドライン・コーディングスタイル・イディオム集                         |
-| [C++11/14 コア言語](https://amzn.to/2HmyYQP)                               | 2015 | C++14    | C++11/14 の文法と言語機能を規格書に基づいて詳細に解説。[オープンソース版](https://github.com/EzoeRyou/cpp-book)               |
-| [組込みソフトウェア開発向けコーディング作法ガイド C++ 言語版 Ver.2.0](https://www.ipa.go.jp/sec/publish/tn16-007.html) | 2016 | C++14 | 基礎を学んだ人向けのコーディングスタイル本。組み込み向けの厳格さもあるが概ね汎用的。PDF 版は無料公開 |
+| [C++11/14 コア言語](https://amzn.to/2HmyYQP)                               | 2015 | C++14    | C++11/14 の文法と言語機能を規格書に基づいて詳細に解説。[オープンソース版 :material-open-in-new:](https://github.com/EzoeRyou/cpp-book){:target="_blank"}               |
+| [組込みソフトウェア開発向けコーディング作法ガイド C++ 言語版 Ver.2.0](https://www.ipa.go.jp/publish/secbooks20161001.html) | 2016 | C++14 | 基礎を学んだ人向けのコーディングスタイル本。組み込み向けの厳格さもあるが概ね汎用的。PDF 版は無料公開 |
 | [C++ によるプログラミングの原則と実践](https://amzn.to/2Hmzazx)                        | 2016 | C++14    | C++ を使ってプログラミングを教える 1,000 ページ超の入門書。C++ 生みの親 Bjarne Stroustrup 著                                |
 | [基礎からしっかり学ぶ C++ の教科書](https://amzn.to/2IXa1hf)                         | 2017 | C++14    | C++ の基本的な文法からクラス、コンテナ、並列化など様々な機能を 300 ページに圧縮して紹介する入門書                                |
 | [C++ の絵本 第２版](https://amzn.to/2TFvvTO)                                 | 2017 | C++14    | クラスや参照、テンプレートなど、C に対する C++ 固有の言語機能を図版を用いて解説                                                    |
 | [Optimized C++](https://amzn.to/2Ho1KjN)                               | 2017 | C++14    | C++ プログラムの性能測定と最適化についての実践と解説                                                                   |
 | [[改訂第3版] C++ ポケットリファレンス](https://amzn.to/2H8a3kH)                      | 2018 | C++17    | 基本文法の解説に加え、逆引き形式で標準ライブラリの幅広い機能を紹介                                                              |
-| [江添亮の詳説 C++17](https://amzn.to/2HmVw42)                                | 2018 | C++17    | C++14/17 の新しい文法と標準ライブラリ機能を詳細に解説。[オープンソース版](https://ezoeryou.github.io/cpp17book/)              |
-| [冒険で学ぶはじめてのプログラミング](https://amzn.to/2IWnWnx)                           | 2018 | C++17    | :fontawesome-solid-graduation-cap: 未経験者向け。早稲田大学が運営する中学・高校生向け C++ 入門講座の教科書。[紹介ページ](https://enrect.org/cppbook/) |
+| [江添亮の詳説 C++17](https://amzn.to/2HmVw42)                                | 2018 | C++17    | C++14/17 の新しい文法と標準ライブラリ機能を詳細に解説。[オープンソース版 :material-open-in-new:](https://ezoeryou.github.io/cpp17book/){:target="_blank"}              |
+| [冒険で学ぶはじめてのプログラミング](https://amzn.to/2IWnWnx)                           | 2018 | C++17    | :fontawesome-solid-graduation-cap: 未経験者向け。早稲田大学が運営する中学・高校生向け C++ 入門講座の教科書。[紹介ページ :material-open-in-new:](https://enrect.org/cppbook/){:target="_blank"} |
 | [Modern C++ チャレンジ ― C++17 プログラミング力を鍛える 100 問](https://amzn.to/2EMsIP8) | 2019 | C++17/20 | 現実的・実践的な 100 の課題を C++ で解決する問題集。オープンソースライブラリを積極的に活用する                                           |
-| [江添亮の C++ 入門](https://amzn.to/2HTGUbt) | 2019 | C++17/20 | C++ のツールや文法、いくつかの標準ライブラリ機能の設計を学べる解説書。[オープンソース版](https://ezoeryou.github.io/cpp-intro/) |
+| [江添亮の C++ 入門](https://amzn.to/2HTGUbt) | 2019 | C++17/20 | C++ のツールや文法、いくつかの標準ライブラリ機能の設計を学べる解説書。[オープンソース版 :material-open-in-new:](https://ezoeryou.github.io/cpp-intro/){:target="_blank"} |
 | [独習 C++ 新版](https://amzn.to/2ZWRrck) | 2019 | C++17 | :fontawesome-solid-graduation-cap: 初学者向け。「独習 C++ 第 4 版」を C++17 に対応させ解説を一新 | 
-| [[改訂第4版] C++ポケットリファレンス](https://amzn.to/3p4p0pa) | 2021 | C++20 | 基本文法の解説に加え、逆引き形式で標準ライブラリの幅広い機能を紹介 | 
-
+| [[改訂第4版] C++ ポケットリファレンス](https://amzn.to/3p4p0pa) | 2021 | C++20 | 基本文法の解説に加え、逆引き形式で標準ライブラリの幅広い機能を紹介 | 
+| [C++ ソフトウェア設計 - 高品質設計の原則とデザインパターン](https://amzn.to/3tI3puI) | 2023 | C++20 | モダン C++ における設計技法やデザインパターンなど 39 項目を解説。[目次 :material-open-in-new:](https://www.oreilly.co.jp/books/9784814400454/){:target="_blank"} | 
 
 ![](images/books.jpg)
 
