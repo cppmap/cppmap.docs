@@ -31,6 +31,16 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - [Youtube チャンネル](https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w)
 - Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix&f=live)
 
+### C++ MIX #9 [(2024-02-09)](https://cppmix.connpass.com/event/305699/)
+| タイトル                                                                                                        | 発表者           | ムービー                                         |
+|-----------------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                              | Akira Takahashi  |                                                  |
+| [C++とWin32 APIを利用した中品質なリソースファイルのホットリロード](https://www.docswell.com/slide/5W1QQ4/embed) | 荻野雄季         | [:simple-youtube:](https://youtu.be/A95aFKW7DSw) |
+| [C++でつくる歴史シミュレーションGIS](https://speakerdeck.com/aspjt/c-plus-plus-detukuruli-shi-simiyuresiyongis) | Hayato Kasuga    | [:simple-youtube:](https://youtu.be/GyUjW8MAhLw) |
+| [使いたい標準C++機能がない環境でいかに実装・設計するか](https://speakerdeck.com/faithandbrave/shi-itaibiao-zhun-c-plus-plus-ji-neng-ganaihuan-jing-deikanishi-zhuang-she-ji-suruka-55e6f70a-5ff8-46f0-9cda-d7229c5e6d65) | Akira Takahashi  | [:simple-youtube:](https://youtu.be/XFKoQbsP-_8) |
+| [C++ 開発が少し便利になる Visual Studio の最近の機能](https://speakerdeck.com/cpp/cppmix9)                      | Ryo Suzuki       | [:simple-youtube:](https://youtu.be/eP-rm5_Rl7E) |
+| カジュアルディスカッション                                                                                      | (全員参加)       |                                                  |
+
 ### C++ MIX #8 [(2023-12-06)](https://cppmix.connpass.com/event/301925/)
 | タイトル                                                                                                                    | 発表者           | ムービー                                         |
 |-----------------------------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------------|
