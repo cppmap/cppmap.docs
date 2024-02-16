@@ -31,6 +31,16 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - [Youtube チャンネル](https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w)
 - Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix&f=live)
 
+### C++ MIX #8 [(2023-12-06)](https://cppmix.connpass.com/event/301925/)
+| タイトル                                                                                                                    | 発表者           | ムービー                                         |
+|-----------------------------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                                          | Akira Takahashi  |                                                  |
+| [C++20からC++23での変化](https://speakerdeck.com/faithandbrave/c-plus-plus-20karac-plus-plus-23madenobian-hua)              | Akira Takahashi  | [:simple-youtube:](https://youtu.be/75HuEvqklkQ) |
+| [オレオレGithub Copilotを作ろう](https://docs.google.com/presentation/d/1Euz4Fr1gMX9CchM2MbexxTIijShCChIJUzDp18349R0/edit)  | Shintarou Okada  | [:simple-youtube:](https://youtu.be/sd9txd65iAY) |
+| [未定義動作でFizzBuzz](https://speakerdeck.com/kaityo256/undefined-fizz-buzz)                                               | kaityo256        | [:simple-youtube:](https://youtu.be/bEDY9E5yKhc) |
+| [構文解析で使えるC++のテクニック](https://docs.google.com/presentation/d/15lNgrej1hugJkMi0NZ7iGe69REon9u8FaH3xKhT_u7c/edit) | Ryosuke Hirakida | [:simple-youtube:](https://youtu.be/EIqEEZywdi4) |
+| ディスカッション                                                                                                            | (全員参加)       |                                                  |
+
 ### C++ MIX #7 [(2020-01-29)](https://cppmix.connpass.com/event/160166/)
 | タイトル                                                 | 発表者               | ムービー |
 |------------------------------------------------------|-------------------|------|
