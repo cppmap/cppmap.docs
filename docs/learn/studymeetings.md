@@ -31,6 +31,26 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - [Youtube チャンネル](https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w)
 - Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix&f=live)
 
+### C++ MIX #9 [(2024-02-09)](https://cppmix.connpass.com/event/305699/)
+| タイトル                                                                                                        | 発表者           | ムービー                                         |
+|-----------------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                              | Akira Takahashi  |                                                  |
+| [C++とWin32 APIを利用した中品質なリソースファイルのホットリロード](https://www.docswell.com/slide/5W1QQ4/embed) | 荻野雄季         | [:simple-youtube:](https://youtu.be/A95aFKW7DSw) |
+| [C++でつくる歴史シミュレーションGIS](https://speakerdeck.com/aspjt/c-plus-plus-detukuruli-shi-simiyuresiyongis) | Hayato Kasuga    | [:simple-youtube:](https://youtu.be/GyUjW8MAhLw) |
+| [使いたい標準C++機能がない環境でいかに実装・設計するか](https://speakerdeck.com/faithandbrave/shi-itaibiao-zhun-c-plus-plus-ji-neng-ganaihuan-jing-deikanishi-zhuang-she-ji-suruka-55e6f70a-5ff8-46f0-9cda-d7229c5e6d65) | Akira Takahashi  | [:simple-youtube:](https://youtu.be/XFKoQbsP-_8) |
+| [C++ 開発が少し便利になる Visual Studio の最近の機能](https://speakerdeck.com/cpp/cppmix9)                      | Ryo Suzuki       | [:simple-youtube:](https://youtu.be/eP-rm5_Rl7E) |
+| カジュアルディスカッション                                                                                      | (全員参加)       |                                                  |
+
+### C++ MIX #8 [(2023-12-06)](https://cppmix.connpass.com/event/301925/)
+| タイトル                                                                                                                    | 発表者           | ムービー                                         |
+|-----------------------------------------------------------------------------------------------------------------------------|------------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                                          | Akira Takahashi  |                                                  |
+| [C++20からC++23での変化](https://speakerdeck.com/faithandbrave/c-plus-plus-20karac-plus-plus-23madenobian-hua)              | Akira Takahashi  | [:simple-youtube:](https://youtu.be/75HuEvqklkQ) |
+| [オレオレGithub Copilotを作ろう](https://docs.google.com/presentation/d/1Euz4Fr1gMX9CchM2MbexxTIijShCChIJUzDp18349R0/edit)  | Shintarou Okada  | [:simple-youtube:](https://youtu.be/sd9txd65iAY) |
+| [未定義動作でFizzBuzz](https://speakerdeck.com/kaityo256/undefined-fizz-buzz)                                               | kaityo256        | [:simple-youtube:](https://youtu.be/bEDY9E5yKhc) |
+| [構文解析で使えるC++のテクニック](https://docs.google.com/presentation/d/15lNgrej1hugJkMi0NZ7iGe69REon9u8FaH3xKhT_u7c/edit) | Ryosuke Hirakida | [:simple-youtube:](https://youtu.be/EIqEEZywdi4) |
+| ディスカッション                                                                                                            | (全員参加)       |                                                  |
+
 ### C++ MIX #7 [(2020-01-29)](https://cppmix.connpass.com/event/160166/)
 | タイトル                                                 | 発表者               | ムービー |
 |------------------------------------------------------|-------------------|------|
