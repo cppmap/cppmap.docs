@@ -26,6 +26,8 @@ C++ の学習に役立つ最新の書籍を紹介します。
 | [独習 C++ 新版](https://amzn.to/2ZWRrck) | 2019 | C++17 | :fontawesome-solid-graduation-cap: 初学者向け。「独習 C++ 第 4 版」を C++17 に対応させ解説を一新 | 
 | [[改訂第4版] C++ ポケットリファレンス](https://amzn.to/3p4p0pa) | 2021 | C++20 | 基本文法の解説に加え、逆引き形式で標準ライブラリの幅広い機能を紹介 | 
 | [C++ ソフトウェア設計 - 高品質設計の原則とデザインパターン](https://amzn.to/3tI3puI) | 2023 | C++20 | モダン C++ における設計技法やデザインパターンなど 39 項目を解説。[目次 :material-open-in-new:](https://www.oreilly.co.jp/books/9784814400454/){:target="_blank"} | 
+| [［改訂第5版］C++ ポケットリファレンス](https://amzn.to/3PrY2bf) | 2024 | C++23 | 基本文法の解説に加え、逆引き形式で標準ライブラリの幅広い機能を紹介。C++23 に対応 | 
+
 
 ![](images/books.jpg)
 
@@ -92,5 +94,6 @@ C++ の入門～中級レベルの多くの情報（『やさしい C++ 第 5 �
 | [C++20 コア言語機能](https://techbookfest.org/product/4904567416291328?productVariantID=5196501510782976) | 2022 | C++20    | C++20 コア言語に追加された機能を解説 (128 ページ)                                                                          |
 | [C++20 ライブラリ機能 Vol.1](https://techbookfest.org/product/eGzbawjDfDAjJdkCwKbFtY?productVariantID=imM8MxR9zvu5fC0cpzWD6g) | 2022 | C++20    | C++20で新たに追加された標準ライブラリ機能のうち、規模の大きなものに絞って解説 (222 ページ)                                                                          |
 | [C++20 ライブラリ機能 Vol.2](https://techbookfest.org/product/w7kWwTCFWpgi7XYvGyKqpM?productVariantID=4ZazJVHsFG7e5AdL28WjpQ) | 2022 | C++20    | Vol.1 で取り扱っていない機能を解説 (174 ページ)                                                                          |
+| [return 文で起こること](https://techbookfest.org/product/wEvHSr45NZQ9EV7u3sMZ9Y?productVariantID=qXfWjZxLmjfM8a2UTcAWc9) | 2023 | C++20/23 | C++ の return 文に関するトピックを解説（72 ページ）                                                                          |
 
 <!-- ToDo: C++11 とそれ以前の書籍 -->
