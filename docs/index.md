@@ -35,6 +35,7 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 
 #### Silver Sponsor
 - [sknjpn](https://twitter.com/sknjpn)
+- 野菜ジュース
 
 #### Bronze Sponsor
-アゲハマ, Fuyutsubaki, 😊, 🐝, 野菜ジュース, jacking75, Chris Ohk, qppon, ysaito, おおやま, ShivAlley, lamuda, 🌻, fal_rnd, As Project, 🍑, IZUNA, 柏崎でぃすこ
+アゲハマ, Fuyutsubaki, 😊, 🐝, jacking75, Chris Ohk, qppon, ysaito, おおやま, ShivAlley, lamuda, 🌻, fal_rnd, As Project, IZUNA, 柏崎でぃすこ
