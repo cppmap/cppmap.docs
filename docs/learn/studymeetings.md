@@ -31,6 +31,15 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - [Youtube チャンネル](https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w)
 - Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix&f=live)
 
+### C++ MIX #10 [(2024-04-19)](https://cppmix.connpass.com/event/311283/)
+| タイトル                                                                                                                                       | 発表者          | ムービー |
+|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------|
+| 勉強会と会場の説明                                                                                                                             | Akira Takahashi |          |
+| [x64 のスカラー，SIMD 演算性能を測ってみた](https://www.slideshare.net/slideshow/x64-simd-c-mix-10/267364631)                                  | 鈴木 宗良       |          |
+| [Boost.Asioにおけるcoroutineの活用法](https://1drv.ms/p/c/9164139b3166c293/Edth1kidYtFJt0JLjpUDE4cB5ALYoamKTPAfnWyPTgm_iw?e=QXy9dj)            | 近藤貴俊        |          |
+| [if constexpr文はテンプレート世界のラムダ式である](https://speakerdeck.com/faithandbrave/if-constexprwen-hatenpuretoshi-jie-noramudashi-dearu) | Akira Takahashi |          |
+| カジュアルディスカッション                                                                                                                     | (全員参加)      |          |
+
 ### C++ MIX #7 [(2020-01-29)](https://cppmix.connpass.com/event/160166/)
 | タイトル                                                 | 発表者               | ムービー |
 |------------------------------------------------------|-------------------|------|
