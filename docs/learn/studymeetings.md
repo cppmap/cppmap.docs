@@ -15,6 +15,8 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 ## C++ Meetup
 ウーブン・バイ・トヨタが主催する、C++ 専門家を招いたパネルディスカッションです。
 
+### C++ Meetup [(2024-03-21)](https://www.youtube.com/watch?v=vRda0mGYg_A)
+
 ### C++ Meetup [(2023-11-21)](https://www.youtube.com/watch?v=MddV3jwqcTk)
 
 ### C++ Meetup [(2023-06-07)](https://www.youtube.com/watch?v=rkDTgkN7FIY)
