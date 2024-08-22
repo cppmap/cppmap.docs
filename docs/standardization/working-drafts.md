@@ -16,7 +16,7 @@ C++11 以降は、規格書と同等の内容のワーキングドラフトが�
 | C++17 | [N4659 (PDF)](http://wg21.link/n4659) / [HTML](https://timsong-cpp.github.io/cppwp/n4659/) | [ISO/IEC 14882:2017](https://www.iso.org/standard/68564.html) | 1605 | 2017-12 |
 | C++20 | [N4860 (PDF)](https://isocpp.org/files/papers/N4860.pdf) / [HTML](https://timsong-cpp.github.io/cppwp/n4861/) | [ISO/IEC 14882:2020](https://www.iso.org/standard/79358.html) | 1853 | 2020-12 |
 | C++23 | [N4950 (PDF)](http://wg21.link/n4950) / [HTML](http://eel.is/c++draft/)<br>※最終版ではない | （未発行）                                                    | ?    | 2023-?? |
-| C++26 | [N4958 (PDF)](http://wg21.link/n4958) / [HTML](http://eel.is/c++draft/)<br>※最終版ではない | （未発行）                                                    | ?    | 2026-?? |
+| C++26 | [N4988 (PDF)](http://wg21.link/n4988) / [HTML](http://eel.is/c++draft/)<br>※最終版ではない | （未発行）                                                    | ?    | 2026-?? |
 
 - C++03 は日本語版 (JIS 規格) を無償で閲覧できます
     - [日本産業標準調査会：データベース検索-JIS検索](https://www.jisc.go.jp/app/jis/general/GnrJISSearch.html) にて「X3014」を検索します

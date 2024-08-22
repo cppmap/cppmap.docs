@@ -6,8 +6,8 @@ C++ 標準化委員会の提案文書と、その日本語解説記事へのリ�
 
 
 ### 2024 年
-- [JTC1/SC22/WG21 - Papers 2024 mailing2024-05](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-08){:target="_blank"}
-- [JTC1/SC22/WG21 - Papers 2024 mailing2024-05](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-07){:target="_blank"}
+- [JTC1/SC22/WG21 - Papers 2024 mailing2024-08](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-08){:target="_blank"}
+- [JTC1/SC22/WG21 - Papers 2024 mailing2024-07](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-07){:target="_blank"}
 - [JTC1/SC22/WG21 - Papers 2024 mailing2024-05](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-05){:target="_blank"}
 - [JTC1/SC22/WG21 - Papers 2024 mailing2024-04](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-04){:target="_blank"}
 - [JTC1/SC22/WG21 - Papers 2024 mailing2024-02](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-02){:target="_blank"}

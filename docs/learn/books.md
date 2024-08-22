@@ -95,5 +95,6 @@ C++ の入門～中級レベルの多くの情報（『やさしい C++ 第 5 �
 | [C++20 ライブラリ機能 Vol.1](https://techbookfest.org/product/eGzbawjDfDAjJdkCwKbFtY?productVariantID=imM8MxR9zvu5fC0cpzWD6g) | 2022 | C++20    | C++20で新たに追加された標準ライブラリ機能のうち、規模の大きなものに絞って解説 (222 ページ)                                                                          |
 | [C++20 ライブラリ機能 Vol.2](https://techbookfest.org/product/w7kWwTCFWpgi7XYvGyKqpM?productVariantID=4ZazJVHsFG7e5AdL28WjpQ) | 2022 | C++20    | Vol.1 で取り扱っていない機能を解説 (174 ページ)                                                                          |
 | [return 文で起こること](https://techbookfest.org/product/wEvHSr45NZQ9EV7u3sMZ9Y?productVariantID=qXfWjZxLmjfM8a2UTcAWc9) | 2023 | C++20/23 | C++ の return 文に関するトピックを解説（72 ページ）                                                                          |
+| [C++23 ranges](https://techbookfest.org/product/mBjbXjatZwmYXPYJh1ddmB?productVariantID=qWzTAS8TW2x7AmPiYkge29) | 2023 | C++23    | C++23 の Ranges ライブラリの使い方や設計を解説（166 ページ）                                                                          |
 
 <!-- ToDo: C++11 とそれ以前の書籍 -->
