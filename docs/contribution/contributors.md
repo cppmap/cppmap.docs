@@ -37,6 +37,7 @@ C++ の歩き方 Web サイトの改善、情報拡充に協力してくれた�
     - [国内の C++ 勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/55)
     - [国内の C++ 勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/56)
     - [国内の C++ 勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/57)
+    - [国内の C++ 勉強会 記事加筆](https://github.com/cppmap/cppmap.docs/pull/58)
 - [@_matken](https://twitter.com/_matken) さん
     - [C++ パッケージマネージャ 情報提供](https://github.com/cppmap/cppmap.docs/pull/2)
     - [C++ リンター 情報提供](https://github.com/cppmap/cppmap.docs/pull/50)

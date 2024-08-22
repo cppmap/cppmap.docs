@@ -1,16 +1,20 @@
 # C++ の歩き方 | cppmap
 
+📢 CEDEC 2024 にて講演を行いました。発表資料を公開しています。
+
+- [CEDEC 2024 | ゲーム開発者のための C++17～C++23, 近年の C++ 規格策定の動向 :material-open-in-new:](https://www.docswell.com/s/cpp/5XEY92-cedec2024){:target="_blank"}
+
 📢 CEDEC 2020 にて講演を行いました。発表資料を公開しています。
 
-- [CEDEC 2020 | ゲーム開発者のための C++11～C++20, 将来の C++ の展望](https://speakerdeck.com/cpp/cedec2020)
+- [CEDEC 2020 | ゲーム開発者のための C++11～C++20, 将来の C++ の展望 :material-open-in-new:](https://speakerdeck.com/cpp/cedec2020){:target="_blank"}
 
 📢 コンテンツ拡充のため【募集】タグのスレッドへ情報をお寄せください。
 
-- [cppmap.docs | Issues](https://github.com/cppmap/cppmap.docs/issues)
+- [cppmap.docs | Issues :material-open-in-new:](https://github.com/cppmap/cppmap.docs/issues){:target="_blank"}
 
 📢 本サイトの運営は、GitHub Sponsors によって支えられています。
 
-- [GitHub Sponsors | Become a sponsor to Reputeless](https://github.com/sponsors/Reputeless)
+- [GitHub Sponsors | Become a sponsor to Reputeless :material-open-in-new:](https://github.com/sponsors/Reputeless){:target="_blank"}
 
 
 ## このサイトについて
