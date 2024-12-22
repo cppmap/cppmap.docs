@@ -13,6 +13,7 @@ description: 各種 C++ 処理系の規格対応状況
 - Clang: [C++26 implementation status](http://clang.llvm.org/cxx_status.html#cxx26)
 - libc++: [libc++ C++26 Status](https://libcxx.llvm.org/Status/Cxx2c.html)
 - Microsoft Visaul C++: 
+- Apple Clang: [C++26](https://developer.apple.com/xcode/cpp/#c++26)
 
 ## C++23
 - GCC: [C++23 Support in GCC](https://gcc.gnu.org/projects/cxx-status.html#cxx23)
