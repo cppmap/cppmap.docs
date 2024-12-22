@@ -35,6 +35,16 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - [Youtube チャンネル](https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w)
 - Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix&f=live)
 
+### C++ MIX #12 [(2024-12-20)](https://cppmix.connpass.com/event/337028/)
+| タイトル                                                                                                           | 発表者            | ムービー |
+| ------------------------------------------------------------------------------------------------------------------ | ----------------- | -------- |
+| 勉強会と会場の説明                                                                                                 | Akira Takahashi   |          |
+| [C++26から導入される「エラー性動作」を解説](https://speakerdeck.com/faithandbrave/c-plus-plus-26-eraxing-dong-zuo) | Akira Takahashi   |          |
+| [Rangeアダプタを作る](https://speakerdeck.com/tetsurom/rangeadaputawozuo-ru)                                       | Tetsuro Matsumura |          |
+| [HTTP/3サーバ実装について](https://speakerdeck.com/yasunorihigashiyama/3)                                          | 東山裕徳          |          |
+| [return文におけるmoveについて](https://speakerdeck.com/onihusube/returnwen-niokerustd-movenituite)                 | 安藤弘晃          |          |
+| カジュアルディスカッション                                                                                         | (全員参加)        |          |
+
 ### C++ MIX #11 [(2024-06-14)](https://cppmix.connpass.com/event/319167/)
 | タイトル                                                                                                                                                   | 発表者          | ムービー |
 |------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------|
