@@ -199,8 +199,8 @@ inspect constexpr_opt (init-statement_opt condition) trailing-return-type_opt
 		{
 			<int> i   => { std::cout << "int: " << i << '\n'; }
 			<float> f => { std::cout << "float: " << f << '\n'; }
-		}
-	};
+		};
+	}
 	```
 
 ### Polymorphic Types のマッチング
@@ -257,8 +257,8 @@ inspect constexpr_opt (init-statement_opt condition) trailing-return-type_opt
 		{
 			<Circle>	[r]		=> std::numbers::pi * r * r;
 			<Rectangle>	[w, h]	=> w * h;
-		}
-	};
+		};
+	}
 	```
 
 
