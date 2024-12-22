@@ -36,33 +36,33 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 - Twitter ハッシュタグ [#cppmix](https://twitter.com/search?q=%23cppmix&f=live)
 
 ### C++ MIX #12 [(2024-12-20)](https://cppmix.connpass.com/event/337028/)
-| タイトル                                                                                                           | 発表者            | ムービー |
-| ------------------------------------------------------------------------------------------------------------------ | ----------------- | -------- |
-| 勉強会と会場の説明                                                                                                 | Akira Takahashi   |          |
-| [C++26から導入される「エラー性動作」を解説](https://speakerdeck.com/faithandbrave/c-plus-plus-26-eraxing-dong-zuo) | Akira Takahashi   |          |
-| [Rangeアダプタを作る](https://speakerdeck.com/tetsurom/rangeadaputawozuo-ru)                                       | Tetsuro Matsumura |          |
-| [HTTP/3サーバ実装について](https://speakerdeck.com/yasunorihigashiyama/3)                                          | 東山裕徳          |          |
-| [return文におけるmoveについて](https://speakerdeck.com/onihusube/returnwen-niokerustd-movenituite)                 | 安藤弘晃          |          |
-| カジュアルディスカッション                                                                                         | (全員参加)        |          |
+| タイトル                                                                                                           | 発表者            | ムービー                                         |
+|--------------------------------------------------------------------------------------------------------------------|-------------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                                 | Akira Takahashi   |                                                  |
+| [C++26から導入される「エラー性動作」を解説](https://speakerdeck.com/faithandbrave/c-plus-plus-26-eraxing-dong-zuo) | Akira Takahashi   | [:simple-youtube:](https://youtu.be/7AcY_uEPK1Q) |
+| [Rangeアダプタを作る](https://speakerdeck.com/tetsurom/rangeadaputawozuo-ru)                                       | Tetsuro Matsumura | [:simple-youtube:](https://youtu.be/eFFAFuf74Eg) |
+| [HTTP/3サーバ実装について](https://speakerdeck.com/yasunorihigashiyama/3)                                          | 東山裕徳          | [:simple-youtube:](https://youtu.be/mT0eyMP7o0E) |
+| [return文におけるmoveについて](https://speakerdeck.com/onihusube/returnwen-niokerustd-movenituite)                 | 安藤弘晃          | [:simple-youtube:](https://youtu.be/zxlCgBNeCUg) |
+| カジュアルディスカッション                                                                                         | (全員参加)        |                                                  |
 
 ### C++ MIX #11 [(2024-06-14)](https://cppmix.connpass.com/event/319167/)
-| タイトル                                                                                                                                                   | 発表者          | ムービー |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------|
-| 勉強会と会場の説明                                                                                                                                         | Akira Takahashi |          |
-| [コンテナと文字列の中間インタフェースspanとstring_view](https://speakerdeck.com/faithandbrave/kontenatowen-zi-lie-nozhong-jian-intahuesuspantostring-view) | Akira Takahashi |          |
-| [C++23 スタックトレースライブラリ](https://speakerdeck.com/faithandbrave/c-plus-plus-23-sutatukutoresuraiburari)                                           | Akira Takahashi |          |
-| 最短 1 行、C++ と Siv3D で生成 AI 活用アプリを作る                                                                                                         | Ryo Suzuki      |          |
-| [これってどう読むの…？](https://speakerdeck.com/5mingame2/c-plus-plus-mix-number-11-koredoudu-muno-dot-dot-dot)                                           | 西山 信行       |          |
-| カジュアルディスカッション                                                                                                                                 | (全員参加)      |          |
+| タイトル                                                                                                                                                   | 発表者          | ムービー                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                                                                         | Akira Takahashi |                                                  |
+| [コンテナと文字列の中間インタフェースspanとstring_view](https://speakerdeck.com/faithandbrave/kontenatowen-zi-lie-nozhong-jian-intahuesuspantostring-view) | Akira Takahashi | [:simple-youtube:](https://youtu.be/1uxyzeWeyhw) |
+| [C++23 スタックトレースライブラリ](https://speakerdeck.com/faithandbrave/c-plus-plus-23-sutatukutoresuraiburari)                                           | Akira Takahashi | [:simple-youtube:](https://youtu.be/zUspXaFIea4) |
+| 最短 1 行、C++ と Siv3D で生成 AI 活用アプリを作る                                                                                                         | Ryo Suzuki      | [:simple-youtube:](https://youtu.be/RwkxHe_N8Vs) |
+| [これってどう読むの…？](https://speakerdeck.com/5mingame2/c-plus-plus-mix-number-11-koredoudu-muno-dot-dot-dot)                                           | 西山 信行       | [:simple-youtube:](https://youtu.be/RmaoC2es4sA) |
+| カジュアルディスカッション                                                                                                                                 | (全員参加)      |                                                  |
 
 ### C++ MIX #10 [(2024-04-19)](https://cppmix.connpass.com/event/311283/)
-| タイトル                                                                                                                                       | 発表者          | ムービー |
-|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------|
-| 勉強会と会場の説明                                                                                                                             | Akira Takahashi |          |
-| [x64 のスカラー，SIMD 演算性能を測ってみた](https://www.slideshare.net/slideshow/x64-simd-c-mix-10/267364631)                                  | 鈴木 宗良       |          |
-| [Boost.Asioにおけるcoroutineの活用法](https://1drv.ms/p/c/9164139b3166c293/Edth1kidYtFJt0JLjpUDE4cB5ALYoamKTPAfnWyPTgm_iw?e=QXy9dj)            | 近藤貴俊        |          |
-| [if constexpr文はテンプレート世界のラムダ式である](https://speakerdeck.com/faithandbrave/if-constexprwen-hatenpuretoshi-jie-noramudashi-dearu) | Akira Takahashi |          |
-| カジュアルディスカッション                                                                                                                     | (全員参加)      |          |
+| タイトル                                                                                                                                       | 発表者          | ムービー                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                                                             | Akira Takahashi |                                                  |
+| [x64 のスカラー，SIMD 演算性能を測ってみた](https://www.slideshare.net/slideshow/x64-simd-c-mix-10/267364631)                                  | 鈴木 宗良       | [:simple-youtube:](https://youtu.be/AB-vf6TvAIw) |
+| [Boost.Asioにおけるcoroutineの活用法](https://1drv.ms/p/c/9164139b3166c293/Edth1kidYtFJt0JLjpUDE4cB5ALYoamKTPAfnWyPTgm_iw?e=QXy9dj)            | 近藤貴俊        | [:simple-youtube:](https://youtu.be/TrFfJoYklvk) |
+| [if constexpr文はテンプレート世界のラムダ式である](https://speakerdeck.com/faithandbrave/if-constexprwen-hatenpuretoshi-jie-noramudashi-dearu) | Akira Takahashi | [:simple-youtube:](https://youtu.be/Wr3B7ZT4FHY) |
+| カジュアルディスカッション                                                                                                                     | (全員参加)      |                                                  |
 
 ### C++ MIX #9 [(2024-02-09)](https://cppmix.connpass.com/event/305699/)
 | タイトル                                                                                                        | 発表者           | ムービー                                         |
