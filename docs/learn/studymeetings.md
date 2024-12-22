@@ -46,14 +46,14 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | カジュアルディスカッション                                                                                         | (全員参加)        |          |
 
 ### C++ MIX #11 [(2024-06-14)](https://cppmix.connpass.com/event/319167/)
-| タイトル                                                                                                                                                   | 発表者          | ムービー |
-|------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------|
-| 勉強会と会場の説明                                                                                                                                         | Akira Takahashi |          |
-| [コンテナと文字列の中間インタフェースspanとstring_view](https://speakerdeck.com/faithandbrave/kontenatowen-zi-lie-nozhong-jian-intahuesuspantostring-view) | Akira Takahashi |          |
-| [C++23 スタックトレースライブラリ](https://speakerdeck.com/faithandbrave/c-plus-plus-23-sutatukutoresuraiburari)                                           | Akira Takahashi |          |
-| 最短 1 行、C++ と Siv3D で生成 AI 活用アプリを作る                                                                                                         | Ryo Suzuki      |          |
-| [これってどう読むの…？](https://speakerdeck.com/5mingame2/c-plus-plus-mix-number-11-koredoudu-muno-dot-dot-dot)                                           | 西山 信行       |          |
-| カジュアルディスカッション                                                                                                                                 | (全員参加)      |          |
+| タイトル                                                                                                                                                   | 発表者          | ムービー                                         |
+|------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                                                                         | Akira Takahashi |                                                  |
+| [コンテナと文字列の中間インタフェースspanとstring_view](https://speakerdeck.com/faithandbrave/kontenatowen-zi-lie-nozhong-jian-intahuesuspantostring-view) | Akira Takahashi | [:simple-youtube:](https://youtu.be/1uxyzeWeyhw) |
+| [C++23 スタックトレースライブラリ](https://speakerdeck.com/faithandbrave/c-plus-plus-23-sutatukutoresuraiburari)                                           | Akira Takahashi | [:simple-youtube:](https://youtu.be/zUspXaFIea4) |
+| 最短 1 行、C++ と Siv3D で生成 AI 活用アプリを作る                                                                                                         | Ryo Suzuki      | [:simple-youtube:](https://youtu.be/RwkxHe_N8Vs) |
+| [これってどう読むの…？](https://speakerdeck.com/5mingame2/c-plus-plus-mix-number-11-koredoudu-muno-dot-dot-dot)                                           | 西山 信行       | [:simple-youtube:](https://youtu.be/RmaoC2es4sA) |
+| カジュアルディスカッション                                                                                                                                 | (全員参加)      |                                                  |
 
 ### C++ MIX #10 [(2024-04-19)](https://cppmix.connpass.com/event/311283/)
 | タイトル                                                                                                                                       | 発表者          | ムービー                                         |
