@@ -4,13 +4,18 @@ description: C++ 標準化委員会で議論される提案リストと日本語
 
 C++ 標準化委員会の提案文書と、その日本語解説記事へのリンクです。
 
+### 2025 年
+- [JTC1/SC22/WG21 - Papers 2025 mailing2025-01](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2025/#mailing2025-01){:target="_blank"}
 
 ### 2024 年
 - [JTC1/SC22/WG21 - Papers 2024 mailing2024-12](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-12){:target="_blank"}
 - [JTC1/SC22/WG21 - Papers 2024 mailing2024-10](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-10){:target="_blank"}
 - [JTC1/SC22/WG21 - Papers 2024 mailing2024-09](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-09){:target="_blank"}
+    - 日本語での解説: [WG21月次提案文書を眺める（2024年09月）](https://onihusube.hatenablog.com/entry/2025/02/24/215818){:target="_blank"}
 - [JTC1/SC22/WG21 - Papers 2024 mailing2024-08](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-08){:target="_blank"}
+    - 日本語での解説: [WG21月次提案文書を眺める（2024年08月）](https://onihusube.hatenablog.com/entry/2025/01/26/185126){:target="_blank"}
 - [JTC1/SC22/WG21 - Papers 2024 mailing2024-07](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-07){:target="_blank"}
+    - 日本語での解説: [WG21月次提案文書を眺める（2024年07月）](https://onihusube.hatenablog.com/entry/2025/01/13/204945){:target="_blank"}
 - [JTC1/SC22/WG21 - Papers 2024 mailing2024-05](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-05){:target="_blank"}
     - 日本語での解説: [WG21月次提案文書を眺める（2024年05月）](https://onihusube.hatenablog.com/entry/2024/11/24/155428){:target="_blank"}
 - [JTC1/SC22/WG21 - Papers 2024 mailing2024-04](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2024/#mailing2024-04){:target="_blank"}
