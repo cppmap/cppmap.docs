@@ -41,7 +41,7 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | 勉強会と会場の説明                                                                                                    | Akira Takahashi |          |
 | [プラグイン開発で学習するUnrealEngine C++（概要編）](https://www.docswell.com/s/YuukiOgino/ZXEQPX-cppmix13-UE5Plugin) | 荻野雄季        |          |
 | [C++23ジェネレータの紹介](https://www.docswell.com/s/yohhoy/KEXQPG-cpp23gen)                                          | yohhoy          |          |
-| [GCCの\<type_traits\>最適化 (リモート発表予定)](https://drive.proton.me/urls/349KVCZH5C#2SRNr0r2aHX5)                 | Ken Matsui      |          |
+| [GCCの&lt;type_traits&gt;最適化 (リモート発表予定)](https://drive.proton.me/urls/349KVCZH5C#2SRNr0r2aHX5)                 | Ken Matsui      |          |
 | カジュアルディスカッション                                                                                            | (全員参加)      |          |
 
 ### C++ MIX #12 [(2024-12-20)](https://cppmix.connpass.com/event/337028/)
