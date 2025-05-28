@@ -14,7 +14,7 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | Cosense | [https://scrapbox.io/cpp-osaka/ :material-open-in-new:](https://scrapbox.io/cpp-osaka/){:target="_blank"} |
 | X ハッシュタグ | [#cpp読書会 :material-open-in-new:](https://x.com/search?q=%23cpp%E8%AA%AD%E6%9B%B8%E4%BC%9A&f=live){:target="_blank"} |
 
-- [C++ breaktime 2025/Summer](https://cpp-osaka.connpass.com/event/356031/){:target="_blank"}
+- [C++ breaktime 2025/Summer :material-open-in-new:](https://cpp-osaka.connpass.com/event/356031/){:target="_blank"}
     - 大阪 C++ 読書会が開催する聴講スタイルの勉強会
 
 
