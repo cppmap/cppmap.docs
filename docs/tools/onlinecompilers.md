@@ -8,13 +8,13 @@ C++ プログラムのコンパイル、実行、共有ができる Web サイ�
 
 |                                                               | コンパイラ                                                                                         | 日本語入出力     | インタラクティブ   | 複数ファイル     |
 |---------------------------------------------------------------|-----------------------------------------------------------------------------------------------|:------------:|:------------:|:------------:|
-| [Wandbox](https://wandbox.org/)                               | <li>GCC 4.9.4 - 14.0</li><li>Clang 7.1.0 - 18.0</li>                               | :material-check: |            | :material-check: |
-| [Compiler Explorer](https://godbolt.org/)<br>(Compiler モード) | <li>GCC 4.1.2 - 13.2</li><li>Clang 3.0 - 16.0</li><li>MSVC v19.14 - v19.latest</li><li>ICC 13.0.1 - 2021.10.0</li> | :material-check: |            | :material-check: |
-| [Compiler Explorer](https://godbolt.org/)<br>(Execution モード) | <li>GCC 4.6.4 - 13.2</li><li>Clang 3.3 - 16.0</li><li>ICC 16.0.3 - 2021.10.0</li> | :material-check: |            | :material-check: |
-| [repl.it](https://repl.it/languages/cpp)<br>(要アカウント登録) | <li>Clang 12.0.1</li>                                                                          | :material-check: | :material-check: | :material-check: |
+| [Wandbox](https://wandbox.org/)                               | <li>GCC 6.5.0 - 16.0</li><li>Clang 14.0 - 21.0</li>                               | :material-check: |            | :material-check: |
+| [Compiler Explorer](https://godbolt.org/)<br>(Compiler モード) | <li>GCC 3.4.6 - 16.0</li><li>Clang 3.0 - 21.0</li><li>MSVC v19.14 - v19.latest</li><li>ICC 13.0.1 - 2021.10.0</li> | :material-check: |            | :material-check: |
+| [Compiler Explorer](https://godbolt.org/)<br>(Execution モード) | <li>GCC 4.7.3 - 16.0</li><li>Clang 3.3 - 21.0</li><li>MSVC v19.20 - v19.latest</li><li>ICC 16.0.3 - 2021.10.0</li> | :material-check: |            | :material-check: |
+| [repl.it](https://repl.it/languages/cpp)<br>(要アカウント登録) | <li>Clang 17.0.6</li>                                                                          | :material-check: | :material-check: | :material-check: |
 | [C++ Shell](http://cpp.sh/)                                   | <li>Clang 16.0.0</li>                                                                            |            | :material-check: |            |
 | [paiza.io](https://paiza.io/ja/projects/new?language=cpp)     | <li>Clang 10.0.0</li>                                                                          | :material-check: |            | :material-check: |
-| [GDB Online](https://www.onlinegdb.com/)                      | <li>GCC 9.4.0</li>                                                                            | :material-check: | :material-check: | :material-check: |
+| [GDB Online](https://www.onlinegdb.com/)                      | <li>GCC 14.2.0</li>                                                                            | :material-check: | :material-check: | :material-check: |
 | [Ideone](https://ideone.com/)                                 | <li>GCC 8.3.0</li>                                                                            | :material-check: |            |            |
 
 ## その他のツール
