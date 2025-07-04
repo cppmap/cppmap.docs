@@ -45,4 +45,4 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 - [ぼっちマスター](https://profile.bocchi-master.net/){:target="_blank"}
 
 #### Bronze Sponsor
-アゲハマ, Fuyutsubaki, 😊, 🐝, jacking75, Chris Ohk, ysaito, おおやま, ShivAlley, lamuda, fal_rnd, As Project, IZUNA, nasatame, sashi, 🌶️, 💯, PlumRice
+アゲハマ, Fuyutsubaki, 😊, 🐝, jacking75, Chris Ohk, ysaito, おおやま, ShivAlley, lamuda, fal_rnd, As Project, IZUNA, nasatame, sashi, 🌶️, 💯, PlumRice, 緑獺おがめ
