@@ -40,6 +40,14 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | YouTube | [https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w :material-open-in-new:](https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w){:target="_blank"} |
 | X ハッシュタグ | [#cppmix :material-open-in-new:](https://x.com/search?q=%23cppmix&f=live){:target="_blank"} |
 
+#### C++ MIX #15 [(2025-07-18)](https://cppmix.connpass.com/event/359098/)
+| タイトル                                                                                                                           | 発表者          | ムービー                                         |
+|------------------------------------------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                                                 | Akira Takahashi |                                                  |
+| [P2P通信の標準化 WebRTCを知ろう](https://speakerdeck.com/faithandbrave/p2ptong-xin-nobiao-zhun-hua-webrtcwozhi-rou)                | Akira Takahashi | [:simple-youtube:](https://youtu.be/c-admz1IeWs) |
+| [私の機械学習フレームワーク](https://docs.google.com/presentation/d/1SC41aBHOkCfVkjfNEMjVK6BGWWXSn1pW5bVNj_QF6pE/edit?usp=sharing) | 池田公平        | [:simple-youtube:](https://youtu.be/bSdbJZ_JW1Q) |
+| [オーディオ処理入門 ボイスチェンジャーを作ろう](https://speakerdeck.com/hotwatermorning/oteiochu-li-ru-men-hoisutiensiyawozuo-rou) | hotwatermorning | [:simple-youtube:](https://youtu.be/45keX6SxxI0) |
+
 #### C++ MIX #14 [(2025-04-25)](https://cppmix.connpass.com/event/349703/)
 | タイトル                                                                                                                                                              | 発表者          | ムービー |
 |-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------------|----------|
