@@ -40,6 +40,14 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | YouTube | [https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w :material-open-in-new:](https://www.youtube.com/channel/UC3c011RjfXoU4Gj86V7sb_w){:target="_blank"} |
 | X ハッシュタグ | [#cppmix :material-open-in-new:](https://x.com/search?q=%23cppmix&f=live){:target="_blank"} |
 
+#### C++ MIX #16 [(2025-10-17)](https://cppmix.connpass.com/event/369191/)
+| タイトル                                                                                                              | 発表者          | ムービー |
+|-----------------------------------------------------------------------------------------------------------------------|-----------------|----------|
+| 勉強会と会場の説明                                                                                                    | Akira Takahashi |          |
+| [量子コンピュータのシミュレーション](https://www.docswell.com/s/gyu-don/K447N6-2025-10-17-192918)                     | gyu-don         |          |
+| [プラグイン開発で学習するUnrealEngine C++（実践編）](https://www.docswell.com/s/YuukiOgino/574MN1-cppmix16-UE5Plugin) | 荻野雄季        |          |
+| [C++26 std::execution](https://www.docswell.com/s/yohhoy/ZQXJ2E-cpp26-execution)                                      | yohhoy          |          |
+
 #### C++ MIX #15 [(2025-07-18)](https://cppmix.connpass.com/event/359098/)
 | タイトル                                                                                                                           | 発表者          | ムービー                                         |
 |------------------------------------------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
