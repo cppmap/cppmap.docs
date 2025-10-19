@@ -44,4 +44,4 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 - [kt2763](https://github.com/kt2763){:target="_blank"}
 
 #### Bronze Sponsor
-アゲハマ, Fuyutsubaki, 😊, 🐝, jacking75, Chris Ohk, ysaito, おおやま, ShivAlley, lamuda, fal_rnd, As Project, IZUNA, nasatame, sashi, 🌶️, 💯, PlumRice, 緑獺おがめ
+アゲハマ, Fuyutsubaki, 😊, 🐝, jacking75, Chris Ohk, ysaito, おおやま, ShivAlley, lamuda, fal_rnd, As Project, IZUNA, nasatame, sashi, 🌶️, PlumRice, 緑獺おがめ
