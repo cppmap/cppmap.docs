@@ -42,7 +42,7 @@ C++17, C++20, C++23, C++26 に関する情報を調査・提供します。
 - [sknjpn](https://x.com/sknjpn){:target="_blank"}
 - 野菜ジュース
 - [kagamiz](https://github.com/kagamiz){:target="_blank"}
-- ysaito
+- [ysaito](https://x.com/ysaito8015){:target="_blank"}
 
 #### Bronze Sponsor
 アゲハマ, Fuyutsubaki, 😊, 🐝, jacking75, Chris Ohk, ShivAlley, lamuda, fal_rnd, As Project, nasatame, 🌶️, 緑獺おがめ
