@@ -43,21 +43,21 @@ description: 国内で開催されている C++ 関連の勉強会イベント�
 | X ハッシュタグ | [#cppmix :material-open-in-new:](https://x.com/search?q=%23cppmix&f=live){:target="_blank"} |
 
 #### C++ MIX #17 [(2026-03-13)](https://cppmix.connpass.com/event/381312/)
-| タイトル                                                                                                                                                                             | 発表者                   | ムービー |
-|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|----------|
-| 勉強会と会場の説明                                                                                                                                                                   | Akira Takahashi          |          |
-| [TypeScript/DenoでC++/CMakeプロジェクトを支援する話](https://www.docswell.com/s/5942872680/KL3XD3-2026-03-13-150147)                                                                 | 塩澤 達矢                |          |
-| [C#で作ったアプリにビルドした日付を入れる](https://drive.google.com/file/d/11t7HHjndcUjPCRTO8nwWTbKjrBXd2_83/view?usp=share_link)                                                    | 西山信行                 |          |
-| [作ったMQTTライブラリをBoostに提案してみた](https://docs.google.com/presentation/d/13eTuVa2Zp7D2QyvUzhXg5jdc8WFAkxMO/edit?usp=sharing&ouid=102771999813921048196&rtpof=true&sd=true) | 近藤貴俊                 |          |
-| [Modern C++を用いたメモリリークフリー・クラッシュフリーなOBSプラグイン開発手法に関する一検討](https://speakerdeck.com/umireon/modanobspuraguinkai-fa)                                | Kaito Udagawa（umireon） |          |
+| タイトル                                                                                                                                                                             | 発表者                   | ムービー                                         |
+|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                                                                                                   | Akira Takahashi          |                                                  |
+| [TypeScript/DenoでC++/CMakeプロジェクトを支援する話](https://www.docswell.com/s/5942872680/KL3XD3-2026-03-13-150147)                                                                 | 塩澤 達矢                | [:simple-youtube:](https://youtu.be/AjciIA4YFQQ) |
+| [C#で作ったアプリにビルドした日付を入れる](https://drive.google.com/file/d/11t7HHjndcUjPCRTO8nwWTbKjrBXd2_83/view?usp=share_link)                                                    | 西山信行                 | [:simple-youtube:](https://youtu.be/9eIHfHJF2is) |
+| [作ったMQTTライブラリをBoostに提案してみた](https://docs.google.com/presentation/d/13eTuVa2Zp7D2QyvUzhXg5jdc8WFAkxMO/edit?usp=sharing&ouid=102771999813921048196&rtpof=true&sd=true) | 近藤貴俊                 | [:simple-youtube:](https://youtu.be/X_jZMh4Ce2I) |
+| [Modern C++を用いたメモリリークフリー・クラッシュフリーなOBSプラグイン開発手法に関する一検討](https://speakerdeck.com/umireon/modanobspuraguinkai-fa)                                | Kaito Udagawa（umireon） | [:simple-youtube:](https://youtu.be/ox6z9k9neUk) |
 
 #### C++ MIX #16 [(2025-10-17)](https://cppmix.connpass.com/event/369191/)
-| タイトル                                                                                                              | 発表者          | ムービー |
-|-----------------------------------------------------------------------------------------------------------------------|-----------------|----------|
-| 勉強会と会場の説明                                                                                                    | Akira Takahashi |          |
-| [量子コンピュータのシミュレーション](https://www.docswell.com/s/gyu-don/K447N6-2025-10-17-192918)                     | gyu-don         |          |
-| [プラグイン開発で学習するUnrealEngine C++（実践編）](https://www.docswell.com/s/YuukiOgino/574MN1-cppmix16-UE5Plugin) | 荻野雄季        |          |
-| [C++26 std::execution](https://www.docswell.com/s/yohhoy/ZQXJ2E-cpp26-execution)                                      | yohhoy          |          |
+| タイトル                                                                                                              | 発表者          | ムービー                                         |
+|-----------------------------------------------------------------------------------------------------------------------|-----------------|--------------------------------------------------|
+| 勉強会と会場の説明                                                                                                    | Akira Takahashi |                                                  |
+| [量子コンピュータのシミュレーション](https://www.docswell.com/s/gyu-don/K447N6-2025-10-17-192918)                     | gyu-don         | [:simple-youtube:](https://youtu.be/VL7257jL5Vk) |
+| [プラグイン開発で学習するUnrealEngine C++（実践編）](https://www.docswell.com/s/YuukiOgino/574MN1-cppmix16-UE5Plugin) | 荻野雄季        | [:simple-youtube:](https://youtu.be/xEe5Ydtj7ww) |
+| [C++26 std::execution](https://www.docswell.com/s/yohhoy/ZQXJ2E-cpp26-execution)                                      | yohhoy          | [:simple-youtube:](https://youtu.be/nz6SFkbqU7I) |
 
 #### C++ MIX #15 [(2025-07-18)](https://cppmix.connpass.com/event/359098/)
 | タイトル                                                                                                                           | 発表者          | ムービー                                         |
